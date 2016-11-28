@@ -1,0 +1,267 @@
+{
+    "general": {
+        "title": "General",
+        "displayByDefault": true,
+        "defaultSections": true,
+        "printing": {
+            "title": "Charikot Hospital",
+            "header": "Visit",
+            "logo": "../images/nhn-logo.png"
+        }
+    },
+    "discharge_summary": {
+        "title": "Discharge Summary",
+        "printing": {
+            "title": "Charikot Hospital",
+            "header": "Discharge Summary",
+            "logo": "../images/nhn-logo.png"
+        },
+        "sections": {
+            "patientinformation": {
+                "type": "patientInformation",
+                "config": {
+                    "title": "PatientInformation",
+                    "patientAttributes": [],
+                    "addressFields": [
+                        "cityVillage",
+                        "countyDistrict"
+                    ]
+                },
+                "displayOrder": 0
+            },
+            "diagnosis": {
+                "type": "diagnosis",
+                "config": {
+                    "title": "Diagnoses",
+                    "showCertainty": true,
+                    "showOrder": true,
+                    "showDetailsButton": true
+                },
+                "displayOrder": 1
+            },
+            "discharge_notes": {
+                "type": "Discharge Notes",
+                "config": {
+                    "numberOfVisits": 1,
+                    "showDetailsButton": true,
+                    "conceptNames": [
+                        "Discharge Note, Brief Hospital Course",
+                        "Discharge Note, Medications on Discharged",
+                        "Discharge Note, Followup Instructions"
+                    ],
+                    "title":"Discharge Notes"
+                },
+                "displayOrder": 2
+            },
+            "disposition": {
+                "type": "disposition",
+                "config": {
+                    "title": "Dispositions",
+                    "numberOfVisits": 1,
+                    "showDetailsButton": true
+                },
+                "displayOrder": 3
+            },
+            "admissiondetails": {
+                "type": "admissionDetails",
+                "config": {
+                    "showDetailsButton": true,
+                    "title": "Admission Details"
+                },
+                "displayOrder": 4
+            },
+            "investigationresult": {
+                "type": "investigationResult",
+                "config": {
+                    "title": "Lab Investigations",
+                    "showChart": true,
+                    "showTable": true,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "numberOfVisits": 10
+                },
+                "displayOrder": 5
+            },
+            "treatment": {
+                "type": "treatment",
+                "config": {
+                    "title": "Treatments",
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showOtherActive": false,
+                    "showDetailsButton": true,
+                    "showRoute": true,
+                    "showDrugForm": true
+                },
+                "displayOrder": 6
+            }
+        }
+    },
+    "opd_summary": {
+        "title": "OPD Summary",
+        "printing": {
+            "title": "Charikot Hospital",
+            "header": "OPD Summary",
+            "logo": "../images/nhn-logo.png"
+        },
+        "sections": {
+            "patientinformation": {
+                "type": "patientInformation",
+                "config": {
+                    "title": "PatientInformation",
+                    "patientAttributes": [],
+                    "addressFields": [
+                        "cityVillage",
+                        "countyDistrict"
+                    ]
+                },
+                "displayOrder": 0
+            },
+            "diagnosis": {
+                "type": "diagnosis",
+                "config": {
+                    "title": "Diagnoses",
+                    "showCertainty": true,
+                    "showOrder": true,
+                    "showDetailsButton": true
+                },
+                "displayOrder": 1
+            },
+            "observation": {
+                "type": "observation",
+                "title": "Observation",
+                "config": {
+                    "numberOfVisits": 1,
+                    "obsIgnoreList": [
+                        "Patient file",
+                        "Radiology",
+                        "Lab Manager Notes",
+                        "Accession Uuid",
+                        "Impression"
+                    ],
+                    "showDetailsButton": true
+                },
+                "displayOrder": 2
+            },
+            "disposition": {
+                "type": "disposition",
+                "config": {
+                    "numberOfVisits": 1,
+                    "showDetailsButton": true
+                },
+                "displayOrder": 3
+            },
+            "investigationresult": {
+                "type": "investigationResult",
+                "config": {
+                    "title": "Lab Investigations",
+                    "showChart": true,
+                    "showTable": true,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "numberOfVisits": 10
+                },
+                "displayOrder": 4
+            },
+            "treatment": {
+                "type": "treatment",
+                "config": {
+                    "title": "Treatments",
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showOtherActive": false,
+                    "showDetailsButton": true,
+                    "showRoute": true,
+                    "showDrugForm": true
+                },
+                "displayOrder": 5
+            }
+        }
+    } ,"visitSummary": {
+    "translationKey": "Visit Summary",
+    "printing": {
+      "title": "Bahmni",
+      "header": "Visit Summary",
+      "logo": "../images/bahmniLogo.png"
+    },
+    "sections": {
+      "PatientInformation": {
+        "type": "patientInformation",
+        "displayOrder": 0,
+        "config": {
+          "title": "PatientInformation",
+          "patientAttributes": [
+            "caste",
+            "class",
+            "education",
+            "occupation",
+            "debt",
+            "distanceFromCenter",
+            "isUrban",
+            "cluster",
+            "RationCard",
+            "familyIncome"
+          ],
+          "addressFields": [
+            "address1",
+            "address2",
+            "cityVillage",
+            "countryDistrict"
+          ]
+        }
+      },
+       "Diagnosis": {
+            "type": "diagnosis",
+            "title": "Diagnosis",
+            "displayOrder": 1,
+            "config": {
+                "translationKey": "VISIT_TITLE_DIAGNOSIS_KEY",
+                "showCertainty": true,
+                "showOrder": true,
+                "showDetailsButton": true
+            }
+        },
+           "Disposition": {
+            "type": "disposition",
+            "translationKey": "VISIT_TITLE_DISPOSITIONS_KEY",
+            "displayOrder": 2,
+            "config": {
+                "translationKey":"VISIT_TITLE_DISPOSITION_KEY",
+                "numberOfVisits": 1,
+                "showDetailsButton": true
+            }
+        },
+         "labInvestigations": {
+        "type": "investigationResult",
+        "displayOrder": 3,
+        "config": {
+          "title": "Lab Investigations",
+          "translationKey": "LAB_INVESTIGATION",
+          "showChart": true,
+          "showTable": false,
+          "showNormalLabResults": true,
+          "showCommentsExpanded": true,
+          "showAccessionNotes": true,
+          "numberOfVisits": 4,
+          "initialAccessionCount": 1,
+          "latestAccessionCount": 1
+        }
+      },
+      "treatments": {
+        "type": "treatment",
+        "displayOrder": 4,
+        "config": {
+          "translationKey": "DISCHARGE_SUMMARY_TREATMENTS_KEY",
+          "showFlowSheet": false,
+          "showListView": true,
+          "showOtherActive": true,
+          "showDetailsButton": true,
+          "showRoute": true,
+          "showDrugForm": true
+        }
+      }
+    }
+  }
+}
