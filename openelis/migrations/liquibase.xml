@@ -15,19 +15,19 @@
         </preConditions>
         <comment>Creating Possible Organization</comment>
         <sql>
-            INSERT INTO organization (id, name, city, is_active) VALUES ((select max(id)+1 from organization),'Possible','Achham','Y');
+            INSERT INTO organization (id, name, city, is_active) VALUES ((select max(id)+1 from organization),'Possible','Dolakha','Y');
         </sql>
     </changeSet>
     <changeSet id="POSSIBLE-ELIS-3" author="tw" context="search">
         <preConditions onFail="MARK_RAN">
             <sqlCheck expectedResult="0">
-                SELECT COUNT(*) FROM HEALTH_CENTER where name like 'BAH';
+                SELECT COUNT(*) FROM HEALTH_CENTER where name like 'CKT';
             </sqlCheck>
         </preConditions>
-        <comment>Insert BAH health center</comment>
+        <comment>Insert CKT health center</comment>
         <insert schemaName="clinlims" tableName="HEALTH_CENTER">
             <column name="active" type="boolean" valueBoolean="true"/>
-            <column name="name" value="BAH"/>
+            <column name="name" value="CKT"/>
             <column name="description" value="Possible Health Identifier prefix"/>
             <column name="allow_patient_creation" type="boolean" valueBoolean="true"/>
         </insert>
