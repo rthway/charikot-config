@@ -14,6 +14,7 @@
                 "patientAttributes": [],
                 "addressFields": [
                     "cityVillage",
+					"address1",
                     "countyDistrict"
                 ],
                 "displayOrder": 0
@@ -35,6 +36,26 @@
                 "showDetailsButton": true,
                 "displayOrder": 2
             },
+            "formDisplaySummary":{
+                "title": "Active Visit notes",
+                "type": "forms",
+                "dashboardConfig": {
+                    "title": null,
+                    "maximumNoOfVisits": 1
+                },
+                "formGroup":["Patient Vitals","Acute OPD visit","Acute Abdominal Complaint","Acute HEENT Complaint",
+                             "Acute MSK Complaint","Acute Skin Complaint","Acute GU Complaint","ANC","Asthma, Progress","Childhood Illness (Children aged below 2 months)",
+                             "Childhood Illness( Children aged 2 months to 5 years)","CHP Antenatal Care","CHP Chronic Disease Counseling", "CHP Registration",
+                             "Chronic Kidney Disease, Progress","COPD, Progress","Congestive Heart Failure, Progress","Death Note","Delivery note","Dental","Dental Note",
+                             "Depression Note","Diabetes, Progress","Discharge Note","DRTuberculosis, Intake","ECG Notes","ER General Notes","Family Planning Template",
+                             "HIV Testing and Counseling Intake Template","HIV Treatment and Care Intake Template","HIV Treatment and Care Progress Template","Hypertension, Progress",
+                             "IMAM Program","Kalaazar, Template","Leprosy, Template","Mental Health","Mental Health Screener","Malaria","Nutrition","Operative Notes",
+                             "Opioid Substitution Therapy Intake Template","Opioid Substitution Therapy Intake Template","Opportunistic Infection Template","Orthopaedic Examination",
+                             "PNC Note","Post Delivery Family Planning Checklist","Prevention of Mother-to-Child Transmission Intake Template","Procedure Notes","Psychiatrist's Recommendation",
+                             "Psychosis Followup Note","Psychosis Intake Note","Rheumatoid Arthritis, Progress","Rheumatic Heart Disease, Progress","Safe Abortion","Seizure Disorder, Progress",
+                             "Sextually Transmitted Infections Intake Template","Stroke OPD","Trauma Notes","Tuberculosis, Intake","USG Notes","TEST TEMPLATE (टेस्ट टेम्प्लेट)"],
+                "displayOrder": 3
+            },
             "lab_results": {
                 "title": "Lab Results",
                 "type": "labOrders",
@@ -48,7 +69,22 @@
                 "allLabDetails": {
                     "numberOfVisits": 1
                 },
-                "displayOrder": 3
+                "displayOrder": 5
+            },
+            "otherdiagnosticOrderControl":  {
+                "title": "Other Diagnostics",
+                "type": "ordersControl",
+                "orderType": "USG Order",
+                "dashboardConfig": {
+                    "numberOfVisits": "1",
+                    "showHeader": true,
+                    "conceptNames":["USG Order fulfillment Notes, Findings", "USG Order fulfillment, Clinician", "USG Order fulfillment, Remarks"]
+                },
+                "expandedViewConfig": {
+                    "showHeader": true,
+                    "conceptNames":["USG Order fulfillment Notes, Findings", "USG Order fulfillment, Clinician", "USG Order fulfillment, Remarks"]
+                },
+                "displayOrder": 6
             },
             "pacs": {
                 "title":"Pacs",
