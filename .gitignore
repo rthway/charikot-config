@@ -1,0 +1,8 @@
+target/
+.DS_Store
+.idea
+*.iml
+*/logs/*
+logs/*
+playbooks/**/all.retry
+migration-run-log.txt
