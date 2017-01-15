@@ -41,7 +41,7 @@
                     "title": "Vitals",
                     "name": "vitals",
                     "isObservation": true,
-                    "dashboardParams": {
+                    "dashboardConfig": {
                         "conceptNames": [
                             "Vitals"
                         ],
