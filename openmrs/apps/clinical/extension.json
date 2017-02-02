@@ -51,7 +51,7 @@
         "requiredPrivilege": "app:pharmacy"
     },
     "bahmni_clinical_consultation_treatment_treatment_app_clinical": {
-        "id": "bahmni.clinical.consultation.treatment",
+        "id": "bahmni.clinical.consultation.treatment2",
         "extensionPointId": "org.bahmni.clinical.consultation.board",
         "type": "link",
         "label": "Treatment",
@@ -87,7 +87,7 @@
         "requiredPrivilege": "app:clinical"
     },
     "bahmni_clinical_patients_search_allpatients_my_patients_app_clinical": {
-        "id": "bahmni.clinical.patients.search.allPatients",
+        "id": "bahmni.clinical.patients.search.allPatients2",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
@@ -113,7 +113,7 @@
         "requiredPrivilege": "app:clinical"
     },
     "bahmni_clinical_patients_search_allpatients_all_app_clinical": {
-        "id": "bahmni.clinical.patients.search.allPatients",
+        "id": "bahmni.clinical.patients.search.allPatients3",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
@@ -138,7 +138,7 @@
         "requiredPrivilege": "app:pharmacy"
     },
     "bahmni_clinical_patients_search_allpatients_today's_patients_app_pharmacy": {
-        "id": "bahmni.clinical.patients.search.allPatients",
+        "id": "bahmni.clinical.patients.search.allPatients4",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
@@ -151,7 +151,7 @@
         "requiredPrivilege": "app:clinical"
     },
     "bahmni_clinical_patients_search_allpatients_all_app_pharmacy": {
-        "id": "bahmni.clinical.patients.search.allPatients",
+        "id": "bahmni.clinical.patients.search.allPatients5",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {

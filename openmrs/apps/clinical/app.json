@@ -998,6 +998,15 @@
             },
             "Childhood Illness, 2 months, Counseling purpose": {
                 "multiSelect": true
+            },
+            "Delivery Note, Delivery date and time": {
+                "allowFutureDates": true
+            },
+            "Operative Notes, Procedure": {
+                "required": true
+            },
+            "PNC, Discharge Date": {
+                "allowFutureDates": true
             }
         }
     }

@@ -20,7 +20,7 @@
         "mandatoryPersonAttributes": [
             "Caste"
         ],
-	"autoCompleteFields": [
+		"autoCompleteFields": [
             "familyName"
         ],
         "printOptions": [
@@ -47,6 +47,18 @@
                 "answersConceptName": "Hospitals, Referred by, Answers",
                 "required": false,
                 "autocomplete": true
+            }
+        },
+        "patientSearch": {
+            "address": {
+                "label": "VDC/Municipality",
+                "placeholder": "Enter VDC/Municipality",
+                "field": "city_village"
+            }
+        },
+        "patientSearchResults": {
+            "address": {
+                "fields" : ["city_village", "address1"]
             }
         }
     }

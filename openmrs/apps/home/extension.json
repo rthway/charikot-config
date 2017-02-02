@@ -68,22 +68,12 @@
         "order": 4,
         "requiredPrivilege": "app:orders"
     },
-    "bahmni_incidentreporting": {
-        "id": "bahmni.incidentReporting",
-        "extensionPointId": "org.bahmni.home.dashboard",
-        "type": "link",
-        "label": "Incident Reporting",
-        "url": "https://docs.google.com/forms/d/1k55evW5y6v8_Tg1rN8IyNXGVbv1UbtKHEoPpinjdYgk/viewform?c=0&w=1",
-        "target": "_blank",
-        "icon": "fa-pencil-square-o",
-        "order": 10
-    },
     "bahmni_issuereporting": {
         "id": "bahmni.issueReporting",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
         "label": "Issue Reporting",
-        "url": "https://docs.google.com/a/possiblehealth.org/forms/d/1FNIJ2xyTey0oKTtY74FStV5OmOeQuwQ-zj-v5d68HEE/prefill?pref=2&pli=1",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfekthfsroJtLcea1LQZfwawMCkuPjjBCDN4TR64zOsOsmFew/viewform?entry.197171359&entry.1187096321&entry.1646061049=@possiblehealth.org",
         "target": "_blank",
         "icon": "fa-comment",
         "order": 11
