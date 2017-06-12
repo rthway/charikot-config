@@ -177,7 +177,7 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
                 " and obs.voided = false" +
                 " and obs.obsDatetime <= :till" +
                 excludeObsClause +
-                " order by obs.obsDatetime desc limit 1");
+                " order by obs.obsDatetime desc ");
         queryToGetObservations.setString("patientUuid", patientUuid);
         queryToGetObservations.setParameterList("conceptName", conceptName);
         queryToGetObservations.setParameter("till", tillDate);
