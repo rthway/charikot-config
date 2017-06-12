@@ -184,6 +184,7 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
         if (excludedObsIsSaved) {
             queryToGetObservations.setString("excludeObsUuid", excludeObs.uuid)
         }
+        queryToGetObservations.setMaxResults(1);
         List<Obs> observations = queryToGetObservations.list();
         if (observations.size() > 0) {
             return observations.get(0).getValueNumeric();
