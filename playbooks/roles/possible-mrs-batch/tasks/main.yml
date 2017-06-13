@@ -32,7 +32,7 @@
     mode=755
 
 - name: Download omod file for emrapi omod
-   get_url:
+  get_url:
      url={{ emrapi_omod_url }}
      force=yes
      dest=/opt/openmrs/modules/
