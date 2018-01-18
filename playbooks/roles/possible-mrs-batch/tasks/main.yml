@@ -38,9 +38,9 @@
    mode=0755
   when: bahmniapps_url is defined
 
-- name: unlinking /var/www/bahmniapps
-  command: unlink /var/www/bahmniapps
-  when: bahmniapps_url is defined
+#- name: unlinking /var/www/bahmniapps
+#  command: unlink /var/www/bahmniapps
+#  when: bahmniapps_url is defined
 
 - name: Removing endtb-bahmniapps folder
   command: rm -rf /opt/bahmni-web/etc/possible-bahmniapps
