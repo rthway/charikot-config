@@ -1,0 +1,27 @@
+SELECT 
+    IFNULL(SUM(CASE
+        WHEN age_days < 29 THEN 1
+        ELSE 0
+    END),0) AS chd_less_than_29_days_count,
+    IFNULL(SUM(CASE
+        WHEN age_days > 28 AND age_days < 60 THEN 1
+        ELSE 0
+    END),0) AS chd_29_to_59_days_count
+FROM
+    (SELECT DISTINCT
+        p.person_id,
+            TIMESTAMPDIFF(DAY, p.birthdate, v.date_started) AS age_days
+    FROM
+        obs o
+    INNER JOIN person p ON o.person_id = p.person_id
+    INNER JOIN concept_name cn1 ON o.concept_id = cn1.concept_id
+        AND cn1.concept_name_type = 'FULLY_SPECIFIED'
+        AND cn1.name = 'Childhood Illness (Children aged below 2 months)'
+        AND o.voided = 0
+        AND cn1.voided = 0
+    INNER JOIN encounter e ON o.encounter_id = e.encounter_id
+    INNER JOIN visit v ON v.visit_id = e.visit_id
+        AND v.date_stopped IS NOT NULL
+    WHERE
+        -- DATE(e.encounter_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-01')) a;
+         DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#') ) a ; 

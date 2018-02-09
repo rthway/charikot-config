@@ -1,11 +1,247 @@
 {
-    "hospital_activities__number_of_clients_served_new_and_total": {
-        "name": "Hospital Activities - Number of Clients Served (New and Total)",
-        "type": "MRSGeneric",
+    "Hospital Activities - Number of Clients Served (New and Total)": {
+        "name": "Hospital Clients DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports":[
+				{
+					"name":"Hospital Activities - Number of Clients Served (New and Total)",
+					"type":"MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/test-queries/number_of_clients.sql"
+					}
+				}
+			]
+		}
+	},
+	"Family Planning DHIS2":{  
+   "name":"Family Planning DHIS2",
+   "DHISProgram":true,
+   "type":"concatenated",
+   "config":{  
+      "reports":[  
+         {  
+            "name":"Family Planning Program - Temporary FP methods (new users)",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Temporary_Method_New_Users.sql"
+            }
+         },
+         {  
+            "name":"Family Planning Program - FP methods (Discontinued users)",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Discontinued_Count.sql"
+            }
+         },
+         {  
+            "name":"Family Planning Program - Permanent FP method (New users)",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Permanent_Method_New_User_Count.sql"
+            }
+         },
+         {  
+            "name":"Family Planning Program - Postpartum FP Acceptors",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Postpartum_Within_48hrs_Count.sql"
+            }
+         }
+      ]
+   }
+	},
+	"Hospital Services DHIS2":{  
+   "name":"Hospital Services DHIS2",
+   "DHISProgram":true,
+   "type":"concatenated",
+   "config":{  
+      "reports":[  
+         {  
+            "name":"Hospital Services - Outpatient Services",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/outpatientServices.sql"
+            }
+         },
+         {  
+            "name":"Hospital Services - Emergency Services",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/emergencyServices.sql"
+            }
+         },
+         {  
+            "name":"Hospital Activities - Number of Clients Served (New and Total)",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/number_of_clients.sql"
+            }
+         },
+         {  
+            "name":"Hospital Services - Total Patients Admitted",
+            "type":"MRSGeneric",
+            "config":{  
+               "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/totalAdmittedPatients.sql"
+            }
+         },
+			{
+				"name":"TotalIinpatient Days",
+				"type":"MRSGeneric",
+				"config":{
+					"sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/TOTAL_INPATIENT_DAYS.sql"
+					   }
+		},
+				 {  
+					"name":"Hospital Services - Diagnostic Services (USG, ECG)",
+					"type":"MRSGeneric",
+					"config":{  
+					   "sqlPath":"/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/USG_ECG_COUNT.sql"
+					}
+				 }
+			  ]
+		   }
+		},
+		
+	"Safe Motherhood Program": {
+    "name": "Safe Motherhood Program DHIS2",
+    "DHISProgram": true,
+    "type": "concatenated",
+    "config": {
+      "reports":[
+        {
+          "name":"Antenatal Checkup",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Antenatal_Checkup.sql"
+          }
+        },
+        {
+          "name":"Delivery Service",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Delivery_Service.sql"
+          }
+        },
+        {
+          "name":"Type of Delivery",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Type_of_Delivery.sql"
+          }
+        },
+        {
+          "name":"Delivery Outcome",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Delivery_Outcome.sql"
+          }
+        },
+        {
+          "name":"Birth weight",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Birth_weight.sql"
+          }
+        },
+        {
+          "name":"No of still births",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/No_of_still_births.sql"
+          }
+        },
+        {
+          "name":"CHX applied in cord",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/CHX_applied_in_cord.sql"
+          }
+        },
+        {
+          "name":"Blood transfusion",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Blood_transfusion.sql"
+          }
+        },
+        {
+          "name":"PNC Visit",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/PNC_Visit.sql"
+          }
+        },
+        {
+          "name":"Obstetric Complications",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Obstetric_Complications.sql"
+          }
+        },
+        {
+          "name":"Maternal Death",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Maternal_Death.sql"
+          }
+        },
+        {
+          "name":"Safe Abortion Service",
+          "type":"MRSGeneric",
+          "config":{
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Service.sql"
+          }
+        }
+      ]
+    }
+  },
+    "Nutrition Program": {
+        "name": "Nutrition Program DHIS2",
+        "type": "concatenated",
+        "DHISProgram": true,
         "config": {
-            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/number_of_clients.sql"
+            "reports": [
+                {
+                    "name": "Nutrition status of registered children (new and old)",
+                    "type": "MRSGeneric",
+                    "config": {
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Nutrition_status_of_registered_children.sql"
+                    }
+                },
+                {
+                    "name": "Pregnant women receiving",
+                    "type": "MRSGeneric",
+                    "config": {
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Pregnant_women_receiving.sql"
+                    }
+                },
+                {
+                    "name": "Less then 5 yrs Children receiving (Bi annual)",
+                    "type": "MRSGeneric",
+                    "config": {
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Under_5_yrs_Children_receiving.sql"
+                    }
+                },
+                {
+                    "name": "Integrated Management of Acute Malnutrition (IMAM) Program",
+                    "type": "MRSGeneric",
+                    "config": {
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Integrated_Management_of_Acute_Malnutrition_IMAM_Program.sql"
+                    }
+                },
+                {
+                    "name": "Infant and Young Child Feeding",
+                    "type": "MRSGeneric",
+                    "config": {
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Infant_Young_Child_Feeding.sql"
+                    }
+                }
+            ]
         }
     },
+
     "hospital_activities__number_of_clients_served_referred_check_for_only_referred_grid": {
         "name": "Hospital Activities - Number of Clients Served (Referred) [Check for only 'Referred' grid]",
         "type": "obsCount",
