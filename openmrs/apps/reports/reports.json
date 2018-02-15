@@ -1,20 +1,4 @@
 {
-  "Hospital Activities - Number of Clients Served (New and Total)": {
-    "name": "Hospital Clients DHIS2",
-    "DHISProgram": true,
-    "type": "concatenated",
-    "config": {
-      "reports": [
-        {
-          "name": "Hospital Activities - Number of Clients Served (New and Total)",
-          "type": "MRSGeneric",
-          "config": {
-            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/test-queries/number_of_clients.sql"
-          }
-        }
-      ]
-    }
-  },
   "CBIMNCI Program DHISProgram": {
     "name": "CBIMNCI Program",
     "DHISProgram": true,
