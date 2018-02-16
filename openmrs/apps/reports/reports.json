@@ -280,7 +280,7 @@
       ]
     }
   },
-  "Nutrition Program": {
+  "Nutrition Program DHIS2": {
     "name": "Nutrition Program DHIS2",
     "type": "concatenated",
     "DHISProgram": true,
