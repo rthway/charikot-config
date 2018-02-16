@@ -1,12 +1,13 @@
 
 SELECT 
+	first_answers.category AS category,
     first_answers.answer_name AS first_concept_name,
-    count(DISTINCT(first_concept.person_id)) as count_total_diesease
-
+    COUNT(DISTINCT (first_concept.person_id)) AS count_total_diesease
 FROM
-(SELECT 
+    (SELECT 
         ca.answer_concept AS answer,
-            IFNULL(answer_concept_short_name.name, answer_concept_fully_specified_name.name) AS answer_name
+            IFNULL(answer_concept_short_name.name, answer_concept_fully_specified_name.name) AS answer_name,
+            question_concept_name.name AS category
     FROM
         concept c
     INNER JOIN concept_datatype cd ON c.datatype_id = cd.concept_datatype_id
@@ -23,29 +24,19 @@ FROM
         AND answer_concept_short_name.voided
         IS FALSE
     WHERE
-        question_concept_name.name IN ('Childhood Illness (2-59)-ARI-Classification',
-        'Childhood Illness, Dehydration Status',
-		'Childhood Illness, Diarrhoea present',
-		'Childhood Illness - Treatment - Treated with 2-59',
-        Childhood Illness, Refered-Out')
-            AND cd.name = 'Coded' 
+        question_concept_name.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness, Dehydration Status', 'Childhood Illness, Diarrhoea present', 'Childhood Illness - Treatment - Treated with 2-59', 'Childhood Illness, Refered-Out')
+            AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
-        
         LEFT OUTER JOIN
     (SELECT DISTINCT
         o1.person_id,
-            
             cn2.concept_id AS answer,
             cn1.concept_id AS question
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name IN ('Childhood Illness (2-59)-ARI-Classification',
-        'Childhood Illness, Dehydration Status',
-		'Childhood Illness, Diarrhoea present',
-		'Childhood Illness - Treatment - Treated with 2-59',
-        'Childhood Illness, Refered-Out')
+        AND cn1.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness, Dehydration Status', 'Childhood Illness, Diarrhoea present', 'Childhood Illness - Treatment - Treated with 2-59', 'Childhood Illness, Refered-Out')
         AND o1.voided = 0
         AND cn1.voided = 0
     INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id
@@ -54,9 +45,7 @@ FROM
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
     INNER JOIN person p1 ON o1.person_id = p1.person_id
     WHERE
-
-        -- DATE(e.encounter_datetime) BETWEEN DATE('2016-04-01') AND DATE('2017-04-30')
-		 DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
-
+        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
             AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
-GROUP BY first_answers.answer_name ;
+GROUP BY first_answers.answer_name
+ORDER BY category;

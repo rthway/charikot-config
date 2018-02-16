@@ -1,10 +1,9 @@
 
 SELECT 
     first_answers.answer_name AS first_concept_name,
-    count(DISTINCT(first_concept.person_id)) as count_malnutrition
-
+    COUNT(DISTINCT (first_concept.person_id)) AS count_malnutrition
 FROM
-(SELECT 
+    (SELECT 
         ca.answer_concept AS answer,
             IFNULL(answer_concept_short_name.name, answer_concept_fully_specified_name.name) AS answer_name
     FROM
@@ -16,7 +15,7 @@ FROM
     INNER JOIN concept_answer ca ON c.concept_id = ca.concept_id
     INNER JOIN concept_name answer_concept_fully_specified_name ON ca.answer_concept = answer_concept_fully_specified_name.concept_id
         AND answer_concept_fully_specified_name.concept_name_type = 'FULLY_SPECIFIED'
-        AND answer_concept_fully_specified_name.name in ('SAM')
+        AND answer_concept_fully_specified_name.name IN ('SAM')
         AND answer_concept_fully_specified_name.voided
         IS FALSE
     LEFT JOIN concept_name answer_concept_short_name ON ca.answer_concept = answer_concept_short_name.concept_id
@@ -25,13 +24,11 @@ FROM
         IS FALSE
     WHERE
         question_concept_name.name IN ('IMAM, Indicator')
-            AND cd.name = 'Coded' 
+            AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
-        
         LEFT OUTER JOIN
     (SELECT DISTINCT
         o1.person_id,
-            
             cn2.concept_id AS answer,
             cn1.concept_id AS question
     FROM
@@ -48,6 +45,5 @@ FROM
     INNER JOIN person p1 ON o1.person_id = p1.person_id
     WHERE
         DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
-      -- DATE(e.encounter_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-04-30')
             AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
-GROUP BY first_answers.answer_name ;
+GROUP BY first_answers.answer_name;

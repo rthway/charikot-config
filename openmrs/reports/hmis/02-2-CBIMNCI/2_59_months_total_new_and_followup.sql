@@ -1,11 +1,11 @@
-SELECT DISTINCT
-    IFNULL(COUNT(DISTINCT (o1.person_id)), 0) AS total_followup_chd_count
+SELECT 
+    COUNT(DISTINCT o1.person_id) AS count_total_2to59_months
 FROM
     obs o1
         INNER JOIN
     concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name IN ('Childhood Illness-2 to 59 months-Follow up result')
+        AND cn1.name = 'Childhood Illness( Children aged 2 months to 5 years)'
         AND o1.voided = 0
         AND cn1.voided = 0
         INNER JOIN
@@ -13,4 +13,5 @@ FROM
         INNER JOIN
     person p1 ON o1.person_id = p1.person_id
 WHERE
-    DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+    DATE(o1.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+
