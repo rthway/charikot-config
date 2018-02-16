@@ -187,7 +187,7 @@
       ]
     }
   },
-  "Safe Motherhood Program": {
+  "Safe Motherhood Program DHIS2": {
     "name": "Safe Motherhood Program DHIS2",
     "DHISProgram": true,
     "type": "concatenated",
