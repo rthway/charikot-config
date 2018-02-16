@@ -105,18 +105,34 @@
             "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Temporary_Method_New_Users.sql"
           }
         },
-        {
-          "name": "Family Planning Program - FP methods (Discontinued users)",
+		{
+          "name": "Family Planning Program - Temporary FP method (Existing users)",
           "type": "MRSGeneric",
           "config": {
-            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Discontinued_Count.sql"
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Temporary_method_Existing_users_count.sql"
           }
         },
+		
+		{
+          "name": "Family Planning Program - Temporary FP method (Defaulters)",
+          "type": "MRSGeneric",
+          "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Defaulters_count.sql"
+          }
+        },
+		
         {
           "name": "Family Planning Program - Permanent FP method (New users)",
           "type": "MRSGeneric",
           "config": {
             "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Permanent_Method_New_User_Count.sql"
+          }
+        },
+		{
+          "name": "Family Planning Program - Permanent FP method (Existing users)",
+          "type": "MRSGeneric",
+          "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Permanent_method_existing_users_count_method.sql"
           }
         },
         {
