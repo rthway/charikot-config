@@ -1,0 +1,221 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "Total Registered Cases (2-59)months": {
+      "dataValues": [    						 
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",  
+          "dataElement": "QRCtcop84In",
+          "row": 1,
+          "column": 1
+        }
+          
+      ]
+    }
+	,
+    "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Treatment Refered Out":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",  --Cough/Cold
+          "dataElement": "GC6lQSFDO5m",
+          "row": 1,
+          "column": 3
+        },
+        { 
+          "categoryOptionCombo": "J0QYmZGlEii",  --Pneumonia
+          "dataElement": "GGkot8wSlCj",
+          "row": 2,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",  --Severe Pneumonia
+          "dataElement": "KcPFNbB3UZg",
+          "row": 3,
+          "column": 2
+        },
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",	   --No Dehydration
+          "dataElement": "A2lsvQ94qw5", 
+          "row": 12,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",  	--Some Dehydration
+          "dataElement": "SlIi0mTWXte",
+          "row": 14,
+          "column": 3
+        },
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",     --Chronic Diarrhea
+          "dataElement": "KZzKMkn4H7q",
+          "row": 15,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --Dysentery
+          "dataElement": "sAdwOfXe6Ld",
+          "row": 17,
+          "column": 3
+        },
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",	  --Amoxicillin    
+          "dataElement": "C2QpFPSO3cn",
+          "row": 9,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",   --Other Antibiotics   
+          "dataElement": "RR9YSQg5sSY",
+          "row": 7,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --ORS and Zinc 
+          "dataElement": "H3GSFHu9DMV",
+          "row": 5,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",   --IV Fluid 
+          "dataElement": "PbkNwfEqhmR",
+          "row": 4,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --Anti-helminthes
+          "dataElement": "B713onHvu2I",
+          "row": 10,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --Retinol (Vitamin A)  
+          "dataElement": "iJzkUTWNH5a",
+          "row": 8,
+          "column": 3
+        }
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --ARI_Refer_Out
+          "dataElement": "cvo4qh1QkTA",
+          "row": 19,
+          "column": 3
+        }
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --Diarrhoea   
+          "dataElement": "CIO7DFOzXSy",
+          "row": 20,
+          "column": 3
+        }
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",   --Others   
+          "dataElement": "z8fdZad32Pv",
+          "row": 23,
+          "column": 3
+        }
+      ]
+    },
+	
+	"Childhood Illness (2-59)Measles_Falciparum Malaria_Non Falciparum Malaria_Complicated Malaria_Fever_Anaemia_Other":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "kdsirVNKdhm", 	--Falciparum Malaria
+          "dataElement": "g4gt5htFQEZ",
+          "row": 2,
+          "column": 2
+        },
+        {
+          "categoryOptionCombo": "kdsirVNKdhm",  --Non-falciparum Malaria
+          "dataElement": "RByUk9PhqrG",
+          "row": 5,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "J0QYmZGlEii",   --Very severe fever/Complicated Malaria
+          "dataElement": "IM6lK8Mf0q1",
+          "row": 7,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "J0QYmZGlEii", 		--Measles
+          "dataElement": "fZEiEvVrr5K",
+          "row": 4,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "J0QYmZGlEii",     --Fever
+          "dataElement": "IXYmLRVEHc2",
+          "row": 3,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "J0QYmZGlEii",    --Anaemia
+          "dataElement": "jg3YHWsBweg",
+          "row": 1,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "J0QYmZGlEii",      --others
+          "dataElement": "YuNB9v6cf3x",
+          "row": 6,
+          "column": 2
+        }
+      ]
+    },
+	
+	"Childhood Illness(2-59), Follow up result":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",
+          "dataElement": "ri3xWgIHsw1",
+          "row": 1,
+          "column": 1
+        }
+      ]
+    },
+	
+	"Childhood Illness (2-59)-Ear Infection":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii", 
+          "dataElement": "o9sqrRiJzrZ",
+          "row": 1,
+          "column": 1
+        }
+      ]
+    },
+	"CBIMNCI malnutrition(2-59)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii", 
+          "dataElement": "v42lkXexjFS",
+          "row": 1,
+          "column": 2
+        }
+      ]
+    },
+	"CBIMNCI death(2-59)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",  --ARI
+          "dataElement": "R6GsecvoH7c",
+          "row": 1,
+          "column": 1
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii", --dirrhoea
+          "dataElement": "jfa1GkNMHfz",
+          "row": 1,
+          "column": 2
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii", --others
+          "dataElement": "upTQ8ZYfzRq",
+          "row": 1,
+          "column": 3
+        }
+      ]
+    }
+	
+	
+	
+  }
+}
