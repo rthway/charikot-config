@@ -1,5 +1,5 @@
 {
-  "CBIMNCI Program DHIS2": {
+ "CBIMNCI Program DHIS2": {
 		"name": "CBIMNCI Program DHIS2",
 		"DHISProgram": true,
 		"type": "concatenated",
@@ -92,7 +92,7 @@
 			]
 		}
 	},
-  "Family Planning DHIS2": {
+ "Family Planning DHIS2": {
     "name": "Family Planning DHIS2",
     "DHISProgram": true,
     "type": "concatenated",
