@@ -4,49 +4,49 @@
     "Family Planning Program - Temporary FP methods (new users)": {
       "dataValues": [
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- pills oCqILrkoRPB-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "oCqILrkoRPB",
           "row": 13,
           "column": 3
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- depo AnmhKKJgX2G-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "AnmhKKJgX2G",
           "row": 3,
           "column": 3
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- IUCD SujVjgXHP72-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "SujVjgXHP72",
           "row": 7,
           "column": 3
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- Implant CuRbZM8HWyR-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "CuRbZM8HWyR",
           "row": 5,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "kdsirVNKdhm", -- pills zUPRuBqSSgY-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "zUPRuBqSSgY",
           "row": 15,
           "column": 3
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- depo FCqWVnEwIeX-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "FCqWVnEwIeX",
           "row": 4,
           "column": 3
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- IUCD DwOKj8SLOtF-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "DwOKj8SLOtF",
           "row": 8,
           "column": 3
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- Implant d80NCjU1iPK-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "d80NCjU1iPK",
           "row": 6,
           "column": 3
@@ -57,25 +57,25 @@
     "Family Planning Program - Temporary FP method (Existing users)":{
       "dataValues": [
        {
-          "categoryOptionCombo": "kdsirVNKdhm", -- pills Mg77ZuyM6fe-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "Mg77ZuyM6fe",
           "row": 7,
           "column": 2
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- depo tobLk0FbS9k-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "tobLk0FbS9k",
           "row": 2,
           "column": 2
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- IUCD wJ0d4pvhud7-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "wJ0d4pvhud7",
           "row": 4,
           "column": 2
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- Implant vaRoCnJ7Xwl-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "vaRoCnJ7Xwl",
           "row": 3,
           "column": 2
@@ -86,25 +86,25 @@
     "Family Planning Program - Temporary FP method (Defaulters)":{
       "dataValues": [
          {
-          "categoryOptionCombo": "kdsirVNKdhm", -- pills fPdwKS6tcyn-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "fPdwKS6tcyn",
           "row": 7,
           "column": 4
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- depo tobLk0FbS9k-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "gn4hsUJEG7c",
           "row": 2,
           "column": 4
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- IUCD eeTiOM51Tbq-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "eeTiOM51Tbq",
           "row": 4,
           "column": 4
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  -- UGdWSivv6AA-kdsirVNKdhm-val"
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "UGdWSivv6AA",
           "row": 3,
           "column": 4
@@ -115,12 +115,12 @@
       "dataValues": [
         {
           "categoryOptionCombo": "ye1QuAMRG5Z", 
-          "dataElement": "vX8EiOWYa5P",       -- female vX8EiOWYa5P-ye1QuAMRG5Z-val
+          "dataElement": "vX8EiOWYa5P",       
           "row": 1,
           "column": 2
         },
         {
-          "categoryOptionCombo": "PflKpozpO7b", -- male vX8EiOWYa5P-PflKpozpO7b-val
+          "categoryOptionCombo": "PflKpozpO7b", 
           "dataElement": "vX8EiOWYa5P",
           "row": 2,
           "column": 2
@@ -131,13 +131,13 @@
     "Family Planning Program - Permanent FP method (Existing users)":{
       "dataValues": [
         {
-          "categoryOptionCombo": "ye1QuAMRG5Z", -- female lPDmcklspNe-ye1QuAMRG5Z-val
+          "categoryOptionCombo": "ye1QuAMRG5Z", 
           "dataElement": "lPDmcklspNe",
           "row": 1,
           "column": 2
         },
         {
-          "categoryOptionCombo": "PflKpozpO7b", -- male lPDmcklspNe-PflKpozpO7b-val 
+          "categoryOptionCombo": "PflKpozpO7b", 
           "dataElement": "lPDmcklspNe",
           "row": 1,
           "column": 2
@@ -148,19 +148,19 @@
     "Family Planning Program - Postpartum FP Acceptors":{
       "dataValues": [
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- iucd uTtWya0epbQ-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "uTtWya0epbQ",
           "row": 2,
           "column": 2
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- implant U2Kn6TMzAO3-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "U2Kn6TMzAO3",
           "row": 1,
           "column": 2
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm", -- Tubectomy hVwCP5NLK04-kdsirVNKdhm-val
+          "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "hVwCP5NLK04",
           "row": 3,
           "column": 2
