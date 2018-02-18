@@ -16,97 +16,97 @@
     "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Treatment Refered Out":{
       "dataValues": [
         {
-          "categoryOptionCombo": "J0QYmZGlEii",  --Cough/Cold
+          "categoryOptionCombo": "J0QYmZGlEii",  
           "dataElement": "GC6lQSFDO5m",
           "row": 1,
           "column": 3
         },
         { 
-          "categoryOptionCombo": "J0QYmZGlEii",  --Pneumonia
+          "categoryOptionCombo": "J0QYmZGlEii",  
           "dataElement": "GGkot8wSlCj",
           "row": 2,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",  --Severe Pneumonia
+          "categoryOptionCombo": "J0QYmZGlEii",  
           "dataElement": "KcPFNbB3UZg",
           "row": 3,
           "column": 2
         },
         {
-          "categoryOptionCombo": "J0QYmZGlEii",	   --No Dehydration
+          "categoryOptionCombo": "J0QYmZGlEii",
           "dataElement": "A2lsvQ94qw5", 
           "row": 12,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",  	--Some Dehydration
+          "categoryOptionCombo": "J0QYmZGlEii",  	
           "dataElement": "SlIi0mTWXte",
           "row": 14,
           "column": 3
         },
         {
-          "categoryOptionCombo": "J0QYmZGlEii",     --Chronic Diarrhea
+          "categoryOptionCombo": "J0QYmZGlEii",
           "dataElement": "KZzKMkn4H7q",
           "row": 15,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --Dysentery
+          "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "sAdwOfXe6Ld",
           "row": 17,
           "column": 3
         },
         {
-          "categoryOptionCombo": "J0QYmZGlEii",	  --Amoxicillin    
+          "categoryOptionCombo": "J0QYmZGlEii",	  
           "dataElement": "C2QpFPSO3cn",
           "row": 9,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "kdsirVNKdhm",   --Other Antibiotics   
+          "categoryOptionCombo": "kdsirVNKdhm",     
           "dataElement": "RR9YSQg5sSY",
           "row": 7,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --ORS and Zinc 
+          "categoryOptionCombo": "J0QYmZGlEii", 
           "dataElement": "H3GSFHu9DMV",
           "row": 5,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "kdsirVNKdhm",   --IV Fluid 
+          "categoryOptionCombo": "kdsirVNKdhm",   
           "dataElement": "PbkNwfEqhmR",
           "row": 4,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --Anti-helminthes
+          "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "B713onHvu2I",
           "row": 10,
           "column": 3
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --Retinol (Vitamin A)  
+          "categoryOptionCombo": "J0QYmZGlEii",     
           "dataElement": "iJzkUTWNH5a",
           "row": 8,
           "column": 3
         }
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --ARI_Refer_Out
+          "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "cvo4qh1QkTA",
           "row": 19,
           "column": 3
         }
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --Diarrhoea   
+          "categoryOptionCombo": "J0QYmZGlEii",      
           "dataElement": "CIO7DFOzXSy",
           "row": 20,
           "column": 3
         }
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   --Others   
+          "categoryOptionCombo": "J0QYmZGlEii",   - 
           "dataElement": "z8fdZad32Pv",
           "row": 23,
           "column": 3
@@ -117,43 +117,43 @@
 	"Childhood Illness (2-59)Measles_Falciparum Malaria_Non Falciparum Malaria_Complicated Malaria_Fever_Anaemia_Other":{
       "dataValues": [
         {
-          "categoryOptionCombo": "kdsirVNKdhm", 	--Falciparum Malaria
+          "categoryOptionCombo": "kdsirVNKdhm", 	
           "dataElement": "g4gt5htFQEZ",
           "row": 2,
           "column": 2
         },
         {
-          "categoryOptionCombo": "kdsirVNKdhm",  --Non-falciparum Malaria
+          "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "RByUk9PhqrG",
           "row": 5,
           "column": 2
         },
 		 {
-          "categoryOptionCombo": "J0QYmZGlEii",   --Very severe fever/Complicated Malaria
+          "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "IM6lK8Mf0q1",
           "row": 7,
           "column": 2
         },
 		 {
-          "categoryOptionCombo": "J0QYmZGlEii", 		--Measles
+          "categoryOptionCombo": "J0QYmZGlEii", 		
           "dataElement": "fZEiEvVrr5K",
           "row": 4,
           "column": 2
         },
 		 {
-          "categoryOptionCombo": "J0QYmZGlEii",     --Fever
+          "categoryOptionCombo": "J0QYmZGlEii",     
           "dataElement": "IXYmLRVEHc2",
           "row": 3,
           "column": 2
         },
 		 {
-          "categoryOptionCombo": "J0QYmZGlEii",    --Anaemia
+          "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "jg3YHWsBweg",
           "row": 1,
           "column": 2
         },
 		 {
-          "categoryOptionCombo": "J0QYmZGlEii",      --others
+          "categoryOptionCombo": "J0QYmZGlEii",     
           "dataElement": "YuNB9v6cf3x",
           "row": 6,
           "column": 2
@@ -195,23 +195,180 @@
 	"CBIMNCI death(2-59)":{
       "dataValues": [
         {
-          "categoryOptionCombo": "J0QYmZGlEii",  --ARI
+          "categoryOptionCombo": "J0QYmZGlEii",  
           "dataElement": "R6GsecvoH7c",
           "row": 1,
           "column": 1
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii", --dirrhoea
+          "categoryOptionCombo": "J0QYmZGlEii", 
           "dataElement": "jfa1GkNMHfz",
           "row": 1,
           "column": 2
         },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii", --others
+          "categoryOptionCombo": "J0QYmZGlEii", 
           "dataElement": "upTQ8ZYfzRq",
           "row": 1,
           "column": 3
         }
+      ]
+    },
+	"Childhood Illness Registered(Children aged below 2 months)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "MMj2Dc8TvgL",  
+          "dataElement": "UbOzhGOJdrq",
+          "row": 1,
+          "column": 1
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "UbOzhGOJdrq",
+          "row": 1,
+          "column": 2
+        },
+		
+      ]
+    },
+	"Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight Treatment  Treated with Amoxicillin ampicillin refered out Treatment Treated with Amoxicillin(less than 2 months)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "MMj2Dc8TvgL",  
+          "dataElement": "ISzvhZycG3z",
+          "row": 23,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "ISzvhZycG3z",
+          "row": 22,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "YXIPqFIPsjg",
+          "row": 17,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "YXIPqFIPsjg",
+          "row": 16,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "IDbh8WJcQsP",
+          "row": 14,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "IDbh8WJcQsP",
+          "row": 13,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "kdsirVNKdhm", 
+          "dataElement": "fmCWNnmldW4",
+          "row": 11,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "kdsirVNKdhm", 
+          "dataElement": "aFgNWKMgYz9",
+          "row": 10,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "zxN7niCGtSh",
+          "row": 2,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "zxN7niCGtSh",
+          "row": 1,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "lfjCh0FyKSc",
+          "row": 5,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "lfjCh0FyKSc",
+          "row": 4,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "kqspOhPReRm",
+          "row": 26,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "kqspOhPReRm",
+          "row": 25,
+          "column": 4
+        }
+		
+      ]
+    },
+	"Childhood Illness Treatment Gentamycin 1st dose and Complete Dose'(less than 2 months)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",  
+          "dataElement": "fK36K8WBX9s",
+          "row": 1,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii", 
+          "dataElement": "Q5YnsomfHvO",
+          "row": 2,
+          "column": 3
+        },
+		
+      ]
+    },
+	"Childhood Illness Follow up and other antibiotics(less than 2 months)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "J0QYmZGlEii",  
+          "dataElement": "WoIzHgdHUjE",
+          "row": 1,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "kdsirVNKdhm", 
+          "dataElement": "TwMrwcnwuSO",
+          "row": 2,
+          "column": 3
+        },
+		
+      ]
+    },
+	"Total death less than 2 months":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "MMj2Dc8TvgL",  
+          "dataElement": "adiGRH9XgjW",
+          "row": 1,
+          "column": 1
+        },
+		{
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "adiGRH9XgjW",
+          "row": 1,
+          "column": 2
+        },
+		
       ]
     }
 	
