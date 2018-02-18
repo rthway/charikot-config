@@ -69,14 +69,14 @@
 					}
 				},
 				{
-					"name": "Childhood Illness - Treatment - Gentamycin - 1st dose and Complete Dose'(less than 2 months)",
+					"name": "Childhood Illness  Treatment Gentamycin  1st dose and Complete Dose'(less than 2 months)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_Gentamycin_dose_count.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness - PSBI - LBI- Jaundice- Breastfed- difficuilty feeding or low weight- Treatment - Treated with - Amoxicillin ampicillin refered out - Treatment - Treated with - Amoxicillin(less than 2 months)",
+					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight- Treatment  Treated with  Amoxicillin ampicillin refered out - Treatment - Treated with - Amoxicillin(less than 2 months)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_ALL_other_Categories_Count_chd.sql"
