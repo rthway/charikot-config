@@ -92,21 +92,21 @@
           "dataElement": "iJzkUTWNH5a",
           "row": 8,
           "column": 3
-        }
+        },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "cvo4qh1QkTA",
           "row": 19,
           "column": 3
-        }
+        },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",      
           "dataElement": "CIO7DFOzXSy",
           "row": 20,
           "column": 3
-        }
+        },
 		{
-          "categoryOptionCombo": "J0QYmZGlEii",   - 
+          "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "z8fdZad32Pv",
           "row": 23,
           "column": 3
@@ -227,7 +227,7 @@
           "dataElement": "UbOzhGOJdrq",
           "row": 1,
           "column": 2
-        },
+        }
 		
       ]
     },
@@ -333,8 +333,7 @@
           "dataElement": "Q5YnsomfHvO",
           "row": 2,
           "column": 3
-        },
-		
+        }
       ]
     },
 	"Childhood Illness Follow up and other antibiotics(less than 2 months)":{
@@ -350,7 +349,7 @@
           "dataElement": "TwMrwcnwuSO",
           "row": 2,
           "column": 3
-        },
+        }
 		
       ]
     },
@@ -367,7 +366,7 @@
           "dataElement": "adiGRH9XgjW",
           "row": 1,
           "column": 2
-        },
+        }
 		
       ]
     }
