@@ -5,56 +5,56 @@
 		"type": "concatenated",
 		"config": {
 			"reports": [{
-					"name": "CBIMNCI Total cases (2-59)months",
+					"name": "Total Registered Cases (2-59)months",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_new_and_followup.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness (2-59)ARI-Classification_Dehydration_Diarrhoea_Treatment_Refered-Out",
+					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Treatment Refered Out",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_diseases_valuecoded.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness (2-59)Measles_Falciparum Malaria_Non Falciparum Malaria_Complicated Malaria_Fever_Anaemia_Other",
+					"name": "Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_disease.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness(2-59), Follow up result",
+					"name": "Childhood Illness(2-59) total Follow up",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_followup.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness (2-59)-Ear Infection",
+					"name": "Childhood Illness (2-59) total Ear Infection cases",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_ear_infection.sql"
 					}
 				},
 				{
-					"name": "CBIMNCI malnutrition(2-59)",
+					"name": "Total malnutrition(2-59) cases",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_Severe_malnutrition.sql"
 					}
 				},
 				{
-					"name": "CBIMNCI death(2-59)",
+					"name": "Total death(2-59)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_death.sql"
 					}
 				},
 				{
-					"name": "death less than 2 months",
+					"name": "Total death less than 2 months",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_death_Count_chd.sql"
@@ -69,21 +69,21 @@
 					}
 				},
 				{
-					"name": "Childhood Illness  Treatment Gentamycin  1st dose and Complete Dose'(less than 2 months)",
+					"name": "Childhood Illness Treatment Gentamycin 1st dose and Complete Dose(less than 2 months)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_Gentamycin_dose_count.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight- Treatment  Treated with  Amoxicillin ampicillin refered out - Treatment - Treated with - Amoxicillin(less than 2 months)",
+					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight Treatment  Treated with Amoxicillin ampicillin refered out Treatment Treated with Amoxicillin(less than 2 months)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_ALL_other_Categories_Count_chd.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness (Children aged below 2 months)",
+					"name": "Childhood Illness Registered(Children aged below 2 months)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_Total_Count_chd.sql"

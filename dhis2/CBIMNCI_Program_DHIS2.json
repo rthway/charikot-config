@@ -114,7 +114,7 @@
       ]
     },
 	
-	"Childhood Illness (2-59)Measles_Falciparum Malaria_Non Falciparum Malaria_Complicated Malaria_Fever_Anaemia_Other":{
+	"Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other":{
       "dataValues": [
         {
           "categoryOptionCombo": "kdsirVNKdhm", 	
@@ -161,7 +161,7 @@
       ]
     },
 	
-	"Childhood Illness(2-59), Follow up result":{
+	"Childhood Illness(2-59) total Follow up":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii",
@@ -172,7 +172,7 @@
       ]
     },
 	
-	"Childhood Illness (2-59)-Ear Infection":{
+	"Childhood Illness (2-59) total Ear Infection cases":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii", 
@@ -182,7 +182,7 @@
         }
       ]
     },
-	"CBIMNCI malnutrition(2-59)":{
+	"Total malnutrition(2-59) cases":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii", 
@@ -192,7 +192,7 @@
         }
       ]
     },
-	"CBIMNCI death(2-59)":{
+	"Total death(2-59)":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii",  
@@ -320,7 +320,7 @@
 		
       ]
     },
-	"Childhood Illness Treatment Gentamycin 1st dose and Complete Dose'(less than 2 months)":{
+	"Childhood Illness Treatment Gentamycin 1st dose and Complete Dose(less than 2 months)":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii",  
