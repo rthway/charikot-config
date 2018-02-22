@@ -256,10 +256,17 @@
 					}
 				},
 				{
-					"name": "Hospital Services - Referred out patient",
+					"name": "Hospital Services - Referred out patient(OPD,IPD)",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_by_depart_grping.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_ipd_opd.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Referred out patient(ER)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_er.sql"
 					}
 				},
 				{

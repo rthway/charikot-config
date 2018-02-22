@@ -1,5 +1,5 @@
 {
-  "orgUnit": "eeb064kT5cG",
+  "orgUnit": "Bm39oMfSNir",
   "reports": {
     "Hospital Services - Outpatient Services": {
       "dataValues": [    						 
@@ -200,13 +200,13 @@
       ]
     },
 	
-	"Hospital Services - Referred out patient":{
+	"Hospital Services - Referred out patient(OPD,IPD)":{
       "dataValues": [
         {
           "categoryOptionCombo": "ye1QuAMRG5Z",
           "dataElement": "O7vdFXujKQX",
-          "row": 1,
-          "column": 2
+          "row": 2,
+          "column": 3
         },
         {
           "categoryOptionCombo": "ye1QuAMRG5Z", 
@@ -215,33 +215,39 @@
           "column": 3
         }
 		,
-        {
-          "categoryOptionCombo": "ye1QuAMRG5Z",
-          "dataElement": "R8gvkj9ssaI",
-          "row": 1,
-          "column": 4
-        },
 		{
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "O7vdFXujKQX",
-          "row": 2,
-          "column": 2
+          "row": 4,
+          "column": 3
         },
         {
           "categoryOptionCombo": "PflKpozpO7b", 
           "dataElement": "cUMLBeIlaIp",
-          "row": 2,
+          "row": 3,
           "column": 3
         }
-		,
+		
+      ]
+    },
+	
+	"Hospital Services - Referred out patient(ER)":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "ye1QuAMRG5Z",
+          "dataElement": "R8gvkj9ssaI",
+          "row": 1,
+          "column": 2
+        },
         {
           "categoryOptionCombo": "PflKpozpO7b", 
           "dataElement": "R8gvkj9ssaI",
           "row": 2,
-          "column": 4
+          "column": 2
         }
       ]
     },
+	
 	
 	"Hospital Services - Diagnostic Services (USG, ECG)":{
       "dataValues": [

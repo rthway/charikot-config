@@ -1,4 +1,3 @@
-
 SELECT 
     gender_group.gender,
     ifnull(referred_opd_patients,0) as referred_opd_patients,
