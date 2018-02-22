@@ -33,7 +33,7 @@ FROM (SELECT
            --  AND address.address1 ='10'
             AND DATE(oStatus.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
             AND DATE(oVisitType.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
-            AND TIMESTAMPDIFF(MONTH, p.birthdate, v.date_started) < 24
+            AND TIMESTAMPDIFF(MONTH, p.birthdate, v.date_started) <= 24
             AND oStatus.question_full_name = 'Nutrition, Nutritional Status'
             AND oVisitType.question_full_name = 'Nutrition, Visit Type') report
 GROUP BY visitType
