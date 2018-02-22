@@ -1,5 +1,4 @@
-SET @dt1 = date('2017-01-3');
-SET @dt2 = date('2017-01-9');
+
 SELECT 
     age_years_grp.age_years as mother_age_years,
     count(distinct(ip)) as count_mothers

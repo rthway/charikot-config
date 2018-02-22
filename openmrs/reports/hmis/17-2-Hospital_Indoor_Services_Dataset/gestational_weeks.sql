@@ -3,7 +3,7 @@ SELECT
     count(distinct(ip)) as count_mothers
 FROM
     (SELECT '22 - 27 weeks' AS weeks UNION SELECT '28 - 36 weeks' AS weeks UNION SELECT '37 - 41 weeks' AS weeks 
-    UNION SELECT '≥ 42 weeks' AS weeks) gestational_weeks 
+    UNION SELECT '> 41 weeks' AS weeks) gestational_weeks 
         LEFT  JOIN
     (SELECT 
         pi.identifier AS ip,
@@ -17,7 +17,7 @@ FROM
                 
                 WHEN  o.value_numeric > 36 and o.value_numeric < 42 THEN '37 - 41 weeks'
                 
-                WHEN  o.value_numeric > 41 THEN '≥ 42 weeks'
+                WHEN  o.value_numeric > 41 THEN '> 41 weeks'
             END AS weeks
     FROM
         obs o

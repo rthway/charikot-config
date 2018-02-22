@@ -1,0 +1,35 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "Summary of Indoor Services gestational weeks": {
+      "dataValues": [    						 
+        {
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "Iyu2jI3uZLe",
+          "row": 1,
+          "column": 2
+        },
+		
+		 {
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "XfaiH4LO4HU",
+          "row": 2,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "J16O3bLT94B",
+          "row": 3,
+          "column": 2
+        },
+		 {
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "Wz9lyL4EFgc",
+          "row": 4,
+          "column": 2 
+        }
+      ]
+    }
+		
+  }
+}
