@@ -93,6 +93,32 @@
 			]
 		}
 	},
+	
+	"Reporting Status Dataset DHIS2": {
+		"name": "Reporting Status Dataset DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Reporting Status(New and Existing Clients)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/new_and_existing_clients.sql"
+					}
+				},
+					
+					{
+						"name": "Reporting Status (Referred Out Patients)",
+						"type": "MRSGeneric",
+						"config": {
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/referred_out_patients.sql"
+						}
+					}
+			]
+		}
+	},
+	
 	"Hospital Summary DHIS2": {
 		"name": "Hospital Summary DHIS2",
 		"DHISProgram": true,
