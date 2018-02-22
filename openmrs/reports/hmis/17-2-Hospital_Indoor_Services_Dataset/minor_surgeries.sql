@@ -31,8 +31,5 @@ FROM
     WHERE
          (o.value_coded IS NOT NULL)
 		AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#') group by pi.identifier) a ON a.gender = gender.gender
-
-         -- AND DATE(e.encounter_datetime) BETWEEN @dt1 AND @dt2 group by pi.identifier) a ON a.gender = gender.gender
         and a.visit_type =  visit_type.type
-            -- AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) a ON a.gender = gestational_gender.gender
  GROUP BY gender.gender,visit_type.type order by gender.gender,visit_type.type;

@@ -40,6 +40,7 @@ FROM
         AND pi.voided = '0'
     WHERE
         DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) a ON a.gender = gender.gender
+		and a.visit_type =  visit_type.type
         AND a.question = first_answers.question)
 GROUP BY first_answers.question , gender.gender
 ORDER BY first_answers.question , gender.gender;
