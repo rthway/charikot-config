@@ -1,5 +1,3 @@
-SET @dt1 = date('2017-01-3');
-SET @dt2 = date('2017-01-9');
 SELECT 
     gestational_weeks.weeks as gestational_weeks,
     count(distinct(ip)) as count_mothers

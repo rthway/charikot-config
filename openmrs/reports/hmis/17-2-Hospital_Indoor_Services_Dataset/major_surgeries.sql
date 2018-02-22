@@ -1,5 +1,3 @@
-SET @dt1 = date('2017-01-3');
-SET @dt2 = date('2017-02-9');
 SELECT 
     gender.gender as gender,
     count(distinct(ip)) as count_major_surgeries
@@ -25,6 +23,6 @@ FROM
         AND pi.voided = '0'
     WHERE
          (o.value_coded IS NOT NULL)
-        AND DATE(e.encounter_datetime) BETWEEN @dt1 AND @dt2) a ON a.gender = gender.gender
-            -- AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) a ON a.gender = gestational_gender.gender
+        -- AND DATE(e.encounter_datetime) BETWEEN @dt1 AND @dt2) a ON a.gender = gender.gender
+        AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) a ON a.gender = gender.gender
 GROUP BY gender.gender order by gender.gender;

@@ -1,5 +1,3 @@
-SET @dt1 = date('2017-01-3');
-SET @dt2 = date('2017-12-9');
 SELECT 
     first_answers.answer_name,
     gender.gender AS gender,

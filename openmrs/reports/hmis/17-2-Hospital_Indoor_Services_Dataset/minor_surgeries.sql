@@ -1,5 +1,3 @@
-SET @dt1 = date('2017-01-3');
-SET @dt2 = date('2017-01-9');
 SELECT 
     gender.gender as gender,
     visit_type.type as visit_type,
