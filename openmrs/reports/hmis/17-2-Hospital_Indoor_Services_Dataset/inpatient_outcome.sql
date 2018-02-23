@@ -2,7 +2,7 @@ select
   answer.concept_full_name as answer_concept_name,
   gender.gender as gender,
   reporting_age_group.name as age_group,
-  visit_type.type as visit_type,
+  
   IFNULL(result.total_count,0) as total_count
 from
   concept_view AS question
@@ -16,7 +16,6 @@ from
       obs.value_coded as answer_concept_id,
       obs.concept_id as question_concept_id,
       person.gender as gender,
-      visit_attribute.value_reference as visit_type,
       reporting_age_group.name as age_group,
       count(*) as total_count
     FROM
@@ -25,18 +24,15 @@ from
       INNER JOIN person on obs.person_id = person.person_id
       INNER JOIN encounter on obs.encounter_id = encounter.encounter_id
       INNER  JOIN visit on encounter.visit_id = visit.visit_id
-      INNER JOIN visit_attribute on visit.visit_id = visit_attribute.visit_id
-      INNER JOIN visit_attribute_type on visit_attribute_type.visit_attribute_type_id = visit_attribute.attribute_type_id and visit_attribute_type.name = "Visit Status"
       INNER JOIN reporting_age_group on cast(obs.obs_datetime AS DATE) BETWEEN (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL reporting_age_group.min_years YEAR), INTERVAL reporting_age_group.min_days DAY))
                                         AND (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL reporting_age_group.max_years YEAR), INTERVAL reporting_age_group.max_days DAY))
                                         AND reporting_age_group.report_group_name = "Inpatient"
    -- WHERE CAST(visit.date_stopped  as DATE) BETWEEN "2016-02-01" and "2017-02-20"
    WHERE CAST(visit.date_stopped  as DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
-    group by obs.concept_id, obs.value_coded, reporting_age_group.name, person.gender, visit_attribute.value_reference
+    group by obs.concept_id, obs.value_coded, reporting_age_group.name, person.gender
   ) result on question.concept_id = result.question_concept_id
               and answer.concept_id = result.answer_concept_id
               and gender.gender = result.gender
-              and visit_type.type = result.visit_type
               and result.age_group = reporting_age_group.name
-GROUP BY question.concept_full_name, answer.concept_full_name, gender.gender, reporting_age_group.name, visit_type.type
+GROUP BY question.concept_full_name, answer.concept_full_name, gender.gender, reporting_age_group.name
 ORDER BY answer.concept_full_name,reporting_age_group.sort_order;

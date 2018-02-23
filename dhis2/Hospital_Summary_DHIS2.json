@@ -16,20 +16,197 @@
           "row": 2,
           "column": 2
         },
+		
 		 {
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "J16O3bLT94B",
           "row": 3,
           "column": 2
         },
+		
 		 {
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "Wz9lyL4EFgc",
           "row": 4,
           "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "Wz9lyL4EFgc",
+          "row": 4,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "OQ4CxYP11zR",
+          "row": 5,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "kK32tZ49ToM",
+          "row": 6,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "kK32tZ49ToM",
+          "row": 7,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "f95dTxsNaOr",
+          "row": 8,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "ErsRqXBszJe",
+          "row": 9,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "GU5n3qxVV1G",
+          "row": 10,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "FeOTYqWEND5",
+          "row": 11,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "fgGIHbLGHr3",
+          "row": 12,
+          "column": 2 
         }
       ]
-    }
+    },
+	"Summary of Indoor Services Inpatient Outcome":{
+      "dataValues": [
+        {
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "IEPgzf9wukn",
+          "row": 183,
+          "column": 4
+        },
+        { 
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "IEPgzf9wukn",
+          "row": 181,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "VT7pxUmkCk4",
+          "row": 196,
+          "column": 4
+        },
+        {
+          "categoryOptionCombo": "PflKpozpO7b",
+          "dataElement": "VT7pxUmkCk4", 
+          "row": 194,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",  	
+          "dataElement": "hfKKGFpcahT",
+          "row": 189,
+          "column": 4
+        },
+        {
+          "categoryOptionCombo": "PflKpozpO7b",
+          "dataElement": "hfKKGFpcahT",
+          "row": 187,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",   
+          "dataElement": "idfm34Azg6Q",
+          "row": 192,
+          "column": 4
+        },
+        {
+          "categoryOptionCombo": "PflKpozpO7b",	  
+          "dataElement": "idfm34Azg6Q",
+          "row": 190,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",     
+          "dataElement": "jeODCTX57ty",
+          "row": 195,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b", 
+          "dataElement": "jeODCTX57ty",
+          "row": 193,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",   
+          "dataElement": "eWZ03zEBkBX",
+          "row": 198,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b",   
+          "dataElement": "eWZ03zEBkBX",
+          "row": 196,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",     
+          "dataElement": "byiU4Z8VZxP",
+          "row": 201,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b",   
+          "dataElement": "byiU4Z8VZxP",
+          "row": 199,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",      
+          "dataElement": "qFKmdcMXi8R",
+          "row": 206,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b",   
+          "dataElement": "qFKmdcMXi8R",
+          "row": 207,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",      
+          "dataElement": "xsf043Abyz4",
+          "row": 209,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b",   
+          "dataElement": "xsf043Abyz4",
+          "row": 210,
+          "column": 4
+        }
+      ]
+    },
 		
   }
 }
