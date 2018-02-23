@@ -112,7 +112,7 @@
 						"name": "Reporting Status (Referred Out Patients)",
 						"type": "MRSGeneric",
 						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/referred_out_patients.sql"
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/referred_out_patients_age_grp.sql"
 						}
 					}
 			]
