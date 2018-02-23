@@ -47,10 +47,13 @@ FROM
         AND cn1.voided = 0
     INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id
         AND cn2.concept_name_type = 'FULLY_SPECIFIED'
+		AND cn2.name IN ('Cast application' , 'High Groin Cast', 'Slab application', 'Thumb Spica Cast', 'Figure 8 Bandage')
+
         AND cn2.voided = 0
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
     INNER JOIN person p1 ON o1.person_id = p1.person_id
     WHERE
-        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+        DATE(e.encounter_datetime) BETWEEN '2016-7-16' AND '2017-7-16'
             AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
     GROUP BY first_answers.answer_name) plaster;
+    
