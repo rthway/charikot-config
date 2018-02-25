@@ -126,12 +126,20 @@
 		"config": {
 			"reports": [
 				{
-					"name": "Summary of Indoor Services gestational weeks",
+					"name": "Summary of Indoor Services Gestational weeks(Neonate Form)",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/gestational_weeks.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/gestational_weeks_neonate_form.sql"
 					}
 				},
+				{
+						"name": "Summary of Indoor Services Gestational weeks(Maternal Age)",
+						"type": "MRSGeneric",
+						"config": {
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/gestational_weeks_maternal_age.sql"
+						}
+					},
+
 					{
 						"name": "Summary of Indoor Services Inpatient Outcome",
 						"type": "MRSGeneric",
@@ -147,14 +155,7 @@
 						}
 					},
 
-					{
-						"name": "Summary of Indoor Services Maternal Age",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/maternal_age.sql"
-						}
-					},
-
+					
 					{
 						"name": "FreeHealthServices Outpatient and ER",
 						"type": "MRSGeneric",

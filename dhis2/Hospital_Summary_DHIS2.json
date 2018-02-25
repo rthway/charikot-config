@@ -1,7 +1,7 @@
 {
   "orgUnit": "Bm39oMfSNir",
   "reports": {
-    "Summary of Indoor Services gestational weeks": {
+    "Summary of Indoor Services Gestational weeks(Neonate Form)": {
       "dataValues": [    						 
         {
           "categoryOptionCombo": "kdsirVNKdhm",  
@@ -13,88 +13,169 @@
 		 {
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "XfaiH4LO4HU",
-          "row": 2,
-          "column": 2
+          "row": 1,
+          "column": 3
         },
 		
 		 {
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "J16O3bLT94B",
-          "row": 3,
-          "column": 2
+          "row": 1,
+          "column": 4
         },
 		
 		 {
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "Wz9lyL4EFgc",
-          "row": 4,
-          "column": 2 
-        },
-		
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "Wz9lyL4EFgc",
-          "row": 4,
-          "column": 2 
+          "row": 1,
+          "column": 5
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "OQ4CxYP11zR",
-          "row": 5,
+          "row": 2,
           "column": 2 
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "kK32tZ49ToM",
-          "row": 6,
-          "column": 2 
+          "row": 2,
+          "column": 3 
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "kK32tZ49ToM",
-          "row": 7,
-          "column": 2 
+          "dataElement": "Wz6fi5h43ln", 
+          "row": 2,
+          "column": 4
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "f95dTxsNaOr",
-          "row": 8,
-          "column": 2 
+          "row": 2,
+          "column": 5
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "ErsRqXBszJe",
-          "row": 9,
+          "row": 3,
           "column": 2 
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
           "dataElement": "GU5n3qxVV1G",
-          "row": 10,
-          "column": 2 
+          "row": 3,
+          "column": 3
         },
 		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "FeOTYqWEND5",
-          "row": 11,
-          "column": 2 
+          "dataElement": "FeOTYqWEND5", 
+          "row": 3,
+          "column": 4
         },
-		
 		{
           "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "fgGIHbLGHr3",
-          "row": 12,
-          "column": 2 
+          "dataElement": "fgGIHbLGHr3", 
+          "row": 3,
+          "column": 5 
         }
       ]
     },
+	
+	 "Summary of Indoor Services Gestational weeks(Maternal Age)": {
+      "dataValues": [    						 
+        {
+          "categoryOptionCombo": "kdsirVNKdhm",   
+          "dataElement": "LLtybn3Il5y",
+          "row": 1,
+          "column": 2
+        },
+		
+		 {
+          "categoryOptionCombo": "kdsirVNKdhm",   
+          "dataElement": "a7MLCIvl3N0",
+          "row": 1,
+          "column": 3
+        },
+		
+		 {
+          "categoryOptionCombo": "kdsirVNKdhm", 
+          "dataElement": "i4LqEvJTyyH",
+          "row": 1,
+          "column": 4
+        },
+		
+		 {
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "NmLTLB5IM4x",
+          "row": 1,
+          "column": 5
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "Ynoi7oT6Cui",
+          "row": 2,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "jW4Nxz5ZtTc",
+          "row": 2,
+          "column": 3 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "T2RIoCzbcrE",
+          "row": 2,
+          "column": 4
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "NNa4syq83FQ",
+          "row": 2,
+          "column": 5
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "DmCnfwpVcMT",
+          "row": 3,
+          "column": 2 
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "yoj2oCbvriM",
+          "row": 3,
+          "column": 3
+        },
+		
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "bbMBbR3oQa5", 
+          "row": 3,
+          "column": 4
+        },
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "KWtpxg9gMS0", 
+          "row": 3,
+          "column": 5 
+        }
+      ]
+    },
+	
+	
 	"Summary of Indoor Services Inpatient Outcome":{
       "dataValues": [
         {
@@ -951,13 +1032,13 @@
         },
 			{
           "categoryOptionCombo": "ye1QuAMRG5Z",      
-          "dataElement": "GSebS9QkuVm",
+          "dataElement": "GSebS9QkuVm", 
           "row": 10,
           "column": 2
         },
 		{
           "categoryOptionCombo": "PflKpozpO7b",   
-          "dataElement": "GSebS9QkuVm--",
+          "dataElement": "GSebS9QkuVm",
           "row": 10,
           "column": 3
         }
