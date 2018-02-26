@@ -31,8 +31,7 @@ FROM
      patients.birthdate,
      patients.risk_group,
 	 IF(tested_now.order_id IS NOT NULL || tested_before.tested = 'True', 1, 0) AS tested,
-     reporting_age_group.name,
-     reporting_age_group.sort_order
+     reporting_age_group.name
 FROM
 (SELECT 	
 	 person.person_id,
@@ -76,9 +75,8 @@ INNER JOIN concept_view test_concept ON test_order.concept_id = test_concept.con
    	AND test_concept.concept_full_name IN ('HIV (Blood)', 'HIV (Serum)')
 INNER JOIN person ON test_order.patient_id = person.person_id) AS tested_now
 ON tested_now.person_id = patients.person_id
-RIGHT OUTER JOIN reporting_age_group ON patients.date_stopped BETWEEN (DATE_ADD(DATE_ADD(patients.birthdate, INTERVAL reporting_age_group.min_years YEAR), INTERVAL reporting_age_group.min_days DAY)) 
+RIGHT OUTER JOIN (SELECT '≤ 14 Years' as name, 0 as min_years,0 as min_days, 15 as max_years, -1 as max_days
+ union select '≥ 15 years' as name, 15 as min_years , 0 as min_days, 999 as max_years, -1 as max_days ) reporting_age_group ON patients.date_stopped BETWEEN (DATE_ADD(DATE_ADD(patients.birthdate, INTERVAL reporting_age_group.min_years YEAR), INTERVAL reporting_age_group.min_days DAY)) 
 						AND (DATE_ADD(DATE_ADD(patients.birthdate, INTERVAL reporting_age_group.max_years YEAR), INTERVAL reporting_age_group.max_days DAY))
-WHERE reporting_age_group.report_group_name = 'HTC Programme'
 ) AS entries
-GROUP BY entries.name
-ORDER BY entries.sort_order;
+GROUP BY entries.name;

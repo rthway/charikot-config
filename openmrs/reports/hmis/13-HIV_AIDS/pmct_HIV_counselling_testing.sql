@@ -1,4 +1,4 @@
-SELECT IF(cn.name = 'ANC, HIV Counseling', 'Pregnancy - Counseled', 'Pregnancy - Tested') Report, count(distinct person_id) as "No. of Patients"
+SELECT IF(cn.name = 'ANC, HIV Counseling', 'Pregnancy - Counseled', 'Pregnancy - Tested') Report, count(distinct person_id) as No_of_patients
 FROM obs obs
   INNER JOIN concept_name cn ON obs.concept_id = cn.concept_id AND obs.voided = 0 and cn.name in ('ANC, HIV Counseling','ANC, HIV Result Received') and cn.concept_name_type = 'FULLY_SPECIFIED'
   INNER JOIN concept_name trueConcept
@@ -6,7 +6,7 @@ FROM obs obs
 WHERE DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 GROUP BY Report
 UNION
-SELECT 'Pregnancy - Positive' as Report, count(distinct person_id) AS "No. of Patients"
+SELECT 'Pregnancy - Positive' as Report, count(distinct person_id) AS No_of_patients
 FROM obs obs
   INNER JOIN concept_name cn ON obs.concept_id = cn.concept_id AND obs.voided = 0 and cn.name = 'ANC, HIV Test Result' and cn.concept_name_type = 'FULLY_SPECIFIED'
   INNER JOIN concept_name trueConcept
@@ -14,7 +14,7 @@ FROM obs obs
 WHERE DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 GROUP BY Report
 UNION
-SELECT 'Labour and delivery - Counseled' as Report, count(distinct person.person_id) AS "No. of Patients"
+SELECT 'Labour and delivery - Counseled' as Report, count(distinct person.person_id) AS No_of_patients
 FROM person person
   INNER JOIN obs on obs.person_id = person.person_id AND person.voided = 0
   INNER JOIN obs deliveryMethodObs on deliveryMethodObs.person_id = person.person_id and deliveryMethodObs.voided = 0 and deliveryMethodObs.value_coded is not null
@@ -25,7 +25,7 @@ FROM person person
 WHERE DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 GROUP BY Report
 UNION
-SELECT 'Labour and Delivery - Tested' as Report, count(distinct person.person_id) AS "No. of Patients"
+SELECT 'Labour and Delivery - Tested' as Report, count(distinct person.person_id) AS No_of_patients
 FROM person person
   INNER JOIN obs on person.person_id = obs.person_id and obs.voided = 0 AND person.voided = 0
   INNER JOIN obs deliveryMethodObs on deliveryMethodObs.person_id = person.person_id and deliveryMethodObs.voided = 0 and deliveryMethodObs.value_coded is not null
@@ -51,7 +51,7 @@ FROM person person
 where (testedBefore.obs_id is not null or htcConfirmatory.obs_id is not null or htcInitial.obs_id is not null or htcTieBreaker.obs_id is not null)
                                                                                                                 AND DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 UNION
-SELECT 'Labour and Delivery - Positive' as Report, count(distinct person.person_id) AS "No. of Patients"
+SELECT 'Labour and Delivery - Positive' as Report, count(distinct person.person_id) AS No_of_patients
 FROM person person
   INNER JOIN obs on person.person_id = obs.person_id and obs.voided = 0 AND person.voided = 0
   INNER JOIN obs deliveryMethodObs on deliveryMethodObs.person_id = person.person_id and deliveryMethodObs.voided = 0 and deliveryMethodObs.value_coded is not null
@@ -79,7 +79,7 @@ FROM person person
 where ((resultIfTested.obs_id is not null) or (htcConfirmatory.obs_id is not null and htcInitial.obs_id is not null) or (htcTieBreaker.obs_id is not null))
                                                                                                                        AND DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 UNION
-SELECT 'Puerperium - Counseled' as Report, count(distinct person.person_id) AS "No. of Patients"
+SELECT 'Puerperium - Counseled' as Report, count(distinct person.person_id) AS No_of_patients
 FROM person person
   INNER JOIN obs on person.person_id = obs.person_id and obs.voided = 0 AND person.voided = 0
   INNER JOIN obs deliveryMethodObs on deliveryMethodObs.person_id = person.person_id and deliveryMethodObs.voided = 0 and deliveryMethodObs.value_coded is not null
@@ -96,7 +96,7 @@ FROM person person
 where ((pncVisitTime.obs_id is not null) or (htcPretestCouncelling.obs_id is not null))                                                                                                                 
                                            AND DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 UNION
-SELECT 'Puerperium - Tested' as Report, count(distinct person.person_id) AS "No. of Patients"
+SELECT 'Puerperium - Tested' as Report, count(distinct person.person_id) AS No_of_patients
 FROM person person
   INNER JOIN obs obs on person.person_id = obs.person_id and obs.voided = 0 AND person.voided = 0
   INNER JOIN obs deliveryMethodObs on deliveryMethodObs.person_id = person.person_id and deliveryMethodObs.voided = 0 and deliveryMethodObs.value_coded is not null
@@ -125,7 +125,7 @@ FROM person person
 where ((pncVisitTime.obs_id is not null) and (testedBefore.obs_id is not null or htcConfirmatory.obs_id is not null or htcInitial.obs_id is not null or htcTieBreaker.obs_id is not null))
       AND DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
 UNION
-SELECT 'Puerperium - Positive' as Report, count(distinct person.person_id) as "No. of Patients"
+SELECT 'Puerperium - Positive' as Report, count(distinct person.person_id) as No_of_patients
 FROM person person
   INNER JOIN obs obs on person.person_id = obs.person_id and obs.voided = 0 AND person.voided = 0
   INNER JOIN obs deliveryMethodObs on deliveryMethodObs.person_id = person.person_id and deliveryMethodObs.voided = 0 and deliveryMethodObs.value_coded is not null
