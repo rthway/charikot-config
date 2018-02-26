@@ -1,9 +1,9 @@
 
-SELECT sum(final.receivingFirstTime)                            as 'Patients Receiving Iron Tablets - First Time',
-  sum(final.receivingMoreThan180)                               as 'Patients Receiving >= 180 Iron Tablets',
-  sum(final.receivingDeworming)                                 as 'Patients Receiving Deworming Tablets',
-  sum(final.receivingMoreThan45) as 'Postpartum Patients Receiving >= 45 Iron Tablets',
-  sum(final.receivingVitaminA) as 'Postpartum Patients Receiving Vitamin A Capsules'
+SELECT sum(final.receivingFirstTime)                            as 'Iron Tablets at First Time',
+  sum(final.receivingMoreThan180)                               as '180 Iron Tablets',
+  sum(final.receivingDeworming)                                 as 'Deworming Tablets',
+  sum(final.receivingMoreThan45) as 'PP mother Receiving >= 45 Iron Tablets',
+  sum(final.receivingVitaminA) as 'PP mother Receiving Vitamin A Capsules'
 FROM
 
 (-- Pregnant women receiving - Iron tablets first time
