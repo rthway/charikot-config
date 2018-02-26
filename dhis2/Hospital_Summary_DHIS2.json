@@ -1045,6 +1045,94 @@
           
       ]
     },
+	
+	"Summary of Indoor Services Major Surgeries": {
+      "dataValues": [    						 
+        {
+          "categoryOptionCombo": "ye1QuAMRG5Z",
+          "dataElement": "MncP9cJXwZs",
+          "row": 1,
+          "column": 2
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b", 
+          "dataElement": "MncP9cJXwZs",
+          "row": 2,
+          "column": 2
+        }
+		]
+    },
+	
+	"Summary of Indoor Services Minor Surgeries": {
+      "dataValues": [    						 
+        { 
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "XOIIA9PktoG",
+          "row": 2,
+          "column": 3
+        },
+		
+        {
+          "categoryOptionCombo": "ye1QuAMRG5Z",
+          "dataElement": "ds89kwFirfa", 
+          "row": 1,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b",  	
+          "dataElement": "XOIIA9PktoG",
+          "row": 4,
+          "column": 3
+        },
+        {
+          "categoryOptionCombo": "PflKpozpO7b",
+          "dataElement": "ds89kwFirfa",
+          "row": 3,
+          "column": 3
+        }
+          
+      ]
+    },
+	
+	"Summary of Indoor Services Hospital Summary Plaster": {
+      "dataValues": [    						 
+        {
+          "categoryOptionCombo": "ye1QuAMRG5Z", 
+          "dataElement": "bRyy4uqVUn6",
+          "row": 1,
+          "column": 1
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b", 
+          "dataElement": "bRyy4uqVUn6",
+          "row": 1,
+          "column": 2
+        }
+		]
+    },
+	"Summary of Indoor Services Death (Maternal and Post Operative)": {
+      "dataValues": [    						 
+        {
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "HUtoMj9IIHY",
+          "row": 1,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "PflKpozpO7b", 
+          "dataElement": "HUtoMj9IIHY",
+          "row": 2,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "ye1QuAMRG5Z",
+          "dataElement": "OWZvJevMlQd",
+          "row": 3,
+          "column": 3
+        }
+		]
+    }
+	
 		
   }
 }

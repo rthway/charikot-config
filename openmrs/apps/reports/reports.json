@@ -165,7 +165,7 @@
 					},
 
 					{
-						"name": "Summary of Indoor Services major surgeries",
+						"name": "Summary of Indoor Services Major Surgeries",
 						"type": "MRSGeneric",
 						"config": {
 							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/major_surgeries.sql"
@@ -173,21 +173,22 @@
 					},
 
 					{
-						"name": "Summary of Indoor Services minor surgeries",
+						"name": "Summary of Indoor Services Minor Surgeries",
 						"type": "MRSGeneric",
 						"config": {
 							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/minor_surgeries.sql"
 						}
 					},
+					
 					{
-						"name": "Summary of Indoor Services death maternal post operative",
+						"name": "Summary of Indoor Services Death (Maternal and Post Operative)",
 						"type": "MRSGeneric",
 						"config": {
 							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/death_maternal_post_operative.sql"
 						}
 					},
 					{
-						"name": "Summary of Indoor Services Hospital_Summary_Plaster",
+						"name": "Summary of Indoor Services Hospital Summary Plaster",
 						"type": "MRSGeneric",
 						"config": {
 							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/Hospital_Summary_Plaster.sql"

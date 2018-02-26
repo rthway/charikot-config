@@ -36,11 +36,9 @@ FROM
     INNER JOIN person p ON o.person_id = p.person_id
         AND p.voided = 0
     INNER JOIN patient_identifier pi ON pi.patient_id = p.person_id
-        AND pi.identifier != 'BAH200052'
         AND pi.voided = '0'
     WHERE
         DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) a ON a.gender = gender.gender
-		and a.visit_type =  visit_type.type
         AND a.question = first_answers.question)
 GROUP BY first_answers.question , gender.gender
 ORDER BY first_answers.question , gender.gender;

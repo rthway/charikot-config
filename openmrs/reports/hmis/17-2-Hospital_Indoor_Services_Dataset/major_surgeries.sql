@@ -19,7 +19,6 @@ FROM
     INNER JOIN person p ON o.person_id = p.person_id
         AND p.voided = 0
     INNER JOIN patient_identifier pi ON pi.patient_id = p.person_id
-        AND pi.identifier != 'BAH200052'
         AND pi.voided = '0'
     WHERE
          (o.value_coded IS NOT NULL)

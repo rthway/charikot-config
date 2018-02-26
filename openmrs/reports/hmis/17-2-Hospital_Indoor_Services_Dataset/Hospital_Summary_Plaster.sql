@@ -1,12 +1,10 @@
 SELECT 
     SUM(plaster.Female) AS Female_Count_Plaster,
-    SUM(plaster.Male) AS Male_Count_Plaster,
-    SUM(plaster.Other) AS Other_Count_Plaster
+    SUM(plaster.Male) AS Male_Count_Plaster
 FROM
     (SELECT 
         SUM(IF(first_concept.gender = 'F', 1, 0)) AS Female,
             SUM(IF(first_concept.gender = 'M', 1, 0)) AS Male,
-            SUM(IF(first_concept.gender = 'O', 1, 0)) AS Other,
             first_answers.answer_name AS first_concept_name,
             COUNT(DISTINCT (first_concept.person_id)) AS count
     FROM
