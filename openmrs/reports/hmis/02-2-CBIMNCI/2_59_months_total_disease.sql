@@ -20,7 +20,9 @@ FROM
     ORDER BY answer_name DESC) first_question
         LEFT OUTER JOIN
     (SELECT DISTINCT
-        o1.person_id, cn1.concept_id AS question
+        o1.person_id, cn1.concept_id AS question,
+        (select name from concept_name where concept_id = o1.value_coded AND
+			o1.voided IS FALSE and concept_name_type = 'FULLY_SPECIFIED' and voided = '0') as Diag
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
@@ -31,5 +33,5 @@ FROM
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
     INNER JOIN person p1 ON o1.person_id = p1.person_id
     WHERE
-        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.question = first_question.question
+        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.question = first_question.question AND first_concept.Diag = "TRUE"
 GROUP BY first_question.answer_name;
