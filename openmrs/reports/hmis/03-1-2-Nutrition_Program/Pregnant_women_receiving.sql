@@ -45,7 +45,7 @@ FROM
    WHERE ifaTablet.question_full_name = 'ANC-Number of Iron Tablets given'
          AND date(ifaTablet.obs_datetime) BETWEEN '#startDate#' AND '#endDate#'
          AND ancVisit.question_full_name = 'ANC, ANC Visit'
-         AND ancVisit.answer_full_name = 'ANC, 4th (per protocol)'
+         AND ancVisit.answer_full_name = 'ANC, Completed 4 ANC visits'
          AND date(ancVisit.obs_datetime) BETWEEN '#startDate#' AND '#endDate#'
   ) AS result
 UNION ALL
