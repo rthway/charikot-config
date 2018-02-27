@@ -49,5 +49,5 @@ FROM
 
         DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
             AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
-GROUP BY first_answers.answer_name,first_answers.answer_name
+GROUP BY first_answers.answer_name,first_answers.category
 ORDER BY category;
