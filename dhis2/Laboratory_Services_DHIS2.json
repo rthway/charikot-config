@@ -1,0 +1,17 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": { 
+    "Laboratory Services DHIS2": {
+      "dataValues": [    	
+		{
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "MX5XthyOLIX",
+          "row": 8,
+          "column": 3
+        }
+          
+      ]
+    }
+	
+  }
+}

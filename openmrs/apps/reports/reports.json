@@ -1,4 +1,14 @@
-{
+{	
+
+	
+	"Laboratory Services DHIS2": {
+        "name": "Laboratory Services DHIS2",
+        "type": "ElisGeneric",
+		"DHISProgram": true,
+        "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/16-lab/Laboratory_Services.sql"
+        }
+    },
 	"CBIMNCI Program DHIS2": {
 		"name": "CBIMNCI Program DHIS2",
 		"DHISProgram": true,
@@ -1642,10 +1652,8 @@
 			]
 		}
 	},
-	"laboratory_services": {
-		"name": "Laboratory Services",
-		"type": "TestCount"
-	},
+	
+	
 	"hospital_services__outpatient_services": {
 		"name": "Hospital Services - Outpatient Services",
 		"type": "MRSGeneric",
