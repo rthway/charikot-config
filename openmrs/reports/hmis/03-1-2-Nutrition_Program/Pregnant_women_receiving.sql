@@ -60,10 +60,6 @@ FROM
 WHERE dewormTablet.question_full_name = 'ANC, Albendazole given'
       AND (date(dewormTablet.obs_datetime) BETWEEN '#startDate#' AND '#endDate#')
       AND dewormTablet.value_coded = 1
-      AND ancVisit.question_full_name = 'ANC, ANC Visit'
-      AND ancVisit.answer_full_name = 'ANC, 1st (any time)'
-      AND (date(ancVisit.obs_datetime) BETWEEN '#startDate#' AND '#endDate#')
-
 UNION ALL
 
 -- PP women receiving - 45 iron tablets + Vit A
