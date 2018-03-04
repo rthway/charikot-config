@@ -1,6 +1,7 @@
  SELECT 
-    IFNULL((CASE
-                WHEN LOWER(causes_for_death) LIKE '%pneumonia%' THEN cause_count
+    IFNULL(SUM(CASE
+                WHEN LOWER(causes_for_death) LIKE '%pneumonia%'
+                AND LOWER(causes_for_death)LIKE '%Respiratory Tract Infection%' THEN cause_count
                 ELSE 0
             END),
             0) AS count_ari_death,

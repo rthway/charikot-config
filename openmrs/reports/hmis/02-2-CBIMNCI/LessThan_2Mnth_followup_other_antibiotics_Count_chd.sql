@@ -21,7 +21,9 @@ FROM
     ORDER BY answer_name DESC) first_question
         LEFT OUTER JOIN
     (SELECT DISTINCT
-        o.person_id, cn1.concept_id AS question
+        o.person_id, cn1.concept_id AS question,
+         (select name from concept_name where concept_id = o.value_coded AND
+			o.voided IS FALSE and concept_name_type = 'FULLY_SPECIFIED' and voided = '0') as Diag
     FROM
         obs o
     INNER JOIN concept_name cn1 ON o.concept_id = cn1.concept_id
@@ -37,6 +39,5 @@ FROM
             AND TIMESTAMPDIFF(DAY, p.birthdate, v.date_started) < 60
 			And DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
            -- AND DATE(o.obs_datetime) BETWEEN DATE('2017-01-01') AND DATE('2017-12-30')
-			) first_concept ON first_concept.question = first_question.question
-GROUP BY first_question.answer_name
-ORDER BY first_question.answer_name;
+			) first_concept ON first_concept.question = first_question.question AND first_concept.Diag = "TRUE"
+GROUP BY first_question.answer_name;

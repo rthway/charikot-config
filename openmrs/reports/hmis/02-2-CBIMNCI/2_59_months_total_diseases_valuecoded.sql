@@ -44,8 +44,11 @@ FROM
         AND cn2.voided = 0
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
     INNER JOIN person p1 ON o1.person_id = p1.person_id
+      INNER JOIN visit v ON v.visit_id = e.visit_id
     WHERE
-        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+     TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) > 1
+            AND TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) < 60
+       AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
             AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
 GROUP BY first_answers.answer_name
 ORDER BY category;

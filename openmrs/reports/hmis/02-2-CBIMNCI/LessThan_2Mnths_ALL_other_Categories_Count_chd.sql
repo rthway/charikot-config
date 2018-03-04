@@ -51,6 +51,8 @@ FROM
     (SELECT DISTINCT
         o.person_id,
             cn1.concept_id AS question,
+            (select name from concept_name where concept_id = o.value_coded AND
+			o.voided IS FALSE and concept_name_type = 'FULLY_SPECIFIED' and voided = '0') as Diag,
             CASE
                 WHEN TIMESTAMPDIFF(DAY, p.birthdate, v.date_started) < 29 THEN '< 29 days'
                 WHEN
@@ -84,6 +86,6 @@ FROM
        -- DATE(o.obs_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-30')
 	   DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
 		
-		) first_concept ON first_concept.question = first_question.question
+		) first_concept ON first_concept.question = first_question.question AND first_concept.Diag = "TRUE"
 GROUP BY first_question.answer_name , age_days
 ORDER BY first_question.answer_name , age_days;

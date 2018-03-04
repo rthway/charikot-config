@@ -16,7 +16,7 @@ FROM
     INNER JOIN person p ON o.person_id = p.person_id
     INNER JOIN concept_name cn1 ON o.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name = 'Childhood Illness (Children aged below 2 months)'
+        AND cn1.name = 'Childhood Illness-<2 months, case'
         AND o.voided = 0
         AND cn1.voided = 0
     INNER JOIN encounter e ON o.encounter_id = e.encounter_id

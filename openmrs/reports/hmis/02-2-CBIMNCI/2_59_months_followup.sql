@@ -12,5 +12,8 @@ FROM
     encounter e ON o1.encounter_id = e.encounter_id
         INNER JOIN
     person p1 ON o1.person_id = p1.person_id
+    INNER JOIN visit v ON v.visit_id = e.visit_id
 WHERE
-    DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+      TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) > 1
+         AND TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) < 60
+    AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
