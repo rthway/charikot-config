@@ -23,7 +23,6 @@ FROM person person
   INNER JOIN concept_name trueConcept
     ON obs.value_coded = trueConcept.concept_id AND trueConcept.concept_name_type = 'FULLY_SPECIFIED' and trueConcept.name ='True'
 WHERE DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
-GROUP BY Report
 UNION
 SELECT 'Labour and Delivery - Tested' as Report, count(distinct person.person_id) AS No_of_patients
 FROM person person

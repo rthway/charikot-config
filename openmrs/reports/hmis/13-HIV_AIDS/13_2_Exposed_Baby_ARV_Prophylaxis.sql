@@ -1,7 +1,5 @@
-
-            
-            SELECT 
-    COUNT(DISTINCT (o1.person_id)) AS exposed_baby_art_prophylaxis
+SELECT 
+    COUNT(DISTINCT (o1.person_id)) AS 'count of exposed baby (ARV Prophylaxis)'
 FROM
     obs o1
         INNER JOIN
