@@ -10,6 +10,15 @@
         }
     },
 	
+	"Laboratory Services Other DHIS2": {
+        "name": "Laboratory Services Other DHIS2",
+        "type": "ElisGeneric",
+		"DHISProgram": true,
+        "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/16-lab/lab_other_servies.sql"
+        }
+    },
+	
 	"HIV Program DHIS2": {
 		"name": "HIV Program DHIS2",
 		"DHISProgram": true,

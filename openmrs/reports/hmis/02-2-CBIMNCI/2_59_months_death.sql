@@ -1,7 +1,7 @@
  SELECT 
     IFNULL(SUM(CASE
                 WHEN LOWER(causes_for_death) LIKE '%pneumonia%'
-                AND LOWER(causes_for_death)LIKE '%Respiratory Tract Infection%' THEN cause_count
+                THEN cause_count
                 ELSE 0
             END),
             0) AS count_ari_death,
@@ -13,6 +13,7 @@
     IFNULL(SUM(CASE
                 WHEN
                     LOWER(causes_for_death) NOT LIKE '%pneumonia%'
+                    AND LOWER(causes_for_death) NOT LIKE '%Respiratory Tract Infection%'
                         AND LOWER(causes_for_death) NOT LIKE '%diarrhea%'
                 THEN
                     cause_count
@@ -45,5 +46,5 @@ FROM
     WHERE
         TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) > 1
             AND TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) < 60
-            AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+            AND DATE(e.encounter_datetime) BETWEEN '#startDate#' AND '#endDate#'
     GROUP BY causes_for_death) a;
