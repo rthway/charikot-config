@@ -40,6 +40,13 @@
 					}
 				},
 				{
+					"name": "HIV Prevention of Mother-To-Child Transmission ANC count",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_Number_of_ANC_Visits.sql"
+					}
+				},
+				{
 					"name": "HIV Prevention of Mother-To-Child Transmission (PMTCT) Dataset(Labour & Delivery and Postnatal)",
 					"type": "MRSGeneric",
 					"config": {
@@ -47,7 +54,7 @@
 					}
 				},
 				{
-					"name": "PMTCT of HIV ART Started, HIV Positive Women - Male Partner, Breast Feeding status",
+					"name": "PMTCT of HIV ART Started,HIV Positive Women,Male Partner,Breast Feeding status",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_PMTCT_of_HIV_ART_Started_HIV_Positive_Women_Male_Partner_Breast_Feeding_status.sql"
@@ -61,7 +68,7 @@
 					}
 				},
 				{
-					"name": "HIV Exposed Baby (Started ARV Prophylaxis )",
+					"name": "HIV Exposed Baby (Started ARV Prophylaxis)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_ARV_Prophylaxis.sql"
