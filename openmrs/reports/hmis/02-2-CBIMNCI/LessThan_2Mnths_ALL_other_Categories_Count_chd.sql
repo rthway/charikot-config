@@ -1,25 +1,7 @@
 SELECT 
-    first_question.answer_name AS first_concept_name,
-    first_question.question as concept_id,
-    age_days_grp.age_days AS age_days,
-    Ifnull(SUM(CASE
-        WHEN
-            age_days_grp.age_days = '< 29 days'
-                AND first_concept.agegroup = '< 29 days'
-        THEN
-            1
-        WHEN
-            age_days_grp.age_days = '29 - 59 days'
-                AND first_concept.agegroup = '29 - 59 days'
-        THEN
-            1
-        WHEN
-            age_days_grp.age_days = '> 59 days'
-                AND first_concept.agegroup = '> 59 days'
-        THEN
-            1
-        ELSE 0
-    END),0) AS patient_count
+    first_question.answer_name AS category,
+    age_days_grp.age_days AS 'Age-Days',
+    count(distinct first_concept.person_id)AS 'Total Count'
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,
@@ -41,12 +23,10 @@ FROM
         'PSBI/LBI/NBI, Jaundice', 
         'Breastfed', 
         'Difficulty feeding or low weight', 
-        'Childhood Illness - Treatment - Treated with - Amoxicillin', 
-        'Ampicillin',  
         'Childhood Illness, Referred out')
         ORDER BY answer_name DESC) first_question
         INNER JOIN
-    (SELECT '< 29 days' AS age_days UNION SELECT '29 - 59 days' AS age_days UNION SELECT '> 59 days' AS age_days) age_days_grp
+    (SELECT '< 29 days' AS age_days UNION SELECT '29 - 59 days' AS age_days) age_days_grp
         LEFT OUTER JOIN
     (SELECT DISTINCT
         o.person_id,
@@ -60,7 +40,6 @@ FROM
                         AND TIMESTAMPDIFF(DAY, p.birthdate, v.date_started) < 60
                 THEN
                     '29 - 59 days'
-                WHEN TIMESTAMPDIFF(DAY, p.birthdate, v.date_started) > 59 THEN '> 59 days'
             END AS agegroup
     FROM
         obs o
@@ -79,13 +58,12 @@ FROM
         'PSBI/LBI/NBI, Jaundice', 
         'Breastfed', 
         'Difficulty feeding or low weight', 
-        'Childhood Illness - Treatment - Treated with - Amoxicillin',
-        'Ampicillin', 
         'Childhood Illness, Referred out')
          and 
-       -- DATE(o.obs_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-30')
-	   DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+        DATE(o.obs_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-30')
+	  -- DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
 		
 		) first_concept ON first_concept.question = first_question.question AND first_concept.Diag = "TRUE"
-GROUP BY first_question.answer_name , age_days
+        and age_days_grp.age_days = first_concept.agegroup
+GROUP BY first_question.answer_name , age_days_grp.age_days, first_concept.agegroup
 ORDER BY first_question.answer_name , age_days;
