@@ -16,12 +16,12 @@ FROM
     INNER JOIN person p ON o.person_id = p.person_id
     INNER JOIN concept_name cn1 ON o.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name = 'Childhood Illness-<2 months, case'
+        AND cn1.name = 'CBIMNCI (<2 months child)'
         AND o.voided = 0
         AND cn1.voided = 0
     INNER JOIN encounter e ON o.encounter_id = e.encounter_id
     INNER JOIN visit v ON v.visit_id = e.visit_id
-        AND v.date_stopped IS NOT NULL
+        
     WHERE
         -- DATE(e.encounter_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-01')) a;
          DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#') ) a ; 
