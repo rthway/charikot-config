@@ -681,6 +681,17 @@
 				}
 			]
 		},
+		"HIV+ve Women (Delivered)": {
+			"dataValues": [
+				{
+					"_comment": "HIV+ve Women (Delivered)",
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "Cw2C5u7qXog",
+					"row": 1,
+					"column": 1
+				}
+			]
+		},
 		
 		"PMTCT of HIV ART Started,HIV Positive Women,Male Partner,Breast Feeding status": {
 			"dataValues": [
@@ -689,64 +700,58 @@
 					"_comment": "ART started-before pregnancy",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "jqyzzzVg9Hj",
-					"row": 15,
-					"column": 7
+					"row": 5,
+					"column": 3
 				},
 				{
 					"_comment": "ART started- ANC",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "BqsVe0mMJ5x",
-					"row": 14,
-					"column": 7
+					"row": 4,
+					"column": 3
 				},
 				{
 					"_comment": "ART started-labour and delivery",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "ebT2TGBitjN",
-					"row": 13,
-					"column": 7
+					"row": 6,
+					"column": 3
 				},
 				{
 					"_comment": "ART started-postnatal",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "J1FOtP4pD87",
-					"row": 16,
-					"column": 7
+					"row": 7,
+					"column": 3
 				},
 				{
 					"_comment": "HIV+ve-Women-Male Partner who know their status",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "jqyzzzVg9Hj",
-					"row": 8,
-					"column": 7
-				},
-				{
-					"_comment": "HIV+ve Women-Delivered",
-					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "jqyzzzVg9Hj",
 					"row": 9,
-					"column": 7
+					"column": 3
 				},
+			
 				{
 					"_comment": "Breast Feeding status-Exclusive",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "WvftG3vxxyy",
-					"row": 3,
-					"column": 7
+					"row": 1,
+					"column": 3
 				},
 				{
 					"_comment": "Breast Feeding status-Replacement",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "oqBfzRkl7UL",
-					"row": 2,
-					"column": 7
+					"row": 3,
+					"column": 3
 				},
 				{
 					"_comment": "Breast Feeding status-Mixed",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "Md6HGlF68xc",
-					"row": 1,
-					"column": 7
+					"row": 2,
+					"column": 3
 				}
 			
 			]
