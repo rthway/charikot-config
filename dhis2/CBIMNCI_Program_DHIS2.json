@@ -13,7 +13,7 @@
       ]
     }
 	,
-    "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Treatment Refered Out":{
+    "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Refered Out":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii",  
@@ -57,42 +57,6 @@
           "row": 17,
           "column": 3
         },
-        {
-          "categoryOptionCombo": "J0QYmZGlEii",	  
-          "dataElement": "C2QpFPSO3cn",
-          "row": 6,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",     
-          "dataElement": "RR9YSQg5sSY",
-          "row": 4,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "J0QYmZGlEii", 
-          "dataElement": "H3GSFHu9DMV",
-          "row": 9,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",   
-          "dataElement": "PbkNwfEqhmR",
-          "row": 8,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "J0QYmZGlEii",   
-          "dataElement": "B713onHvu2I",
-          "row": 7,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "J0QYmZGlEii",     
-          "dataElement": "iJzkUTWNH5a",
-          "row": 5,
-          "column": 3
-        },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "cvo4qh1QkTA",
@@ -113,6 +77,52 @@
         }
       ]
     },
+	"Childhood Illness(2-59) total treatment":{
+      "dataValues": [
+        {
+		"_comment": "Amoxicillin",
+          "categoryOptionCombo": "J0QYmZGlEii",	  
+          "dataElement": "C2QpFPSO3cn",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Other Antibiotics",
+          "categoryOptionCombo": "kdsirVNKdhm",     
+          "dataElement": "RR9YSQg5sSY",
+          "row": 6,
+          "column": 2
+        },
+		{
+		"_comment": "ORS and Zinc",
+          "categoryOptionCombo": "J0QYmZGlEii", 
+          "dataElement": "H3GSFHu9DMV",
+          "row": 4,
+          "column": 2
+        },
+		{
+		"_comment": "IV Fluid",
+          "categoryOptionCombo": "kdsirVNKdhm",   
+          "dataElement": "PbkNwfEqhmR",
+          "row": 3,
+          "column": 2
+        },
+		{
+		"_comment": "Anti-helminthes",
+          "categoryOptionCombo": "J0QYmZGlEii",   
+          "dataElement": "B713onHvu2I",
+          "row": 2,
+          "column": 2
+        },
+		{
+		"_comment": "Retinol (Vitamin A)",
+          "categoryOptionCombo": "J0QYmZGlEii",     
+          "dataElement": "iJzkUTWNH5a",
+          "row": 7,
+          "column": 2
+        }
+		]
+	},
 	
 	"Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other":{
       "dataValues": [
@@ -231,7 +241,7 @@
 		
       ]
     },
-	"Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight Treatment  Treated with Amoxicillin ampicillin refered out Treatment Treated with Amoxicillin(less than 2 months)":{
+	"Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight (less than 2 months)":{
       "dataValues": [
         {
           "categoryOptionCombo": "MMj2Dc8TvgL",  
@@ -281,30 +291,8 @@
           "row": 10,
           "column": 4
         },
-		{
-          "categoryOptionCombo": "MMj2Dc8TvgL", 
-          "dataElement": "zxN7niCGtSh",
-          "row": 2,
-          "column": 4
-        },
-		{
-          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
-          "dataElement": "zxN7niCGtSh",
-          "row": 1,
-          "column": 4
-        },
-		{
-          "categoryOptionCombo": "MMj2Dc8TvgL", 
-          "dataElement": "lfjCh0FyKSc",
-          "row": 5,
-          "column": 4
-        },
-		{
-          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
-          "dataElement": "lfjCh0FyKSc",
-          "row": 4,
-          "column": 4
-        },
+		
+		
 		{
           "categoryOptionCombo": "MMj2Dc8TvgL", 
           "dataElement": "kqspOhPReRm",
@@ -336,7 +324,7 @@
         }
       ]
     },
-	"Childhood Illness Follow up and other antibiotics(less than 2 months)":{
+	"Childhood Illness less than 2 months Follow up":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii",  
@@ -348,6 +336,46 @@
           "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "TwMrwcnwuSO",
           "row": 2,
+          "column": 3
+        }
+		
+      ]
+    },
+	"Childhood Illness less than 2 months treatment":{
+      "dataValues": [
+	  {
+		"_comment": "Amoxicillin less than 28",
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "zxN7niCGtSh",
+          "row": 2,
+          "column": 3
+        },
+		{
+		"_comment": "Amoxicillin more than 28",
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "zxN7niCGtSh",
+          "row": 1,
+          "column": 3
+        },
+		{
+		"_comment": "Ampicillin less than 28",
+          "categoryOptionCombo": "MMj2Dc8TvgL", 
+          "dataElement": "lfjCh0FyKSc",
+          "row": 4,
+          "column": 3
+        },
+		{
+		"_comment": "Ampicillin more than 28",
+          "categoryOptionCombo": "ZQJ5pcgH1lJ", 
+          "dataElement": "lfjCh0FyKSc",
+          "row": 3,
+          "column": 3
+        },
+		{
+		"_comment": "other antibiotics",
+          "categoryOptionCombo": "kdsirVNKdhm", 
+          "dataElement": "TwMrwcnwuSO",
+          "row": 5,
           "column": 3
         }
 		

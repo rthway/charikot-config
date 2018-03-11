@@ -73,7 +73,7 @@ WHERE
         AND TIMESTAMPDIFF(MONTH,
         p1.birthdate,
         v.date_started) < 60
-        AND DATE(e.encounter_datetime) BETWEEN '2016-07-01' AND '2017-10-16'
+        AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#') 
         
  union all 
         
@@ -127,7 +127,7 @@ WHERE
         AND TIMESTAMPDIFF(MONTH,
         p1.birthdate,
         v.date_started) < 60
-        AND DATE(e.encounter_datetime) BETWEEN '2016-07-01' AND '2017-10-16'
+        AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#') 
 GROUP BY person_id) a where drug_group is not null )  b
 
 group by drug_group) first_concept ON first_concept.drug_group = first_answers.answer_name

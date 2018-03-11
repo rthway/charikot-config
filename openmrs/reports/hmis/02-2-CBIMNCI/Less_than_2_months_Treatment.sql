@@ -65,7 +65,7 @@ WHERE
         AND TIMESTAMPDIFF(MONTH,
         p1.birthdate,
         v.date_started) < 60
-        AND DATE(e.encounter_datetime) BETWEEN '2016-07-01' AND '2017-10-16'
+        AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
         )  b
 
 group by drug_group,agegroup) first_concept ON first_concept.drug_group = drugs.drug_name

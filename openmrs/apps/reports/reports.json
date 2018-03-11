@@ -153,7 +153,7 @@
 					}
 				},
 				{
-					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Treatment Refered Out",
+					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Refered Out",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_diseases_valuecoded.sql"
@@ -171,6 +171,13 @@
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_followup.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness(2-59) total treatment",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_Treatment.sql"
 					}
 				},
 				{
@@ -203,10 +210,17 @@
 				},
 
 				{
-					"name": "Childhood Illness Follow up and other antibiotics(less than 2 months)",
+					"name": "Childhood Illness less than 2 months Follow up",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_other_antibiotics_Count_chd.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_Count_chd.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness less than 2 months treatment",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/Less_than_2_months_Treatment.sql"
 					}
 				},
 				{
@@ -217,7 +231,7 @@
 					}
 				},
 				{
-					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight Treatment  Treated with Amoxicillin ampicillin refered out Treatment Treated with Amoxicillin(less than 2 months)",
+					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight (less than 2 months)",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_ALL_other_Categories_Count_chd.sql"

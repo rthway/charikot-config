@@ -817,7 +817,335 @@
 					"column": 2
 				}
 			]
+		},
+		"Asymptomatic Partners Treated": {
+			"dataValues": [
+				{
+					"_comment": "Asymptomatic Partners Treated-F",
+					"categoryOptionCombo": "YwjOaHAvG6m",
+					"dataElement": "YPpqANKU05q",
+					"row": 2,
+					"column": 2
+				},
+					{
+					"_comment": "Asymptomatic Partners Treated-M",
+					"categoryOptionCombo": "zbfeiEeiC34",
+					"dataElement": "YPpqANKU05q",
+					"row": 1,
+					"column": 2
+				},
+					{
+					"_comment": "Asymptomatic Partners Treated-TG",
+					"categoryOptionCombo": "DVzC42inPjR",
+					"dataElement": "YPpqANKU05q",
+					"row": 3,
+					"column": 2
+				}
+			]
+		},
+		"STI Cases - by Syndromes": {
+			"dataValues": [
+				{
+					"_comment": "Total Clients Assessed-Female Sex Workers (FSWs)",
+					"categoryOptionCombo": "N8obptCXv0k",
+					"dataElement": "rkYQJyToheM",
+					"row": 2,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-People who Inject Drugs (PWIDs)",
+					"categoryOptionCombo": "q6yhZEWMtwK",
+					"dataElement": "rkYQJyToheM",
+					"row": 3,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-MSM and TG",
+					"categoryOptionCombo": "xasNlF5QEKb",
+					"dataElement": "rkYQJyToheM",
+					"row": 1,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-Clients of FSWs",
+					"categoryOptionCombo": "fDxbHpWBa7v",
+					"dataElement": "rkYQJyToheM",
+					"row": 5,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-Male migrants",
+					"categoryOptionCombo": "yjn333AYmLn",
+					"dataElement": "rkYQJyToheM",
+					"row": 6,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-Spouses of male migrants",
+					"categoryOptionCombo": "jAmZ5bhMNJy",
+					"dataElement": "rkYQJyToheM",
+					"row": 4,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-Pregnant women",
+					"categoryOptionCombo": "Ojl2zVYZIvd",
+					"dataElement": "rkYQJyToheM",
+					"row": 2,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-Neonates",
+					"categoryOptionCombo": "w8kP6ZjPm9x",
+					"dataElement": "rkYQJyToheM",
+					"row": 3,
+					"column": 2
+				},
+				{
+					"_comment": "Total Clients Assessed-Others",
+					"categoryOptionCombo": "Zw5NZF6dX2E",
+					"dataElement": "rkYQJyToheM",
+					"row": 3,
+					"column": 2
+				}
+			]
+		},
+		"HIV-AIDS Program Opportunistic Infections": {
+			"dataValues": [
+				{
+					"_comment": "Bacterial Pneumonia-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "nNkUv1Mq6LE",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"_comment": "Bacterial Pneumonia-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "nNkUv1Mq6LE",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "Bacterial Pneumonia-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "nNkUv1Mq6LE",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "TB-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "tkp4AAyNVo1",
+					"row": 32,
+					"column": 3
+				},
+				{
+					"_comment": "TB-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "tkp4AAyNVo1",
+					"row": 31,
+					"column": 3
+				},
+				{
+					"_comment": "TB-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "tkp4AAyNVo1",
+					"row": 33,
+					"column": 3
+				},
+				{
+					"_comment": "Candidiasis-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "nI28jCbTm3z",
+					"row": 5,
+					"column": 3
+				},
+				{
+					"_comment": "Candidiasis-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "nI28jCbTm3z",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"_comment": "Candidiasis-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "nI28jCbTm3z",
+					"row": 6,
+					"column": 3
+				},
+				{
+					"_comment": "Diarrhoea-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "f4MuUH3PlIQ",
+					"row": 14,
+					"column": 3
+				},
+				{
+					"_comment": "Diarrhoea-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "f4MuUH3PlIQ",
+					"row": 13,
+					"column": 3
+				},
+				{
+					"_comment": "Diarrhoea-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "f4MuUH3PlIQ",
+					"row": 15,
+					"column": 3
+				},
+				{
+					"_comment": "Cryptococcal Meningitis-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "f4MuUH3PlIQ",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"_comment": "Cryptococcal Meningitis-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "f4MuUH3PlIQ",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"_comment": "Cryptococcal Meningitis-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "f4MuUH3PlIQ",
+					"row": 9,
+					"column": 3
+				},
+				{
+					"_comment": "PCP*-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "UvCjfjCJFnb",
+					"row": 26,
+					"column": 3
+				},
+				{
+					"_comment": "PCP*-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "UvCjfjCJFnb",
+					"row": 25,
+					"column": 3
+				},
+				{
+					"_comment": "PCP*-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "UvCjfjCJFnb",
+					"row": 27,
+					"column": 3
+				},
+				{
+					"_comment": "Cytomegato Virus-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "rddIoPGKW90",
+					"row": 11,
+					"column": 3
+				},
+				{
+					"_comment": "Cytomegato Virus-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "rddIoPGKW90",
+					"row": 10,
+					"column": 3
+				},
+				{
+					"_comment": "Cytomegato Virus-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "rddIoPGKW90",
+					"row": 12,
+					"column": 3
+				},
+				{
+					"_comment": "Herpes Zoster-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "xKV4WaxOhER",
+					"row": 20,
+					"column": 3
+				},
+				{
+					"_comment": "Herpes Zoster-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "xKV4WaxOhER",
+					"row": 19,
+					"column": 3
+				},
+				{
+					"_comment": "Herpes Zoster-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "xKV4WaxOhER",
+					"row": 21,
+					"column": 3
+				},
+				{
+					"_comment": "Genital Herpes-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "JGXqwdzbn8g",
+					"row": 17,
+					"column": 3
+				},
+				{
+					"_comment": "Genital Herpes-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "JGXqwdzbn8g",
+					"row": 16,
+					"column": 3
+				},
+				{
+					"_comment": "Genital Herpes-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "JGXqwdzbn8g",
+					"row": 18,
+					"column": 3
+				},
+				{
+					"_comment": "Toxo-plasmosis-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "VxZo21bX59i",
+					"row": 29,
+					"column": 3
+				},
+				{
+					"_comment": "Toxo-plasmosis-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "VxZo21bX59i",
+					"row": 28,
+					"column": 3
+				},
+				{
+					"_comment": "Toxo-plasmosis-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "VxZo21bX59i",
+					"row": 30,
+					"column": 3
+				},
+				{
+					"_comment": "Others-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "r94yJQOzGYb",
+					"row": 23,
+					"column": 3
+				},
+				{
+					"_comment": "Others-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "r94yJQOzGYb",
+					"row": 22,
+					"column": 3
+				},
+				{
+					"_comment": "Others-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "r94yJQOzGYb",
+					"row": 24,
+					"column": 3
+				}
+			]
 		}
+
 
 	}
 }
