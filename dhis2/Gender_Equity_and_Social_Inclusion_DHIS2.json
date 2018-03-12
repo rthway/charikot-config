@@ -1,0 +1,179 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "Gender Equity and Social Inclusion": {
+      "dataValues": [    	
+		{
+		"_comment": "Enroll in CBIMCI programme-Female-dalit",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Female-janjati",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Female-madhesi",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Female-muslim",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Female-brahmin/chhetri",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Female-others",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Male-dalit",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Male-janjati",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Male-madhesi",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Male-muslim",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Male-brahmin/chhetri",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Enroll in CBIMCI programme-Male-others",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Female-dalit",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Female-janjati",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Female-madhesi",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Female-muslim",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Female-brahmin/chhetri",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Female-others",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Male-dalit",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Male-janjati",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Male-madhesi",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Male-muslim",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Male-brahmin/chhetri",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        },
+		{
+		"_comment": "Underweight Children(<2years)-Male-others",
+          "categoryOptionCombo": "Dj0rmsKZiLJ",  
+          "dataElement": "HWOXhR9Mhkp",
+          "row": 1,
+          "column": 2
+        }
+		
+       ] 
+		
+  }
+}
+}

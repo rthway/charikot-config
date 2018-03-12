@@ -347,10 +347,10 @@
 				},
 
 				{
-					"name": "Childhood Illness less than 2 months Follow up",
+					"name": "Childhood Illness less than 2 months Follow up and other antibiotics",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_Count_chd.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_other_abtibiotics_Count_chd.sql"
 					}
 				},
 				{
@@ -407,6 +407,22 @@
 							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/referred_out_patients_age_grp.sql"
 						}
 					}
+			]
+		}
+	},
+	"Gender Equity and Social Inclusion DHIS2": {
+		"name": "Gender Equity and Social Inclusion DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Gender Equity and Social Inclusion",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/14-Gender-Equity-and-Social-Inclusion/Gender_ Equity_and_Social_Inclusion.sql"
+					}
+				}
 			]
 		}
 	},

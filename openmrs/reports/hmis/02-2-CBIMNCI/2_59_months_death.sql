@@ -8,15 +8,15 @@
             END),
             0) AS count_ari_death,
     IFNULL(SUM(CASE
-                WHEN LOWER(causes_for_death) LIKE '%diarrhea%' THEN cause_count
+                WHEN LOWER(causes_for_death) LIKE '%Diarrhoea%' THEN cause_count
                 ELSE 0
             END),
-            0) AS count_diarrhea_death,
+            0) AS count_diarrhoea_death,
     IFNULL(SUM(CASE
                 WHEN
                     LOWER(causes_for_death) NOT LIKE '%pneumonia%'
                     AND LOWER(causes_for_death) NOT LIKE '%Respiratory Tract Infection%'
-                        AND LOWER(causes_for_death) NOT LIKE '%diarrhea%'
+                        AND LOWER(causes_for_death) NOT LIKE '%Diarrhoea%'
                 THEN
                     cause_count
                 ELSE 0
