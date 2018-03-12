@@ -210,10 +210,10 @@
 				},
 
 				{
-					"name": "Childhood Illness less than 2 months Follow up",
+					"name": "Childhood Illness less than 2 months Follow up and other antibiotics",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_Count_chd.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_other_abtibiotics_Count_chd.sql"
 					}
 				},
 				{

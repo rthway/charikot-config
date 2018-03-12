@@ -36,43 +36,49 @@
         {
           "categoryOptionCombo": "J0QYmZGlEii",
           "dataElement": "A2lsvQ94qw5", 
-          "row": 12,
+          "row": 5,
           "column": 3
         },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",  	
           "dataElement": "SlIi0mTWXte",
-          "row": 14,
+          "row": 7,
+          "column": 3
+        },
+		{
+          "categoryOptionCombo": "J0QYmZGlEii",
+          "dataElement": "Z7hy1EP2KW5",
+          "row": 6,
           "column": 3
         },
         {
           "categoryOptionCombo": "J0QYmZGlEii",
           "dataElement": "KZzKMkn4H7q",
-          "row": 15,
+          "row": 8,
           "column": 3
         },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "sAdwOfXe6Ld",
-          "row": 17,
+          "row": 10,
           "column": 3
         },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "cvo4qh1QkTA",
-          "row": 19,
+          "row": 12,
           "column": 3
         },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",      
           "dataElement": "CIO7DFOzXSy",
-          "row": 20,
+          "row": 13,
           "column": 3
         },
 		{
           "categoryOptionCombo": "J0QYmZGlEii",   
           "dataElement": "z8fdZad32Pv",
-          "row": 23,
+          "row": 16,
           "column": 3
         }
       ]
@@ -246,64 +252,64 @@
         {
           "categoryOptionCombo": "MMj2Dc8TvgL",  
           "dataElement": "ISzvhZycG3z",
-          "row": 23,
-          "column": 4
+          "row": 12,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "ZQJ5pcgH1lJ", 
           "dataElement": "ISzvhZycG3z",
-          "row": 22,
-          "column": 4
+          "row": 11,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "MMj2Dc8TvgL", 
           "dataElement": "YXIPqFIPsjg",
-          "row": 17,
-          "column": 4
+          "row": 8,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "ZQJ5pcgH1lJ", 
           "dataElement": "YXIPqFIPsjg",
-          "row": 16,
-          "column": 4
+          "row": 7,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "MMj2Dc8TvgL", 
           "dataElement": "IDbh8WJcQsP",
-          "row": 14,
-          "column": 4
+          "row": 6,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "ZQJ5pcgH1lJ", 
           "dataElement": "IDbh8WJcQsP",
-          "row": 13,
-          "column": 4
+          "row": 5,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "fmCWNnmldW4",
-          "row": 11,
-          "column": 4
+          "row": 2,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "aFgNWKMgYz9",
-          "row": 10,
-          "column": 4
+          "row": 1,
+          "column": 3
         },
 		
 		
 		{
           "categoryOptionCombo": "MMj2Dc8TvgL", 
           "dataElement": "kqspOhPReRm",
-          "row": 26,
-          "column": 4
+          "row": 14,
+          "column": 3
         },
 		{
           "categoryOptionCombo": "ZQJ5pcgH1lJ", 
           "dataElement": "kqspOhPReRm",
-          "row": 25,
-          "column": 4
+          "row": 13,
+          "column": 3
         }
 		
       ]
@@ -324,19 +330,20 @@
         }
       ]
     },
-	"Childhood Illness less than 2 months Follow up":{
+	"Childhood Illness less than 2 months Follow up and other antibiotics":{
       "dataValues": [
         {
           "categoryOptionCombo": "J0QYmZGlEii",  
           "dataElement": "WoIzHgdHUjE",
           "row": 1,
-          "column": 3
+          "column": 2
         },
 		{
+		"_comment": "other antibiotics",
           "categoryOptionCombo": "kdsirVNKdhm", 
           "dataElement": "TwMrwcnwuSO",
           "row": 2,
-          "column": 3
+          "column": 2
         }
 		
       ]
@@ -369,13 +376,6 @@
           "categoryOptionCombo": "ZQJ5pcgH1lJ", 
           "dataElement": "lfjCh0FyKSc",
           "row": 3,
-          "column": 3
-        },
-		{
-		"_comment": "other antibiotics",
-          "categoryOptionCombo": "kdsirVNKdhm", 
-          "dataElement": "TwMrwcnwuSO",
-          "row": 5,
           "column": 3
         }
 		
