@@ -1,5 +1,142 @@
 {	
-
+	
+	"OPD Programs(1-5) DHIS2": {
+		"name": "OPD Programs(1-5) DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "OPD Communicable Immunizable",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15_01_OPD_Communicable_Immunizable.sql"
+					}
+				},
+					
+					{
+					"name": "OPD Communicable, Vector-Water Borne",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-02_OPD_Communicable_VectorWater_Borne.sql"
+					}
+				},
+				{
+					"name": "OPD Other Communicable Infactions Diseases",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-03_ OPD_Other_Communicable_Infactions_Diseases.sql"
+					}
+				},
+				{
+					"name": "OPD Nutritional and Metabolic Disorder",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-04_OPD_Nutritional_Metabolic_Disorder.sql"
+					}
+				},
+				{
+					"name": "OPD Skin Diseases",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-05_OPD_Skin_Diseases.sql"
+					}
+				}
+			]
+		}
+	},
+	
+	"OPD Programs(6-10) DHIS2": {
+		"name": "OPD Programs(6-10) DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "OPD Ear Nose and Throat Infection",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-06_OPD_Ear_Nose_and_Throat_Infection.sql"
+					}
+				},
+					
+					{
+					"name": "OPD Oral Health Related Problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-07_OPD_Oral_Health_Related_Problems.sql"
+					}
+				},
+				{
+					"name": "OPD Eye Problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-08_OPD_Eye_Problems.sql"
+					}
+				},
+				{
+					"name": "OPD Obstetrics Complications Gyne Problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-09_OPD_Obstetrics_ComplicationsGyne_Problems.sql"
+					}
+				},
+				{
+					"name": "OPD Mental Health related problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-10_OPD_Mental_Health_related_Problems.sql"
+					}
+				}
+			]
+		}
+	},
+	
+	"OPD Programs(11-15) DHIS2": {
+		"name": "OPD Programs(11-15) DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "OPD Malignancy",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-11_OPD_Malignancy.sql"
+					}
+				},
+					
+					{
+					"name": "OPD Cardiovascular Respiratory Related Problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-12_OPD_Cardiovascular_Respiratory_Related_Problems.sql"
+					}
+				},
+				{
+					"name": "OPD Other Diseases Injuries",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-13_OPD_Other_Diseases_Injuries.sql"
+					}
+				},
+				{
+					"name": "OPD Orthopaedic Problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-14_OPD_Orthopaedic_Problems.sql"
+					}
+				},
+				{
+					"name": "OPD Surgical Problems",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-15_OPD_Surgical_Problems.sql"
+					}
+				}
+			]
+		}
+	},
 	
 	"Laboratory Services DHIS2": {
         "name": "Laboratory Services DHIS2",
