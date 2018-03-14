@@ -1,0 +1,701 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "OPD Communicable Immunizable": {
+      "dataValues": [    						 
+        {
+		"_comment": "measles-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "ZrwTzFTdZhz",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Diptheria-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "CSRB2H5GLDZ",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Whooping Cough-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "Y3S9491u1gd",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Neonatal Tetanus-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "QQSZDRTD294",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Tetanus-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "qkAsR3sHGWM",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Tuberculosis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "cVIqiRvVHVE",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Acute Flaccid Paralysis (AFP)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "cSBNopxh2ZP",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Rubella-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "EJOh3U60jKx",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Mumps-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "BpxwodMjTM4",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Chicken Pox-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "ZJPpYiYwPeW",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Hepatitis B	-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "cI801zaVGau",
+          "row": 1,
+          "column": 3
+        },
+		
+		
+		
+		
+		
+		 {
+		"_comment": "measles-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "ZrwTzFTdZhz",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Diptheria-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "CSRB2H5GLDZ",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Whooping Cough-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "Y3S9491u1gd",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Neonatal Tetanus-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "QQSZDRTD294",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Tetanus-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "qkAsR3sHGWM",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Tuberculosis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "cVIqiRvVHVE",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Acute Flaccid Paralysis (AFP)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "cSBNopxh2ZP",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Rubella-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "EJOh3U60jKx",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Mumps-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "BpxwodMjTM4",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Chicken Pox-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "ZJPpYiYwPeW",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Hepatitis B-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "cI801zaVGau",
+          "row": 1,
+          "column": 3
+        }   
+      ]
+    },
+	"OPD Communicable, Vector-Water Borne": {
+      "dataValues": [    						 
+        {
+		"_comment": "Acute Encephalitis like Syndrome (AES)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "pHrDUquZIYm",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Filariasis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "zcypZ3frGDB",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Clinical Malaria-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "QDaBpwjmfws",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Malaria(Plasmodium Falciparum)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "fZsSPCGs3d9",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Malaria(Plasmodium Vivax)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "LZYfptKIqkh",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Dengue Fever-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "XBZPrqWn6OG",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Kala-azar/Leshmaniasis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "gCLElGi3gze",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Typhoid (Enteric Fever)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "gwhVCfaS9UN",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Acute gastro-enteritis(AGE)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "cISG3BoGZTm",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Ameobic Dysentery/Amoebiasis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "td2iBmsLero",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Bacillary Dysentery/Shigellosis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "y3glz39HVvQ",
+          "row": 1,
+          "column": 3
+        },
+			 {
+		 "_comment": "Presumed non-infectious diarrhoea-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "LAwTvVrfnOB",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Cholera-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "FJ0pdVWlBbG",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Intestinal Worms-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "te3iSwrdWO7",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Jaundice-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "iZDCnd0VgWy",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Hepatitis A-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "w5mNn2EBUmg",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "7	Hepatitis E-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "LAP6lgcrJi5",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Volume Depletion (Dehydration)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "ZZsL7yaqg4L",
+          "row": 1,
+          "column": 3
+        },
+		
+		
+		
+		
+		
+		 {
+		"_comment": "Acute Encephalitis like Syndrome (AES)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "pHrDUquZIYm",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Filariasis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "zcypZ3frGDB",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Clinical Malaria-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "QDaBpwjmfws",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Malaria(Plasmodium Falciparum)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "fZsSPCGs3d9",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Malaria(Plasmodium Vivax)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "LZYfptKIqkh",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Dengue Fever-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "XBZPrqWn6OG",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Kala-azar/Leshmaniasis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "gCLElGi3gze",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Typhoid (Enteric Fever)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "gwhVCfaS9UN",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Acute gastro-enteritis(AGE)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "cISG3BoGZTm",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Ameobic Dysentery/Amoebiasis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "td2iBmsLero",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Bacillary Dysentery/Shigellosis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "y3glz39HVvQ",
+          "row": 1,
+          "column": 3
+        },
+			 {
+		 "_comment": "Presumed non-infectious diarrhoea-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "LAwTvVrfnOB",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Cholera-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "FJ0pdVWlBbG",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Intestinal Worms-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "te3iSwrdWO7",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Jaundice-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "iZDCnd0VgWy",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Hepatitis A-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "w5mNn2EBUmg",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Hepatitis E-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "LAP6lgcrJi5",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Volume Depletion (Dehydration)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "ZZsL7yaqg4L",
+          "row": 1,
+          "column": 3
+        }
+		]
+	},
+	"OPD Other Communicable Infactions Diseases": {
+      "dataValues": [    						 
+        {
+		"_comment": "Leprosy-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "zCnvG70EbAa",
+          "row": 1,
+          "column": 3
+        },
+		{
+		 "_comment": "Meningitis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "E80SAeiK4KF",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "HIV Infection-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "oVnNnGHesch",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Urethral Discharge Syndrome(UDS)Gonococal-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "B8CqXFlCBr5",
+          "row": 1,
+          "column": 3
+        },
+		 
+		 {
+		 "_comment": "Vaginal Discharge Syndrome (VDS)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "HuGvgg2pOA2",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Lower Abdominal Pain Syndrome (LAPS)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "uPijgtgd0jA",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Neonatal Conjuctive Syndrome (NCS)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "A7ZUMi18b2C",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Genital User Disease Syndrome (GUDS) - female",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "b0flJFAByeR",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Inguinal Bubo Syndrome (IBS)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "s4WLJ0dumzx",
+          "row": 1,
+          "column": 3
+        },
+			 {
+		 "_comment": "	Syphilis-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "wxnuAwt1Hqm",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "ARI/Lower respiratory tract infection (LRTI)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "eimjIL0RFb8",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Upper respiratory tract infection (URTI)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "C1dYWXuPeBo",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Pneumonia-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "ZCcVuwqAfaG",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Severe pneumonia-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "e8gE5FvXVnB",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Bronchitis (Acute & chronic)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "G2SkThUYe5w",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Urinary Tract Infection (UTI)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "uV5LwN8OzCy",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Viral Influenza-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "qrTjnhUQ195",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Reproductive Tract Infection (RTI) - Female",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "z1O4M2enpI3",
+          "row": 1,
+          "column": 3
+        },
+		 
+		
+		
+		
+		
+		  {
+		"_comment": "Leprosy-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "zCnvG70EbAa",
+          "row": 1,
+          "column": 3
+        },
+		{
+		 "_comment": "Meningitis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "E80SAeiK4KF",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "HIV Infection-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "oVnNnGHesch",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Urethral Discharge Syndrome(UDS)Gonococal-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "B8CqXFlCBr5",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Scrotal Swelling Syndrome (SSS)-M",
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "BJpAbmeRUVm",
+          "row": 1,
+          "column": 3
+        },
+		 
+		 {
+		 "_comment": "Vaginal Discharge Syndrome (VDS)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "HuGvgg2pOA2",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Lower Abdominal Pain Syndrome (LAPS)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "uPijgtgd0jA",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Neonatal Conjuctive Syndrome (NCS)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "A7ZUMi18b2C",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Genital User Disease Syndrome (GUDS) - male",
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "ru2303Sy7nA",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Inguinal Bubo Syndrome (IBS)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "s4WLJ0dumzx",
+          "row": 1,
+          "column": 3
+        },
+			 {
+		 "_comment": "	Syphilis-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "wxnuAwt1Hqm",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "ARI/Lower respiratory tract infection (LRTI)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "eimjIL0RFb8",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Upper respiratory tract infection (URTI)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "C1dYWXuPeBo",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Pneumonia-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "ZCcVuwqAfaG",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Severe pneumonia-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "e8gE5FvXVnB",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Bronchitis (Acute & chronic)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "G2SkThUYe5w",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Urinary Tract Infection (UTI)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "uV5LwN8OzCy",
+          "row": 1,
+          "column": 3
+        },
+		 {
+		 "_comment": "Viral Influenza-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "qrTjnhUQ195",
+          "row": 1,
+          "column": 3
+        },
+		 
+		 {
+		 "_comment": "Reproductive Tract Infection (RTI) - Male",
+          "categoryOptionCombo": "kdsirVNKdhm",  
+          "dataElement": "INDKIQBLb3i",
+          "row": 1,
+          "column": 3
+        }
+		]
+	}
+	
+}
+}

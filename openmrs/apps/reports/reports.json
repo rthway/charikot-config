@@ -404,7 +404,7 @@
 					}
 				},
 				{
-					"name": "STI Cases - by Syndromes",
+					"name": "STI Cases-by Syndromes",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_3_STI_Cases_ By_Syndromes.sql"
