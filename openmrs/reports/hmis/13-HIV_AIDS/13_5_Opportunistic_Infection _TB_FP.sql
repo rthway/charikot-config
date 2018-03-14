@@ -1,7 +1,12 @@
 SELECT 
-    first_question.answer_name AS concept_name,
-    reporting_age_group.name as age_group,
-    COUNT(DISTINCT (patients.person_id)) AS count_patient
+    first_question.answer_name AS 'Category',
+    reporting_age_group.name AS 'Age Group',
+    COUNT(DISTINCT IF((patients.gender = 'F'),
+            patients.person_id,
+            NULL)) AS Female,
+    COUNT(DISTINCT IF((patients.gender = 'M'),
+            patients.person_id,
+            NULL)) AS Male
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,
@@ -19,8 +24,8 @@ FROM
     WHERE
         question_concept_name.name IN ('HIV Treatment and Care Progress Template' , 'HIVTC, FP methods used by the patient', 'HIVTC, HIV care IPT started', 'HIVTC, Need Family Planning assessment', 'HIVTC, Opportunistic Infection Diagnosis', 'HIVTC-Progress Refer for FP')
     ORDER BY answer_name DESC) first_question
-    
-    inner JOIN (SELECT 
+        INNER JOIN
+    (SELECT 
         '< 5 Years' AS name,
             0 AS min_years,
             0 AS min_days,
@@ -32,22 +37,21 @@ FROM
             0 AS min_days,
             15 AS max_years,
             - 1 AS max_days
-	UNION SELECT 
+     UNION SELECT 
         '≥ 15 years' AS name,
             15 AS min_years,
             0 AS min_days,
             999 AS max_years,
             - 1 AS max_days
     ) reporting_age_group
-    
         LEFT OUTER JOIN
-        
-    (  SELECT DISTINCT
+    (SELECT DISTINCT
         o1.person_id,
             cn1.concept_id AS question,
-			person.birthdate,
+            person.birthdate,
+            person.gender,
             v.date_stopped
-		from
+    FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
@@ -58,7 +62,11 @@ FROM
     INNER JOIN visit v ON v.visit_id = e.visit_id
     INNER JOIN person person ON o1.person_id = person.person_id
     WHERE
-        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#') ) patients ON patients.question = first_question.question
-		and patients.date_stopped BETWEEN (DATE_ADD(DATE_ADD(patients.birthdate, INTERVAL reporting_age_group.min_years YEAR), INTERVAL reporting_age_group.min_days DAY)) AND (DATE_ADD(DATE_ADD(patients.birthdate, INTERVAL reporting_age_group.max_years YEAR), INTERVAL reporting_age_group.max_days DAY))
-        GROUP BY first_question.answer_name, reporting_age_group.name;
+        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) patients ON patients.question = first_question.question
+        AND patients.date_stopped BETWEEN (DATE_ADD(DATE_ADD(patients.birthdate,
+            INTERVAL reporting_age_group.min_years YEAR),
+        INTERVAL reporting_age_group.min_days DAY)) AND (DATE_ADD(DATE_ADD(patients.birthdate,
+            INTERVAL reporting_age_group.max_years YEAR),
+        INTERVAL reporting_age_group.max_days DAY))
+GROUP BY first_question.answer_name , reporting_age_group.name;
 ;

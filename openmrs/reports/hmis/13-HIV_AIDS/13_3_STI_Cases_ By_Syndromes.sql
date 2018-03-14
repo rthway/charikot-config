@@ -1,8 +1,7 @@
 SELECT
   first_answers.answer_name  AS first_concept_name,
   second_answers.answer_name AS second_concept_name,
-  gender.gender              AS gender,
-  sum(CASE WHEN first_concept.answer IS NOT NULL AND second_concept.answer IS NOT NULL AND p.gender IS NOT NULL THEN 1
+  sum(CASE WHEN first_concept.answer IS NOT NULL AND second_concept.answer IS NOT NULL THEN 1
       ELSE 0 END)            AS patient_count
 FROM
   (SELECT
@@ -77,9 +76,6 @@ FROM
    WHERE question_concept_name.name = 'STI, STI Diagnosis Syndrome' AND cd.name = 'Boolean'
    ORDER BY answer_name DESC
   ) second_answers
-  INNER JOIN (SELECT 'M' AS gender
-              UNION SELECT 'F' AS gender
-              UNION SELECT 'O' AS gender) gender
   INNER JOIN reporting_age_group rag ON rag.report_group_name = 'All Ages'
   LEFT OUTER JOIN (
                     SELECT
@@ -131,9 +127,9 @@ FROM
     ON second_concept.answer = second_answers.answer
        AND first_concept.person_id = second_concept.person_id
        AND first_concept.visit_id = second_concept.visit_id
-  LEFT OUTER JOIN person p ON first_concept.person_id = p.person_id AND p.gender = gender.gender
+  LEFT OUTER JOIN person p ON first_concept.person_id = p.person_id 
                               AND cast(first_concept.datetime AS DATE) BETWEEN (DATE_ADD(
     DATE_ADD(p.birthdate, INTERVAL rag.min_years YEAR), INTERVAL rag.min_days
     DAY)) AND (DATE_ADD(DATE_ADD(p.birthdate, INTERVAL rag.max_years YEAR), INTERVAL
                         rag.max_days DAY))
-GROUP BY first_answers.answer_name, second_answers.answer_name, gender.gender, rag.name, rag.sort_order;
+GROUP BY first_answers.answer_name, second_answers.answer_name,  rag.name, rag.sort_order;
