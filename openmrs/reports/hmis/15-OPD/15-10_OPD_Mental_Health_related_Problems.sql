@@ -1,8 +1,9 @@
 SELECT 
     c.concept_full_name as Disease,
     c.icd10_code as 'ICD CODE',
-    ifnull(b.Male,0) as Male,
-    ifnull(b.Female,0) as Female
+    
+    ifnull(b.Female,0) as Female,
+    ifnull(b.Male,0) as Male
     
 FROM
     (SELECT 
