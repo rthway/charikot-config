@@ -1,7 +1,12 @@
 SELECT 
-    first_question.answer_name AS concept_name,
-    reporting_age_group.name as age_group,
-    COUNT(DISTINCT (patients.person_id)) AS count_patient
+    first_question.answer_name AS Category,
+    reporting_age_group.name as 'Age Group',
+    COUNT(DISTINCT IF((patients.gender = 'F'),
+            patients.person_id,
+            NULL)) AS Female,
+    COUNT(DISTINCT IF((patients.gender = 'M'),
+            patients.person_id,
+            NULL)) AS Male
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,
@@ -45,6 +50,7 @@ FROM
         o1.person_id,
             cn1.concept_id AS question,
 			person.birthdate,
+            person.gender,
             v.date_stopped
 		from
         obs o1
