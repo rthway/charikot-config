@@ -249,10 +249,17 @@
 				},
 				
 				{
-					"name": "HIV-AIDS Program Opportunistic Infections",
+					"name": "HIV-AIDS Program Opportunistic Infections diagnosed",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Oppurtunistic_Infection_Diagonized.sql"
+					}
+				},
+				{
+					"name": "HIV-AIDS Program Opportunistic Infections treated",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Oppurtunistic_Infection_Treated.sql"
 					}
 				},
 				{
