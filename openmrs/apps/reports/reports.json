@@ -1,5 +1,474 @@
 {	
+
+	"Reporting Status Dataset DHIS2": {
+		"name": "Reporting Status Dataset DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Reporting Status(New and Existing Clients)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/new_and_existing_clients.sql"
+					}
+				},
+					
+					{
+						"name": "Reporting Status (Referred Out Patients)",
+						"type": "MRSGeneric",
+						"config": {
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/referred_out_patients_age_grp.sql"
+						}
+					}
+			]
+		}
+	},
+
+	"CBIMNCI Program DHIS2": {
+		"name": "CBIMNCI Program DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [{
+					"name": "Total Registered Cases (2-59)months",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_new_and_followup.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Refered Out",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_diseases_valuecoded.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_disease.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness(2-59) total Follow up",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_followup.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness(2-59) total treatment",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_Treatment.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness (2-59) total Ear Infection cases",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_ear_infection.sql"
+					}
+				},
+				{
+					"name": "Total malnutrition(2-59) cases",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_Severe_malnutrition.sql"
+					}
+				},
+				{
+					"name": "Total death(2-59)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_death.sql"
+					}
+				},
+				{
+					"name": "Total death less than 2 months",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_death_Count_chd.sql"
+					}
+				},
+
+				{
+					"name": "Childhood Illness less than 2 months Follow up and other antibiotics",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_other_abtibiotics_Count_chd.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness less than 2 months treatment",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/Less_than_2_months_Treatment.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness Treatment Gentamycin 1st dose and Complete Dose(less than 2 months)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_Gentamycin_dose_count.sql"
+					}
+				},
+				{
+					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight (less than 2 months)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_ALL_other_Categories_Count_chd.sql"
+					}
+				},
+
+				{
+					"name": "Childhood Illness Registered(Children aged below 2 months)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_Total_Count_chd.sql"
+					}
+				}
+			]
+		}
+	},
 	
+	"Nutrition Program DHIS2": {
+		"name": "Nutrition Program DHIS2",
+		"type": "concatenated",
+		"DHISProgram": true,
+		"config": {
+			"reports": [{
+					"name": "Nutrition status of registered children (new and old)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Nutrition_status_of_registered_children.sql"
+					}
+				},
+				{
+					"name": "Pregnant women receiving",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Pregnant_women_receiving.sql"
+					}
+				},
+				{
+					"name": "Less then 5 yrs Children receiving (Bi annual)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Under_5_yrs_Children_receiving.sql"
+					}
+				},
+				{
+					"name": "Integrated Management of Acute Malnutrition (IMAM) Program",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Integrated_Management_of_Acute_Malnutrition_IMAM_Program.sql"
+					}
+				},
+				{
+					"name": "Infant and Young Child Feeding",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Infant_Young_Child_Feeding.sql"
+					}
+				}
+			]
+		}
+	},
+	
+	"Safe Motherhood Program DHIS2": {
+		"name": "Safe Motherhood Program DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [{
+					"name": "Antenatal Checkup",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Antenatal_Checkup.sql"
+					}
+				},
+				{
+					"name": "Delivery Service",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Delivery_Service - Copy.sql"
+					}
+				},
+				{
+					"name": "Type of Delivery",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Type_of_Delivery.sql"
+					}
+				},
+				{
+					"name": "Delivery Outcome",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Delivery_Outcome.sql"
+					}
+				},
+				{
+					"name": "Birth weight",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Birth_weight.sql"
+					}
+				},
+				{
+					"name": "No of still births",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/No_of_still_births.sql"
+					}
+				},
+				{
+					"name": "CHX applied in cord",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/CHX_applied_in_cord.sql"
+					}
+				},
+				{
+					"name": "Blood transfusion",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Blood_transfusion.sql"
+					}
+				},
+				{
+					"name": "PNC Visit",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/PNC_Visit.sql"
+					}
+				},
+				{
+					"name": "Obstetric Complications",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Obstetric_Complications.sql"
+					}
+				},
+				{
+					"name": "Maternal Death",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Maternal_Death.sql"
+					}
+				},
+				{
+					"name": "Safe Abortion Service",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Service.sql"
+					}
+				}
+			]
+		}
+	},
+	
+	"Family Planning DHIS2": {
+		"name": "Family Planning DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Family Planning Program - Temporary FP methods (new users)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Temporary_Method_New_Users.sql"
+					}
+				},
+				{
+					"name": "Family Planning Program - Temporary FP method (Existing users)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Temporary_method_Existing_users_count.sql"
+					}
+				},
+
+				{
+					"name": "Family Planning Program - Temporary FP method (Defaulters)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Defaulters_count.sql"
+					}
+				},
+
+				{
+					"name": "Family Planning Program - Permanent FP method (New users)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Permanent_Method_New_User_Count.sql"
+					}
+				},
+				{
+					"name": "Family Planning Program - Permanent FP method (Existing users)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Permanent_method_existing_users_count_method.sql"
+					}
+				},
+				{
+					"name": "Family Planning Program - Postpartum FP Acceptors",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Postpartum_Within_48hrs_Count.sql"
+					}
+				}
+			]
+		}
+	},
+	
+		
+	"HIV Program DHIS2": {
+		"name": "HIV Program DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "HIV Testing And Counseling (TESTED)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_HIV_Testing_And_Counseling_Tested.sql"
+					}
+				},
+				{
+					"name": "HIV Testing And Counseling (POSITIVE)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_HIV_Testing_And_Counseling_Positive.sql"
+					}
+				},
+				{
+					"name": "HIV Prevention of Mother-To-Child Transmission ANC count",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_Number_of_ANC_Visits.sql"
+					}
+				},
+				{
+					"name": "HIV Prevention of Mother-To-Child Transmission (PMTCT) Dataset(Labour & Delivery and Postnatal)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_PMTCT_Counseling_And_Testing_Labour_Postnatal.sql"
+					}
+				},
+				{
+					"name": "PMTCT of HIV ART Started,HIV Positive Women,Male Partner,Breast Feeding status",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_PMTCT_of_HIV_ART_Started_HIV_Positive_Women_Male_Partner_Breast_Feeding_status.sql"
+					}
+				},
+				{
+					"name": "HIV Exposed Baby (Live births)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_Live_Births.sql"
+					}
+				},
+				{
+					"name": "HIV Exposed Baby (Started ARV Prophylaxis)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_ARV_Prophylaxis.sql"
+					}
+				},
+				{
+					"name": "HIV+ve Women (Delivered)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Positive_Delivered.sql"
+					}
+				},
+				{
+					"name": "HIV Exposed Baby- Early Infant Diagnosis (EID)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Early_Infant_Diagnosis.sql"
+					}
+				},
+
+				{
+					"name": "HIV+ve postnatal women received FP services",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Postnatal_Women_Received_FP_Services.sql"
+					}
+				},
+				{
+					"name": "STI Cases - by Syndromes",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_3_STI_Cases_ By_Syndromes.sql"
+					}
+				},
+				{
+					"name": "Asymptomatic Partners Treated",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_3_Asymptomatic_Partners_Treated.sql"
+					}
+				},
+				
+				{
+					"name": "HIV-AIDS Program Opportunistic Infections diagnosed",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Oppurtunistic_Infection_Diagonized.sql"
+					}
+				},
+				{
+					"name": "HIV-AIDS Program Opportunistic Infections treated",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Oppurtunistic_Infection_Treated.sql"
+					}
+				},
+				{
+					"name": " HIV-AIDS Program Opportunistic Infection - TB and FP",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Opportunistic_Infection _TB_FP.sql"
+					}
+				},
+
+				{
+					"name": " HIV-AIDS Program Opportunistic Infection - TB and FP(HIV Patients received CPT)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Opportunistic_Infection_TB_FP_HIV_Patients_Received_CPT.sql"
+					}
+				}
+
+				
+			]
+		}
+	},
+	
+	"Gender Equity and Social Inclusion DHIS2": {
+		"name": "Gender Equity and Social Inclusion DHIS2",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Gender Equity and Social Inclusion",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/14-Gender-Equity-and-Social-Inclusion/Gender_ Equity_and_Social_Inclusion.sql"
+					}
+				}
+			]
+		}
+	},
 	"OPD Programs(1-5) DHIS2": {
 		"name": "OPD Programs(1-5) DHIS2",
 		"DHISProgram": true,
@@ -138,6 +607,7 @@
 		}
 	},
 	
+	
 	"Laboratory Services DHIS2": {
         "name": "Laboratory Services DHIS2",
         "type": "ElisGeneric",
@@ -156,283 +626,6 @@
         }
     },
 	
-	"HIV Program DHIS2": {
-		"name": "HIV Program DHIS2",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [
-				{
-					"name": "HIV Testing And Counseling (TESTED)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_HIV_Testing_And_Counseling_Tested.sql"
-					}
-				},
-				{
-					"name": "HIV Testing And Counseling (POSITIVE)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_HIV_Testing_And_Counseling_Positive.sql"
-					}
-				},
-				{
-					"name": "HIV Prevention of Mother-To-Child Transmission ANC count",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_Number_of_ANC_Visits.sql"
-					}
-				},
-				{
-					"name": "HIV Prevention of Mother-To-Child Transmission (PMTCT) Dataset(Labour & Delivery and Postnatal)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_PMTCT_Counseling_And_Testing_Labour_Postnatal.sql"
-					}
-				},
-				{
-					"name": "PMTCT of HIV ART Started,HIV Positive Women,Male Partner,Breast Feeding status",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_PMTCT_of_HIV_ART_Started_HIV_Positive_Women_Male_Partner_Breast_Feeding_status.sql"
-					}
-				},
-				{
-					"name": "HIV Exposed Baby (Live births)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_Live_Births.sql"
-					}
-				},
-				{
-					"name": "HIV Exposed Baby (Started ARV Prophylaxis)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_ARV_Prophylaxis.sql"
-					}
-				},
-				{
-					"name": "HIV+ve Women (Delivered)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Positive_Delivered.sql"
-					}
-				},
-				{
-					"name": "HIV Exposed Baby- Early Infant Diagnosis (EID)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Early_Infant_Diagnosis.sql"
-					}
-				},
-
-				{
-					"name": "HIV+ve postnatal women received FP services",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Postnatal_Women_Received_FP_Services.sql"
-					}
-				},
-				{
-					"name": "STI Cases - by Syndromes",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_3_STI_Cases_ By_Syndromes.sql"
-					}
-				},
-				{
-					"name": "Asymptomatic Partners Treated",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_3_Asymptomatic_Partners_Treated.sql"
-					}
-				},
-				
-				{
-					"name": "HIV-AIDS Program Opportunistic Infections diagnosed",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Oppurtunistic_Infection_Diagonized.sql"
-					}
-				},
-				{
-					"name": "HIV-AIDS Program Opportunistic Infections treated",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Oppurtunistic_Infection_Treated.sql"
-					}
-				},
-				{
-					"name": " HIV-AIDS Program Opportunistic Infection - TB and FP",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Opportunistic_Infection _TB_FP.sql"
-					}
-				},
-
-				{
-					"name": " HIV-AIDS Program Opportunistic Infection - TB and FP(HIV Patients received CPT)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_5_Opportunistic_Infection_TB_FP_HIV_Patients_Received_CPT.sql"
-					}
-				}
-
-				
-			]
-		}
-	},
-	
-	
-	"CBIMNCI Program DHIS2": {
-		"name": "CBIMNCI Program DHIS2",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [{
-					"name": "Total Registered Cases (2-59)months",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_new_and_followup.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Refered Out",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_diseases_valuecoded.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_disease.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness(2-59) total Follow up",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_followup.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness(2-59) total treatment",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_Treatment.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness (2-59) total Ear Infection cases",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_ear_infection.sql"
-					}
-				},
-				{
-					"name": "Total malnutrition(2-59) cases",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_Severe_malnutrition.sql"
-					}
-				},
-				{
-					"name": "Total death(2-59)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_death.sql"
-					}
-				},
-				{
-					"name": "Total death less than 2 months",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_death_Count_chd.sql"
-					}
-				},
-
-				{
-					"name": "Childhood Illness less than 2 months Follow up and other antibiotics",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_other_abtibiotics_Count_chd.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness less than 2 months treatment",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/Less_than_2_months_Treatment.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness Treatment Gentamycin 1st dose and Complete Dose(less than 2 months)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_Gentamycin_dose_count.sql"
-					}
-				},
-				{
-					"name": "Childhood Illness PSBI LBI Jaundice Breastfed difficuilty feeding or low weight (less than 2 months)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_ALL_other_Categories_Count_chd.sql"
-					}
-				},
-
-				{
-					"name": "Childhood Illness Registered(Children aged below 2 months)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_Total_Count_chd.sql"
-					}
-				}
-			]
-		}
-	},
-	
-	"Reporting Status Dataset DHIS2": {
-		"name": "Reporting Status Dataset DHIS2",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [
-				{
-					"name": "Reporting Status(New and Existing Clients)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/new_and_existing_clients.sql"
-					}
-				},
-					
-					{
-						"name": "Reporting Status (Referred Out Patients)",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/01-Reporting_Status/referred_out_patients_age_grp.sql"
-						}
-					}
-			]
-		}
-	},
-	"Gender Equity and Social Inclusion DHIS2": {
-		"name": "Gender Equity and Social Inclusion DHIS2",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [
-				{
-					"name": "Gender Equity and Social Inclusion",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/14-Gender-Equity-and-Social-Inclusion/Gender_ Equity_and_Social_Inclusion.sql"
-					}
-				}
-			]
-		}
-	},
 	
 	"Hospital Summary DHIS2": {
 		"name": "Hospital Summary DHIS2",
@@ -512,59 +705,9 @@
 			]
 		}
 	},
-	"Family Planning DHIS2": {
-		"name": "Family Planning DHIS2",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [
-				{
-					"name": "Family Planning Program - Temporary FP methods (new users)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Temporary_Method_New_Users.sql"
-					}
-				},
-				{
-					"name": "Family Planning Program - Temporary FP method (Existing users)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Temporary_method_Existing_users_count.sql"
-					}
-				},
 
-				{
-					"name": "Family Planning Program - Temporary FP method (Defaulters)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Defaulters_count.sql"
-					}
-				},
-
-				{
-					"name": "Family Planning Program - Permanent FP method (New users)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Permanent_Method_New_User_Count.sql"
-					}
-				},
-				{
-					"name": "Family Planning Program - Permanent FP method (Existing users)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Permanent_method_existing_users_count_method.sql"
-					}
-				},
-				{
-					"name": "Family Planning Program - Postpartum FP Acceptors",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Program_Postpartum_Within_48hrs_Count.sql"
-					}
-				}
-			]
-		}
-	},
+	
+	
 	"Hospital Services DHIS2": {
 		"name": "Hospital Services DHIS2",
 		"DHISProgram": true,
@@ -629,141 +772,8 @@
 			]
 		}
 	},
-	"Safe Motherhood Program DHIS2": {
-		"name": "Safe Motherhood Program DHIS2",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [{
-					"name": "Antenatal Checkup",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Antenatal_Checkup.sql"
-					}
-				},
-				{
-					"name": "Delivery Service",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Delivery_Service - Copy.sql"
-					}
-				},
-				{
-					"name": "Type of Delivery",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Type_of_Delivery.sql"
-					}
-				},
-				{
-					"name": "Delivery Outcome",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Delivery_Outcome.sql"
-					}
-				},
-				{
-					"name": "Birth weight",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Birth_weight.sql"
-					}
-				},
-				{
-					"name": "No of still births",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/No_of_still_births.sql"
-					}
-				},
-				{
-					"name": "CHX applied in cord",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/CHX_applied_in_cord.sql"
-					}
-				},
-				{
-					"name": "Blood transfusion",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Blood_transfusion.sql"
-					}
-				},
-				{
-					"name": "PNC Visit",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/PNC_Visit.sql"
-					}
-				},
-				{
-					"name": "Obstetric Complications",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Obstetric_Complications.sql"
-					}
-				},
-				{
-					"name": "Maternal Death",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Maternal_Death.sql"
-					}
-				},
-				{
-					"name": "Safe Abortion Service",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Service.sql"
-					}
-				}
-			]
-		}
-	},
-	"Nutrition Program DHIS2": {
-		"name": "Nutrition Program DHIS2",
-		"type": "concatenated",
-		"DHISProgram": true,
-		"config": {
-			"reports": [{
-					"name": "Nutrition status of registered children (new and old)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Nutrition_status_of_registered_children.sql"
-					}
-				},
-				{
-					"name": "Pregnant women receiving",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Pregnant_women_receiving.sql"
-					}
-				},
-				{
-					"name": "Less then 5 yrs Children receiving (Bi annual)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Under_5_yrs_Children_receiving.sql"
-					}
-				},
-				{
-					"name": "Integrated Management of Acute Malnutrition (IMAM) Program",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Integrated_Management_of_Acute_Malnutrition_IMAM_Program.sql"
-					}
-				},
-				{
-					"name": "Infant and Young Child Feeding",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1-2-Nutrition_Program/Infant_Young_Child_Feeding.sql"
-					}
-				}
-			]
-		}
-	},
+		
+	
 	"hospital_activities__number_of_clients_served_referred_check_for_only_referred_grid": {
 		"name": "Hospital Activities - Number of Clients Served (Referred) [Check for only 'Referred' grid]",
 		"type": "obsCount",
