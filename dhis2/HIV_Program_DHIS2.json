@@ -910,7 +910,7 @@
 				}
 			]
 		},
-		"HIV-AIDS Program Opportunistic Infections": {
+		"HIV-AIDS Program Opportunistic Infections diagnosed": {
 			"dataValues": [
 				{
 					"_comment": "Bacterial Pneumonia-M",
@@ -1144,7 +1144,249 @@
 					"column": 3
 				}
 			]
+		},
+		
+		
+		
+		
+		
+		
+		"HIV-AIDS Program Opportunistic Infections treated": {
+			"dataValues": [
+				{
+					"_comment": "Bacterial Pneumonia-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "lp7ljdCinPm",
+					"row": 2,
+					"column": 5
+				},
+				{
+					"_comment": "Bacterial Pneumonia-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "lp7ljdCinPm",
+					"row": 1,
+					"column": 5
+				},
+				{
+					"_comment": "Bacterial Pneumonia-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "lp7ljdCinPm",
+					"row": 3,
+					"column": 5
+				},
+				{
+					"_comment": "TB-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "hPGIAAUqpvS",
+					"row": 32,
+					"column": 5
+				},
+				{
+					"_comment": "TB-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "hPGIAAUqpvS",
+					"row": 31,
+					"column": 5
+				},
+				{
+					"_comment": "TB-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "hPGIAAUqpvS",
+					"row": 33,
+					"column": 5
+				},
+				{
+					"_comment": "Candidiasis-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "vbPBLDCfhV2",
+					"row": 5,
+					"column": 5
+				},
+				{
+					"_comment": "Candidiasis-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "vbPBLDCfhV2",
+					"row": 4,
+					"column": 5
+				},
+				{
+					"_comment": "Candidiasis-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "vbPBLDCfhV2",
+					"row": 6,
+					"column": 5
+				},
+				{
+					"_comment": "Diarrhoea-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "Xqv8XWqux0i",
+					"row": 14,
+					"column": 5
+				},
+				{
+					"_comment": "Diarrhoea-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "Xqv8XWqux0i",
+					"row": 13,
+					"column": 5
+				},
+				{
+					"_comment": "Diarrhoea-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "Xqv8XWqux0i",
+					"row": 15,
+					"column": 5
+				},
+				{
+					"_comment": "Cryptococcal Meningitis-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "ocLEeGWGp7O",
+					"row": 8,
+					"column": 5
+				},
+				{
+					"_comment": "Cryptococcal Meningitis-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "ocLEeGWGp7O",
+					"row": 7,
+					"column": 5
+				},
+				{
+					"_comment": "Cryptococcal Meningitis-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "ocLEeGWGp7O",
+					"row": 9,
+					"column": 5
+				},
+				{
+					"_comment": "PCP*-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "mCKMkzFWvmy",
+					"row": 26,
+					"column": 5
+				},
+				{
+					"_comment": "PCP*-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "mCKMkzFWvmy",
+					"row": 25,
+					"column": 5
+				},
+				{
+					"_comment": "PCP*-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "mCKMkzFWvmy",
+					"row": 27,
+					"column": 5
+				},
+				{
+					"_comment": "Cytomegato Virus-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "c2h4ROUs45m",
+					"row": 11,
+					"column": 5
+				},
+				{
+					"_comment": "Cytomegato Virus-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "c2h4ROUs45m",
+					"row": 10,
+					"column": 5
+				},
+				{
+					"_comment": "Cytomegato Virus-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "c2h4ROUs45m",
+					"row": 12,
+					"column": 5
+				},
+				{
+					"_comment": "Herpes Zoster-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "oez1t3IMTZY",
+					"row": 20,
+					"column": 5
+				},
+				{
+					"_comment": "Herpes Zoster-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "oez1t3IMTZY",
+					"row": 19,
+					"column": 5
+				},
+				{
+					"_comment": "Herpes Zoster-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "oez1t3IMTZY",
+					"row": 21,
+					"column": 5
+				},
+				{
+					"_comment": "Genital Herpes-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "jMji2KwXyRV",
+					"row": 17,
+					"column": 5
+				},
+				{
+					"_comment": "Genital Herpes-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "jMji2KwXyRV",
+					"row": 16,
+					"column": 5
+				},
+				{
+					"_comment": "Genital Herpes-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "jMji2KwXyRV",
+					"row": 18,
+					"column": 5
+				},
+				{
+					"_comment": "Toxo-plasmosis-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "ywokhrfUX84",
+					"row": 29,
+					"column": 5
+				},
+				{
+					"_comment": "Toxo-plasmosis-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "ywokhrfUX84",
+					"row": 28,
+					"column": 5
+				},
+				{
+					"_comment": "Toxo-plasmosis-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "ywokhrfUX84",
+					"row": 30,
+					"column": 5
+				},
+				{
+					"_comment": "Others-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "uLQFOQ7511C",
+					"row": 23,
+					"column": 5
+				},
+				{
+					"_comment": "Others-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "uLQFOQ7511C",
+					"row": 22,
+					"column": 5
+				},
+				{
+					"_comment": "Others-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "uLQFOQ7511C",
+					"row": 24,
+					"column": 5
+				}
+			]
 		}
+
 
 
 	}
