@@ -1,8 +1,8 @@
 SELECT 
        IF(client_visits.patient_id IS NULL, 0, SUM(IF(DATE(client_visits.first_visit_date) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE),IF(client_visits.patient_gender = 'F', 1, 0),0))) AS 'Total New OPD Visits Female',
        IF(client_visits.patient_id IS NULL, 0, SUM(IF(DATE(client_visits.first_visit_date) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE),IF(client_visits.patient_gender = 'M', 1, 0),0))) AS 'Total New OPD Visits Male',
-       IF(client_visits.patient_id IS NULL, 0, SUM(IF(client_visits.patient_gender = 'F', 1, 0))) - IF(client_visits.patient_id IS NULL, 0, SUM(IF(DATE(client_visits.first_visit_date) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE),IF(client_visits.patient_gender = 'F', 1, 0),0))) as 'Total Old  OPD Visits Female' ,
-       IF(client_visits.patient_id IS NULL, 0, SUM(IF(client_visits.patient_gender = 'M', 1, 0))) - IF(client_visits.patient_id IS NULL, 0, SUM(IF(DATE(client_visits.first_visit_date) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE),IF(client_visits.patient_gender = 'M', 1, 0),0))) AS 'Total Old  OPD Visits Male'
+       IF(client_visits.patient_id IS NULL, 0, SUM(IF(client_visits.patient_gender = 'F', 1, 0))) - IF(client_visits.patient_id IS NULL, 0, SUM(IF(DATE(client_visits.first_visit_date) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE),IF(client_visits.patient_gender = 'F', 1, 0),0))) as 'Total Old OPD Visits Female' ,
+       IF(client_visits.patient_id IS NULL, 0, SUM(IF(client_visits.patient_gender = 'M', 1, 0))) - IF(client_visits.patient_id IS NULL, 0, SUM(IF(DATE(client_visits.first_visit_date) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE),IF(client_visits.patient_gender = 'M', 1, 0),0))) AS 'Total Old OPD Visits Male'
 
 FROM
   (SELECT DISTINCT patient.patient_id AS patient_id,

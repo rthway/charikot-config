@@ -602,6 +602,13 @@
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-15_OPD_Surgical_Problems.sql"
 					}
+				},
+				{
+					"name": "OPD Surgical Problems(Total and New OPD )",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-15_Surgical_Problem_Total _OPD_New_Old.sql"
+					}
 				}
 			]
 		}

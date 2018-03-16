@@ -1,7 +1,7 @@
 SELECT
-  first_answers.answer_name  AS Categroy,
+  first_answers.answer_name  AS 'Risk Groups/ Key Population Group',
   sum(CASE WHEN first_concept.answer IS NOT NULL AND second_concept.answer IS NOT NULL THEN 1
-      ELSE 0 END)            AS 'Total Count'
+      ELSE 0 END)            AS 'Total Clients Assessed'
 FROM
   (SELECT
      ca.answer_concept                                                                AS answer,

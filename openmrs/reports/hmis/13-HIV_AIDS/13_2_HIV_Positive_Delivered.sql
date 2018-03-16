@@ -1,4 +1,4 @@
-SELECT count(DISTINCT( o1.person_id)) as HIV_Positive_Women_Delivered
+SELECT count(DISTINCT( o1.person_id)) as 'HIV+ve Women Delivered'
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id

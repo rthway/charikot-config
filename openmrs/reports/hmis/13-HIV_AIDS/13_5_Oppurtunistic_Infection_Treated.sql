@@ -1,10 +1,8 @@
 SELECT
-  second_answers.answer_name AS concept_name,
-  gender.gender              AS gender,
-  rag.name                   AS age_group,
-  rag.sort_order             AS age_group_sort_order,
+  second_answers.answer_name AS 'Opportunistic Infections',
+  gender.gender              AS Gender,
   sum(CASE WHEN first_concept.answer IS NOT NULL AND second_concept.answer IS NOT NULL AND p.gender IS NOT NULL THEN 1
-      ELSE 0 END)            AS patient_count
+      ELSE 0 END)            AS 'Total Count'
 FROM
   (SELECT
      ca.answer_concept                                                                AS answer,

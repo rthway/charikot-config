@@ -1,7 +1,7 @@
 select
-  question.concept_full_name as concept_name,
-  answer.concept_full_name as answer_concept_name,
-  ifnull(result.total_count,0) as total_count
+  question.concept_full_name as 'Category',
+  answer.concept_full_name as 'Coded concept',
+  ifnull(result.total_count,0) as 'Toatal Count'
 from
   concept_view AS question
   INNER JOIN concept_answer ON question.concept_id = concept_answer.concept_id AND question.concept_full_name IN ('PMTCT, Started ART during','PMTCT, Who already know their HIV status','PMTCT, Breast feeding options opted by HIV +ve mother')

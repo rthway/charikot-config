@@ -1,5 +1,5 @@
 SELECT
-  header.concept_full_name as 'Age Group for EID',
+  header.concept_full_name as 'Age Group for Early Infant Diagnosis (EID)',
   IF(infant_diagnosis.positive IS NULL , 0, infant_diagnosis.positive) as positive,
   IF(infant_diagnosis.negative IS NULL , 0, infant_diagnosis.negative) as negative
 FROM

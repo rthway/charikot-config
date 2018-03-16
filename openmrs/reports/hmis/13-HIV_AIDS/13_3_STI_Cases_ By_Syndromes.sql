@@ -1,8 +1,8 @@
 SELECT
-  first_answers.answer_name  AS first_concept_name,
-  second_answers.answer_name AS second_concept_name,
+  first_answers.answer_name  AS 'Risk Groups/ Key Population Group',
+  second_answers.answer_name AS 'Syndromes',
   sum(CASE WHEN first_concept.answer IS NOT NULL AND second_concept.answer IS NOT NULL THEN 1
-      ELSE 0 END)            AS patient_count
+      ELSE 0 END)            AS 'Total Count'
 FROM
   (SELECT
      ca.answer_concept                                                                AS answer,

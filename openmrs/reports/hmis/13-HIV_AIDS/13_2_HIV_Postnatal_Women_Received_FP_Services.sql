@@ -1,7 +1,7 @@
 
             
             SELECT 
-    COUNT(DISTINCT (o1.person_id)) AS HIV_postnatal_women_received_FP_services
+    COUNT(DISTINCT (o1.person_id)) AS 'HIV+ve postnatal women received FP services'
 FROM
     obs o1
         INNER JOIN

@@ -1,6 +1,6 @@
 SELECT 
     gender.gender as gender,
-	count(DISTINCT( a.ip)) as Asymptomatic_Partners_Treated
+	count(DISTINCT( a.ip)) as 'Asymptomatic Partners Treated'
 FROM
 
     (SELECT 'M' AS gender UNION SELECT 'F' AS gender UNION 	SELECT '0' AS gender ) gender 

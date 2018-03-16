@@ -1,7 +1,7 @@
 select
-  answer.concept_full_name as answer_concept_name,
+  answer.concept_full_name as 'Opportunistic Infections',
   gender.gender as gender,
-  ifnull(total_count,0) as total
+  ifnull(total_count,0) as 'Total Count'
 from
   concept_view AS question
   INNER JOIN concept_answer ON question.concept_id = concept_answer.concept_id AND question.concept_full_name IN ('OI, Opportunistic infections')
@@ -20,7 +20,7 @@ from
       INNER JOIN encounter on obs.encounter_id = encounter.encounter_id
       INNER  JOIN visit on encounter.visit_id = visit.visit_id
       INNER JOIN visit_attribute on visit.visit_id = visit_attribute.visit_id
-    WHERE CAST(visit.date_stopped  as DATE) BETWEEN "2018-02-01" and "2018-02-26"
+    WHERE CAST(visit.date_stopped  as DATE) BETWEEN '#startDate#' and '#endDate#'
     group by obs.concept_id, obs.value_coded, person.gender, visit_attribute.value_reference
   ) result on question.concept_id = result.question_concept_id
               and answer.concept_id = result.answer_concept_id

@@ -1,4 +1,4 @@
-SELECT count(DISTINCT( o1.person_id)) as 'Count of exposed baby (live births)'
+SELECT count(DISTINCT( o1.person_id)) as 'Exposed baby (live births)'
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
