@@ -1056,7 +1056,39 @@
           "column": 4
         }
 		]
-	}	
+	},
+	"OPD Surgical Problems(Total and New OPD )": {
+      "dataValues": [    						 
+        {
+		"_comment": "Total New OPD Visits (Including Under 5 Children)-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "xvwrzooDVQ7",
+          "row": 1,
+          "column": 1
+        },
+		 {
+		 "_comment": "Total Old (repeated) OPD Visits-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "EUX6hTMoCe9",
+          "row": 1,
+          "column": 3
+        },	
+		  {
+		"_comment": "Total New OPD Visits (Including Under 5 Children)-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "xvwrzooDVQ7",
+          "row": 1,
+          "column": 2
+        },
+		 {
+		 "_comment": "Total Old (repeated) OPD Visits-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "EUX6hTMoCe9",
+          "row": 1,
+          "column": 4
+        }
+		]
+	}
 		
 		
 	
