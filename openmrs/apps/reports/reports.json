@@ -350,7 +350,7 @@
 					"name": "HIV Prevention of Mother-To-Child Transmission ANC count",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_Number_of_ANC_Visits.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Number_of_ANC_Visits.sql"
 					}
 				},
 				{
