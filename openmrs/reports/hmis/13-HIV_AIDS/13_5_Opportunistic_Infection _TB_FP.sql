@@ -31,7 +31,8 @@ FROM
         'HIVTC, HIV care IPT started', 
         'HIVTC, Need Family Planning assessment', 
         'HIVTC-Progress Refer for FP',
-        'HIVTC, TB Screened')
+        'HIVTC, TB Screened',
+        'STI, STI Diagnosis Syndrome')
     ORDER BY answer_name DESC) first_question
         INNER JOIN
     (SELECT 
@@ -69,7 +70,8 @@ FROM
         'HIVTC, HIV care IPT started', 
         'HIVTC, Need Family Planning assessment'
         , 'HIVTC-Progress Refer for FP',
-        'HIVTC, TB Screened')
+        'HIVTC, TB Screened',
+        'STI, STI Diagnosis Syndrome')
         AND o1.voided = 0
         AND cn1.voided = 0
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
