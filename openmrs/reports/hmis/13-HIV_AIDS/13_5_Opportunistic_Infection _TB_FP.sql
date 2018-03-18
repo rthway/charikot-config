@@ -6,7 +6,11 @@ SELECT
             NULL)) AS Female,
     COUNT(DISTINCT IF((patients.gender = 'M'),
             patients.person_id,
-            NULL)) AS Male
+            NULL)) AS Male,
+	COUNT(DISTINCT IF((patients.gender = 'O'),
+            patients.person_id,
+            NULL)) AS Others
+            
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,
@@ -79,4 +83,4 @@ FROM
             INTERVAL reporting_age_group.max_years YEAR),
         INTERVAL reporting_age_group.max_days DAY))
 GROUP BY first_question.answer_name , reporting_age_group.name;
-;
+

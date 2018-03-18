@@ -626,28 +626,8 @@
 			]
 		},
 			
-			"HIV Prevention of Mother-To-Child Transmission ANC count": {
-			"dataValues": [
 			
-				{
-					"_comment": "Counseling and Testing-Antenatal(ANC)-counsled",
-					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "I5mm6lCVOke",
-					"row": 1,
-					"column": 1
-				},
-
-				{
-					"_comment": "ANC count",
-					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "HWpJE2sEu3z",
-					"row": 1,
-					"column": 1
-				}
-			]
-		},
-			
-		"HIV Exposed Baby (Live births)": {
+		"Exposed baby live births ARV Prophylaxis ANC visit HIV Positive delivered Postnatal women received FP": {
 			"dataValues": [
 				{
 					"_comment": "Exposed Baby-Live births",
@@ -655,43 +635,47 @@
 					"dataElement": "CVH3X0Xqe87",
 					"row": 1,
 					"column": 1
-				}
-			]
-		},
-	
-		"HIV Exposed Baby (Started ARV Prophylaxis)": {
-			"dataValues": [
+				},
 				{
 					"_comment": "Exposed Baby-Started ARV Prophylaxis",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "LzOXaXHFsP6",
 					"row": 1,
-					"column": 1
-				}
-			]
-		},
-		"HIV+ve postnatal women received FP services": {
-			"dataValues": [
-				{
-					"_comment": "HIV+ve postnatal women received FP services",
-					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "yG1UG5VQ4J7",
-					"row": 1,
-					"column": 1
-				}
-			]
-		},
-		"HIV+ve Women (Delivered)": {
-			"dataValues": [
+					"column": 2
+				},
 				{
 					"_comment": "HIV+ve Women (Delivered)",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "Cw2C5u7qXog",
 					"row": 1,
-					"column": 1
+					"column": 4
+				},
+				{
+					"_comment": "HIV+ve postnatal women received FP services",
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "yG1UG5VQ4J7",
+					"row": 1,
+					"column": 5
 				}
+				{
+					"_comment": "Counseling and Testing-Antenatal(ANC)-counsled",
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "I5mm6lCVOke",
+					"row": 1,
+					"column": 3
+				},
+
+				{
+					"_comment": "ANC count",
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "HWpJE2sEu3z",
+					"row": 1,
+					"column": 3
+				}
+				
 			]
 		},
+
 		
 		"PMTCT of HIV ART Started,HIV Positive Women,Male Partner,Breast Feeding status": {
 			"dataValues": [

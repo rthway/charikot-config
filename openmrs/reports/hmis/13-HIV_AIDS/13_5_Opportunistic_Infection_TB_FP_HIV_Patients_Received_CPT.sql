@@ -6,7 +6,10 @@ SELECT
             NULL)) AS Female,
     COUNT(DISTINCT IF((patients.gender = 'M'),
             patients.person_id,
-            NULL)) AS Male
+            NULL)) AS Male,
+	COUNT(DISTINCT IF((patients.gender = 'O'),
+            patients.person_id,
+            NULL)) AS Others
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,

@@ -346,13 +346,7 @@
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_1_HIV_Testing_And_Counseling_Positive.sql"
 					}
 				},
-				{
-					"name": "HIV Prevention of Mother-To-Child Transmission ANC count",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Number_of_ANC_Visits.sql"
-					}
-				},
+				
 				{
 					"name": "HIV Prevention of Mother-To-Child Transmission (PMTCT) Dataset(Labour & Delivery and Postnatal)",
 					"type": "MRSGeneric",
@@ -368,26 +362,13 @@
 					}
 				},
 				{
-					"name": "HIV Exposed Baby (Live births)",
+					"name": "Exposed baby live births ARV Prophylaxis ANC visit HIV Positive delivered Postnatal women received FP",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_Live_Births.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_baby_live_births_ARV_Prophylaxis_ANC_visit_HIV_Positive_delivered_Postnatal_women_received_FP.sql"
 					}
 				},
-				{
-					"name": "HIV Exposed Baby (Started ARV Prophylaxis)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_Exposed_Baby_ARV_Prophylaxis.sql"
-					}
-				},
-				{
-					"name": "HIV+ve Women (Delivered)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Positive_Delivered.sql"
-					}
-				},
+				
 				{
 					"name": "HIV Exposed Baby- Early Infant Diagnosis (EID)",
 					"type": "MRSGeneric",
@@ -396,13 +377,7 @@
 					}
 				},
 
-				{
-					"name": "HIV+ve postnatal women received FP services",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_2_HIV_Postnatal_Women_Received_FP_Services.sql"
-					}
-				},
+				
 				{
 					"name": "STI Cases-by Syndromes",
 					"type": "MRSGeneric",
