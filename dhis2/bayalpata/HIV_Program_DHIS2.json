@@ -656,7 +656,7 @@
 					"dataElement": "yG1UG5VQ4J7",
 					"row": 1,
 					"column": 5
-				}
+				},
 				{
 					"_comment": "Counseling and Testing-Antenatal(ANC)-counsled",
 					"categoryOptionCombo": "kdsirVNKdhm",
@@ -711,7 +711,7 @@
 				{
 					"_comment": "HIV+ve-Women-Male Partner who know their status",
 					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "jqyzzzVg9Hj",
+					"dataElement": "Lc9CJmuevxy",
 					"row": 9,
 					"column": 3
 				},
@@ -1832,234 +1832,780 @@
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "lp7ljdCinPm",
 					"row": 2,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Bacterial Pneumonia-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "lp7ljdCinPm",
 					"row": 1,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Bacterial Pneumonia-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "lp7ljdCinPm",
 					"row": 3,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "TB-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "hPGIAAUqpvS",
 					"row": 32,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "TB-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "hPGIAAUqpvS",
 					"row": 31,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "TB-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "hPGIAAUqpvS",
 					"row": 33,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Candidiasis-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "vbPBLDCfhV2",
 					"row": 5,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Candidiasis-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "vbPBLDCfhV2",
 					"row": 4,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Candidiasis-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "vbPBLDCfhV2",
 					"row": 6,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Diarrhoea-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "Xqv8XWqux0i",
 					"row": 14,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Diarrhoea-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "Xqv8XWqux0i",
 					"row": 13,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Diarrhoea-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "Xqv8XWqux0i",
 					"row": 15,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Cryptococcal Meningitis-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "ocLEeGWGp7O",
 					"row": 8,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Cryptococcal Meningitis-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "ocLEeGWGp7O",
 					"row": 7,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Cryptococcal Meningitis-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "ocLEeGWGp7O",
 					"row": 9,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "PCP*-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "mCKMkzFWvmy",
 					"row": 26,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "PCP*-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "mCKMkzFWvmy",
 					"row": 25,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "PCP*-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "mCKMkzFWvmy",
 					"row": 27,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Cytomegato Virus-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "c2h4ROUs45m",
 					"row": 11,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Cytomegato Virus-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "c2h4ROUs45m",
 					"row": 10,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Cytomegato Virus-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "c2h4ROUs45m",
 					"row": 12,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Herpes Zoster-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "oez1t3IMTZY",
 					"row": 20,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Herpes Zoster-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "oez1t3IMTZY",
 					"row": 19,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Herpes Zoster-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "oez1t3IMTZY",
 					"row": 21,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Genital Herpes-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "jMji2KwXyRV",
 					"row": 17,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Genital Herpes-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "jMji2KwXyRV",
 					"row": 16,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Genital Herpes-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "jMji2KwXyRV",
 					"row": 18,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Toxo-plasmosis-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "ywokhrfUX84",
 					"row": 29,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Toxo-plasmosis-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "ywokhrfUX84",
 					"row": 28,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Toxo-plasmosis-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "ywokhrfUX84",
 					"row": 30,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Others-M",
 					"categoryOptionCombo": "mF1o6p14lxL",
 					"dataElement": "uLQFOQ7511C",
 					"row": 23,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Others-F",
 					"categoryOptionCombo": "fWqT46wDX5G",
 					"dataElement": "uLQFOQ7511C",
 					"row": 22,
-					"column": 5
+					"column": 3
 				},
 				{
 					"_comment": "Others-TG",
 					"categoryOptionCombo": "YDmqM7oj6C1",
 					"dataElement": "uLQFOQ7511C",
 					"row": 24,
-					"column": 5
+					"column": 3
 				}
 			]
-		}
+		},
+		"HIV-AIDS Program Opportunistic Infection - TB and FP(HIV Patients received CPT)": {
+			"dataValues": [
+				{
+					"_comment": "< 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "dt7sU3JM87d",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"_comment": "5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "Ke9OAUUhb4Z",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "ywmvaXaVB8S",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "< 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "dt7sU3JM87d",
+					"row": 2,
+					"column": 4
+				},
+				{
+					"_comment": "5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "Ke9OAUUhb4Z",
+					"row": 1,
+					"column": 4
+				},
+				{
+					"_comment": "≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "ywmvaXaVB8S",
+					"row": 3,
+					"column": 4
+				},
+				{
+					"_comment": "< 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "dt7sU3JM87d",
+					"row": 2,
+					"column": 5
+				},
+				{
+					"_comment": "5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "Ke9OAUUhb4Z",
+					"row": 1,
+					"column": 5
+				},
+				{
+					"_comment": "≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "ywmvaXaVB8S",
+					"row": 3,
+					"column": 5
+				}
+				]
+			},
+			"HIV-AIDS Program Opportunistic Infection - TB and FP": {
+			"dataValues": [
+			{
+					"_comment": "Total no of PLHIV served this month for OI services< 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "nCex1XJPFYj",
+					"row": 5,
+					"column": 3
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "uAHiqtsg3mT",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "u3U9eIOsEvv",
+					"row": 6,
+					"column": 3
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services< 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "nCex1XJPFYj",
+					"row": 5,
+					"column": 4
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "uAHiqtsg3mT",
+					"row": 4,
+					"column": 4
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "u3U9eIOsEvv",
+					"row": 6,
+					"column": 4
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services< 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "nCex1XJPFYj",
+					"row": 5,
+					"column": 5
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "uAHiqtsg3mT",
+					"row": 4,
+					"column": 5
+				},
+				{
+					"_comment": "Total no of PLHIV served this month for OI services≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "u3U9eIOsEvv",
+					"row": 6,
+					"column": 5
+				},
+				
+				
+				
+				
+				
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month< 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "z9I5hGSrWej",
+					"row": 17,
+					"column": 3
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "qFEUUI51eil",
+					"row": 16,
+					"column": 3
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "b59G70maDeN",
+					"row": 18,
+					"column": 3
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month< 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "z9I5hGSrWej",
+					"row": 17,
+					"column": 4
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "qFEUUI51eil",
+					"row": 16,
+					"column": 4
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "b59G70maDeN",
+					"row": 18,
+					"column": 4
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month< 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "z9I5hGSrWej",
+					"row": 17,
+					"column": 5
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "qFEUUI51eil",
+					"row": 16,
+					"column": 5
+				},
+				{
+					"_comment": "PLHA diagnosed & treated for OI this month≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "b59G70maDeN",
+					"row": 18,
+					"column": 5
+				},	
+				
+				
+		
+				{
+					"_comment": "Assessed for TB this month < 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "RbaLxS0Wc0v",
+					"row": 20,
+					"column": 3
+				},
+				{
+					"_comment": "Assessed for TB this month 5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "bM1gsyyDiNj",
+					"row": 19,
+					"column": 3
+				},
+				{
+					"_comment": "Assessed for TB this month ≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "Xatns77yOwt",
+					"row": 21,
+					"column": 3
+				},
+				{
+					"_comment": "Assessed for TB this month < 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "RbaLxS0Wc0v",
+					"row": 20,
+					"column": 4
+				},
+				{
+					"_comment": "Assessed for TB this month 5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "bM1gsyyDiNj",
+					"row": 19,
+					"column": 4
+				},
+				{
+					"_comment": "Assessed for TB this month ≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "Xatns77yOwt",
+					"row": 21,
+					"column": 4
+				},
+				{
+					"_comment": "Assessed for TB this month < 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "RbaLxS0Wc0v",
+					"row": 21,
+					"column": 5
+				},
+				{
+					"_comment": "Assessed for TB this month 5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "bM1gsyyDiNj",
+					"row": 19,
+					"column": 5
+				},
+				{
+					"_comment": "Assessed for TB this month ≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "Xatns77yOwt",
+					"row": 21,
+					"column": 5
+				},
+				
+				
+				
+				
+				
+				
+				
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) < 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "KSkwqLrT0Cs",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) 5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "eWA0r7teWoX",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) ≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "S65XqzNvhKC",
+					"row": 9,
+					"column": 3
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) < 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "KSkwqLrT0Cs",
+					"row": 8,
+					"column": 4
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) 5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "eWA0r7teWoX",
+					"row": 7,
+					"column": 4
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) ≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "S65XqzNvhKC",
+					"row": 9,
+					"column": 4
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) < 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "KSkwqLrT0Cs",
+					"row": 8,
+					"column": 5
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) 5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "eWA0r7teWoX",
+					"row": 7,
+					"column": 5
+				},
+				{
+					"_comment": "HIV Patients initiated IPT this month (new) ≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "S65XqzNvhKC",
+					"row": 9,
+					"column": 5
+				},
+				
+				
+				
+				
+				{
+					"_comment": "PLHIV screened for FP need< 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "QLN1lKYCwHJ",
+					"row": 11,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV screened for FP need5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "ZWi6JUddoHH",
+					"row": 10,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV screened for FP need≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "dFa6uTfAwWC",
+					"row": 12,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV screened for FP need< 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "QLN1lKYCwHJ",
+					"row": 11,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV screened for FP need5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "ZWi6JUddoHH",
+					"row": 10,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV screened for FP need≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "dFa6uTfAwWC",
+					"row": 12,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV screened for FP need< 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "QLN1lKYCwHJ",
+					"row": 11,
+					"column": 5
+				},
+				{
+					"_comment": "PLHIV screened for FP need5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "ZWi6JUddoHH",
+					"row": 10,
+					"column": 5
+				},
+				{
+					"_comment": "PLHIV screened for FP need≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "dFa6uTfAwWC",
+					"row": 12,
+					"column": 5
+				},
+				
+				
+				
+				
+				
+				
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)< 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "KQoew73HhrA",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "Owutnc0OIpL",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "f6ZCT4Ug2cm",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)< 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "KQoew73HhrA",
+					"row": 2,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "Owutnc0OIpL",
+					"row": 1,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "f6ZCT4Ug2cm",
+					"row": 3,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)< 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "KQoew73HhrA",
+					"row": 2,
+					"column": 5
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "Owutnc0OIpL",
+					"row": 1,
+					"column": 5
+				},
+				{
+					"_comment": "PLHIV using any FP method FP (OCP, Depo, IUCD, Implant, Minilap, Vasectomy)≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "f6ZCT4Ug2cm",
+					"row": 3,
+					"column": 5
+				},
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				{
+					"_comment": "PLHIV referred for FP< 5 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "OQRpLOiKBIp",
+					"row": 14,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV referred for FP5- 14 years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "kOxPx2Shylb",
+					"row": 13,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV referred for FP≥ 15 Years-F",
+					"categoryOptionCombo": "fWqT46wDX5G",
+					"dataElement": "iUCKp48mAsB",
+					"row": 15,
+					"column": 3
+				},
+				{
+					"_comment": "PLHIV referred for FP< 5 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "OQRpLOiKBIp",
+					"row": 14,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV referred for FP5- 14 years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "kOxPx2Shylb",
+					"row": 13,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV referred for FP≥ 15 Years-M",
+					"categoryOptionCombo": "mF1o6p14lxL",
+					"dataElement": "iUCKp48mAsB",
+					"row": 15,
+					"column": 4
+				},
+				{
+					"_comment": "PLHIV referred for FP< 5 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "OQRpLOiKBIp",
+					"row": 14,
+					"column": 5
+				},
+				{
+					"_comment": "PLHIV referred for FP5- 14 years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "kOxPx2Shylb",
+					"row": 13,
+					"column": 5
+				},
+				{
+					"_comment": "PLHIV referred for FP≥ 15 Years-TG",
+					"categoryOptionCombo": "YDmqM7oj6C1",
+					"dataElement": "iUCKp48mAsB",
+					"row": 15,
+					"column": 5
+				}
+				]
+			}
 
 
 
