@@ -43,7 +43,7 @@ FROM
         INNER JOIN
     concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name = 'Childhood Illness-<2 months, case'
+        AND cn1.name = 'CBIMNCI (<2 months child)'
         AND o1.voided = 0
         AND cn1.voided = 0
         INNER JOIN
