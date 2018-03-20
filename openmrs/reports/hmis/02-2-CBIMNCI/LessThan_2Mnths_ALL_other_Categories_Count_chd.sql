@@ -60,8 +60,8 @@ FROM
         'Difficulty feeding or low weight', 
         'Childhood Illness, Referred out')
          and 
-        DATE(o.obs_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-30')
-	  -- DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+        -- DATE(o.obs_datetime) BETWEEN DATE('2017-03-01') AND DATE('2017-03-30')
+	  DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
 		
 		) first_concept ON first_concept.question = first_question.question AND first_concept.Diag = "TRUE"
         and age_days_grp.age_days = first_concept.agegroup
