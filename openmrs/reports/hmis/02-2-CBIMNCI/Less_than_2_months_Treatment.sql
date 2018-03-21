@@ -59,13 +59,13 @@ FROM
         INNER JOIN
     drug_order dord ON dord.order_id = ord.order_id
 WHERE
-    TIMESTAMPDIFF(MONTH,
+    TIMESTAMPDIFF(DAY,
         p1.birthdate,
         v.date_started) > 1
-        AND TIMESTAMPDIFF(MONTH,
+        AND TIMESTAMPDIFF(DAY,
         p1.birthdate,
         v.date_started) < 60
-        AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+        AND DATE(e.encounter_datetime) BETWEEN '2018-2-14' AND '2018-3-21'
         )  b
 
 group by drug_group,agegroup) first_concept ON first_concept.drug_group = drugs.drug_name
