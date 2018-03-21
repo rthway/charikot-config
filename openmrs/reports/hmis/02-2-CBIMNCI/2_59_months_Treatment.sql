@@ -36,7 +36,7 @@ SELECT DISTINCT
     CASE
 	WHEN (SELECT   name FROM  drug WHERE drug_id = dord.drug_inventory_id) in ('Amoxicillin 250mg Tablet','Amoxicillin 125mg/5ml Suspension, 60ml Bottle') 
     THEN  'Amoxicillin'
-	WHEN (SELECT   name  FROM  drug WHERE drug_id = dord.drug_inventory_id) in ('P lyte 500 ml IV fluid','Normal Saaline 0.9% 500ml Injection','Ringer\'s Lactate, 500ml Injection')
+	WHEN (SELECT   name  FROM  drug WHERE drug_id = dord.drug_inventory_id) in ('P lyte 500 ml IV fluid','Normal Saline 0.9% 500ml Injection','Ringer\'s Lactate, 500ml Injection')
     THEN  'IV Fluid'
 	WHEN (SELECT   name  FROM  drug WHERE drug_id = dord.drug_inventory_id) in ('Albendazole 400mg chewable Tablet','Albendazole 200mg/5ml Suspension') 
     THEN  'Anti-helminthes'
