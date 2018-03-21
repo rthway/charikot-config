@@ -16,7 +16,7 @@ FROM
     WHERE
         t5.name = 'Delivery Note, Blood transfusion quantity'
             AND t1.voided = 0
-            AND t1.value_numeric > 1
+            AND t1.value_numeric > 0
             AND (DATE(t1.obs_datetime) BETWEEN '#startDate#' AND '#endDate#') UNION ALL SELECT 
         'Unit' AS Blood, SUM(t1.value_numeric) AS BloodTransfusion
     FROM
