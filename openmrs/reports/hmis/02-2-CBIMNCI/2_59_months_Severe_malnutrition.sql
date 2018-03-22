@@ -1,7 +1,7 @@
 
 SELECT 
-    first_answers.answer_name AS first_concept_name,
-    COUNT(DISTINCT (first_concept.person_id)) AS count_malnutrition
+   -- first_answers.answer_name AS first_concept_name,
+    COUNT(DISTINCT (first_concept.person_id)) AS 'Severe Malnutrition'
 FROM
     (SELECT 
         ca.answer_concept AS answer,

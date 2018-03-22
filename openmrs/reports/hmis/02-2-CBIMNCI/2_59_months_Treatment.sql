@@ -1,6 +1,6 @@
 SELECT 
  first_answers.answer_name as 'Drug',
- ifnull(first_concept.count_total,0) as 'Total Count'
+ ifnull(first_concept.count_total,0) as 'Total Patient (2-59) months'
 FROM
     (SELECT 
         ca.answer_concept AS answer,

@@ -1,5 +1,5 @@
 SELECT DISTINCT
-    IFNULL(COUNT(DISTINCT (o1.person_id)), 0) AS total_followup_chd_count
+    IFNULL(COUNT(DISTINCT (o1.person_id)), 0) AS 'Total Follow-Up'
 FROM
     obs o1
         INNER JOIN

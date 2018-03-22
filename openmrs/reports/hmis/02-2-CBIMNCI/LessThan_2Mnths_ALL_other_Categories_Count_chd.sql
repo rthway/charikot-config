@@ -1,7 +1,7 @@
 SELECT 
-    first_question.answer_name AS category,
-    age_days_grp.age_days AS 'Age-Days',
-    count(distinct first_concept.person_id)AS 'Total Count'
+    first_question.answer_name AS 'Category',
+    age_days_grp.age_days AS 'Age Days',
+    count(distinct first_concept.person_id)AS 'Total Patient'
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,

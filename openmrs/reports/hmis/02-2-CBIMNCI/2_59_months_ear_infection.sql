@@ -1,5 +1,5 @@
 SELECT 
-            COUNT(DISTINCT (first_concept.person_id)) AS Ear_infection_count
+            COUNT(DISTINCT (first_concept.person_id)) AS 'Patient with Ear-Infection'
     FROM
         (SELECT 
         ca.answer_concept AS answer,

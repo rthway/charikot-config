@@ -2,11 +2,11 @@ SELECT
     IFNULL(SUM(CASE
         WHEN age_days < 29 THEN 1
         ELSE 0
-    END),0) AS chd_less_than_29_days_count,
+    END),0) AS 'Total children less than 29 days',
     IFNULL(SUM(CASE
         WHEN age_days > 28 AND age_days < 60 THEN 1
         ELSE 0
-    END),0) AS chd_29_to_59_days_count
+    END),0) AS 'Total children between 29-59 days'
 FROM
     (SELECT DISTINCT
         p.person_id,

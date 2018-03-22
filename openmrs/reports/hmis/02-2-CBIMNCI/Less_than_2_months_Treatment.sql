@@ -1,7 +1,7 @@
 SELECT 
  drugs.drug_name as 'Drug',
      age_days_grp.age_days AS 'Age-Days',
- ifnull(first_concept.count_total,0) as 'Total Count'
+ ifnull(first_concept.count_total,0) as 'Total Patient less than 2 months'
 FROM
     (select 'Amoxicillin' as drug_name union select 'Ampicillin' as drug_name union select 'Other Antibiotics' as drug_name) drugs
        INNER JOIN

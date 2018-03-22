@@ -1,7 +1,7 @@
 SELECT 
-    first_question.answer_name AS Gentamycin_Dose,
-    first_question.question as concept_id,
-    COUNT(DISTINCT (first_concept.person_id)) AS count_chd
+    first_question.answer_name AS 'Gentamycin Dose',
+    -- first_question.question as concept_id,
+    COUNT(DISTINCT (first_concept.person_id)) AS 'Total Patient'
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,

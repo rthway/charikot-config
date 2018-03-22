@@ -6,12 +6,12 @@
                 THEN cause_count
                 ELSE 0
             END),
-            0) AS count_ari_death,
+            0) AS 'Death By ARI',
     IFNULL(SUM(CASE
                 WHEN LOWER(causes_for_death) LIKE '%Diarrhoea%' THEN cause_count
                 ELSE 0
             END),
-            0) AS count_diarrhoea_death,
+            0) AS 'Death By Diarrhoea',
     IFNULL(SUM(CASE
                 WHEN
                     LOWER(causes_for_death) NOT LIKE '%pneumonia%'
@@ -21,7 +21,7 @@
                     cause_count
                 ELSE 0
             END),
-            0) AS count_others_death
+            0) AS 'Death By Other'
 FROM
     (SELECT DISTINCT
         COUNT(DISTINCT o1.person_id) AS cause_count,

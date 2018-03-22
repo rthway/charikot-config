@@ -1,6 +1,6 @@
 SELECT 
-    first_question.answer_name AS first_concept_name,
-    COUNT(DISTINCT (first_concept.person_id)) AS count_patient
+    first_question.answer_name AS 'Diseases',
+    COUNT(DISTINCT (first_concept.person_id)) AS 'Total Patient'
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,

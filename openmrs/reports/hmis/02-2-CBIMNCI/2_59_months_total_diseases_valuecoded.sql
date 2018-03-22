@@ -1,8 +1,8 @@
 
 SELECT 
-	first_answers.category AS category,
-    first_answers.answer_name AS first_concept_name,
-    COUNT(DISTINCT (first_concept.person_id)) AS count_total_diesease
+	first_answers.category AS 'Category',
+    first_answers.answer_name AS 'Diseases',
+    COUNT(DISTINCT (first_concept.person_id)) AS 'Total Patietnt'
 FROM
     (SELECT 
         ca.answer_concept AS answer,

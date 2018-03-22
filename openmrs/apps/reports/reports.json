@@ -38,7 +38,7 @@
 					}
 				},
 				{
-					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea Refered Out",
+					"name": "Childhood Illness (2-59)ARI Classification Dehydration Diarrhoea and Refered Out",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/2_59_months_total_diseases_valuecoded.sql"
@@ -87,22 +87,21 @@
 					}
 				},
 				{
-					"name": "Total death less than 2 months",
+					"name": "Childhood Illness Registered(Children aged below 2 months)",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_death_Count_chd.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_Total_Count_chd.sql"
 					}
 				},
-
 				{
-					"name": "Childhood Illness less than 2 months Follow up and other antibiotics",
+					"name": "Childhood Illness (less than 2 months) Follow up and other antibiotics",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_followup_other_abtibiotics_Count_chd.sql"
 					}
 				},
 				{
-					"name": "Childhood Illness less than 2 months treatment",
+					"name": "Childhood Illness (less than 2 months) treatment",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/Less_than_2_months_Treatment.sql"
@@ -122,14 +121,15 @@
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_ALL_other_Categories_Count_chd.sql"
 					}
 				},
-
 				{
-					"name": "Childhood Illness Registered(Children aged below 2 months)",
+					"name": "Total death less than 2 months",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnths_Total_Count_chd.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02-2-CBIMNCI/LessThan_2Mnth_death_Count_chd.sql"
 					}
 				}
+
+				
 			]
 		}
 	},
