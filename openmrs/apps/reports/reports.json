@@ -1,7 +1,7 @@
 {	
 
-	"Reporting Status Dataset DHIS2": {
-		"name": "Reporting Status Dataset DHIS2",
+	"01 Reporting Status Dataset": {
+		"name": "01 Reporting Status Dataset",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -25,8 +25,8 @@
 		}
 	},
 
-	"CBIMNCI Program DHIS2": {
-		"name": "CBIMNCI Program DHIS2",
+	"02-2 Community Based Integrated Management Of Neonatal And Childhood Illnesses (CBIMNCI)": {
+		"name": "02-2 Community Based Integrated Management Of Neonatal And Childhood Illnesses (CBIMNCI)",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -134,8 +134,8 @@
 		}
 	},
 	
-	"Nutrition Program DHIS2": {
-		"name": "Nutrition Program DHIS2",
+	"03-1 Nutrition Dataset Newly Registered And 03-2 Acute Malnutrition": {
+		"name": "03-1 Nutrition Dataset Newly Registered And 03-2 Acute Malnutrition",
 		"type": "concatenated",
 		"DHISProgram": true,
 		"config": {
@@ -178,8 +178,8 @@
 		}
 	},
 	
-	"Safe Motherhood Program DHIS2": {
-		"name": "Safe Motherhood Program DHIS2",
+	"06 Safe Motherhood Program": {
+		"name": "06 Safe Motherhood Program",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -271,8 +271,8 @@
 		}
 	},
 	
-	"Family Planning DHIS2": {
-		"name": "Family Planning DHIS2",
+	"07 Family Planning Program": {
+		"name": "07 Family Planning Program",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -326,8 +326,8 @@
 	},
 	
 		
-	"HIV Program DHIS2": {
-		"name": "HIV Program DHIS2",
+	"13 HIV-AIDS": {
+		"name": "13 HIV-AIDS",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -428,8 +428,8 @@
 		}
 	},
 	
-	"Gender Equity and Social Inclusion DHIS2": {
-		"name": "Gender Equity and Social Inclusion DHIS2",
+	"14 Gender Equity and Social Inclusion Dataset": {
+		"name": "14 Gender Equity and Social Inclusion Dataset",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -444,8 +444,9 @@
 			]
 		}
 	},
-	"OPD Programs(1-5) DHIS2": {
-		"name": "OPD Programs(1-5) DHIS2",
+	
+	"15 OPD Programs(1-5)": {
+		"name": "15 OPD Programs(1-5)",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -490,8 +491,8 @@
 		}
 	},
 	
-	"OPD Programs(6-10) DHIS2": {
-		"name": "OPD Programs(6-10) DHIS2",
+	"15 OPD Programs(6-10)": {
+		"name": "15 OPD Programs(6-10)",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -536,8 +537,8 @@
 		}
 	},
 	
-	"OPD Programs(11-15) DHIS2": {
-		"name": "OPD Programs(11-15) DHIS2",
+	"15 OPD Programs(11-15)": {
+		"name": "15 OPD Programs(11-15)",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -590,8 +591,8 @@
 	},
 	
 	
-	"Laboratory Services DHIS2": {
-        "name": "Laboratory Services DHIS2",
+	"16 Laboratory Services Dataset": {
+        "name": "16 Laboratory Services Dataset",
         "type": "ElisGeneric",
 		"DHISProgram": true,
         "config": {
@@ -599,8 +600,8 @@
         }
     },
 	
-	"Laboratory Services Other DHIS2": {
-        "name": "Laboratory Services Other DHIS2",
+	"16 Laboratory Services Dataset(Other)": {
+        "name": "16 Laboratory Services Dataset(Other)",
         "type": "ElisGeneric",
 		"DHISProgram": true,
         "config": {
@@ -609,8 +610,8 @@
     },
 	
 	
-	"Hospital Summary DHIS2": {
-		"name": "Hospital Summary DHIS2",
+	"17-1 Hospital Summary Dataset": {
+		"name": "17-1 Hospital Summary Dataset",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -690,8 +691,8 @@
 
 	
 	
-	"Hospital Services DHIS2": {
-		"name": "Hospital Services DHIS2",
+	"17-2 Hospital Indoor Services Dataset": {
+		"name": "17-2 Hospital Indoor Services Dataset",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
