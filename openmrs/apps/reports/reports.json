@@ -324,6 +324,256 @@
 			]
 		}
 	},
+	"09 Leprosy Dataset": {
+		"name": "09 Leprosy Dataset",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Leprosy program total patient count",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_patient_Count.sql"
+					}
+				},
+					
+				{
+					"name": "Leprosy program total patient in this month",
+					"type": "MRSGeneric",
+					"config": {
+					"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_treatment_received_in_reporting_month.sql"
+					}
+				},
+				{
+					"name": "Leprosy program total deducted",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_patient_Deducted.sql"
+					}
+				},
+					
+					{
+						"name": "Leprosy program total patient at the end of this month after deduction",
+						"type": "MRSGeneric",
+						"config": {
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_patient_at_the_end_of_this_month.sql"
+						}
+					},
+					{
+					"name": "Leprosy program total smear cases",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_positive_smear_cases.sql"
+					}
+				},
+					
+					{
+						"name": "Leprosy program total new cases less than 14 years",
+						"type": "MRSGeneric",
+						"config": {
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_New_Cases_less_than_14years.sql"
+						}
+					},
+					{
+					"name": "Leprosy program total deformity status count",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_deformity_status_count.sql"
+					}
+				},
+					
+					{
+						"name": "Leprosy program total deformity status less than 14 years",
+						"type": "MRSGeneric",
+						"config": {
+							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_deformity_status_less_than_14years.sql"
+						}
+					},
+				{
+					"name": "Leprosy program total deformity status RFT count",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_deformity_status_RFT_count.sql"
+					}
+				},
+				{
+					"name": "Leprosy program Cohort of new registered patients",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Cohort_of_new_registered_patients.sql"
+					}
+				}
+			]
+		}
+	},
+
+	
+		"11 Tubercluosis Control Program": {
+		"name": "11 Tubercluosis Control Program",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [
+				{
+					"name": "Tubercluosis Control Program Case Registration",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Tubercluosis_Case_Registration.sql"
+					}
+				},
+					
+					{
+					"name": "Tubercluosis Control Program Registration (BC or CD) all new ",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Tubercluosis_BC_or_CD_Registration_allnew.sql"
+					}
+				},
+					{
+					"name": "Tubercluosis Control Program Registration (BC or CD) all relapse",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Tubercluosis_BC_or_CD_Registration_allrelapse.sql"
+					}
+				},
+					{
+					"name": "Tubercluosis Control Program Private Community Involvement Referral PBC New",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Private_Community_Involvement_Referral_PBC_New.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program Private Community Involvement Referral PBC Relapse",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Private_Community_Involvement_Referral_PBC_Relapse.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program Private Community Involvement Referral PBC Except New and Relapse",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Private_Community_Involvement_Referral_PBC_except_new_and_relapase.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program Private Community Involvement Referral PCD and EP all",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Private_Community_Involvement_Referral_PCD_EP_all.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program Registration by Treatment Category",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_Registration_by_Treatment_Category.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TB-HIV Activities HIV +VE TB Patients This Month",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_HIV_+VE_TB_Patients_This_Month.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TB-HIV Activities HIV +VE TB Patients Till Date",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_HIV_+VE_TB_Patients_Till_Date.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TB-HIV Activities HIV +VE TB Patients ART CPT This Month",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_HIV_+VE_TB_Patients_ART_CPT_This_Month.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TB-HIV Activities HIV +VE TB Patients ART CPT Till Date",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_1_HIV_+VE_TB_Patients_ART_CPT_Till_Date.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TreatmentOutcome PBC",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_2_TreatmentOutcome_PBC.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TreatmentOutcome PBC HIV +ve",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_2_TreatmentOutcome_PBC_HIV_+ve.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TreatmentOutcome PCD EP New",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_2_TreatmentOutcome_PCD_EP_New.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TreatmentOutcome PCD EP Others",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_2_TreatmentOutcome_PCD_EP_Others.sql"
+					}
+				},
+				{
+					"name": "Tubercluosis Control Program TreatmentOutcome PCD EP HIV +ve",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_2_TreatmentOutcome_PCD_EP_HIV_+ve.sql"
+					}
+				},
+				{
+					"name": "DR Tubercluosis Control Program Drug Resistant (DR) TB Case Registration",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_4_Drug_Resistant_(DR)_TB_Case_Registration.sql"
+					}
+				},
+				
+				{
+					"name": "DR Tubercluosis Control Program New Registered DR TB Cases",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_4_New_Registered_DR_TB_Cases.sql"
+					}
+				},
+				{
+					"name": "DR Tubercluosis Control Program Treatment Outcome",
+					"type": "MRSGeneric",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_4_Treatment_Outcome.sql"
+					}
+				},
+				{
+					"name": "DR Tubercluosis Control Program Treatment Outcome HIV positive",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_4_Treatment_Outcome_HIV_positive.sql"
+					}
+				}
+				
+				
+				
+				
+				
+				
+			]
+		}
+	},
 	
 		
 	"13 HIV-AIDS": {

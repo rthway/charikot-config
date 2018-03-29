@@ -2,7 +2,9 @@
     IFNULL(SUM(CASE
                 WHEN LOWER(causes_for_death) LIKE '%pneumonia%'
                 THEN cause_count
-				WHEN LOWER(causes_for_death) LIKE '%Respiratory Tract Infection%'
+				WHEN LOWER(causes_for_death) LIKE '%URTI%'
+                THEN cause_count
+				WHEN LOWER(causes_for_death) LIKE '%LRTI%'
                 THEN cause_count
                 ELSE 0
             END),
