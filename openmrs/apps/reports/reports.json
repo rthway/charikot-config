@@ -361,7 +361,7 @@
 						}
 					},
 					{
-					"name": "Leprosy program total smear cases",
+					"name": "Leprosy program total positive smear cases",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/09-Leprosy-Dataset/09_Total_positive_smear_cases.sql"
@@ -552,7 +552,6 @@
 				},
 				{
 					"name": "DR Tubercluosis Control Program Treatment Outcome",
-					"type": "MRSGeneric",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/11-Tuberculosis-Control-Program/11_4_Treatment_Outcome.sql"

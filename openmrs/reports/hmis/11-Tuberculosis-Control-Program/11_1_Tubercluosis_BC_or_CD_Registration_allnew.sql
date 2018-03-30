@@ -117,4 +117,4 @@ FROM
             INTERVAL rag.max_years YEAR),
         INTERVAL rag.max_days DAY))
         AND rag.report_group_name = 'Tuberculosis'
-GROUP BY gender.gender , rag.name;
+GROUP BY rag.name,gender.gender ;

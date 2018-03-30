@@ -1,0 +1,757 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "Tubercluosis Control Program Case Registration": {
+      "dataValues": [    	
+		{
+		"_comment": "PBC-NEW_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "fEqA4AtMjJL",
+          "row": 16,
+          "column": 4
+		}
+        
+      ]
+    }
+  }
+}{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "Tubercluosis Control Program Case Registration": {
+      "dataValues": [    	
+		{
+		"_comment": "PBC-NEW_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "fEqA4AtMjJL",
+          "row": 15,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-NEW_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "fEqA4AtMjJL",
+          "row": 16,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Relapse_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "k26RPrXIpoo",
+          "row": 21,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Relapse_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "k26RPrXIpoo",
+          "row": 22,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Treatment After Failure_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "gN5dGI91IcU",
+          "row": 25,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Treatment After Failure_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "gN5dGI91IcU",
+          "row": 26,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Treatment After Loss to Follow up_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "Vn2hxlC0kae",
+          "row": 27,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Treatment After Loss to Follow up_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "Vn2hxlC0kae",
+          "row": 28,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Other Previously Treated_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "VJG7eqFdNFw",
+          "row": 17,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Other Previously Treated_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "VJG7eqFdNFw",
+          "row": 18,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Previous Treatment History Unknown_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "GyNhrvFPQaO",
+          "row": 19,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Previous Treatment History Unknown_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "GyNhrvFPQaO",
+          "row": 20,
+          "column": 4
+		},
+			{
+		"_comment": "PBC-Transfer In_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "jO7dhFuFC9m",
+          "row": 23,
+          "column": 4
+		},
+		{
+		"_comment": "PBC-Transfer In_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "jO7dhFuFC9m",
+          "row": 24,
+          "column": 4
+		},
+		
+		
+		
+		{
+		"_comment": "PCD-NEW_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "wn7uqOYMdca",
+          "row": 29,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-NEW_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "wn7uqOYMdca",
+          "row": 30,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Relapse_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "VAT9uMm4nmr",
+          "row": 35,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Relapse_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "VAT9uMm4nmr",
+          "row": 36,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Treatment After Loss to Follow up_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "xVkVMUdLQ6I",
+          "row": 41,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Treatment After Loss to Follow up_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "xVkVMUdLQ6I",
+          "row": 42,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Other Previously Treated_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "PhcKMCuqZhT",
+          "row": 31,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Other Previously Treated_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "PhcKMCuqZhT",
+          "row": 32,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Previous Treatment History Unknown_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "hUFnA75Fp9R",
+          "row": 33,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Previous Treatment History Unknown_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "hUFnA75Fp9R",
+          "row": 34,
+          "column": 4
+		},
+			{
+		"_comment": "PCD-Transfer In_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "cG7NTPtPiw5",
+          "row": 37,
+          "column": 4
+		},
+		{
+		"_comment": "PCD-Transfer In_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "cG7NTPtPiw5",
+          "row": 38,
+          "column": 4
+		},
+		
+		
+		
+		
+			
+		{
+		"_comment": "EP-NEW_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "RFALSJwSpmd",
+          "row": 1,
+          "column": 4
+		},
+		{
+		"_comment": "EP-NEW_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "RFALSJwSpmd",
+          "row": 2,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Relapse_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "Y1i5hgjTImc",
+          "row": 7,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Relapse_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "Y1i5hgjTImc",
+          "row": 8,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Treatment After Loss to Follow up_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "igiGrm5xZlX",
+          "row": 13,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Treatment After Loss to Follow up_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "igiGrm5xZlX",
+          "row": 14,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Other Previously Treated_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "wfjQWicPkkd",
+          "row": 3,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Other Previously Treated_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "wfjQWicPkkd",
+          "row": 4,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Previous Treatment History Unknown_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "GktEjOoQRGM",
+          "row": 5,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Previous Treatment History Unknown_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "GktEjOoQRGM",
+          "row": 6,
+          "column": 4
+		},
+			{
+		"_comment": "EP-Transfer In_F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "EFN2XwRNZVz",
+          "row": 9,
+          "column": 4
+		},
+		{
+		"_comment": "EP-Transfer In_M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "EFN2XwRNZVz",
+          "row": 10,
+          "column": 4
+		}
+      ]
+    },
+	"Tubercluosis Control Program Registration (BC or CD) all new ":{
+      "dataValues": [
+        {
+		"_comment": "0-4 years-F",
+          "categoryOptionCombo": "uPMXAv639Yo",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "0-4 years-M",
+          "categoryOptionCombo": "T56A8QfMXHb",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 2,
+          "column": 3
+        },
+        { 
+		"_comment": "5-14 years-F",
+          "categoryOptionCombo": "j2ZDR093N6j",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 11,
+          "column": 3
+        },
+		{
+		"_comment": "5-14 yrears-M",
+          "categoryOptionCombo": "vmp37WoeKZv",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 12,
+          "column": 3
+        },
+		{
+		"_comment": "15-24 years-F",
+          "categoryOptionCombo": "tuIu2TU5p9e",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 3,
+          "column": 3
+        },
+		 { 
+		"_comment": "15-24 years-M",
+          "categoryOptionCombo": "B7YBqKMl7zr",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 4,
+          "column": 3
+        },
+        { 
+		"_comment": "25-34 years-F",
+          "categoryOptionCombo": "YNCXGb0JmV9",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 5,
+          "column": 3
+        },
+		{
+		"_comment": "25-34 yrears-M",
+          "categoryOptionCombo": "QfB5qFpu4O7",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 6,
+          "column": 3
+        },
+		{
+		"_comment": "35-44 years-F",
+          "categoryOptionCombo": "K51gLdainyZ",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 7,
+          "column": 3
+        },
+		 { 
+		"_comment": "35-44 years-M",
+          "categoryOptionCombo": "O70A1j8ludR",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 8,
+          "column": 3
+        },
+        { 
+		"_comment": "45-54 years-F",
+          "categoryOptionCombo": "HdYFfluvlDn",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 9,
+          "column": 3
+        },
+		{
+		"_comment": "45-54 yrears-M",
+          "categoryOptionCombo": "PYlQXCF5olM",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 10,
+          "column": 3
+        },
+		{
+		"_comment": "55-64 years-F",
+          "categoryOptionCombo": "SmohFfUa5nE",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 13,
+          "column": 3
+        },
+		 { 
+		"_comment": "55-64 years-M",
+          "categoryOptionCombo": "S2oueQaMp2F",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 14,
+          "column": 3
+        },
+        { 
+		"_comment": ">=65 years-F",
+          "categoryOptionCombo": "fQIm42mXlnH",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 15,
+          "column": 3
+        },
+		{
+		"_comment": ">=65 yrears-M",
+          "categoryOptionCombo": "v4br0jd2BbD",  
+          "dataElement": "qXjmxznKsJ6",
+          "row": 16,
+          "column": 3
+        }
+      ]
+    },
+		"Tubercluosis Control Program Registration (BC or CD) all relapse ":{
+      "dataValues": [
+        {
+		"_comment": "0-4 years-F",
+          "categoryOptionCombo": "uPMXAv639Yo",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "0-4 years-M",
+          "categoryOptionCombo": "T56A8QfMXHb",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 2,
+          "column": 3
+        },
+        { 
+		"_comment": "5-14 years-F",
+          "categoryOptionCombo": "j2ZDR093N6j",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 11,
+          "column": 3
+        },
+		{
+		"_comment": "5-14 yrears-M",
+          "categoryOptionCombo": "vmp37WoeKZv",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 12,
+          "column": 3
+        },
+		{
+		"_comment": "15-24 years-F",
+          "categoryOptionCombo": "tuIu2TU5p9e",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 3,
+          "column": 3
+        },
+		 { 
+		"_comment": "15-24 years-M",
+          "categoryOptionCombo": "B7YBqKMl7zr",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 4,
+          "column": 3
+        },
+        { 
+		"_comment": "25-34 years-F",
+          "categoryOptionCombo": "YNCXGb0JmV9",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 5,
+          "column": 3
+        },
+		{
+		"_comment": "25-34 yrears-M",
+          "categoryOptionCombo": "QfB5qFpu4O7",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 6,
+          "column": 3
+        },
+		{
+		"_comment": "35-44 years-F",
+          "categoryOptionCombo": "K51gLdainyZ",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 7,
+          "column": 3
+        },
+		 { 
+		"_comment": "35-44 years-M",
+          "categoryOptionCombo": "O70A1j8ludR",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 8,
+          "column": 3
+        },
+        { 
+		"_comment": "45-54 years-F",
+          "categoryOptionCombo": "HdYFfluvlDn",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 9,
+          "column": 3
+        },
+		{
+		"_comment": "45-54 yrears-M",
+          "categoryOptionCombo": "PYlQXCF5olM",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 10,
+          "column": 3
+        },
+		{
+		"_comment": "55-64 years-F",
+          "categoryOptionCombo": "SmohFfUa5nE",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 13,
+          "column": 3
+        },
+		 { 
+		"_comment": "55-64 years-M",
+          "categoryOptionCombo": "S2oueQaMp2F",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 14,
+          "column": 3
+        },
+        { 
+		"_comment": ">=65 years-F",
+          "categoryOptionCombo": "fQIm42mXlnH",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 15,
+          "column": 3
+        },
+		{
+		"_comment": ">=65 yrears-M",
+          "categoryOptionCombo": "v4br0jd2BbD",  
+          "dataElement": "wd0uCW9jjbR",
+          "row": 16,
+          "column": 3
+        }
+      ]
+    },
+		"Tubercluosis Control Program Private Community Involvement Referral PBC New ":{
+      "dataValues": [
+        {
+		"_comment": "Community-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "XVir4hvdrvJ",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "Community-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "XVir4hvdrvJ",
+          "row": 2,
+          "column": 3
+        },
+		{
+		"_comment": "Private Health Facility-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "cPfucji1CUd",
+          "row": 5,
+          "column": 3
+        },
+		 { 
+		"_comment": "Private Health Facility-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "cPfucji1CUd",
+          "row": 6,
+          "column": 3
+        },
+        { 
+		"_comment": "Diagnosed by contact tracing-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "hTkfYSIMDFg",
+          "row": 3,
+          "column": 3
+        },
+		{
+		"_comment": "Diagnosed by contact tracing-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "hTkfYSIMDFg",
+          "row": 4,
+          "column": 3
+        }
+      ]
+    },
+	"Tubercluosis Control Program Private Community Involvement Referral PBC Relapse":{
+      "dataValues": [
+        {
+		"_comment": "Community-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "HASheUy4pTM",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "Community-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "HASheUy4pTM",
+          "row": 2,
+          "column": 3
+        },
+		{
+		"_comment": "Private Health Facility-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "VRq3Qv7cmyB",
+          "row": 5,
+          "column": 3
+        },
+		 { 
+		"_comment": "Private Health Facility-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "VRq3Qv7cmyB",
+          "row": 6,
+          "column": 3
+        },
+        { 
+		"_comment": "Diagnosed by contact tracing-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "l8I2JCMgYSH",
+          "row": 3,
+          "column": 3
+        },
+		{
+		"_comment": "Diagnosed by contact tracing-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "l8I2JCMgYSH",
+          "row": 4,
+          "column": 3
+        }
+      ]
+    },
+	"Tubercluosis Control Program Private Community Involvement Referral PBC Except New and Relapse":{
+      "dataValues": [
+        {
+		"_comment": "Community-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "LuxoM59gt0n",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "Community-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "LuxoM59gt0n",
+          "row": 2,
+          "column": 3
+        },
+		{
+		"_comment": "Private Health Facility-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "gMPYjX5xPfa",
+          "row": 5,
+          "column": 3
+        },
+		 { 
+		"_comment": "Private Health Facility-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "gMPYjX5xPfa",
+          "row": 6,
+          "column": 3
+        },
+        { 
+		"_comment": "Diagnosed by contact tracing-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "c3AKi4aUmbY",
+          "row": 3,
+          "column": 3
+        },
+		{
+		"_comment": "Diagnosed by contact tracing-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "c3AKi4aUmbY",
+          "row": 4,
+          "column": 3
+        }
+      ]
+    },
+	"Tubercluosis Control Program Private Community Involvement Referral PBC Except New and Relapse":{
+      "dataValues": [
+        {
+		"_comment": "PCD-Community-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "LVei9G3WbMH",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "PCD-Community-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "LVei9G3WbMH",
+          "row": 2,
+          "column": 3
+        },
+		{
+		"_comment": "PCD-Private Health Facility-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "To880ODaTWv",
+          "row": 5,
+          "column": 3
+        },
+		 { 
+		"_comment": "PCD-Private Health Facility-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "To880ODaTWv",
+          "row": 6,
+          "column": 3
+        },
+        { 
+		"_comment": "PCD-Diagnosed by contact tracing-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "yaLFNCTYl8G",
+          "row": 3,
+          "column": 3
+        },
+		{
+		"_comment": "PCD-Diagnosed by contact tracing-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "yaLFNCTYl8G",
+          "row": 4,
+          "column": 3
+        },
+		 {
+		"_comment": "EP-Community-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "v60dhjBjBUK",
+          "row": 1,
+          "column": 3
+        },
+		 { 
+		"_comment": "EP-Community-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "v60dhjBjBUK",
+          "row": 2,
+          "column": 3
+        },
+		{
+		"_comment": "EP-Private Health Facility-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "fFQJ1XEUqNj",
+          "row": 5,
+          "column": 3
+        },
+		 { 
+		"_comment": "EP-Private Health Facility-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "fFQJ1XEUqNj",
+          "row": 6,
+          "column": 3
+        },
+        { 
+		"_comment": "EP-Diagnosed by contact tracing-F",
+          "categoryOptionCombo": "ye1QuAMRG5Z",  
+          "dataElement": "lzQPocGd0pd",
+          "row": 3,
+          "column": 3
+        },
+		{
+		"_comment": "EP-Diagnosed by contact tracing-M",
+          "categoryOptionCombo": "PflKpozpO7b",  
+          "dataElement": "lzQPocGd0pd",
+          "row": 4,
+          "column": 3
+        }
+      ]
+    }
+  }
+}
