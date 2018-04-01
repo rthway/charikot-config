@@ -1,11 +1,16 @@
 
 		SELECT 
-    sum(Case when 
-		(TIMESTAMPDIFF(DAY, visit.date_started,visit.date_stopped)) = 0 then 1
-        else 
-		(TIMESTAMPDIFF(DAY, visit.date_started,visit.date_stopped))
-		End)
-        AS 'IPD Duration'
+    ifnull(SUM(CASE
+        WHEN
+            (TIMESTAMPDIFF(DAY,
+                visit.date_started,
+                visit.date_stopped)) = 0
+        THEN
+            1
+        ELSE (TIMESTAMPDIFF(DAY,
+            visit.date_started,
+            visit.date_stopped))
+    END),0) AS 'IPD Duration'
 FROM
     person
         JOIN

@@ -857,10 +857,76 @@
             "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/16-lab/lab_other_servies.sql"
         }
     },
+
 	
 	
 	"17-1 Hospital Summary Dataset": {
 		"name": "17-1 Hospital Summary Dataset",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [{
+					"name": "Hospital Services - Outpatient Services",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/outpatientServices.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Emergency Services",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/emergencyServices.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Total Patients Admitted",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/totalAdmittedPatients.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Total Inpatient Days",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/total_inpatient_days.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Referred In patient",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_in.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Referred out patient(OPD,IPD)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_ipd_opd.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Referred out patient(ER)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_er.sql"
+					}
+				},
+				{
+					"name": "Hospital Services - Diagnostic Services (USG, ECG)",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/usg_ecg_count.sql"
+					}
+				}
+			]
+		}
+	},
+		
+	"17-2 Hospital Indoor Services Dataset": {
+		"name": "17-2 Hospital Indoor Services Dataset",
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
@@ -937,74 +1003,6 @@
 			]
 		}
 	},
-
-	
-	
-	"17-2 Hospital Indoor Services Dataset": {
-		"name": "17-2 Hospital Indoor Services Dataset",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [{
-					"name": "Hospital Services - Outpatient Services",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/outpatientServices.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Emergency Services",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/emergencyServices.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Total Patients Admitted",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/totalAdmittedPatients.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Total Inpatient Days",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/total_inpatient_days.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Referred In patient",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_in.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Referred out patient(OPD,IPD)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_ipd_opd.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Referred out patient(ER)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_er.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Diagnostic Services (USG, ECG)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/usg_ecg_count.sql"
-					}
-				}
-			]
-		}
-	},
-		
 	
 	"hospital_activities__number_of_clients_served_referred_check_for_only_referred_grid": {
 		"name": "Hospital Activities - Number of Clients Served (Referred) [Check for only 'Referred' grid]",

@@ -1,7 +1,7 @@
 SELECT *
 FROM (SELECT
         IF(shortName.name IS NULL, base.concept_name, shortName.name) AS concept_name,
-        sum(final.male + final.other + final.female )                     AS total
+        ifnull(sum(final.male + final.other + final.female ),0)                    AS total
       FROM
         (SELECT
            rag.name AS age_group,
