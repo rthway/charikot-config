@@ -1,7 +1,7 @@
 SELECT 
-    second_answers.answer_name AS second_concept_name,
-    first_answers.answer_name AS first_concept_name,
-    gender.gender AS gender,
+    second_answers.answer_name AS 'Deduction Type',
+    first_answers.answer_name AS 'Leprosy Type',
+    gender.gender AS Gender,
     SUM(CASE
         WHEN
             first_concept.answer IS NOT NULL
@@ -10,7 +10,7 @@ SELECT
         THEN
             1
         ELSE 0
-    END) AS patient_count
+    END) AS 'Patient Count'
 FROM
     (SELECT 
         ca.answer_concept AS answer,
@@ -61,7 +61,7 @@ FROM
     (SELECT 'M' AS gender UNION SELECT 'F' AS gender) gender
         LEFT OUTER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
@@ -83,7 +83,7 @@ FROM
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.answer = first_answers.answer
         LEFT OUTER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,

@@ -1,14 +1,6 @@
 SELECT  leprosy.type_leprosy AS 'leprosy type',
-		total_female AS 'total female',
-		total_male AS 'total male',
-		deducted_female AS 'deducted female',
-        deducted_male AS 'deducted male',
         total_female-deducted_female AS 'Female at the end of month',
 		total_male-deducted_male AS 'Male at the end of month'
-
-       
-        
-      
 FROM
 (SELECT
 	first_answers.answer_name AS type_leprosy,
@@ -38,29 +30,6 @@ FROM
         question_concept_name.name IN ('Leprosy, Leprosy Type')
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
-        INNER JOIN
-    (SELECT 
-        ca.answer_concept AS answer,
-            IFNULL(answer_concept_short_name.name, answer_concept_fully_specified_name.name) AS answer_name
-    FROM
-        concept c
-    INNER JOIN concept_datatype cd ON c.datatype_id = cd.concept_datatype_id
-    INNER JOIN concept_name question_concept_name ON c.concept_id = question_concept_name.concept_id
-        AND question_concept_name.concept_name_type = 'FULLY_SPECIFIED'
-        AND question_concept_name.voided IS FALSE
-    INNER JOIN concept_answer ca ON c.concept_id = ca.concept_id
-    INNER JOIN concept_name answer_concept_fully_specified_name ON ca.answer_concept = answer_concept_fully_specified_name.concept_id
-        AND answer_concept_fully_specified_name.concept_name_type = 'FULLY_SPECIFIED'
-        AND answer_concept_fully_specified_name.voided
-        IS FALSE
-    LEFT JOIN concept_name answer_concept_short_name ON ca.answer_concept = answer_concept_short_name.concept_id
-        AND answer_concept_short_name.concept_name_type = 'SHORT'
-        AND answer_concept_short_name.voided
-        IS FALSE
-    WHERE
-        question_concept_name.name IN ('Leprosy, Case Type')
-            AND cd.name = 'Coded'
-    ORDER BY answer_name DESC) second_answers
         LEFT OUTER JOIN
     (SELECT 
         o1.person_id,
@@ -104,8 +73,8 @@ FROM
     INNER JOIN visit v1 ON v1.visit_id = e.visit_id
         AND v1.date_stopped IS NOT NULL
     WHERE
-        CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON second_concept.answer = second_answers.answer
-        AND first_concept.person_id = second_concept.person_id
+        CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON 
+        first_concept.person_id = second_concept.person_id
         AND first_concept.visit_id = second_concept.visit_id
         LEFT OUTER JOIN
     person p ON first_concept.person_id = p.person_id
@@ -139,31 +108,8 @@ FROM
         question_concept_name.name IN ('Leprosy, Leprosy Type')
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
-        INNER JOIN
-    (SELECT 
-        ca.answer_concept AS answer,
-            IFNULL(answer_concept_short_name.name, answer_concept_fully_specified_name.name) AS answer_name
-    FROM
-        concept c
-    INNER JOIN concept_datatype cd ON c.datatype_id = cd.concept_datatype_id
-    INNER JOIN concept_name question_concept_name ON c.concept_id = question_concept_name.concept_id
-        AND question_concept_name.concept_name_type = 'FULLY_SPECIFIED'
-        AND question_concept_name.voided IS FALSE
-    INNER JOIN concept_answer ca ON c.concept_id = ca.concept_id
-    INNER JOIN concept_name answer_concept_fully_specified_name ON ca.answer_concept = answer_concept_fully_specified_name.concept_id
-        AND answer_concept_fully_specified_name.concept_name_type = 'FULLY_SPECIFIED'
-        AND answer_concept_fully_specified_name.voided
-        IS FALSE
-    LEFT JOIN concept_name answer_concept_short_name ON ca.answer_concept = answer_concept_short_name.concept_id
-        AND answer_concept_short_name.concept_name_type = 'SHORT'
-        AND answer_concept_short_name.voided
-        IS FALSE
-    WHERE
-        question_concept_name.name IN ('Leprosy, Patient Deduction Type')
-            AND cd.name = 'Coded'
-    ORDER BY answer_name DESC) second_answers
         LEFT OUTER JOIN
-    (SELECT 
+        (SELECT 
         o1.person_id,
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
@@ -205,8 +151,8 @@ FROM
     INNER JOIN visit v1 ON v1.visit_id = e.visit_id
         AND v1.date_stopped IS NOT NULL
     WHERE
-        CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON second_concept.answer = second_answers.answer
-        AND first_concept.person_id = second_concept.person_id
+        CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON 
+        first_concept.person_id = second_concept.person_id
         AND first_concept.visit_id = second_concept.visit_id
         LEFT OUTER JOIN
     person p ON first_concept.person_id = p.person_id

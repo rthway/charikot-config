@@ -1,6 +1,6 @@
 SELECT 
-    first_answers.answer_name AS 'Leprosry Type',
-    gender.gender AS gender,
+    first_answers.answer_name AS 'Leprosy Type',
+    gender.gender AS Gender,
     SUM(CASE
         WHEN
             first_concept.answer IS NOT NULL
@@ -9,7 +9,7 @@ SELECT
         THEN
             1
         ELSE 0
-    END) AS patient_count
+    END) AS 'Patient Count'
 FROM
     (SELECT 
         ca.answer_concept AS answer,
@@ -68,7 +68,7 @@ FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name = 'Leprosy, Supervised drug administration for this month'
+        AND cn1.name = 'HIVTC, Smear TB assessment at enrollment'
         AND o1.voided = 0
         AND cn1.voided = 0
     INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id
@@ -79,7 +79,7 @@ FROM
         AND v1.date_stopped IS NOT NULL
     WHERE
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON 
-		first_concept.person_id = second_concept.person_id
+        first_concept.person_id = second_concept.person_id
         AND first_concept.visit_id = second_concept.visit_id
         LEFT OUTER JOIN
     person p ON first_concept.person_id = p.person_id
