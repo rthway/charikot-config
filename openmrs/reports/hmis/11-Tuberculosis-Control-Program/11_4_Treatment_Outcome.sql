@@ -1,5 +1,5 @@
 SELECT 
-    second_answers.answer_name AS second_concept_name,
+	second_answers.answer_name AS second_concept_name,
     first_answers.answer_name AS first_concept_name,
     gender.gender AS gender,
     SUM(CASE
