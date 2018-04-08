@@ -1,6 +1,6 @@
 SELECT 
-first_answers.answer_name,
-    gender.gender AS gender,
+first_answers.answer_name AS 'Patient Type',
+    gender.gender AS 'Gender',
     SUM(CASE
         WHEN
             first_concept.question IS NOT NULL
@@ -8,7 +8,7 @@ first_answers.answer_name,
         THEN
             1
         ELSE 0
-    END) AS patient_count
+    END) AS 'Patient Count'
 FROM
     (SELECT 
         question_concept_name.concept_id AS question,
@@ -30,7 +30,7 @@ FROM
     (SELECT 'M' AS gender UNION SELECT 'F' AS gender) gender
         LEFT OUTER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
 			cn2.concept_id AS answer_name,

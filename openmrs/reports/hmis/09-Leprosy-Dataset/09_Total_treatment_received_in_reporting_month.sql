@@ -1,6 +1,6 @@
 SELECT 
     first_answers.answer_name AS 'Leprosry Type',
-    gender.gender AS gender,
+    gender.gender AS Gender,
     SUM(CASE
         WHEN
             first_concept.answer IS NOT NULL
@@ -9,7 +9,7 @@ SELECT
         THEN
             1
         ELSE 0
-    END) AS patient_count
+    END) AS 'Patient Count'
 FROM
     (SELECT 
         ca.answer_concept AS answer,

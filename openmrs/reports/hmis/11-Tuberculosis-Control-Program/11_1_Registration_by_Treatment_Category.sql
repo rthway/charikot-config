@@ -1,50 +1,72 @@
 SELECT 
-    reporting_age_group.name AS age_group,
-    answer.concept_full_name AS answer_concept_name,
-    gender.gender AS gender,
-    result.total_count
+ rag.name AS 'Age Group',
+    first_answers.answer_name AS 'Category',
+    gender.gender AS 'Gender',
+    SUM(CASE
+        WHEN
+            first_concept.answer IS NOT NULL
+                AND p.gender IS NOT NULL
+        THEN
+            1
+        ELSE 0
+    END) AS 'Patient Count'
 FROM
-    concept_view AS question
-        INNER JOIN
-    concept_answer ON question.concept_id = concept_answer.concept_id
-        AND question.concept_full_name IN ('Tuberculosis, Treatment Type')
-        INNER JOIN
-    concept_view AS answer ON answer.concept_id = concept_answer.answer_concept
-        INNER JOIN
-    (SELECT DISTINCT
-        value_reference AS type
+    (SELECT 
+        ca.answer_concept AS answer,
+            IFNULL(answer_concept_short_name.name, answer_concept_fully_specified_name.name) AS answer_name
     FROM
-        visit_attribute) visit_type
+        concept c
+    INNER JOIN concept_datatype cd ON c.datatype_id = cd.concept_datatype_id
+    INNER JOIN concept_name question_concept_name ON c.concept_id = question_concept_name.concept_id
+        AND question_concept_name.concept_name_type = 'FULLY_SPECIFIED'
+        AND question_concept_name.voided IS FALSE
+    INNER JOIN concept_answer ca ON c.concept_id = ca.concept_id
+    INNER JOIN concept_name answer_concept_fully_specified_name ON ca.answer_concept = answer_concept_fully_specified_name.concept_id
+        AND answer_concept_fully_specified_name.concept_name_type = 'FULLY_SPECIFIED'
+        AND answer_concept_fully_specified_name.voided
+        IS FALSE
+    LEFT JOIN concept_name answer_concept_short_name ON ca.answer_concept = answer_concept_short_name.concept_id
+        AND answer_concept_short_name.concept_name_type = 'SHORT'
+        AND answer_concept_short_name.voided
+        IS FALSE
+    WHERE
+        question_concept_name.name IN ('Tuberculosis, Treatment Type')
+            AND cd.name = 'Coded'
+    ORDER BY answer_name DESC) first_answers
         INNER JOIN
-    reporting_age_group ON reporting_age_group.report_group_name = 'Tuberculosis Treatment Category'
+     (SELECT 'M' AS gender UNION SELECT 'F' AS gender) gender
         INNER JOIN
-    (SELECT 'M' AS gender UNION SELECT 'F' AS gender) AS gender
+    reporting_age_group rag ON rag.report_group_name = 'Tuberculosis Treatment Category'
         LEFT OUTER JOIN
     (SELECT 
-        obs.value_coded AS answer_concept_id,
-            obs.concept_id AS question_concept_id,
-            person.gender AS gender,
-            visit_attribute.value_reference AS visit_type,
-            reporting_age_group.name AS age_group,
-            COUNT(*) AS total_count
+        DISTINCT(o1.person_id),
+            cn2.concept_id AS answer,
+            cn1.concept_id AS question,
+            v1.visit_id AS visit_id,
+            v1.date_stopped AS datetime
     FROM
-        obs
-    INNER JOIN concept_view question ON obs.concept_id = question.concept_id
-        AND question.concept_full_name IN ('Tuberculosis, Treatment Type')
-    INNER JOIN person ON obs.person_id = person.person_id
-    INNER JOIN encounter ON obs.encounter_id = encounter.encounter_id
-    INNER JOIN visit ON encounter.visit_id = visit.visit_id
-    INNER JOIN visit_attribute ON visit.visit_id = visit_attribute.visit_id
-    INNER JOIN visit_attribute_type ON visit_attribute_type.visit_attribute_type_id = visit_attribute.attribute_type_id
-        AND visit_attribute_type.name = 'Visit Status'
-    INNER JOIN reporting_age_group ON CAST(obs.obs_datetime AS DATE) BETWEEN (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL reporting_age_group.min_years YEAR), INTERVAL reporting_age_group.min_days DAY)) AND (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL reporting_age_group.max_years YEAR), INTERVAL reporting_age_group.max_days DAY))
-        AND reporting_age_group.report_group_name = 'Tuberculosis Treatment Category'
+        obs o1
+    INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
+        AND cn1.concept_name_type = 'FULLY_SPECIFIED'
+        AND cn1.name = 'Tuberculosis, Treatment Type'
+        AND o1.voided = 0
+        AND cn1.voided = 0
+    INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id
+        AND cn2.concept_name_type = 'FULLY_SPECIFIED'
+        AND cn2.voided = 0
+    INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
+    INNER JOIN visit v1 ON v1.visit_id = e.visit_id
+        AND v1.date_stopped IS NOT NULL
     WHERE
-        CAST(visit.date_stopped AS DATE) BETWEEN '2018-03-01' AND '2018-03-19'
-    GROUP BY obs.concept_id , obs.value_coded , reporting_age_group.name , person.gender , visit_attribute.value_reference) result ON question.concept_id = result.question_concept_id
-        AND answer.concept_id = result.answer_concept_id
-        AND gender.gender = result.gender
-        AND visit_type.type = result.visit_type
-        AND result.age_group = reporting_age_group.name
-GROUP BY answer.concept_full_name , gender.gender , reporting_age_group.name
-ORDER BY reporting_age_group.sort_order,answer.concept_full_name ,gender.gender ;
+        CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.answer = first_answers.answer
+    
+        LEFT OUTER JOIN
+    person p ON first_concept.person_id = p.person_id
+        AND p.gender = gender.gender
+        AND CAST(first_concept.datetime AS DATE) BETWEEN (DATE_ADD(DATE_ADD(p.birthdate,
+            INTERVAL rag.min_years YEAR),
+        INTERVAL rag.min_days DAY)) AND (DATE_ADD(DATE_ADD(p.birthdate,
+            INTERVAL rag.max_years YEAR),
+        INTERVAL rag.max_days DAY))
+        AND rag.report_group_name = 'Tuberculosis Treatment Category'
+GROUP BY  rag.name,first_answers.answer_name,gender.gender ;

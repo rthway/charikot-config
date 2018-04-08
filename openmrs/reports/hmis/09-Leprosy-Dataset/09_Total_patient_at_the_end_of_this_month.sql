@@ -30,9 +30,9 @@ FROM
         question_concept_name.name IN ('Leprosy, Leprosy Type')
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
-        LEFT OUTER JOIN
+        INNER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
@@ -52,9 +52,9 @@ FROM
         AND v1.date_stopped IS NOT NULL
     WHERE
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.answer = first_answers.answer
-        LEFT OUTER JOIN
+        INNER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
@@ -76,7 +76,7 @@ FROM
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON 
         first_concept.person_id = second_concept.person_id
         AND first_concept.visit_id = second_concept.visit_id
-        LEFT OUTER JOIN
+        INNER JOIN
     person p ON first_concept.person_id = p.person_id
 GROUP BY  first_answers.answer_name) AS leprosy
 INNER JOIN
@@ -108,9 +108,9 @@ FROM
         question_concept_name.name IN ('Leprosy, Leprosy Type')
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
-        LEFT OUTER JOIN
+        INNER JOIN
         (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
@@ -130,9 +130,9 @@ FROM
         AND v1.date_stopped IS NOT NULL
     WHERE
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.answer = first_answers.answer
-        LEFT OUTER JOIN
+        INNER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
@@ -154,6 +154,6 @@ FROM
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON 
         first_concept.person_id = second_concept.person_id
         AND first_concept.visit_id = second_concept.visit_id
-        LEFT OUTER JOIN
+        INNER JOIN
     person p ON first_concept.person_id = p.person_id
 GROUP BY  first_answers.answer_name) AS deducted ON deducted.type_leprosy = leprosy.type_leprosy

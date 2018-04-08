@@ -1,6 +1,6 @@
 SELECT 
-    second_answers.answer_name AS second_concept_name,
-    gender.gender AS gender,
+    second_answers.answer_name AS 'Treatment outcome',
+    gender.gender AS 'Gender',
     SUM(CASE
         WHEN
             first_concept.answer IS NOT NULL
@@ -9,7 +9,7 @@ SELECT
         THEN
             1
         ELSE 0
-    END) AS patient_count
+    END) AS 'Patient Count'
 FROM
     (SELECT 
         ca.answer_concept AS answer,
@@ -23,9 +23,8 @@ FROM
     INNER JOIN concept_answer ca ON c.concept_id = ca.concept_id
     INNER JOIN concept_name answer_concept_fully_specified_name ON ca.answer_concept = answer_concept_fully_specified_name.concept_id
         AND answer_concept_fully_specified_name.concept_name_type = 'FULLY_SPECIFIED'
-                		AND answer_concept_fully_specified_name.name  IN ('Yes')
-
-        AND answer_concept_fully_specified_name.voided
+		AND answer_concept_fully_specified_name.name  IN ('Yes')
+		AND answer_concept_fully_specified_name.voided
         IS FALSE
     LEFT JOIN concept_name answer_concept_short_name ON ca.answer_concept = answer_concept_short_name.concept_id
         AND answer_concept_short_name.concept_name_type = 'SHORT'
@@ -62,7 +61,7 @@ FROM
     (SELECT 'M' AS gender UNION SELECT 'F' AS gender) gender
         LEFT OUTER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
@@ -76,6 +75,7 @@ FROM
         AND cn1.voided = 0
     INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id
         AND cn2.concept_name_type = 'FULLY_SPECIFIED'
+        AND cn2.name = 'Yes'
         AND cn2.voided = 0
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
     INNER JOIN visit v1 ON v1.visit_id = e.visit_id
@@ -84,7 +84,7 @@ FROM
         CAST(v1.date_stopped AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) first_concept ON first_concept.answer = first_answers.answer
         LEFT OUTER JOIN
     (SELECT 
-        o1.person_id,
+        DISTINCT(o1.person_id),
             cn2.concept_id AS answer,
             cn1.concept_id AS question,
             v1.visit_id AS visit_id,
