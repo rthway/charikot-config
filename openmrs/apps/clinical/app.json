@@ -326,6 +326,12 @@
             "Dental Note, Tooth number": {
                 "multiSelect": true
             },
+           "Dental Note, Procedure": {
+                "multiSelect": true
+            },
+           "Dental Note, Tooth quadrant": {
+                "multiSelect": true
+            },
             "Dental Note, Treatment": {
                 "allowAddMore": true
             },
@@ -867,6 +873,10 @@
             "Chronic OPD Details, Free Health Service Code": {
                 "required": true
             },
+	    "Depression Initial-Patient History": {
+                "required": true
+            },
+
             "Delivery Note, Delivery service done by": {
                 "required": true
             },
@@ -1005,10 +1015,172 @@
             "Delivery Note, Delivery date and time": {
                 "allowFutureDates": true
             },
+	    "FRH-Procedure Follow Up": {
+                "allowFutureDates": true
+            },
             "Operative Notes, Procedure": {
                 "required": true
             },
-            "PNC, Discharge Date": {
+	    "Depression Initial-History of Mania": {
+                "required": true
+            },
+			"Depression Initial-Grief": {
+                "required": true
+            },
+			"Depression Initial-Psychosis": {
+                "required": true
+            },
+			"IMAM, Weight": {
+                "required": true
+            },
+			"History-Hands": {
+                "multiSelect": true
+            },
+			"History-Mouth": {
+                "multiSelect": true
+            },
+			"History-Lymphadenopathy": {
+                "multiSelect": true
+            },
+			"History-Skin": {
+                "multiSelect": true
+            },
+			"PSC-Stroke": {
+                "required": true
+            },
+			"PSC-Anemia": {
+                "required": true
+            },
+			"PSC-Medication side-effects": {
+                "required": true
+            },
+			"PSC-Signs and Symptoms": {
+                "required": true
+            },
+			"PSC-Suspected diagnosis": {
+                "required": true
+            },
+			"Depression Initial-Confirm rule-out": {
+                "required": true
+            },
+			"Depression Initial-History of Mania": {
+                "required": true
+            },
+			"PTSD-Medication and Counselling": {
+                "multiSelect": true
+            },
+			"PTSD-Amitriptyline": {
+                "multiSelect": true
+            },
+			"Depression Initial-Counselling": {
+                "multiSelect": true
+            },
+			"Depression Followup-Improvement": {
+                "required": true
+            },
+			"Depression Followup-Fluoxetine": {
+                "multiSelect": true
+            },
+			"Depression Followup-Amitriptyline": {
+                "multiSelect": true
+            },
+			"Psychosis-Symptoms-Disorganized speech": {
+                "required": true
+            },
+			"Psychosis-Symptoms-Abnormal Behavior": {
+                "required": true
+            },
+			"Psychosis-Symptoms-Delusions": {
+                "required": true
+            },
+			"Psychosis-Symptoms-Thought broadcasting": {
+                "required": true
+            },
+			"Psychosis-Symptoms-Social withdrawal": {
+                "required": true
+            },
+			"Psychosis-Symptoms-Hallucination": {
+                "required": true
+            },
+			"Psychosis-Symptoms-Problems started when": {
+                "required": true
+            },
+			"Psychosis-DD-Comorbidities-Manic episode": {
+                "multiSelect": true
+            },
+			"Psychosis-DD-Comorbidities-Other Medical Conditions": {
+                "multiSelect": true
+            },
+			"Psychosis-DD-Comorbidities-Manic episode": {
+                "multiSelect": true
+            },
+			"Psychosis-Management-Psychosocial counseling": {
+                "multiSelect": true
+            },
+			"Psychosis-Management-Medication counseling": {
+                "multiSelect": true
+            },
+			"Psychosis-Management-Psychosocial counseling": {
+                "multiSelect": true
+            },
+			"History-Skin": {
+                "multiSelect": true
+            },
+			"History-Mouth": {
+                "multiSelect": true
+            },
+			"History-Eye": {
+                "multiSelect": true
+            },
+			"Situation Compared to Previous Visit": {
+                "required": true
+            },
+			"Psychosis FU-Current Symptoms-Disorganized speech": {
+                "required": true
+            },
+			"Psychosis FU-Current Symptoms-Abnormal Behavior": {
+                "required": true
+            },
+			"Psychosis FU-Current Symptoms-Delusions": {
+                "required": true
+            },
+			"Psychosis FU-Current Symptoms-Thought broadcasting": {
+                "required": true
+            },
+			"Psychosis FU-Current Symptoms-Hallucination": {
+                "required": true
+            },
+			"Psychosis FU-Current Symptoms-Social withdrawal": {
+                "required": true
+            },
+			"Psychosis FU-Meds-Med adherence": {
+                "required": true
+            },
+			"PTSD-History of Trauma": {
+                "required": true
+            },
+			"PTSD-Symptoms Duration": {
+                "required": true
+            },
+			"PTSD Followup-Signs of Mania": {
+                "required": true
+            },
+			"Psychiatrist's Rec, Reasoning/rationale": {
+                "required": true
+            },
+			"PTSD-Counseling": {
+                "multiSelect": true
+            },
+			"PTSD-Meds-Fluoxetine": {
+                "multiSelect": true
+            },
+			"PTSD Followup-Amitriptyline": {
+                "multiSelect": true
+            },
+			"PTSD Followup-What Counselling is Being Provided": {
+                "multiSelect": true
+            },
+			"PNC, Discharge Date": {
                 "allowFutureDates": true
             }
         }
