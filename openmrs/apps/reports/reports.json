@@ -1552,6 +1552,13 @@
 			]
 		}
 	},
+"Mental__Health_Reports_CH": {
+        "name": "Mental Health Report",
+        "type": "MRSGeneric",
+        "config": {
+            "sqlPath": "/var/www/bahmni_config/openmrs/reports/mentalhealth_qi.sql"
+        }
+    },
 	"tuberculosis_control_program__registration_by_treatment_category": {
 		"name": "Tuberculosis Control Program - Registration By Treatment Category",
 		"type": "obsCount",
@@ -2197,8 +2204,10 @@
 			]
 		}
 	},
-	
-	
+    "laboratory_services": {
+        "name": "Laboratory Services",
+        "type": "TestCount"
+    },
 	"hospital_services__outpatient_services": {
 		"name": "Hospital Services - Outpatient Services",
 		"type": "MRSGeneric",
@@ -2582,6 +2591,27 @@
 			"templateName": "Dental Note"
 		}
 	},
+    "vaccine_note" : {
+        "name": "Vaccine-Note",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "Vaccine-Note"
+        }
+    },
+	"Depression-Followup_Visit" : {
+        "name": "Depression-Followup Visit",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "Depression-Followup Visit"
+        }
+    },
+	"MHS-Depression Initial Visit" : {
+        "name": "MHS-Depression Initial Visit",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "MHS-Depression Initial Visit"
+        }
+    },
 	"cd_asthma_progress": {
 		"name": "CD - Asthma progress",
 		"type": "obsTemplate",

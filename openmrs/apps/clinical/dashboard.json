@@ -52,7 +52,7 @@
                              "IMAM Program","Kalaazar, Template","Leprosy, Template","Mental Health","Mental Health Screener","Malaria","Nutrition","Operative Notes",
                              "Opioid Substitution Therapy Intake Template","Opioid Substitution Therapy Intake Template","Opportunistic Infection Template","Orthopaedic Examination",
                              "PNC Note","Post Delivery Family Planning Checklist","Prevention of Mother-to-Child Transmission Intake Template","Procedure Notes","Psychiatrist's Recommendation",
-                             "Psychosis Followup Note","Psychosis Intake Note","Rheumatoid Arthritis, Progress","Rheumatic Heart Disease, Progress","Safe Abortion","Seizure Disorder, Progress",
+                             "Psychosis Followup Note","Psychiatrists Recommendation","Psychosis Intake Note","Rheumatoid Arthritis, Progress","Rheumatic Heart Disease, Progress","Safe Abortion","Seizure Disorder, Progress",
                              "Sextually Transmitted Infections Intake Template","Stroke OPD","Trauma Notes","Tuberculosis, Intake","USG Notes","TEST TEMPLATE (टेस्ट टेम्प्लेट)"],
                 "displayOrder": 3
             	},
@@ -66,7 +66,7 @@
                 "type": "labOrders",
                 "dashboardConfig": {
                     "title": null,
-                    "numberOfVisits": 1,
+                    "numberOfVisits": 2,
                     "showChart": false,
                     "showTable": true,
                     "showDetailsButton": false
@@ -394,7 +394,7 @@
     "hiv": {
         "dashboardName": "HIV",
         "printing": {
-            "title": "Bayalpata Hospital",
+            "title": "Charikot Hospital",
             "header": "HIV Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -430,7 +430,7 @@
     "motherhood": {
         "dashboardName": "Motherhood",
         "printing": {
-            "title": "Bayalpata Hospital",
+            "title": "Charikot Hospital",
             "header": "Motherhood Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -466,7 +466,7 @@
     "orthopaedic": {
         "dashboardName": "Orthopaedic",
         "printing": {
-            "title": "Bayalpata Hospital",
+            "title": "Charikot Hospital",
             "header": "Orthopaedic Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -502,7 +502,7 @@
     "imam": {
         "dashboardName": "IMAM",
         "printing": {
-            "title": "Bayalpata Hospital",
+            "title": "Charikot Hospital",
             "header": "IMAM Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -538,7 +538,7 @@
     "Community Health" : {
         "dashboardName": "Community Health",
         "printing": {
-            "title": "Bayalpata Hospital",
+            "title": "Charikot Hospital",
             "header": "Community Health Summary",
             "logo": "../images/nhn-logo.png"
         },
