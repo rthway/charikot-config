@@ -17,12 +17,12 @@ FROM
     (SELECT 
         concept_full_name,
             IF(icd10_code IS NULL, 'R69', icd10_code) AS 'ICD Code',
-            COUNT(DISTINCT IF((gender = 'F' ), obs_id, NULL)) AS Female
+            COUNT(DISTINCT IF((gender = 'F' ), person_id, NULL)) AS Female
             FROM
         (SELECT 
         dcv.concept_full_name,
             dcv.icd10_code,
-            o.obs_id,
+            p.person_id,
             p.gender
     FROM
         person p
