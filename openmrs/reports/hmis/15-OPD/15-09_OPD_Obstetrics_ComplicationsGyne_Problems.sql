@@ -2,7 +2,6 @@ SELECT
     c.concept_full_name as Disease,
     c.icd10_code as 'ICD CODE',
     ifnull(b.Female,0) as Female
-    
 FROM
     (SELECT 
         concept_full_name,icd10_code
@@ -17,7 +16,7 @@ FROM
     (SELECT 
         concept_full_name,
             IF(icd10_code IS NULL, 'R69', icd10_code) AS 'ICD Code',
-            COUNT(DISTINCT IF((gender = 'F' ), person_id, NULL)) AS Female
+            COUNT(DISTINCT IF((gender = 'F' OR (gender = 'M' AND icd10_code = 'N46') ), person_id, NULL)) AS Female
             FROM
         (SELECT 
         dcv.concept_full_name,
