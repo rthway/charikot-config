@@ -38,7 +38,7 @@ FROM
            INNER JOIN visit t5 ON t4.visit_id = t5.visit_id
          WHERE
            t1.value_coded IN (SELECT answer_concept FROM concept_answer
-           WHERE concept_id IN (SELECT concept_id FROM concept_name WHERE NAME='PAC Cause' AND voided = 0))
+           WHERE concept_id IN (SELECT concept_id FROM concept_name WHERE NAME IN ('Safe abortion-Surgical procedure','Safe abortion-Medical Procedure') AND voided = 0))
            AND
            (DATE(t1.obs_datetime) BETWEEN '#startDate#' AND '#endDate#')
            AND
