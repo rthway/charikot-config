@@ -1,7 +1,7 @@
 {
   "orgUnit": "as6EmlRFNGM",
   "reports": { 
-    "Laboratory Services DHIS2": {
+    "16 Laboratory Services Dataset": {
       "dataValues": [    	
 		{
 		 "_comment": "Haematology-HB",
@@ -146,17 +146,6 @@
           "row": 177,
           "column": 3
         },
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		{
 		"_comment": "Immunlogy-Pregnancy-Test",

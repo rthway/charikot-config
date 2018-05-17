@@ -1,0 +1,24 @@
+{
+  "orgUnit": "Bm39oMfSNir",
+  "reports": {
+    "Inpatient Morbidity": {
+      "dataValues": [    	
+		{
+          "categoryOptionCombo": "ctRSQgWXyV9", 
+          "dataElement": "OGGD4CdMeeW", 
+          "row": 1,
+          "column": 4,
+		  "attributeOptionCombo":"10238"
+        },
+        {
+          "categoryOptionCombo": "lcbTuooUUAd", 
+          "dataElement": "OGGD4CdMeeW", 
+          "row": 1,
+          "column": 5,
+		  "attributeOptionCombo":"10238"
+        }
+          
+      ]
+    }
+   }  
+}
