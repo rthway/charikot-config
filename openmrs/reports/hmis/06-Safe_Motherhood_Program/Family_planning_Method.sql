@@ -72,8 +72,7 @@ FROM
     (SELECT DISTINCT
         (o1.person_id),
             cn2.concept_id AS answer,
-            cn1.concept_id AS question,
-            v1.visit_id AS visit_id
+            cn1.concept_id AS question
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
@@ -92,8 +91,7 @@ FROM
         LEFT OUTER JOIN
     (SELECT DISTINCT
         (o1.person_id),
-            cn2.concept_id AS answer,
-            v1.visit_id AS visit_id
+            cn2.concept_id AS answer
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
@@ -109,5 +107,4 @@ FROM
     WHERE
         CAST(v1.date_started AS DATE) BETWEEN DATE('#startDate#') AND DATE('#endDate#')) second_concept ON second_concept.answer = second_answers.answer
         AND first_concept.person_id = second_concept.person_id
-        AND first_concept.visit_id = second_concept.visit_id
 GROUP BY first_answers.category;
