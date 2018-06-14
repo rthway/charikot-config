@@ -57,7 +57,7 @@ FROM
     INNER JOIN encounter e ON v.visit_id = e.visit_id AND e.voided = 0
     INNER JOIN obs o ON e.encounter_id = o.encounter_id
         AND o.voided = 0
-        AND DATE(o.obs_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+        AND o.obs_datetime BETWEEN DATE('#startDate#') AND DATE('#endDate#')
     INNER JOIN concept_name cn ON o.concept_id = cn.concept_id
         AND cn.concept_name_type = 'FULLY_SPECIFIED'
         AND cn.name = 'Coded Diagnosis'
