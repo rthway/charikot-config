@@ -765,10 +765,10 @@
 					}
 				},
 				{
-					"name": "OPD Other Communicable Infactions Diseases",
+					"name": "OPD Other Communicable Infections Diseases",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-03_ OPD_Other_Communicable_Infactions_Diseases.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-03_ OPD_Other_Communicable_Infections_Diseases.sql"
 					}
 				},
 				{
@@ -913,154 +913,7 @@
             "sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/16-lab/lab_other_servies.sql"
         }
     },
-
-	
-	
-	"17-1 Hospital Summary Dataset": {
-		"name": "17-1 Hospital Summary Dataset",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [{
-					"name": "Hospital Services - Outpatient Services",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/outpatientServices.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Emergency Services",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/emergencyServices.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Total Patients Admitted",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/totalAdmittedPatients.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Total Inpatient Days",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/total_inpatient_days.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Referred In patient",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_in.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Referred out patient(OPD,IPD)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_ipd_opd.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Referred out patient(ER)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_out_er.sql"
-					}
-				},
-				{
-					"name": "Hospital Services - Diagnostic Services (USG, ECG)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/usg_ecg_count.sql"
-					}
-				}
-			]
-		}
-	},
-		
-	"17-2 Hospital Indoor Services Dataset": {
-		"name": "17-2 Hospital Indoor Services Dataset",
-		"DHISProgram": true,
-		"type": "concatenated",
-		"config": {
-			"reports": [
-				{
-					"name": "Summary of Indoor Services Gestational weeks(Neonate Form)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/gestational_weeks_neonate_form.sql"
-					}
-				},
-				{
-						"name": "Summary of Indoor Services Gestational weeks(Maternal Age)",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/gestational_weeks_maternal_age.sql"
-						}
-					},
-
-					{
-						"name": "Summary of Indoor Services Inpatient Outcome",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/inpatient_outcome.sql"
-						}
-					},
-					{
-						"name": "Summary of Indoor Services Inpatient Outcome Referred Out",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/inpatient_referredout.sql"
-						}
-					},
-
-					
-					{
-						"name": "FreeHealthServices Outpatient and ER",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/FreeHealthServices_Outpatient_ER.sql"
-						}
-					},
-
-					{
-						"name": "Summary of Indoor Services Major Surgeries",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/major_surgeries.sql"
-						}
-					},
-
-					{
-						"name": "Summary of Indoor Services Minor Surgeries",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/minor_surgeries.sql"
-						}
-					},
-					
-					{
-						"name": "Summary of Indoor Services Death (Maternal and Post Operative)",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/death_maternal_post_operative.sql"
-						}
-					},
-					{
-						"name": "Summary of Indoor Services Hospital Summary Plaster",
-						"type": "MRSGeneric",
-						"config": {
-							"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/Hospital_Summary_Plaster.sql"
-						}
-					}
-			]
-		}
-	},
-	
-    
+  
 	"hospital_activities__number_of_clients_served_new_and_total": {
         "name": "Hospital Activities - Number of Clients Served (New and Total)",
         "type": "MRSGeneric",
