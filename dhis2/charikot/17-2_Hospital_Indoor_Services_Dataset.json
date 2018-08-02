@@ -1132,96 +1132,99 @@
         }
 		]
     },
-	"FreeHealthServices Outpatient and ER": {
-      "dataValues": [    						 
-        {
-          "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "fMgY7buyPgJ",
-          "row": 16,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm", 
-          "dataElement": "TQchxgpT1Mg",
-          "row": 12,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",
-          "dataElement": "U0aYCzqSIrV",
-          "row": 9,
-          "column": 3
-        },
-		 {
-          "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "pGKBCQ2y96V",
-          "row": 15,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm", 
-          "dataElement": "SIODC3GmBPx",
-          "row": 10,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",
-          "dataElement": "d5xARcg2y1L",
-          "row": 11,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",
-          "dataElement": "xD4PTWeBft4",
-          "row": 14,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "sboNx8FiP4d",
-          "row": 8,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm", 
-          "dataElement": "B9svAWSTFQt",
-          "row": 4,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",
-          "dataElement": "xkfNycS7hEG",
-          "row": 1,
-          "column": 3
-        },
-		 {
-          "categoryOptionCombo": "kdsirVNKdhm",  
-          "dataElement": "wYwdmBDhBNu",
-          "row": 7,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm", 
-          "dataElement": "YLBxlWQ2Ji5",
-          "row": 2,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",
-          "dataElement": "qLLnISVBthc",
-          "row": 3,
-          "column": 3
-        },
-		{
-          "categoryOptionCombo": "kdsirVNKdhm",
-          "dataElement": "sSIsC8lbPDs",
-          "row": 6,
-          "column": 3
-        }
-		
-		]
-    }
-	
-		
-  }
+	"FreeHealthServices Outpatient": {
+			"dataValues": [{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "fMgY7buyPgJ",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "TQchxgpT1Mg",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "U0aYCzqSIrV",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "pGKBCQ2y96V",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "SIODC3GmBPx",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "d5xARcg2y1L",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "xD4PTWeBft4",
+					"row": 6,
+					"column": 3
+				}
+
+			]
+		},
+		"FreeHealthServices ER": {
+			"dataValues": [{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "sboNx8FiP4d",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "B9svAWSTFQt",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "xkfNycS7hEG",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "wYwdmBDhBNu",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "YLBxlWQ2Ji5",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "qLLnISVBthc",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "sSIsC8lbPDs",
+					"row": 6,
+					"column": 3
+				}
+
+			]
+		}
+
+
+	}
 }
