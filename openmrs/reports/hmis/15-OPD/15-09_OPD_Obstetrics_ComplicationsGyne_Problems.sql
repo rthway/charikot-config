@@ -69,3 +69,4 @@ FROM
 GROUP BY first_answers.icd10_code
 ORDER BY FIELD(first_answers.icd10_code,'O00','O08','O13','O14','O15.0','O15.1','O15.2','O21','O46','O63','O64-O66','S37','O72','O73','O75',
  'O85','N73','N81.4','N92','N93','N97','N46')
+

@@ -1019,7 +1019,8 @@
                 "allowFutureDates": true
             },
             "Operative Notes, Procedure": {
-                "required": true
+                "required": true,
+				"multiSelect": true
             },
 	    "Depression Initial-History of Mania": {
                 "required": true
@@ -1168,6 +1169,137 @@
 			"Psychiatrist's Rec, Reasoning/rationale": {
                 "required": true
             },
+			"PTSD-Patient History": {
+                "required": true
+            },
+			"PTSD-Time of Trauma": {
+                "required": true
+            },
+			"PTSD-Symptoms Prior to Event": {
+                "required": true
+            },
+			"PTSD-Extreme Sleeplessness": {
+                "required": true
+            },
+			"PTSD PCL C-Confirm PTSD": {
+                "required": true
+            },
+			"PTSD Initial counselling-Counselling provided for": {
+                "required": true,
+				"multiSelect": true
+            },
+			"PTSD Initial-Goal of treatment": {
+                "required": true
+            },
+			"PTSD Initial Note-Follow up visit": {
+                "required": true
+            },
+			"PTSD-Consent for Houselold Visit": {
+                "required": true
+            },
+			"PTSD Follow up-Patient history": {
+                "required": true
+            },
+			"PTSD Followup-Medical Adherence": {
+                "required": true
+            },
+			"Psychosis_FU-Counselling provided for": {
+                "required": true
+            },
+			"Psychosis_FU- Progress toward goal of treatment": {
+                "required": true
+            },
+			"PTSD Follow up-Follow up visit": {
+                "required": true
+            },
+			"aaa": {
+                "required": true
+            },
+			"Depression-Patient History": {
+                "required": true
+            },
+			"Depression Initial-Grief": {
+                "required": true
+            },
+			"Depression Initial-History of Mania": {
+                "required": true
+            },
+			"Depression-Severity of depression": {
+                "required": true
+            },
+			"Depression Follow up-Conselling": {
+                "required": true
+            },
+			"Depression Initial-Progress Toward Goal of Treatment": {
+                "required": true
+            },
+			"Depression Initial-Follow up visit": {
+                "required": true
+            },
+			"Depression-Consent for Household Visit": {
+                "required": true
+            },
+			"Depression-Counseling benefits": {
+                "required": true
+            },
+			"Depression-Recommendation Rationale Followed": {
+                "required": true
+            },
+			"Depression Initial-Consent for Household Visit": {
+                "required": true
+            },
+			"Psychosis_Intake-Patient history": {
+                "required": true
+            },
+			"Psychosis_Intake-Symptoms of Psychosis": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_Intake-Suicidal tendencies": {
+                "required": true
+            },
+			"Psychosis_Intake-Self harm": {
+                "required": true
+            },
+			"Psychosis_Intake-Counselling provided for": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_Intake-Progress toward goal of treatment": {
+                "required": true
+            },
+			"Psychosis_FU-Follow up": {
+                "required": true
+            },
+			"Psychosis_FU-Situation compared to previous visit": {
+                "required": true
+            },
+			"Psychosis_FU-Situation compared to previous visit": {
+                "required": true
+            },
+			"Psychosis_FU-If no medical adherence": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_FU-Counselling benefit": {
+                "required": true
+            },
+			"Psychosis_FU-Counselling provided for": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_FU- Progress toward goal of treatment": {
+                "required": true
+            },
+			"Mental health-Consent for household visit": {
+                "required": true
+            },
+			"Psychosis_FU-Psychiatrist's recommendation followed": {
+                "required": true
+            },
+			"Psychosis_FU-Referral": {
+                "required": true
+            },			
 			"PTSD-Counseling": {
                 "multiSelect": true
             },
@@ -1175,13 +1307,16 @@
                 "multiSelect": true
             },
 			"PTSD Followup-Amitriptyline": {
-                "multiSelect": true
+                "multiSelect": true  
             },
 			"PTSD Followup-What Counselling is Being Provided": {
                 "multiSelect": true
             },
 			"PNC, Discharge Date": {
                 "allowFutureDates": true
+            },
+			"Discharge Note-Post op surgery complications": {
+                "multiSelect": true
             }
         }
     }
