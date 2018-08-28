@@ -196,6 +196,10 @@
                     "showOnly": [],
                     "showDetailsButton": true
                 },
+		"expandedViewConfig": {
+                    "showOnly": [],
+                    "showDetailsButton": true
+                },
                 "displayOrder": 9
             },
             "childhood_templates": {
@@ -205,6 +209,10 @@
                 "showOnly": [],
                 "showDetailsButton": true,
                 "dashboardConfig": {
+                    "showOnly": [],
+                    "showDetailsButton": true
+                },
+		"expandedViewConfig": {
                     "showOnly": [],
                     "showDetailsButton": true
                 },
@@ -320,6 +328,10 @@
                     "showDetailsButton": true
                 },
                 "allDiseaseDetails": {
+                    "showOnly": [],
+                    "showDetailsButton": true
+                },
+		"expandedViewConfig": {
                     "showOnly": [],
                     "showDetailsButton": true
                 },
