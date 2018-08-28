@@ -1,8 +1,6 @@
-
 SELECT 
-	first_answers.category AS 'Category',
-    first_answers.answer_name AS 'Diseases',
-    COUNT(DISTINCT (first_concept.person_id)) AS 'Total Patient'
+    first_answers.answer_name AS 'Categories',
+    COUNT(DISTINCT (first_concept.person_id)) AS 'Total Patietnt'
 FROM
     (SELECT 
         ca.answer_concept AS answer,
@@ -24,7 +22,7 @@ FROM
         AND answer_concept_short_name.voided
         IS FALSE
     WHERE
-        question_concept_name.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness, Dehydration Status', 'Childhood Illness, Diarrhoea present', 'Childhood Illness, Refered-Out')
+        question_concept_name.name IN ( 'Out Patient Details, Free Health Service Code','ER General Notes, Free Health Service Code')
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
         LEFT OUTER JOIN
@@ -36,7 +34,7 @@ FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness, Dehydration Status', 'Childhood Illness, Diarrhoea present','Childhood Illness, Refered-Out')
+        AND cn1.name IN ('Out Patient Details, Free Health Service Code','ER General Notes, Free Health Service Code')
         AND o1.voided = 0
         AND cn1.voided = 0
     INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id
@@ -45,10 +43,10 @@ FROM
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id
     INNER JOIN person p1 ON o1.person_id = p1.person_id
       INNER JOIN visit v ON v.visit_id = e.visit_id
+      join visit_attribute as va on va.visit_id = v.visit_id  and va.value_reference = 'IPD'
     WHERE
-     TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) > 1
-            AND TIMESTAMPDIFF(MONTH, p1.birthdate, v.date_started) < 60
-       AND DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
-            AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
+   
+        DATE(e.encounter_datetime) BETWEEN DATE('#startDate#') AND DATE('#endDate#')
+            AND o1.value_coded IS NOT NULL
+           ) first_concept ON first_concept.answer = first_answers.answer
 GROUP BY first_answers.answer_name
-ORDER BY first_answers.category, first_answers.answer_name;
