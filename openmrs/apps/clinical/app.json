@@ -1230,7 +1230,8 @@
                 "required": true
             },
 			"Depression Follow up-Conselling": {
-                "required": true
+                "required": true,
+				"multiSelect": true
             },
 			"Depression Initial-Progress Toward Goal of Treatment": {
                 "required": true
@@ -1315,6 +1316,20 @@
                 "multiSelect": true
             },
 			"PNC, Discharge Date": {
+                "allowFutureDates": true
+            },
+			"ANC, Expected Delivery Date": {
+                "allowFutureDates": true
+            },
+			"PTSD Follow up-Counselling provided for": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_FU-Current symptoms": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Safe abortion-Follow up": {
                 "allowFutureDates": true
             },
 			"Discharge Note-Post op surgery complications": {
