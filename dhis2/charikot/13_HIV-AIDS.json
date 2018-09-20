@@ -656,21 +656,6 @@
 					"dataElement": "yG1UG5VQ4J7",
 					"row": 1,
 					"column": 5
-				},
-				{
-					"_comment": "Counseling and Testing-Antenatal(ANC)-counsled",
-					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "I5mm6lCVOke",
-					"row": 1,
-					"column": 3
-				},
-
-				{
-					"_comment": "ANC count",
-					"categoryOptionCombo": "kdsirVNKdhm",
-					"dataElement": "HWpJE2sEu3z",
-					"row": 1,
-					"column": 3
 				}
 				
 			]
@@ -742,62 +727,75 @@
 		},
 		"HIV Prevention of Mother-To-Child Transmission (PMTCT) Dataset(Labour & Delivery and Postnatal)": {
 			"dataValues": [
-
+				{
+					"_comment": "ANC count",
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "HWpJE2sEu3z",
+					"row": 1,
+					"column": 2
+				},
+				{
+					"_comment": "Counseling and Testing-Antenatal(ANC)-counsled",
+					"categoryOptionCombo": "kdsirVNKdhm",
+					"dataElement": "I5mm6lCVOke",
+					"row": 2,
+					"column": 2
+				},
 				
 				{
 					"_comment": "Counseling and Testing-Antenatal(ANC)-tested",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "kcPJTbYhsSJ",
-					"row": 2,
+					"row": 3,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Antenatal(ANC)-positive",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "Z2kMarZqg5U",
-					"row": 3,
+					"row": 4,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Labour & Delivery-counsled",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "LF4AyH3ld79",
-					"row": 1,
+					"row": 5,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Labour & Delivery-tested",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "l6LYnh4LA0o",
-					"row": 5,
+					"row": 6,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Labour & Delivery-positive",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "waO7EMzRFMO",
-					"row": 6,
+					"row": 7,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Postnatal-counsled",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "PNeH6e8Zk5C",
-					"row": 4,
+					"row": 8,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Postnatal-tested",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "GIQUNR2DiVC",
-					"row": 2,
+					"row": 9,
 					"column": 2
 				},
 				{
 					"_comment": "Counseling and Testing-Postnatal-positive",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "mfYORJjZo4q",
-					"row": 3,
+					"row": 10,
 					"column": 2
 				}
 			]
