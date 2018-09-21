@@ -1332,6 +1332,254 @@
 			"Safe abortion-Follow up": {
                 "allowFutureDates": true
             },
+			"PTSD1-Trauma": {
+                "required": true
+            },
+			"PTSD Followup-Repeated Disturbing Memories": {
+                "required": true
+            },
+			"PTSD Followup-Repeated Disturbing Dreams": {
+                "required": true
+            },
+			"PTSD Followup-Reliving Stressful Events": {
+                "required": true
+            },
+			"PTSD Followup-Upset When Reminded Of The Event": {
+                "required": true
+            },
+			"PTSD Followup-Physical Reactions": {
+                "required": true
+            },
+			"PTSD Followup-Avoiding Thinking or Talking": {
+                "required": true
+            },
+			"PTSD Followup-Avoiding Activities or Situations": {
+                "required": true
+            },
+			"PTSD Followup-Trouble Remembering": {
+                "required": true
+            },
+			"PTSD Followup-Loss of interest": {
+                "required": true
+            },
+			"PTSD Followup-Feeling Distant": {
+                "required": true
+            },
+			"PTSD Followup-Emotionally Numb": {
+                "required": true
+            },
+			"PTSD Followup-Future Somehow will be cut Short?": {
+                "required": true
+            },
+			"PTSD Followup-Trouble falling or staying asleep?": {
+                "required": true
+            },
+			"PTSD Followup-Angry Outbursts": {
+                "required": true
+            },
+			"PTSD Followup-Difficulty Concentrating?": {
+                "required": true
+            },
+			"PTSD Followup-Being Superalert": {
+                "required": true
+            },
+			"PTSD Followup-Feeling Jumpy or Easily startled?": {
+                "required": true
+            },
+			"PTSD Followup-PCL Total": {
+                "required": true
+            },
+			"PTSD Followup-Daily Activities": {
+                "required": true
+            },
+			"PTSD Follow up-Medical adherence": {
+                "required": true
+            },
+			"PTSD Followup-If No Medical Adherence ?": {
+                "required": true
+            },
+			"PTSD Followup-Counselling benefits": {
+                "required": true
+            },
+			"PTSD Follow up-Goal of treatment": {
+                "required": true
+            },
+			"PTSD Follow up-Psychiatrist's recommended followed": {
+                "required": true
+            },
+			"Psychiatrist's Rec, Recommendation": {
+                "required": true
+            },
+			"Depression-Signs of mania": {
+                "required": true
+            },
+			"Depression-Medical Adherence": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-1": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-2": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-3": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-4": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-5": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-6": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-7": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-8": {
+                "required": true
+            },
+			"Depression-F/U-PHQ9-9": {
+                "required": true
+            },
+			"Depression-PHQ9 Total": {
+                "required": true
+            },
+			"Depression-Progress toward Goal of treatment": {
+                "required": true
+            },
+			"Depression F/U-Follow up": {
+                "required": true
+            },
+			"PTSD Initial-Trauma": {
+                "required": true
+            },
+			"PTSD Initial-Repeated Disturbing Memories": {
+                "required": true
+            },
+			"PTSD Initial-Repeated Disturbing Dreams": {
+                "required": true
+            },
+			"PTSD Initial-Reliving Stressful Events": {
+                "required": true
+            },
+			"PTSD Initial-Upset When Reminded Of The Event": {
+                "required": true
+            },
+			"PTSD Initial-Physical Reactions": {
+                "required": true
+            },
+			"PTSD Initial-Avoiding Thinking or Talking": {
+                "required": true
+            },
+			"PTSD Initial-Avoiding Activities or Situations": {
+                "required": true
+            },
+			"PTSD Initial-Trouble Remembering": {
+                "required": true
+            },
+			"PTSD Initial-Loss of interest": {
+                "required": true
+            },
+			"PTSD Initial-Feeling Distant": {
+                "required": true
+            },
+			"PTSD Initial-Emotionally Numb": {
+                "required": true
+            },
+			"PTSD Initial-Future Somehow will be cut Short?": {
+                "required": true
+            },
+			"PTSD Initial-Trouble falling or staying asleep?": {
+                "required": true
+            },
+			"PTSD Initial-Angry Outbursts": {
+                "required": true
+            },
+			"PTSD Initial-Difficulty Concentrating?": {
+                "required": true
+            },
+			"PTSD Initial-Being Superalert": {
+                "required": true
+            },
+			"PTSD Initial-Feeling Jumpy or Easily startled?": {
+                "required": true
+            },
+			"PTSD Initial-PCL Total": {
+                "required": true
+            },
+			"PTSD Initial-Daily Activities": {
+                "required": true
+            },
+			"PTSD-ASR": {
+                "required": true
+            },
+			"Depression Initial-Counselling": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Depression Initial-PHQ9-1": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-2": {
+                "required": true
+            },
+			"Depression Initial -PHQ9-3": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-4": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-5": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-6": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-7": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-8": {
+                "required": true
+            },
+			"Depression Initial-PHQ9-9": {
+                "required": true
+            },
+			"Depression-Severity of depression": {
+                "required": true
+            },
+			"Depression Initial-PHQ9 Effect": {
+                "required": true
+            },
+			"Psychosis_Intake-Differential diagnosis": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_Intake-Follow up": {
+                "required": true
+            },
+			"Psychosis FU-Meds-HPD side effects-EPS": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Psychosis_FU-Medical adherence": {
+                "required": true
+            },
+			"Mental Health-Visit Type": {
+                "required": true
+            },
+			"Mental health-Primary Complaint": {
+                "required": true
+            },
+			"Mental Health-Medical Ruleout": {
+                "required": true,
+				"multiSelect": true
+            },
+			"Mental Health-Signs and Symptoms": {
+                "required": true,
+				"multiSelect": true
+            },
 			"Discharge Note-Post op surgery complications": {
                 "multiSelect": true
             }
