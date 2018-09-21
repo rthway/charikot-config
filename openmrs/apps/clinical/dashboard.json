@@ -24,7 +24,7 @@
                 "type": "visits",
                 "dashboardConfig": {
                     "title": null,
-                    "maximumNoOfVisits": 4
+                    "maximumNoOfVisits": 6
                 },
                 "displayOrder": 1
             },
@@ -45,11 +45,11 @@
                 },
                 "formGroup":["Patient Vitals","Acute OPD visit","Acute Abdominal Complaint","Acute HEENT Complaint",
                              "Acute MSK Complaint","Acute Skin Complaint","Acute GU Complaint","ANC","Asthma, Progress","Childhood Illness (Children aged below 2 months)",
-                             "Childhood Illness( Children aged 2 months to 5 years)","CHP Antenatal Care","CHP Chronic Disease Counseling", "CHP Registration",
+                             "Childhood Illness( Children aged 2 months to 5 years)","CHP Antenatal Care","Depression-Initial Visit","CHP Chronic Disease Counseling", "CHP Registration",
                              "Chronic Kidney Disease, Progress","COPD, Progress","Congestive Heart Failure, Progress","Death Note","Delivery note","Dental","Dental Note",
                              "Depression Note","Diabetes, Progress","Discharge Note","DRTuberculosis, Intake","ECG Notes","ER General Notes","Family Planning Template",
                              "HIV Testing and Counseling Intake Template","HIV Treatment and Care Intake Template","HIV Treatment and Care Progress Template","Hypertension, Progress",
-                             "IMAM Program","Kalaazar, Template","Leprosy, Template","Mental Health","Mental Health Screener","Malaria","Nutrition","Operative Notes",
+                             "IMAM Program","Kalaazar, Template","Leprosy, Template","Mental Health","MHS-Depression Initial Visit","Mental Health Screener","Malaria","Nutrition","Operative Notes",
                              "Opioid Substitution Therapy Intake Template","Opioid Substitution Therapy Intake Template","Opportunistic Infection Template","Orthopaedic Examination",
                              "PNC Note","Post Delivery Family Planning Checklist","Prevention of Mother-to-Child Transmission Intake Template","Procedure Notes","Psychiatrist's Recommendation",
                              "Psychosis Followup Note","Psychiatrists Recommendation","Psychosis Intake Note","Rheumatoid Arthritis, Progress","Rheumatic Heart Disease, Progress","Safe Abortion","Seizure Disorder, Progress",
@@ -279,6 +279,10 @@
                     "showOnly": [],
                     "showDetailsButton": true
                 },
+                "expandedViewConfig": {
+                    "showOnly": [],
+                    "showDetailsButton": true
+                },
                 "allDiseaseDetails": {
                     "showOnly": [],
                     "showDetailsButton": true
@@ -312,6 +316,10 @@
                     "showDetailsButton": true
                 },
                 "allDiseaseDetails": {
+                    "showOnly": [],
+                    "showDetailsButton": true
+                },
+                "expandedViewConfig": {
                     "showOnly": [],
                     "showDetailsButton": true
                 },
@@ -396,6 +404,10 @@
                     "showDetailsButton": true
                 },
                 "allDiseaseDetails": {
+                    "showOnly": [],
+                    "showDetailsButton": true
+                },
+		"expandedViewConfig": {
                     "showOnly": [],
                     "showDetailsButton": true
                 },
