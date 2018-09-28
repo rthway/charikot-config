@@ -31,7 +31,8 @@ FROM
     (SELECT 
         o1.person_id,
             cn2.concept_id AS answer,
-            cn1.concept_id AS question
+            cn1.concept_id AS question,
+			cn1.name AS categories
     FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
@@ -48,6 +49,6 @@ FROM
     WHERE
     
         DATE(v.date_started) BETWEEN '#startDate#' AND '#endDate#'
-            AND o1.value_coded IS NOT NULL) first_concept ON first_concept.answer = first_answers.answer
+            AND o1.value_coded IS NOT NULL) first_concept ON first_concept.categories=first_answers.category AND first_concept.answer = first_answers.answer
 GROUP BY first_answers.category,first_answers.answer_name
 ORDER BY first_answers.category, first_answers.answer_name;
