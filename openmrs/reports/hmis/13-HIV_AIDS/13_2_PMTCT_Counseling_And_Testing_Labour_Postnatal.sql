@@ -188,7 +188,7 @@ FROM
         AND person.voided = 0
         INNER JOIN
     concept_name deliveryMethodConcept ON deliveryMethodConcept.concept_id = obs.concept_id
-        AND deliveryMethodConcept.name = 'PNC - HIV tested'
+        AND deliveryMethodConcept.name = 'PNC, Result if Tested'
         AND deliveryMethodConcept.concept_name_type = 'FULLY_SPECIFIED'
        
 WHERE
