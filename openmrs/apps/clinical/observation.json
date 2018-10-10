@@ -3,6 +3,7 @@
         "common": [
             "Patient Vitals",
             "Acute OPD visit",
+            "Psychosocial Assessment",
             "Acute Abdominal Complaint",
             "Acute HEENT Complaint",
             "Acute MSK Complaint",
