@@ -26,8 +26,8 @@
 		"enableNepaliCalendar": true,
 		"displayNepaliDates": true,
 		"defaultVisitType": "General",
-		"filterObservationTemplates":true,
-        "visitTypeForRetrospectiveEntries": "General",
+	        "filterObservationTemplates":true,
+                "visitTypeForRetrospectiveEntries": "General",
 		"obsIgnoreList": ["Patient file"],
 		"patientConfig": {
 	   	    "showMiddleNameOn" : ["patient-profile","patient-context"]
