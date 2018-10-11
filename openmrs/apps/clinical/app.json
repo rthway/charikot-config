@@ -831,18 +831,6 @@
             "ANC, Visit Month": {
                 "required": true
             },
-            "ANC, Albendazole given": {
-                "required": true
-            },
-            "ANC, Number of IFA Tablets given": {
-                "required": true
-            },
-            "ANC, Blood Transfusion Provided": {
-                "required": true
-            },
-            "ANC, Blood Transfusion Quantity": {
-                "required": true
-            },
             "Childhood Illness, Acute Respiratory Infection present": {
                 "required": true
             },
@@ -950,7 +938,8 @@
                 "required": true
             },
             "ANC, ANC Visit": {
-                "required": true
+                "required": true,
+				"multiSelect": true
             },
             "ANC, Completed 4 ANC visits": {
                 "required": true
@@ -1573,6 +1562,9 @@
 			"Mental health-Primary Complaint": {
                 "required": true
             },
+			"Depression Initial-PHQ9 Total": {
+                "required": true
+            },
 			"Mental Health-Medical Ruleout": {
                 "required": true,
 				"multiSelect": true
@@ -1582,6 +1574,9 @@
 				"multiSelect": true
             },
 			"Discharge Note-Post op surgery complications": {
+                "multiSelect": true
+            },
+			"New born admission-Sepsis risk factor": {
                 "multiSelect": true
             }
         }
