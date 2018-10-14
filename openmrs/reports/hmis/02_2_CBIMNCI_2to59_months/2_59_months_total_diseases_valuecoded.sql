@@ -28,7 +28,7 @@ FROM
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
         LEFT OUTER JOIN
-    (SELECT DISTINCT
+    (SELECT 
         o1.person_id,
             cn2.concept_id AS answer,
             cn1.concept_id AS question
