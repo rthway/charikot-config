@@ -29,4 +29,5 @@
         "order": 1,
         "requiredPrivilege": "app:orders"
     }
+
 }

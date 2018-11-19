@@ -1,6 +1,7 @@
 {
   "homePage": {
     "header_text": "<b>Welcome to Possible Health Charikot",
+
     "logo": "/bahmni/images/bahmniLogoFull.png",
     "title_text": " "
   },
@@ -12,4 +13,5 @@
   "helpLink": {
     "url": "https://bahmni.atlassian.net/wiki/display/BAH/Bahmni+Home"
   }
+
 }

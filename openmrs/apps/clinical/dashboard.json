@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "general": {
         "dashboardName": "General",
@@ -589,6 +590,7 @@
                 "allDiseaseDetails":{
                     "showOnly": [],
                     "showDetailsButton": true
+
                 }
             }
         }

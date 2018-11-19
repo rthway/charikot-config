@@ -1,9 +1,14 @@
 {
-  "commonConfig": {},
+	"commonConfig": {
+  },
   "tabConfig": {
     "allMedicationTabConfig": {
+      "orderSet": {
+        "calculateDoseOnlyOnCurrentVisitValues": false
+      },
       "inputOptionsConfig": {
         "defaultDurationUnit": "Day(s)",
+        "hideOrderSet" : false,
         "defaultInstructions": "As directed",
         "frequencyDefaultDurationUnitsMap": [
           {
@@ -85,8 +90,16 @@
             "doseUnits": "Drop",
             "route": "Topical"
           },
+          "Food Supplement": {
+            "doseUnits": "Unit(s)",
+            "route": "Oral"
+          },
           "Gel": {
             "route": "Topical"
+          },
+          "Granule": {
+            "doseUnits": "Unit(s)",
+            "route": "Oral"
           },
           "Inhaler": {
             "doseUnits": "Puff(s)",
@@ -95,6 +108,9 @@
           "Injection": {
             "doseUnits": "mg",
             "route": "Intravenous"
+          },
+          "Jelly": {
+            "route": "Topical"
           },
           "Liquid": {
             "doseUnits": "ml",
@@ -111,6 +127,7 @@
             "route": "Per Vaginal"
           },
           "Powder": {
+            "doseUnits": "mg",
             "route": "Topical"
           },
           "Solution": {
@@ -134,7 +151,8 @@
       },
       "drugOrderHistoryConfig": {
         "view": "default"
+        }
       }
     }
   }
-}
+
