@@ -1576,6 +1576,9 @@
 			"Discharge Note-Post op surgery complications": {
                 "multiSelect": true
             },
+		"Delivery Note-Complication Present": {
+		"multiSelect": true
+	    },
 			"New born admission-Sepsis risk factor": {
                 "multiSelect": true
             }
