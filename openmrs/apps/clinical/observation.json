@@ -57,6 +57,7 @@
             "Trauma Notes",
             "Tuberculosis, Intake",
             "Tuberculosis, Follow up note",
+	    "DR TB Intake note",
             "DR TB Follow up Note",
             "USG Notes",
             "TEST TEMPLATE (टेस्ट टेम्प्लेट)",
@@ -77,11 +78,11 @@
             "Post Delivery Family Planning Checklist",
             "Prevention of Mother-to-Child Transmission Intake Template",
             "Reproductive Health-Note",
-            "Safe Abortion",
-	    "Newborn admission Note"
+            "Safe Abortion"
         ],
         "lessThanTwoMonths":[
-            "CBIMNCI (<2 months child)"
+            "CBIMNCI (<2 months child)",
+	    "Newborn admission (NBA) Note"
         ],
         "infant": [
         ],
