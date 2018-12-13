@@ -2,8 +2,7 @@
     "id": "bahmni.registration",
     "instanceOf": "bahmni.template.registration",
     "description": "Bahmni Patient Registration App",
-    "extensionPoints": [
-        {
+    "extensionPoints": [{
             "id": "org.bahmni.registration.patient.search.result.action",
             "description": "Bahmni Patient Search Result Action"
         },
@@ -20,16 +19,14 @@
         "mandatoryPersonAttributes": [
             "Caste"
         ],
-		"autoCompleteFields": [
+        "autoCompleteFields": [
             "familyName"
         ],
-        "printOptions": [
-            {
-                "label": "P<u>r</u>int Sticker",
-                "templateUrl": "/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html",
-                "shortcutKey": "r"
-            }
-        ],
+        "printOptions": [{
+            "label": "P<u>r</u>int Sticker",
+            "templateUrl": "/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html",
+            "shortcutKey": "r"
+        }],
         "showMiddleName": true,
         "showLastName": true,
         "defaultVisitType": "General",
@@ -59,7 +56,7 @@
         },
         "patientSearchResults": {
             "address": {
-                "fields" : ["city_village", "address1"]
+                "fields": ["city_village", "address1"]
             }
         },
         "enableNepaliCalendar": true,

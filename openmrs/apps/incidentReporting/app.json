@@ -1,7 +1,5 @@
-[
-	{
-		"id":"bahmni.incidentReporting",
-		"description":"Incident Reporting System",
-		"extensionPoints":[]
-	}
-]
+[{
+	"id": "bahmni.incidentReporting",
+	"description": "Incident Reporting System",
+	"extensionPoints": []
+}]

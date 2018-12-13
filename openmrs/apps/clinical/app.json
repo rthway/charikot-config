@@ -24,8 +24,13 @@
     ],
     "config": {
         "hideConditions": false,
+        "enableNepaliCalendar": true,
+		"displayNepaliDates": true,
         "enableRadiologyOrderOptions": ["Urgent", "NeedsPrint"],
         "enableLabOrderOptions": ["Urgent", "NeedsPrint"],
+        "patientConfig": {
+			"showMiddleNameOn": ["patient-profile", "patient-context"]
+		},
         "quickPrints": false,
         "networkConnectivity": {
             "showNetworkStatusMessage": false,

@@ -12,8 +12,8 @@ var onBloodPressureChange = function (formName, formFieldValues) {
     }
 };
 Bahmni.ConceptSet.FormConditions.rules = {
-    'Diastolic Data' : onBloodPressureChange,
-    'Systolic Data' : onBloodPressureChange
+    'Diastolic Data': onBloodPressureChange,
+    'Systolic Data': onBloodPressureChange
     /* 'Diabetes, Last A1C result known?' : function (formName, formFieldValues) {
         var a1c_known = formFieldValues['Diabetes, Last A1C result known?'];
         if (a1c_known) {
@@ -26,5 +26,5 @@ Bahmni.ConceptSet.FormConditions.rules = {
 				error: "Please order A1C lab test if available"
             }
         }
-    } */ 
+    } */
 };

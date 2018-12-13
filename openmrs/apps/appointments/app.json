@@ -1,12 +1,10 @@
 {
   "id": "bahmni.appointments",
   "description": "Bahmni Appointments Scheduling App",
-  "extensionPoints": [
-    {
-      "id": "org.bahmni.appointments",
-      "description": "Bahmni Admin Page"
-    }
-  ],
+  "extensionPoints": [{
+    "id": "org.bahmni.appointments",
+    "description": "Bahmni Admin Page"
+  }],
   "config": {
     "minCharLengthToTriggerPatientSearch": 3,
     "enableSpecialities": true,
@@ -14,8 +12,8 @@
     "weekStart": "isoWeek",
     "calendarSlotDuration": "00:30",
     "calendarSlotLabelInterval": "01:00",
-    "startOfDay":"09:00",
-    "endOfDay":"19:00",
+    "startOfDay": "09:00",
+    "endOfDay": "19:00",
     "printListViewTemplateUrl": "/bahmni_config/openmrs/apps/appointments/printListView.html",
     "enableServiceTypes": false,
     "enableCalendarView": true,
