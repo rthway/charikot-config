@@ -935,6 +935,615 @@
 				}
 			]
 		},
+		"Tubercluosis Control Program Sptum Conversion Total": {
+			"dataValues": [{
+					"_comment": "No of Cases Registered_New-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "fZ8D461sGy0",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-New-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "fZ8D461sGy0",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Relapse-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "p1f2Ij3cdBF",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Relapse-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "p1f2Ij3cdBF",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered_Treatment After Failure-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "JvI9U3Avfwe",
+					"row": 11,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Treatment After Failure-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "JvI9U3Avfwe",
+					"row": 12,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Treatment After Lost to Follow-up-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "ual1mXMswzb",
+					"row": 13,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Treatment After Lost to Follow-up-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "ual1mXMswzb",
+					"row": 14,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Others Previously Treated-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "DCAs9A8ux4N",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Others Previously Treated-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "DCAs9A8ux4N",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Previous Treatment History Unknown-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "veC4yL4Kd1o",
+					"row": 5,
+					"column": 3
+				},
+				{
+					"_comment": "No of Cases Registered-Previous Treatment History Unknown-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "veC4yL4Kd1o",
+					"row": 6,
+					"column": 3
+				}
+			]
+		},
+		
+		"Tubercluosis Control Program Sptum Conversion": {
+			"dataValues": [{
+					"_comment": "Negative_New-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "HrehcpHmG9L",
+					"row": 29,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-New-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "HrehcpHmG9L",
+					"row": 30,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Relapse-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "w7GRg3JPemY",
+					"row": 35,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Relapse-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "w7GRg3JPemY",
+					"row": 36,
+					"column": 4
+				},
+				{
+					"_comment": "Negative_Treatment After Failure-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "gNHc6Z67QdS",
+					"row": 39,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Treatment After Failure-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "gNHc6Z67QdS",
+					"row": 40,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Treatment After Lost to Follow-up-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "YuYD6F6r1Gr",
+					"row": 41,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Treatment After Lost to Follow-up-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "YuYD6F6r1Gr",
+					"row": 42,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Others Previously Treated-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "phxNJp8Chku",
+					"row": 31,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Others Previously Treated-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "phxNJp8Chku",
+					"row": 32,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Previous Treatment History Unknown-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "vCVBfyedAnt",
+					"row": 33,
+					"column": 4
+				},
+				{
+					"_comment": "Negative-Previous Treatment History Unknown-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "vCVBfyedAnt",
+					"row": 34,
+					"column": 4
+				},
+				
+				
+				
+				{
+					"_comment": "Positive_New-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "CBXWvYttEnA",
+					"row": 57,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-New-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "CBXWvYttEnA",
+					"row": 58,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Relapse-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "o21VfCEp0HC",
+					"row": 63,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Relapse-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "o21VfCEp0HC",
+					"row": 64,
+					"column": 4
+				},
+				{
+					"_comment": "Positive_Treatment After Failure-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "u8eEO25Kng1",
+					"row": 67,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Treatment After Failure-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "u8eEO25Kng1",
+					"row": 68,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Treatment After Lost to Follow-up-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "n6xh2AJqQ0V",
+					"row": 69,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Treatment After Lost to Follow-up-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "n6xh2AJqQ0V",
+					"row": 70,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Others Previously Treated-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "SKscNcwbOzq",
+					"row": 59,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Others Previously Treated-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "SKscNcwbOzq",
+					"row": 60,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Previous Treatment History Unknown-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "pkzzuxRvxsg",
+					"row": 61,
+					"column": 4
+				},
+				{
+					"_comment": "Positive-Previous Treatment History Unknown-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "pkzzuxRvxsg",
+					"row": 62,
+					"column": 4
+				},
+				
+				
+				
+				
+				{
+					"_comment": "Died_New-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "WMrbpYZlMS3",
+					"row": 1,
+					"column": 4
+				},
+				{
+					"_comment": "Died-New-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "WMrbpYZlMS3",
+					"row": 2,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Relapse-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "Nx6TjN3tMH3",
+					"row": 7,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Relapse-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "Nx6TjN3tMH3",
+					"row": 8,
+					"column": 4
+				},
+				{
+					"_comment": "Died_Treatment After Failure-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "qTkuHQLUL4s",
+					"row": 11,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Treatment After Failure-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "qTkuHQLUL4s",
+					"row": 12,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Treatment After Lost to Follow-up-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "IIo9AHznuqQ",
+					"row": 13,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Treatment After Lost to Follow-up-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "IIo9AHznuqQ",
+					"row": 14,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Others Previously Treated-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "G4A0hh7bpSk",
+					"row": 3,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Others Previously Treated-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "G4A0hh7bpSk",
+					"row": 4,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Previous Treatment History Unknown-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "lSLLMBT7264",
+					"row": 6,
+					"column": 4
+				},
+				{
+					"_comment": "Died-Previous Treatment History Unknown-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "lSLLMBT7264",
+					"row": 7,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-New-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "JyIuKj4m4wm",
+					"row": 15,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-New-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "JyIuKj4m4wm",
+					"row": 16,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Relapse-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "mk7QFnpZwOU",
+					"row": 21,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Relapse-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "mk7QFnpZwOU",
+					"row": 22,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up_Treatment After Failure-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "exY8dRRKrPF",
+					"row": 25,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Treatment After Failure-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "exY8dRRKrPF",
+					"row": 26,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Treatment After Lost to Follow-up-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "oPliB3cHuiI",
+					"row": 27,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Treatment After Lost to Follow-up-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "oPliB3cHuiI",
+					"row": 28,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Others Previously Treated-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "hxPzMoIlGnO",
+					"row": 18,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Others Previously Treated-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "hxPzMoIlGnO",
+					"row": 19,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Previous Treatment History Unknown-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "ZImzJRufyoB",
+					"row": 20,
+					"column": 4
+				},
+				{
+					"_comment": "Lost to Follow Up-Previous Treatment History Unknown-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "ZImzJRufyoB",
+					"row": 21,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated_New-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "PymRiOwXluA",
+					"row": 43,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-New-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "PymRiOwXluA",
+					"row": 44,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Relapse-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "u27thi7UidL",
+					"row": 49,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Relapse-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "u27thi7UidL",
+					"row": 50,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated_Treatment After Failure-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "tLiw7FQyOgt",
+					"row": 53,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Treatment After Failure-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "tLiw7FQyOgt",
+					"row": 54,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Treatment After Lost to Follow-up-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "YF5NetnZPsY",
+					"row": 55,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Treatment After Lost to Follow-up-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "YF5NetnZPsY",
+					"row": 56,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Others Previously Treated-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "ni3BKG2w8XX",
+					"row": 45,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Others Previously Treated-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "ni3BKG2w8XX",
+					"row": 46,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Previous Treatment History Unknown-Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "maFskT4J6t7",
+					"row": 47,
+					"column": 4
+				},
+				{
+					"_comment": "Not Evaluated-Previous Treatment History Unknown-Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "maFskT4J6t7",
+					"row": 48,
+					"column": 4
+				}
+			]
+		},
+		
+		
+		"Tubercluosis Control Program TreatmentOutcome PBC Cases Registered": {
+			"dataValues": [
+				{
+					"_comment": "New_F",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "oQEevgbIWXI",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "New_M",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "oQEevgbIWXI",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"_comment": "Relapse_F",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "TX30zq5m4wk",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"_comment": "Relapse_M",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "TX30zq5m4wk",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"_comment": "Treatment After Failure_F",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "WrV2PooqyaV",
+					"row": 11,
+					"column": 3
+				},
+				{
+					"_comment": "Treatment After Failure_M",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "WrV2PooqyaV",
+					"row": 12,
+					"column": 3
+				},
+				{
+					"_comment": "Treatment After Lost to Follow-up_F",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "fAFEAcRRml8",
+					"row": 13,
+					"column": 3
+				},
+				{
+					"_comment": "Treatment After Lost to Follow-up_M",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "fAFEAcRRml8",
+					"row": 14,
+					"column": 3
+				},
+				{
+					"_comment": "Others Previously Treated_F",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "s2eqw4fy7OQ",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "Others Previously Treated_M",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "s2eqw4fy7OQ",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"_comment": "Previous Treatment History Unknown_F",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "M5YxTATvWqA",
+					"row": 5,
+					"column": 3
+				},
+				{
+					"_comment": "Previous Treatment History Unknown_M",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "M5YxTATvWqA",
+					"row": 6,
+					"column": 3
+				}
+			]
+		},
+		
 		"Tubercluosis Control Program TreatmentOutcome PBC": {
 			"dataValues": [{
 					"_comment": "NEW_Cured_F",
@@ -1462,6 +2071,25 @@
 
 			]
 		},
+		"Tubercluosis Control Program TreatmentOutcome PBC HIV +ve Cases Registered": {
+			"dataValues": [
+				{
+					"_comment": "Female",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "h8K741BH6PO",
+					"row": 1,
+					"column": 2
+				},
+				{
+					"_comment": "Male",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "h8K741BH6PO",
+					"row": 2,
+					"column": 2
+				}
+			]
+		},
+		
 		"Tubercluosis Control Program TreatmentOutcome PBC HIV +ve": {
 			"dataValues": [{
 					"_comment": "Cured_F",
@@ -1545,6 +2173,70 @@
 					"categoryOptionCombo": "rk5aLXM2ii2",
 					"dataElement": "h8K741BH6PO",
 					"row": 4,
+					"column": 3
+				}
+			]
+		},
+		"Tubercluosis Control Program TreatmentOutcome PCD EP New Cases Registered": {
+			"dataValues": [
+				{
+					"_comment": "PCD_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "zwqY8u5wSrl",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "PCD_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "zwqY8u5wSrl",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"_comment": "EP_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "TjVaoyaNXLH",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "EP_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "TjVaoyaNXLH",
+					"row": 2,
+					"column": 3
+				}
+			]
+		},
+		"Tubercluosis Control Program TreatmentOutcome PCD EP Others Cases Registered": {
+			"dataValues": [
+				{
+					"_comment": "PCD_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "R1UVusqcsha",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": "PCD_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "R1UVusqcsha",
+					"row": 4,
+					"column": 3
+				},
+				{
+					"_comment": "EP_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "lVzN060c35P",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": "EP_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "lVzN060c35P",
+					"row": 2,
 					"column": 3
 				}
 			]
@@ -1838,76 +2530,94 @@
 				}
 			]
 		},
+		"Tubercluosis Control Program TreatmentOutcome PCD EP HIV +ve Cases Registered": {
+			"dataValues": [
+				{
+					"_comment": "Female",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "gNRwaic6lkn",
+					"row": 1,
+					"column": 2
+				},
+				{
+					"_comment": "Male",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "gNRwaic6lkn",
+					"row": 2,
+					"column": 2
+				}
+			]
+		},
 
 		"Tubercluosis Control Program TreatmentOutcome PCD EP HIV +ve": {
 			"dataValues": [{
 					"_comment": "Completed_F",
 					"categoryOptionCombo": "ye1QuAMRG5Z",
 					"dataElement": "rAVTiJlYx1E",
-					"row": 9,
+					"row": 11,
 					"column": 3
 				},
 				{
 					"_comment": "Completed_M",
 					"categoryOptionCombo": "PflKpozpO7b",
 					"dataElement": "rAVTiJlYx1E",
-					"row": 10,
+					"row": 12,
 					"column": 3
 				},
 				{
 					"_comment": "Failure_F",
 					"categoryOptionCombo": "ye1QuAMRG5Z",
 					"dataElement": "Z7RzDOH264i",
-					"row": 7,
+					"row": 9,
 					"column": 3
 				},
 				{
 					"_comment": "Failure_M",
 					"categoryOptionCombo": "PflKpozpO7b",
 					"dataElement": "Z7RzDOH264i",
-					"row": 8,
+					"row": 10,
 					"column": 3
 				},
 				{
 					"_comment": "Died_F",
 					"categoryOptionCombo": "ye1QuAMRG5Z",
 					"dataElement": "DEjsJ19xSBz",
-					"row": 1,
+					"row": 3,
 					"column": 3
 				},
 				{
 					"_comment": "Died_M",
 					"categoryOptionCombo": "PflKpozpO7b",
 					"dataElement": "DEjsJ19xSBz",
-					"row": 2,
+					"row": 4,
 					"column": 3
 				},
 				{
 					"_comment": "Lost to follow up_F",
 					"categoryOptionCombo": "ye1QuAMRG5Z",
 					"dataElement": "VGFgcKsFGdC",
-					"row": 13,
+					"row": 15,
 					"column": 3
 				},
 				{
 					"_comment": "Lost to follow up_M",
 					"categoryOptionCombo": "PflKpozpO7b",
 					"dataElement": "VGFgcKsFGdC",
-					"row": 14,
+					"row": 16,
 					"column": 3
 				},
 				{
 					"_comment": "Not Evaluated_F",
 					"categoryOptionCombo": "ye1QuAMRG5Z",
 					"dataElement": "snTfWkFEGEd",
-					"row": 3,
+					"row": 5,
 					"column": 3
 				},
 				{
 					"_comment": "Not Evaluated_M",
 					"categoryOptionCombo": "PflKpozpO7b",
 					"dataElement": "snTfWkFEGEd",
-					"row": 4,
+					"row": 6,
 					"column": 3
 				}
 			]
@@ -2016,15 +2726,33 @@
 					"_comment": "HIV +ve RR-TB/DR-TB cases_F",
 					"categoryOptionCombo": "ye1QuAMRG5Z",
 					"dataElement": "rgRmzZQp0re",
-					"row": 3,
+					"row": 17,
 					"column": 3
 				},
 				{
 					"_comment": "HIV +ve RR-TB/DR-TB cases_M",
 					"categoryOptionCombo": "PflKpozpO7b",
 					"dataElement": "rgRmzZQp0re",
-					"row": 4,
+					"row": 18,
 					"column": 3
+				}
+			]
+		},
+		"DR Tubercluosis Control Program DR TB Pt. Under Current TreatmentCase Registration": {
+			"dataValues": [
+				{
+					"_comment": "Female",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "Yt6oAnvmxQu",
+					"row": 1,
+					"column": 2
+				},
+				{
+					"_comment": "Male",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "Yt6oAnvmxQu",
+					"row": 2,
+					"column": 2
 				}
 			]
 		},
@@ -2143,6 +2871,7 @@
 				}
 			]
 		},
+		
 
 		"DR Tubercluosis Control Program Treatment Outcome": {
 			"dataValues": [{
@@ -2735,7 +3464,126 @@
 				}
 			]
 		},
-		"DR Tubercluosis Control Program Treatment Outcome HIV positive": {
+		"DR Tubercluosis Control Program Treatment Outcome Cases Registration": {
+			"dataValues": [{
+					"_comment": " New_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "S2LhCdEFY4y",
+					"row": 1,
+					"column": 3
+				},
+				{
+					"_comment": " New_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "S2LhCdEFY4y",
+					"row": 2,
+					"column": 3
+				},
+				{
+					"_comment": "Replase_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "mVXFnem3Alb",
+					"row": 5,
+					"column": 3
+				},
+				{
+					"_comment": "Replase_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "mVXFnem3Alb",
+					"row": 6,
+					"column": 3
+				},
+				{
+					"_comment": "Treatment After Loss to Follow-up_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "d1jS3T15qvb",
+					"row": 13,
+					"column": 3
+				},
+				{
+					"_comment": " Treatment After Loss to Follow-up_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "d1jS3T15qvb",
+					"row": 14,
+					"column": 3
+				},
+				{
+					"_comment": " Treatment After Failure (Cat I)_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "KRFwrScQakN",
+					"row": 9,
+					"column": 3
+				},
+				{
+					"_comment": " Treatment After Failure (Cat I)_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "KRFwrScQakN",
+					"row": 10,
+					"column": 3
+				},
+				{
+					"_comment": " Treatment After Failure (Cat II)_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "D30gkoZv7tp",
+					"row": 11,
+					"column": 3
+				},
+				{
+					"_comment": " Treatment After Failure (Cat II)_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "D30gkoZv7tp",
+					"row": 12,
+					"column": 3
+				},
+				{
+					"_comment": " Transfer In_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "FAoCIR4Meby",
+					"row": 7,
+					"column": 3
+				},
+				{
+					"_comment": " Transfer In_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "FAoCIR4Meby",
+					"row": 8,
+					"column": 3
+				},
+				{
+					"_comment": " Others_F",
+					"categoryOptionCombo": "ye1QuAMRG5Z",
+					"dataElement": "otDpJdTdUHW",
+					"row": 3,
+					"column": 3
+				},
+				{
+					"_comment": " Others_M",
+					"categoryOptionCombo": "PflKpozpO7b",
+					"dataElement": "otDpJdTdUHW",
+					"row": 4,
+					"column": 3
+				}
+			]
+			},
+			"DR Tubercluosis Control Program Treatment Outcome HIV positive Cases Registration": {
+			"dataValues": [{
+					"_comment": "Female",
+					"categoryOptionCombo": "Uec0VacaHJP",
+					"dataElement": "rgRmzZQp0re",
+					"row": 1,
+					"column": 2
+				},
+				{
+					"_comment": "Male",
+					"categoryOptionCombo": "vJYN5WJjlYb",
+					"dataElement": "rgRmzZQp0re",
+					"row": 2,
+					"column": 2
+				}
+			]
+			},
+				
+			"DR Tubercluosis Control Program Treatment Outcome HIV positive": {
 			"dataValues": [{
 					"_comment": "Cured_F",
 					"categoryOptionCombo": "wjdXuhqtVhf",
