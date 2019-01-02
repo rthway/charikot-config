@@ -324,28 +324,15 @@
 		"DHISProgram": true,
 		"type": "concatenated",
 		"config": {
-			"reports": [{
-					"name": "Family Planning Program - Temporary FP methods (new users)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_Temporary_Method_New_Users.sql"
-					}
-				},
+			"reports": [
 				{
-					"name": "Family Planning Program - Temporary FP method (Existing users)",
+					"name": "Family Planning Program all temporary methods",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Temporary_method_Existing_users_count.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Family_Planning_All_Temporary.sql"
 					}
 				},
-
-				{
-					"name": "Family Planning Program - Temporary FP method (Defaulters)",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/07-Family_Planning_Program/Defaulters_count.sql"
-					}
-				},
+			
 				{
 					"name": "Family Planning Program - Temporary FP method (No of devices used)",
 					"type": "MRSGeneric",
