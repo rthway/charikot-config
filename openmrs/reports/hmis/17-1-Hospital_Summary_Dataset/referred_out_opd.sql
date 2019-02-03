@@ -7,7 +7,7 @@ FROM
     INNER JOIN (SELECT DISTINCT
         value_reference AS type
     FROM
-        visit_attribute) visit_type ON visit_type.type IN ('OPD' , 'IPD')
+        visit_attribute) visit_type ON visit_type.type IN ('OPD')
     LEFT JOIN (SELECT DISTINCT
           p1.person_id AS ip,
             p1.gender AS gender,
@@ -31,5 +31,5 @@ FROM
     WHERE
         DATE(o1.obs_datetime) BETWEEN '#startDate#' AND '#endDate#') a ON a.gender = gender_group.gender
         AND a.visit_type = visit_type.type
-GROUP BY gender_group.gender , visit_type.type
-ORDER BY gender_group.gender , visit_type.type;
+GROUP BY gender_group.gender 
+ORDER BY gender_group.gender ;
