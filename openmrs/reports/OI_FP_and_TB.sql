@@ -11,7 +11,7 @@ select concept_id into @OICM from concept_view where concept_full_name = 'Crypto
 select concept_id into @OIPCP from concept_view where concept_full_name = 'Pneumocysitis Pneumonia';
 select concept_id into @OICV from concept_view where concept_full_name = 'Cytomegato Virus';
 select concept_id into @OIHZ from concept_view where concept_full_name = 'Herpes Zoster';
-select concept_id into @OIGH from concept_view where concept_full_name = 'Herpes Genitalis';
+select concept_id into @OIGH from concept_view where concept_full_name = 'Herpes genitalis';
 select concept_id into @OIT from concept_view where concept_full_name = 'Taxoplasmosis';
 select concept_id into @others from concept_view where concept_full_name = 'Others';
 select concept_id into @Refer_FP from concept_view where concept_full_name = 'Refer for other FP services';
@@ -19,7 +19,7 @@ select concept_id into @Refer_FP from concept_view where concept_full_name = 'Re
 drop table if exists TB_positive;
 
 create table TB_positive as select person_id from obs_view
-	where concept_full_name in ('HIVTC, Smear TB assessment at enrollment','HIVTC, Culture TB assessment at enrollment','HIVTC, Chest X-Ray TB assessment at enrollment','HIVTC, Gene Expert TB assessment at enrollment')
+	where concept_full_name in ('HIVTC, Smear TB assessment at enrollment','HIVTC, Culture TB assessment at enrollment','HIVTC, Chest X-Ray TB assessment at enrollment','HIVTC-Gene expert TB assessment at enrollment')
 	and value_coded = @positive and obs_datetime between @start_date and @end_date group by person_id;
 
 select '< 5 years' as 'OI Status : Age Group',

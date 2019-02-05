@@ -46,13 +46,13 @@
             "Diagnosis location": {
                 "conciseText": true
             },
-            "Congestive Heart Failure - Examination / Follow Up - Diagnostic Clues - Current Medicines - Details": {
+            "Congestive heart failure - Examination / Follow Up - Diagnostic Clues - Current Medicines - Details": {
                 "conciseText": true
             },
-            "Congestive Heart Failure - Examination / Follow Up - Diagnostic Clues - Current Medicines - Reason": {
+            "Congestive heart failure - Examination / Follow Up - Diagnostic Clues - Current Medicines - Reason": {
                 "conciseText": true
             },
-            "Congestive Heart Failure - Examination / Follow Up - Onset - Chief Complaint Data - Chief Complaint": {
+            "Congestive heart failure - Examination / Follow Up - Onset - Chief Complaint Data - Chief Complaint": {
                 "conciseText": true
             },
             "Details": {
@@ -70,10 +70,10 @@
             "CAD - Symptoms of Angina today": {
                 "multiSelect": true
             },
-            "Congestive Heart Failure - Intake - Major comorbidities": {
+            "Congestive heart failure - Intake - Major comorbidities": {
                 "multiSelect": true
             },
-            "Congestive Heart Failure - Examination / Follow Up - Reason for Decompensation / Etiology - Reason for decompensation / Likely Etiology": {
+            "Congestive heart failure - Examination / Follow Up - Reason for Decompensation / Etiology - Reason for decompensation / Likely Etiology": {
                 "multiSelect": true
             },
             "Meets all 5 criteria": {
@@ -82,7 +82,7 @@
             "Meets all 3 criteria": {
                 "multiSelect": true
             },
-            "Congestive Heart Failure - Examination / Follow Up - Assessment / Follow up - Assessment": {
+            "Congestive heart failure - Examination / Follow Up - Assessment / Follow up - Assessment": {
                 "multiSelect": true
             },
             "CAD - Diagnosis": {
@@ -106,22 +106,22 @@
             "Considered top differential diagnosis": {
                 "multiSelect": true
             },
-            "Congestive Heart Failure - Examination / Follow Up - Diagnostic Clues - Symptoms of Heart Failure": {
+            "Congestive heart failure - Examination / Follow Up - Diagnostic Clues - Symptoms of Heart Failure": {
                 "multiSelect": true
             },
             "Hypertension - Risk factors": {
                 "multiSelect": true
             },
-            "HTC, Risk Group": {
+            "HTC-Risk group": {
                 "multiSelect": true
             },
             "PMTCT, Risk Group": {
                 "multiSelect": true
             },
-            "STI, STI Diagnosis Syndrome": {
+            "STI-STI syndromic diagnosis": {
                 "multiSelect": true
             },
-            "STI, Risk Group": {
+            "STI-Risk group": {
                 "multiSelect": true
             },
             "HIVTC, Risk Group": {
@@ -199,26 +199,26 @@
             "CHP ANC, Follow up": {
                 "required":true
             },
-            "CHP ANC, Diagnosis, High Risk Low Touch": {
+            "CHP ANC, Diagnosis, High risk Low Touch": {
                 "multiSelect": true,
                 "required":true
             },
-            "CHP ANC, Diagnosis, High Risk High Touch": {
+            "CHP ANC, Diagnosis, High risk High Touch": {
                 "multiSelect": true,
                 "required":true
             },
-            "ANC, Diagnosis, CHP High Risk Low Touch": {
+            "ANC, Diagnosis, CHP High risk Low Touch": {
                 "multiSelect": true,
                 "required":true
             },
-            "ANC, Diagnosis, CHP High Risk High Touch": {
+            "ANC, Diagnosis, CHP High risk High Touch": {
                 "multiSelect": true,
                 "required":true
             },
-            "HTC, Other reason for test": {
+            "HTC-Other reason for test": {
                 "conciseText": true
             },
-            "HTC, Other Risk Group": {
+            "HTC-Other risk group": {
                 "conciseText": true
             },
             "PMTCT, Other Risk Group": {
@@ -227,10 +227,10 @@
             "PMTCT, Place of transfer out for continuum": {
                 "conciseText": true
             },
-            "STI, Other STI Diagnosis Syndrome": {
+            "STI-Other STI diagnosis syndrome": {
                 "conciseText": true
             },
-            "STI, Other Risk Group": {
+            "STI-Other risk group": {
                 "conciseText": true
             },
             "HIVTC, Other Risk Group": {
@@ -326,19 +326,19 @@
             "Delivery Note, Liveborn infant details": {
                 "allowAddMore": true
             },
-            "Dental Note, Tooth number": {
+            "Dental note-Tooth number": {
                 "multiSelect": true
             },
-           "Dental Note, Procedure": {
+           "Dental note-Procedure": {
                 "multiSelect": true
             },
-           "Dental Note, Tooth quadrant": {
+           "Dental note-Tooth quadrant": {
                 "multiSelect": true
             },
-            "Dental Note, Treatment": {
+            "Dental note-Treatment": {
                 "allowAddMore": true
             },
-            "Out Patient Details, Chief Complaint": {
+            "OPD-Chief complaint": {
                 "required": true
             },
             "Out Patient Details, Duration": {
@@ -347,7 +347,7 @@
             "Out Patient Details, Timing": {
                 "conciseText": true
             },
-            "Out Patient Details, Constitutional": {
+            "OPD-Constitutional": {
                 "multiSelect": true
             },
             "Out Patient Details, Eyes": {
@@ -356,13 +356,13 @@
             "Out Patient Details, ENT": {
                 "multiSelect": true
             },
-            "Out Patient Details, CV": {
+            "OPD-CV": {
                 "multiSelect": true
             },
-            "Out Patient Details, Respair": {
+            "OPD-Respire": {
                 "multiSelect": true
             },
-            "Out Patient Details, GI": {
+            "OPD-GI": {
                 "multiSelect": true
             },
             "Out Patient Details, Urinary": {
@@ -377,7 +377,7 @@
             "Out Patient Details, Skin / Breast": {
                 "multiSelect": true
             },
-            "Out Patient Details, Neuro": {
+            "OPD-Neuro": {
                 "multiSelect": true
             },
             "Out Patient Details, Psych": {
@@ -398,7 +398,7 @@
             "Out Patient Details, Lives With": {
                 "conciseText": true
             },
-            "Out Patient Details, Problem": {
+            "OPD-Problem": {
                 "allowAddMore": true
             },
             "Chronic OPD Details, Duration": {
@@ -461,70 +461,70 @@
             "Chronic OPD Details, Problem": {
                 "allowAddMore": true
             },
-            "ER General Notes, Duration": {
+            "ER General note, Duration": {
                 "conciseText": true
             },
-            "ER General Notes, Timing": {
+            "ER General note, Timing": {
                 "conciseText": true
             },
-            "ER General Notes, Constitutional": {
+            "ER-Constitutional": {
                 "multiSelect": true
             },
-            "ER General Notes, Eyes": {
+            "ER-Eyes": {
                 "multiSelect": true
             },
-            "ER General Notes, ENT": {
+            "ER-ENT": {
                 "multiSelect": true
             },
-            "ER General Notes, CV": {
+            "ER-CV": {
                 "multiSelect": true
             },
-            "ER General Notes, Respair": {
+            "ER-Respair": {
                 "multiSelect": true
             },
-            "ER General Notes, GI": {
+            "ER-GI": {
                 "multiSelect": true
             },
-            "ER General Notes, Urinary": {
+            "ER-Urinary": {
                 "multiSelect": true
             },
-            "ER General Notes, Genital": {
+            "ER-Genital": {
                 "multiSelect": true
             },
-            "ER General Notes, MSK": {
+            "ER-MSK": {
                 "multiSelect": true
             },
-            "ER General Notes, Skin / Breast": {
+            "ER-Skin or breast": {
                 "multiSelect": true
             },
-            "ER General Notes, Neuro": {
+            "ER-Neuro": {
                 "multiSelect": true
             },
-            "ER General Notes, Psych": {
+            "ER-Psych": {
                 "multiSelect": true
             },
-            "ER General Notes, Endocrine": {
+            "ER-Endocrine": {
                 "multiSelect": true
             },
-            "ER General Notes, Heme / Lymph": {
+            "ER-Heme and lymph": {
                 "multiSelect": true
             },
-            "ER General Notes, Allergic / Immunologic": {
+            "ER-Allergic / immunologic": {
                 "multiSelect": true
             },
-            "ER General Notes, Lives Where": {
+            "ER General note, Lives Where": {
                 "conciseText": true
             },
-            "ER General Notes, Lives With": {
+            "ER General note, Lives With": {
                 "conciseText": true
             },
-            "ER General Notes, Problem": {
+            "ER-Problem": {
                 "allowAddMore": true
             },
             "Chronic Kidney Disease, Comorbidities": {
                 "multiSelect": true
             },
-            "Congestive Heart Failure, Major comorbidities": {
+            "Congestive heart failure, Major comorbidities": {
                 "multiSelect": true
             },
             "Coronary Artery Disease, Risk factors": {
@@ -561,7 +561,7 @@
             "Post Delivery FP Checklist, Referred to Higher Center for FP": {
                 "multiSelect": true
             },
-            "Surgical Abortion, Immediate complications": {
+            "Surgical Abortion-Immediate complications": {
                 "multiSelect": true
             },
             "Surgical Abortion, Late complications": {
@@ -570,23 +570,23 @@
             "Medical Abortion complications": {
                 "multiSelect": true
             },
-            "Accepted Family Planning methods": {
+            "Accepted family planning methods": {
                 "multiSelect": true,
                 "required": true
             },
             "Coronary Artery Disease, EKG": {
                 "conciseText": true
             },
-            "Death Note, Provider Name": {
+            "Death note, Provider Name": {
                 "conciseText": true
             },
-            "Death Note, MDGP Notified at": {
+            "Death note, MDGP Notified at": {
                 "conciseText": true
             },
-            "Delivery Note, Main Attendant Name": {
+            "Delivery-Main attendant name": {
                 "conciseText": true
             },
-            "Delivery Note, Suturing": {
+            "Delivery-Suturing": {
                 "conciseText": true
             },
             "Diabetes, A1C": {
@@ -601,7 +601,7 @@
             "Diabetes, Distance Vision Check": {
                 "conciseText": true
             },
-            "Discharge Note, Name of Doctor to contact for more information": {
+            "Discharge note, Name of Doctor to contact for more information": {
                 "conciseText": true
             },
             "Hypertension, Last Cr": {
@@ -610,22 +610,22 @@
             "Hypertension, Last LDL": {
                 "conciseText": true
             },
-            "Kalaazar, Parents Name": {
+            "Kalaazar-Patient name": {
                 "conciseText": true
             },
-            "Leprosy, Parents Name": {
+            "Leprosy-Patient name": {
                 "conciseText": true
             },
-            "Malaria, Parents Name": {
+            "Malaria note-Patient name": {
                 "conciseText": true
             },
-            "Operative Notes, Fluid Amount and Unit": {
+            "Operative note-Fluid amount and unit": {
                 "conciseText": true
             },
-            "Operative Notes, Tourniquet Time": {
+            "Operative note-Tourniquet time": {
                 "conciseText": true
             },
-            "Procedure Notes, Fluid Amount and Unit": {
+            "Procedure note-Fluid amount and unit": {
                 "conciseText": true
             },
             "Stroke, LDL": {
@@ -634,17 +634,17 @@
             "Stroke, A1c": {
                 "conciseText": true
             },
-            "Death Note, Primary Cause of Death": {
+            "Death note, Primary Cause of Death": {
                 "required": true,
-                "answersConceptName": "Death Note, Cause, Answers",
+                "answersConceptName": "Death note, Cause, Answers",
                 "autocomplete": true
             },
-            "Death Note, Secondary Cause of Death": {
-                "answersConceptName": "Death Note, Cause, Answers",
+            "Death note, Secondary Cause of Death": {
+                "answersConceptName": "Death note, Cause, Answers",
                 "autocomplete": true
             },
-            "Death Note, Tertiary Cause of Death": {
-                "answersConceptName": "Death Note, Cause, Answers",
+            "Death note, Tertiary Cause of Death": {
+                "answersConceptName": "Death note, Cause, Answers",
                 "autocomplete": true
             },
             "Vitals": {
@@ -682,7 +682,7 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Congestive Heart Failure, Progress": {
+            "Congestive heart failure, Progress": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -694,7 +694,7 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "ER General Notes": {
+            "ER General note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -710,7 +710,7 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Death Note": {
+            "Death note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -718,7 +718,7 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Discharge Note": {
+            "Discharge note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -730,7 +730,7 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Operative Notes": {
+            "Operative note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -754,15 +754,15 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Procedure Notes": {
+            "Procedure note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Safe Abortion": {
+            "Safe abortion (SA) note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Sextually Transmitted Infections Intake Template": {
+            "Sextually transmitted infections Intake Template": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -786,11 +786,11 @@
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Malaria": {
+            "Malaria note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
-            "Nutrition": {
+            "Nutrition note": {
                 "showPreviousButton": true,
                 "numberOfVisits": 1
             },
@@ -822,28 +822,28 @@
                 "multiSelect": true
             },
             "HIVTC, Death cause": {
-                "answersConceptName": "Death Note, Cause, Answers",
+                "answersConceptName": "Death note, Cause, Answers",
                 "autocomplete": true
             },
-            "Out Patient Details, Free Health Service Code": {
+            "OPD-Free health service code": {
                 "required": true
             },
-            "ANC, Visit Month": {
+            "ANC-Visit month": {
                 "required": true
             },
             "Childhood Illness, Acute Respiratory Infection present": {
                 "required": true
             },
-            "Childhood Illness, Diarrhoea present": {
+            "Childhood Illness-Diarrhoea present": {
                 "required": true
             },
-            "Childhood Illness, Dehydration Status": {
+            "Childhood Illness-Dehydration status": {
                 "required": true
             },
-            "Childhood Illness, Albendazole Given": {
+            "CBIMNCI <2-Albendazole given": {
                 "required": true
             },
-            "Childhood Illness, Vitamin A Capsules Provided": {
+            "Childhood Illness-Vitamin A  provided": {
                 "required": true
             },
             "Difficult feeding": {
@@ -852,13 +852,13 @@
             "Breastfed": {
                 "required": true
             },
-            "Weight condition": {
+            "CBIMNC 2_59-Weight condition": {
                 "required": true
             },
-            "Childhood Illness, Referred out": {
+            "CBIMNCI <2-Referred out": {
                 "required": true
             },
-            "ER General Notes, Free Health Service Code": {
+            "ER-Free health service code": {
                 "required": true
             },
             "Chronic OPD Details, Free Health Service Code": {
@@ -868,22 +868,22 @@
                 "required": true
             },
 
-            "Delivery Note, Delivery service done by": {
+            "Delivery-Delivery service done by": {
                 "required": true
             },
-            "Delivery Note, Method of Delivery": {
+            "Delivery-Method of delivery": {
                 "required": true
             },
-            "Delivery Note, Outcome of Delivery": {
+            "Delivery-Outcome of delivery": {
                 "required": true
             },
-            "Delivery Note, Fetal Presentation": {
+            "Delivery-Fetal presentation": {
                 "required": true
             },
             "Delivery Note, Blood transfusion provided": {
                 "required": true
             },
-            "Delivery Note, Blood transfusion quantity": {
+            "Delivery-Blood transfusion quantity": {
                 "required": true
             },
             "Delivery Note, Liveborn weight": {
@@ -892,10 +892,10 @@
             "Delivery Note, Chlorhexidine applied on cord": {
                 "required": true
             },
-            "Delivery Note, Stillbirth type": {
+            "Delivery-Stillbirth type": {
                 "required": true
             },
-            "Discharge note, Inpatient outcome": {
+            "Discharge note-Inpatient outcome": {
                 "required": true
             },
             "FP, Family Planning Method": {
@@ -904,19 +904,19 @@
             "FP, Units provided": {
                 "required": true
             },
-            "FP, Users Type": {
+            "FRH-Users type": {
                 "required": true
             },
-            "Nutrition, Nutritional Status": {
+            "Nutrition note-Nutrition noteal status": {
                 "required": true
             },
-            "Nutrition, Bal Vita Provided by FCHV": {
+            "Nutrition note-Bal vita provided by fchv": {
                 "required": true
             },
-            "PNC, PNC visit": {
+            "PNC-PNC visit": {
                 "allowAddMore": true
             },
-            "PNC, PNC visit date": {
+            "PNC-Visit date": {
                 "required": true
             },
             "PNC, Visit Time": {
@@ -928,35 +928,35 @@
             "PNC, Blood Transfusion Quantity": {
                 "required": true
             },
-            "PNC, IFA Tablets Provided": {
+            "PNC-IFA tablets provided": {
                 "required": true
             },
-            "PNC, Vitamin A Capsules Provided": {
+            "PNC-Vitamin a capsules provided": {
                 "required": true
             },
-            "Procedure Notes, Procedure": {
+            "Procedure note-Procedure": {
                 "required": true
             },
-            "ANC, ANC Visit": {
+            "ANC-ANC visit": {
                 "required": true,
 				"multiSelect": true
             },
-            "ANC, Completed 4 ANC visits": {
+            "ANC-Completed 4 anc visits": {
                 "required": true
             },
             "HIVTC, Problem": {
                 "allowAddMore": true
             },
-            "IMAM Program": {
+            "IMAM note": {
                 "allowAddMore": true
             },
             "Family Planning Template": {
                 "allowAddMore": true
             },
-            "OP Details, Date of LMP": {
+            "OPD-Date of LMP": {
                 "conciseText": true
             },
-            "ER General Notes, Date of LMP": {
+            "ER-Date of lmp": {
                 "conciseText": true
             },
             "CHPCDC, Hypertension": {
@@ -968,7 +968,7 @@
             "CHPCDC, Coronary Artery Disease": {
                 "multiSelect": true
             },
-            "CHPCDC, Congestive Heart Failure": {
+            "CHPCDC, Congestive heart failure": {
                 "multiSelect": true
             },
             "CHPCDC, COPD": {
@@ -992,25 +992,25 @@
             "ART, Self visit": {
                 "multiSelect": true
             },
-            "PSBI/LBI/NBI, Symptoms": {
+            "CBIMNCI <2-PSBI/LBI/NBI-Symptoms": {
                 "multiSelect": true
             },
-            "Umbilicus Infection": {
+            "CBIMNCI <2-PSBI/LBI/NBI-Umbilicus infection": {
                 "multiSelect": true
             },
             "Diarrhoea, Symptoms": {
                 "multiSelect": true
             },
-            "Childhood Illness, 2 months, Counseling purpose": {
+            "CBIMNCI <2-Counseling provided for": {
                 "multiSelect": true
             },
-            "Delivery Note, Delivery date and time": {
+            "Delivery-Delivery date and time": {
                 "allowFutureDates": true
             },
-	    "FRH-Procedure Follow Up": {
+	    "FRH-Procedure follow up": {
                 "allowFutureDates": true
             },
-            "Operative Notes, Procedure": {
+            "Operative note-Procedure": {
                 "required": true,
 				"multiSelect": true
             },
@@ -1023,7 +1023,7 @@
 			"Depression Initial-Psychosis": {
                 "required": true
             },
-			"IMAM, Weight": {
+			"IMAM-Weight": {
                 "required": true
             },
 			"History-Hands": {
@@ -1308,7 +1308,7 @@
 			"PNC, Discharge Date": {
                 "allowFutureDates": true
             },
-			"ANC, Expected Delivery Date": {
+			"ANC-Expected delivery date": {
                 "allowFutureDates": true
             },
 			"PTSD Follow up-Counselling provided for": {
@@ -1573,10 +1573,10 @@
                 "required": true,
 				"multiSelect": true
             },
-			"Discharge Note-Post op surgery complications": {
+			"Discharge note-Post op surgery complications": {
                 "multiSelect": true
             },
-		"Delivery Note-Complication Present": {
+		"Delivery-Complication present": {
 		"multiSelect": true
 	    },
 			"New born admission-Sepsis risk factor": {

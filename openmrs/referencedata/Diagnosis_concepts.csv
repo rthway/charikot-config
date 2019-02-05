@@ -5,18 +5,18 @@ uuid,name,description,class,datatype,shortname,synonym.1,synonym.2,synonym.3,ans
 ,Neonatal Tetanus,,Diagnosis,N/A,Neonatal Tetanus,,,,,ICD-10-WHO,A33,SAME-AS
 ,Tetanus,,Diagnosis,N/A,Tetanus,,,,,ICD-10-WHO,A35,SAME-AS
 ,Tuberculosis,,Diagnosis,N/A,Tuberculosis,,,,,ICD-10-WHO,A16,SAME-AS
-,Multi Drug Resistant Tuberculosis,,Diagnosis,N/A,MDR Tuberculosis,,,,,,,
+,Multi drug resistant Tuberculosis,,Diagnosis,N/A,MDR Tuberculosis,,,,,,,
 ,Extremely Drug Resistant Tuberculosis,,Diagnosis,N/A,XDR Tuberculosis,,,,,,,
 ,Acute Flaccid Paralysis,,Diagnosis,N/A,AFP,,,,,ICD-10-WHO,G83,SAME-AS
 ,Rubella,,Diagnosis,N/A,Rubella,,,,,ICD-10-WHO,B06,SAME-AS
 ,Mumps,,Diagnosis,N/A,Mumps,,,,,ICD-10-WHO,B26,SAME-AS
 ,Chicken Pox,,Diagnosis,N/A,Chicken Pox,,,,,ICD-10-WHO,B01,SAME-AS
-,Hepatitis B,,Diagnosis,N/A,Hepatitis B,,,,,ICD-10-WHO,B16,SAME-AS
+,Hepatitis b,,Diagnosis,N/A,Hepatitis b,,,,,ICD-10-WHO,B16,SAME-AS
 ,Acute Encephalitis Like Syndrome,,Diagnosis,N/A,AES,,,,,ICD-10-WHO,A86,SAME-AS
 ,Filariasis,,Diagnosis,N/A,Filariasis,,,,,ICD-10-WHO,B74.9,SAME-AS
-,Clinical Malaria,,Diagnosis,N/A,Clinical Malaria,,,,,ICD-10-WHO,B54,SAME-AS
-,Plasmodium Falciparum,,Diagnosis,N/A,Plasmodium Falciparum,,,,,ICD-10-WHO,B50.9,SAME-AS
-,Plasmodium Vivax,,Diagnosis,N/A,Plasmodium Vivax,,,,,ICD-10-WHO,B51.9,SAME-AS
+,Clinical Malaria note,,Diagnosis,N/A,Clinical Malaria note,,,,,ICD-10-WHO,B54,SAME-AS
+,Plasmodium falciparum,,Diagnosis,N/A,Plasmodium falciparum,,,,,ICD-10-WHO,B50.9,SAME-AS
+,Plasmodium vivax,,Diagnosis,N/A,Plasmodium vivax,,,,,ICD-10-WHO,B51.9,SAME-AS
 ,Dengue Fever,,Diagnosis,N/A,Dengue Fever,,,,,ICD-10-WHO,A90,SAME-AS
 ,Kalaazar,,Diagnosis,N/A,Kalaazar,Leshmaniasis,,,,ICD-10-WHO,B55.9,SAME-AS
 ,Typhoid,,Diagnosis,N/A,Typhoid,Enteric Fever,,,,ICD-10-WHO,A01.0,SAME-AS
@@ -29,18 +29,18 @@ uuid,name,description,class,datatype,shortname,synonym.1,synonym.2,synonym.3,ans
 ,Jaundice,,Diagnosis,N/A,Jaundice,,,,,ICD-10-WHO,R17,SAME-AS
 ,Hepatitis A,,Diagnosis,N/A,Hepatitis A,,,,,ICD-10-WHO,B15.9,SAME-AS
 ,Hepatitis E,,Diagnosis,N/A,Hepatitis E,,,,,ICD-10-WHO,B17.2,SAME-AS
-,Volume Depletion,,Diagnosis,N/A,Volume Depletion,Dehydration,,,,ICD-10-WHO,E86,SAME-AS
+,Volume depletion,,Diagnosis,N/A,Volume depletion,Dehydration,,,,ICD-10-WHO,E86,SAME-AS
 ,Leprosy,,Diagnosis,N/A,Leprosy,,,,,ICD-10-WHO,A30.9,SAME-AS
 ,Meningitis,,Diagnosis,N/A,Meningitis,,,,,ICD-10-WHO,G03.9,SAME-AS
 ,HIV Infection,,Diagnosis,N/A,HIV Infection,,,,,ICD-10-WHO,B20,SAME-AS
-,Urethral Discharge Syndrome,,Diagnosis,N/A,UDS,,,,,ICD-10-WHO,A54.0,SAME-AS
+,Urethral discharge syndrome,,Diagnosis,N/A,UDS,,,,,ICD-10-WHO,A54.0,SAME-AS
 ,Scrotal Swelling Syndrome,,Diagnosis,N/A,SSS,,,,,ICD-10-WHO,N49.9,SAME-AS
-,Vaginal Discharge Syndrome,,Diagnosis,N/A,VDS,,,,,ICD-10-WHO,N89.8,SAME-AS
-,Lower Abdominal Pain Syndrome,,Diagnosis,N/A,LAPS,,,,,ICD-10-WHO,N74,SAME-AS
+,Vaginal discharge syndrome,,Diagnosis,N/A,VDS,,,,,ICD-10-WHO,N89.8,SAME-AS
+,Lower Abdominal pain Syndrome,,Diagnosis,N/A,LAPS,,,,,ICD-10-WHO,N74,SAME-AS
 ,Neonatal Conjuctive Syndrome,,Diagnosis,N/A,NCS,,,,,ICD-10-WHO,A54.3,SAME-AS
-,Genital Ulcer Disease Syndrome ‐ Female,,Diagnosis,N/A,GUDS,,,,,ICD-10-WHO,N76.6,SAME-AS
-,Genital Ulcer Disease Syndrome ‐ Male,,Diagnosis,N/A,GUDS,,,,,ICD-10-WHO,N50.8,SAME-AS
-,Inguinal Bubo Syndrome ,,Diagnosis,N/A,IBS,,,,,ICD-10-WHO,A55,SAME-AS
+,Genital ulcer disease syndrome ‐ Female,,Diagnosis,N/A,GUDS,,,,,ICD-10-WHO,N76.6,SAME-AS
+,Genital ulcer disease syndrome ‐ Male,,Diagnosis,N/A,GUDS,,,,,ICD-10-WHO,N50.8,SAME-AS
+,Inguinal bubo syndrome ,,Diagnosis,N/A,IBS,,,,,ICD-10-WHO,A55,SAME-AS
 ,Syphilis,,Diagnosis,N/A,Syphilis,,,,,ICD-10-WHO,A51,SAME-AS
 ,Lower Respiratory Tract Infection,,Diagnosis,N/A,LRTI,ARI,,,,ICD-10-WHO,J22,SAME-AS
 ,Upper Respiratory Tract Infection,,Diagnosis,N/A,URTI,,,,,ICD-10-WHO,J06.9,SAME-AS
@@ -125,22 +125,22 @@ uuid,name,description,class,datatype,shortname,synonym.1,synonym.2,synonym.3,ans
 ,Retinitis Pigmentosa,,Diagnosis,N/A,Retinitis Pigmentosa,,,,,ICD-10-WHO,H35.5,SAME-AS
 ,Night Blindness,,Diagnosis,N/A,Night Blindness,Visual Disturbance,,,,ICD-10-WHO,H53.6,SAME-AS
 ,Retinoblastoma,,Diagnosis,N/A,Retinoblastoma,,,,,ICD-10-WHO,C69.2,SAME-AS
-,Ectopic Pregnancy,,Diagnosis,N/A,Ectopic Pregnancy,,,,,ICD-10-WHO,O00,SAME-AS
-,Abortion Complication,,Diagnosis,N/A,Abortion Complication,,,,,ICD-10-WHO,O08,SAME-AS
-,Pregnancy Induced Hypertension,,Diagnosis,N/A,PIH,,,,,ICD-10-WHO,O13,SAME-AS
+,Ectopic pregnancy,,Diagnosis,N/A,Ectopic pregnancy,,,,,ICD-10-WHO,O00,SAME-AS
+,Abortion complication,,Diagnosis,N/A,Abortion complication,,,,,ICD-10-WHO,O08,SAME-AS
+,Pregnancy induced hypertension,,Diagnosis,N/A,PIH,,,,,ICD-10-WHO,O13,SAME-AS
 ,Pre‐Eclampsia,,Diagnosis,N/A,Pre‐Eclampsia,Severe Pre‐Eclampsia,,,,ICD-10-WHO,O14,SAME-AS
 ,Antepartum Eclampsia,,Diagnosis,N/A,Antepartum Eclampsia,,,,,ICD-10-WHO,O15.0,SAME-AS
 ,Intrapartum Eclampsia,,Diagnosis,N/A,Intrapartum Eclampsia,,,,,ICD-10-WHO,O15.1,SAME-AS
 ,Postpartum Eclampsia,,Diagnosis,N/A,Postpartum Eclampsia,,,,,ICD-10-WHO,O15.2,SAME-AS
 ,Hyperemesis Grivadarum,,Diagnosis,N/A,Hyperemesis Grivadarum,,,,,ICD-10-WHO,O21,SAME-AS
-,Antepartum Haemorrhage,,Diagnosis,N/A,Antepartum Haemorrhage,,,,,ICD-10-WHO,O46,SAME-AS
-,Prolonged Labour,,Diagnosis,N/A,Prolonged Labour,,,,,ICD-10-WHO,O63,SAME-AS
+,Antepartum haemorrhage,,Diagnosis,N/A,Antepartum haemorrhage,,,,,ICD-10-WHO,O46,SAME-AS
+,Prolonged labour,,Diagnosis,N/A,Prolonged labour,,,,,ICD-10-WHO,O63,SAME-AS
 ,Obstructed Labor,,Diagnosis,N/A,Obstructed Labor,,,,,ICD-10-WHO,O64‐O66,SAME-AS
-,Ruptured Uterus,,Diagnosis,N/A,Ruptured Uterus,,,,,ICD-10-WHO,S37,SAME-AS
-,Postpartum Haemorrhage,,Diagnosis,N/A,Postpartum Haemorrhage,,,,,ICD-10-WHO,O72,SAME-AS
-,Retained Placenta,,Diagnosis,N/A,Retained Placenta,,,,,ICD-10-WHO,O73,SAME-AS
+,Ruptured uterus,,Diagnosis,N/A,Ruptured uterus,,,,,ICD-10-WHO,S37,SAME-AS
+,Postpartum haemorrhage,,Diagnosis,N/A,Postpartum haemorrhage,,,,,ICD-10-WHO,O72,SAME-AS
+,Retained placenta,,Diagnosis,N/A,Retained placenta,,,,,ICD-10-WHO,O73,SAME-AS
 ,Other Complications Of Labor And Delivery,,Diagnosis,N/A,Other Complications Of Labor And Delivery,,,,,ICD-10-WHO,O75,SAME-AS
-,Pueperal Sepsis,,Diagnosis,N/A,Pueperal Sepsis,,,,,ICD-10-WHO,O85,SAME-AS
+,Pueperal sepsis,,Diagnosis,N/A,Pueperal sepsis,,,,,ICD-10-WHO,O85,SAME-AS
 ,Pelvic Inflammatory Disease,,Diagnosis,N/A,PID,,,,,ICD-10-WHO,N73,SAME-AS
 ,Prolapsed Uterus,,Diagnosis,N/A,Prolapsed Uterus,,,,,ICD-10-WHO,N81.4,SAME-AS
 ,Menstrual Disorder,,Diagnosis,N/A,Menstrual Disorder,,,,,ICD-10-WHO,N92,SAME-AS
@@ -181,7 +181,7 @@ uuid,name,description,class,datatype,shortname,synonym.1,synonym.2,synonym.3,ans
 ,Head & Neck Cancer,,Diagnosis,N/A,Head & Neck Cancer,,,,,ICD-10-WHO,C49.0,SAME-AS
 ,Other Cancer,,Diagnosis,N/A,Other Cancer,,,,,ICD-10-WHO,C80,SAME-AS
 ,Hypertension,,Diagnosis,N/A,Hypertension,,,,,ICD-10-WHO,I10,SAME-AS
-,Congestive Heart Failure ,,Diagnosis,N/A,Congestive Heart Failure ,,,,,ICD-10-WHO,I50.0,SAME-AS
+,Congestive heart failure ,,Diagnosis,N/A,Congestive heart failure ,,,,,ICD-10-WHO,I50.0,SAME-AS
 ,Cardiac Heart Failure,,Diagnosis,N/A,Cardiac Heart Failure,,,,,ICD-10-WHO,I50.9,SAME-AS
 ,Chronic Obstructive Pulmonary Disease,,Diagnosis,N/A,COPD,,,,,ICD-10-WHO,J44,SAME-AS
 ,Acute Rheumatic Fever,,Diagnosis,N/A,Acute Rheumatic Fever,,,,,ICD-10-WHO,I01,SAME-AS
@@ -197,7 +197,7 @@ uuid,name,description,class,datatype,shortname,synonym.1,synonym.2,synonym.3,ans
 ,Pyrexia Of Unknown Origin,,Diagnosis,N/A,PUO,,,,,ICD-10-WHO,R50,SAME-AS
 ,Gastritis,,Diagnosis,N/A,APD,,,,,ICD-10-WHO,K29,SAME-AS
 ,Insect Bite,,Diagnosis,N/A,Insect Bite,Wasp Bite,,,,ICD-10-WHO,W57,SAME-AS
-,Abdominal Pain,,Diagnosis,N/A,Abdominal Pain,,,,,ICD-10-WHO,R10,SAME-AS
+,Abdominal pain,,Diagnosis,N/A,Abdominal pain,,,,,ICD-10-WHO,R10,SAME-AS
 ,Cirrhosis Of Liver,,Diagnosis,N/A,Cirrhosis Of Liver,,,,,ICD-10-WHO,K74,SAME-AS
 ,Burns And Scalds,,Diagnosis,N/A,Burns And Scalds,,,,,ICD-10-WHO,T30,SAME-AS
 ,Toxic Effect,,Diagnosis,N/A,Toxic Effect,,,,,ICD-10-WHO,T65,SAME-AS

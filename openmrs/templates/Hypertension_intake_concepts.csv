@@ -4,7 +4,7 @@ uuid,name,description,class,datatype,shortname,reference-term-code,reference-ter
 ,"Hypertension, Diagnosis Status",,Misc,Coded,Diagnosis Status,,,,,No Previous Diagnosis,Confirmed Elsewhere,,,,,,,,
 ,"Hypertension, Date Confirmed",,Misc,Date,Date Confirmed,,,,,,,,,,,,,,
 ,"Hypertension, Hypertensive Emergency 12 Months",,Misc,Boolean,Hypertensive Emergency or Cardiac Hospitalization in 12 Months,,,,,,,,,,,,,,
-,"Hypertension, Hypertensive Emergency Cause",,Misc,Coded,Hypertensive Emergency or Cardiac Hospitalization For,,,,,Hypertension,Congestive Heart Failure,Myocardiac Infraction,Chest Pain,,,,,,
+,"Hypertension, Hypertensive Emergency Cause",,Misc,Coded,Hypertensive Emergency or Cardiac Hospitalization For,,,,,Hypertension,Congestive heart failure,Myocardiac Infraction,Chest pain,,,,,,
 ,"Hypertension, EKG",,Misc,Text,EKG,,,,,,,,,,,,,,
 ,"Hypertension, Echocardiogram",,Misc,Text,Echocardiogram,,,,,,,,,,,,,,
 ,"Hypertension, Lipids",,Misc,Text,Lipids,,,,,,,,,,,,,,

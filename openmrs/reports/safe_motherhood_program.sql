@@ -7,7 +7,7 @@ SET @end_date = '2015-03-15';
 -- Delivery Service
 SELECT names.name AS 'Delivery Service', IF(counts.facility IS NULL, 0, counts.facility) AS 'Facility'
 FROM
-(SELECT name FROM concept_name WHERE name IN ('Skilled Birth Attendant', 'Non SBA Health worker')) AS names
+(SELECT name FROM concept_name WHERE name IN ('Skilled birth attendant', 'Non sba health worker')) AS names
 LEFT OUTER JOIN
 (SELECT delivery.delivery_service_worker, COUNT(*) AS facility
 FROM  
@@ -23,7 +23,7 @@ ON names.name = counts.delivery_service_worker;
 
 SELECT delivery_presentation.delivery_method AS 'Type of Delivery',
 	   SUM(IF(delivery_presentation.presentation = 'Cephalic Presentation',1,0)) as Cephalic,
-	   SUM(IF(delivery_presentation.presentation = 'Shoulder Presentation',1,0)) as Shoulder,
+	   SUM(IF(delivery_presentation.presentation = 'Shoulder',1,0)) as Shoulder,
 	   SUM(IF(delivery_presentation.presentation = 'Breech Presentation',1,0)) as Breech
 FROM
 (SELECT obs_presentation.value_concept_full_name as presentation,
@@ -42,32 +42,32 @@ GROUP BY delivery_presentation.delivery_method;
 
 -- Gestation and Delivery Outcome
 (SELECT 'Number of Mothers' AS name,
- SUM(IF(delivery_outcome_total.delivery_outcome_type = 'Single - livebirth'||'Single - stillbirth',1,0)) AS 'Single',
- SUM(IF(delivery_outcome_total.delivery_outcome_type = 'Twins - both liveborn' || 'Twins - one liveborn and one stillborn' || 'Twins - both stillborn',1,0)) AS 'Twin',
- SUM(IF(delivery_outcome_total.delivery_outcome_type = 'Other multiple births - all liveborn' || 'Other multiple births - some liveborn' || 'Other multiple births - all stillborn',1,0)) AS '>/Triplet'
+ SUM(IF(delivery_outcome_total.delivery_outcome_type = 'Single-livebirth'||'Single-stillbirth',1,0)) AS 'Single',
+ SUM(IF(delivery_outcome_total.delivery_outcome_type = 'Twins-both liveborn' || 'Twins-one liveborn and one stillborn' || 'Twins-both stillborn',1,0)) AS 'Twin',
+ SUM(IF(delivery_outcome_total.delivery_outcome_type = 'Other multiple births-all liveborn' || 'Other multiple births-some liveborn' || 'Other multiple births-all stillborn',1,0)) AS '>/Triplet'
 FROM
 (SELECT obs_delivery_outcome.value_concept_full_name as delivery_outcome_type
 FROM coded_obs_view as obs_delivery_outcome
 INNER JOIN obs_view ON obs_delivery_outcome.obs_group_id = obs_view.obs_group_id 
-	AND	obs_delivery_outcome.concept_full_name = 'Delivery Note, Outcome of Delivery'
-    AND obs_view.concept_full_name = 'Delivery Note, Delivery date and time'
+	AND	obs_delivery_outcome.concept_full_name = 'Delivery-Outcome of delivery'
+    AND obs_view.concept_full_name = 'Delivery-Delivery date and time'
 	AND DATE(obs_view.value_datetime) BETWEEN @start_date AND @end_date)
 AS delivery_outcome_total)
 
 UNION
 
 (SELECT 'Number of live births' AS name,
- SUM(IF(delivery_outcome_liveborn.delivery_outcome_type = 'Single - livebirth',1,0)) AS 'Single',
- SUM(IF(delivery_outcome_liveborn.delivery_outcome_type = 'Twins - both liveborn' || delivery_outcome_liveborn.delivery_outcome_type ='Twins - one liveborn and one stillborn',1,0)) AS 'Twin',
- SUM(IF(delivery_outcome_liveborn.delivery_outcome_type = 'Other multiple births - all liveborn' || delivery_outcome_liveborn.delivery_outcome_type ='Other multiple births - some liveborn',1,0)) AS '>/Triplet'
+ SUM(IF(delivery_outcome_liveborn.delivery_outcome_type = 'Single-livebirth',1,0)) AS 'Single',
+ SUM(IF(delivery_outcome_liveborn.delivery_outcome_type = 'Twins-both liveborn' || delivery_outcome_liveborn.delivery_outcome_type ='Twins-one liveborn and one stillborn',1,0)) AS 'Twin',
+ SUM(IF(delivery_outcome_liveborn.delivery_outcome_type = 'Other multiple births-all liveborn' || delivery_outcome_liveborn.delivery_outcome_type ='Other multiple births-some liveborn',1,0)) AS '>/Triplet'
 FROM
 (SELECT obs_delivery_outcome.value_concept_full_name AS delivery_outcome_type
 FROM coded_obs_view as obs_delivery_outcome
 INNER JOIN obs_view ON obs_delivery_outcome.obs_group_id = obs_view.obs_group_id
-	AND obs_delivery_outcome.concept_full_name = 'Delivery Note, Outcome of Delivery'
-    AND obs_view.concept_full_name = 'Delivery Note, Delivery date and time'
+	AND obs_delivery_outcome.concept_full_name = 'Delivery-Outcome of delivery'
+    AND obs_view.concept_full_name = 'Delivery-Delivery date and time'
  	 AND DATE(obs_view.value_datetime) BETWEEN @start_date AND @end_date
-    AND obs_delivery_outcome.value_concept_full_name IN ('Single - livebirth','Twins - both liveborn','Twins - one liveborn and one stillborn', 'Other multiple births - all liveborn','Other multiple births - some liveborn'))
+    AND obs_delivery_outcome.value_concept_full_name IN ('Single-livebirth','Twins-both liveborn','Twins-one liveborn and one stillborn', 'Other multiple births-all liveborn','Other multiple births-some liveborn'))
 AS delivery_outcome_liveborn)
 
 UNION
@@ -92,7 +92,7 @@ INNER JOIN obs_view ON obs_stillbirth_type.obs_group_id = obs_view.obs_group_id
     AND DATE(obs_view.obs_datetime) BETWEEN @start_date AND @end_date)
 AS del_outcomes_with_sb_types    
 RIGHT OUTER JOIN
-(SELECT answer_concept_name FROM concept_answer_view WHERE question_concept_name = 'Stillbirth type' AND answer_concept_name != 'Not Applicable')
+(SELECT answer_concept_name FROM concept_answer_view WHERE question_concept_name = 'Stillbirth type' AND answer_concept_name != 'Not applicable')
 AS stillbirth_types ON del_outcomes_with_sb_types.stillbirth_type = stillbirth_types.answer_concept_name
 
 )
@@ -112,7 +112,7 @@ FROM
  possible_weight_group.name, possible_weight_group.sort_order as sort_order
 FROM obs_view as obs_delivery_time
 INNER JOIN obs_view AS obs_weight ON obs_weight.encounter_id = obs_delivery_time.encounter_id
-	AND obs_delivery_time.concept_full_name = 'Delivery Note, Delivery date and time'
+	AND obs_delivery_time.concept_full_name = 'Delivery-Delivery date and time'
     AND DATE(obs_delivery_time.value_datetime) BETWEEN @start_date AND @end_date
     AND obs_weight.concept_full_name = 'Delivery Note, Liveborn weight'
 LEFT OUTER JOIN obs_view AS obs_defect ON obs_weight.obs_group_id = obs_defect.obs_group_id
@@ -146,9 +146,9 @@ GROUP BY diagnoses_names.child_concept_name;
 
 
 -- Safe abortion service( No. of women, Post abortion FP Methods)
-(SELECT abortion_procedures.age_group AS 'Safe Abortion Service',
-	IF(abortion_procedures.procedure_name IS NULL, 0, SUM(IF(abortion_procedures.procedure_name = 'Medical Abortion' || abortion_procedures.procedure_name = 'Medical Induction' || abortion_procedures.procedure_name = 'Other abortion procedures', 1, 0))) as Medical,
-    IF(abortion_procedures.procedure_name IS NULL, 0, SUM(IF(abortion_procedures.procedure_name = 'Manual Vacuum Aspiration' || abortion_procedures.procedure_name = 'Electric Vacuum Aspiration' || abortion_procedures.procedure_name = 'Dilation and Evacuation', 1, 0))) as Surgical
+(SELECT abortion_procedures.age_group AS 'Safe abortion (SA) note Service',
+	IF(abortion_procedures.procedure_name IS NULL, 0, SUM(IF(abortion_procedures.procedure_name = 'Medical Abortion' || abortion_procedures.procedure_name = 'Medical induction' || abortion_procedures.procedure_name = 'Other abortion procedures', 1, 0))) as Medical,
+    IF(abortion_procedures.procedure_name IS NULL, 0, SUM(IF(abortion_procedures.procedure_name = 'Manual vacuum aspiration' || abortion_procedures.procedure_name = 'Electric vacuum aspiration' || abortion_procedures.procedure_name = 'Dilation and evacuation', 1, 0))) as Surgical
 FROM  
 (SELECT valid_coded_obs_view.value_concept_full_name as procedure_name,
 	   observed_age_group.name AS age_group,
@@ -160,15 +160,15 @@ AND DATE(valid_coded_obs_view.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN possible_age_group AS observed_age_group ON
 DATE(valid_coded_obs_view.obs_datetime) BETWEEN (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL observed_age_group.min_years YEAR), INTERVAL observed_age_group.min_days DAY)) 
 						AND (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL observed_age_group.max_years YEAR), INTERVAL observed_age_group.max_days DAY))
-WHERE observed_age_group.report_group_name = 'Safe Abortion Service') AS abortion_procedures
+WHERE observed_age_group.report_group_name = 'Safe abortion (SA) note Service') AS abortion_procedures
 GROUP BY abortion_procedures.age_group
 ORDER BY abortion_procedures.sort_order)
 
 UNION
 
 (SELECT methods_list.parent_concept_name AS 'Post Abortion FP methods',
-	SUM(IF(procedures_fp_methods.procedure_name IS NULL, 0, IF(procedures_fp_methods.procedure_name = 'Medical Abortion' || procedures_fp_methods.procedure_name = 'Medical Induction' || procedures_fp_methods.procedure_name = 'Other abortion procedures', 1, 0))) as Medical,
-    SUM(IF(procedures_fp_methods.procedure_name IS NULL, 0, IF(procedures_fp_methods.procedure_name = 'Manual Vacuum Aspiration' || procedures_fp_methods.procedure_name = 'Electric Vacuum Aspiration' || procedures_fp_methods.procedure_name = 'Dilation and Evacuation', 1, 0))) as Surgical
+	SUM(IF(procedures_fp_methods.procedure_name IS NULL, 0, IF(procedures_fp_methods.procedure_name = 'Medical Abortion' || procedures_fp_methods.procedure_name = 'Medical induction' || procedures_fp_methods.procedure_name = 'Other abortion procedures', 1, 0))) as Medical,
+    SUM(IF(procedures_fp_methods.procedure_name IS NULL, 0, IF(procedures_fp_methods.procedure_name = 'Manual vacuum aspiration' || procedures_fp_methods.procedure_name = 'Electric vacuum aspiration' || procedures_fp_methods.procedure_name = 'Dilation and evacuation', 1, 0))) as Surgical
 FROM
 (SELECT parent_concept_name, child_concept_name from concept_children_view where parent_concept_name IN ('Short term family planning methods', 'Long term family planning methods'))AS methods_list
 LEFT OUTER JOIN
@@ -176,23 +176,23 @@ LEFT OUTER JOIN
 	    obs_fp.value_concept_full_name as fp_name
 FROM valid_coded_obs_view as obs_procedure
 INNER JOIN valid_coded_obs_view AS obs_fp ON obs_procedure.obs_group_id = obs_fp.obs_group_id 
-	AND obs_fp.concept_full_name = 'Accepted Family Planning methods'
+	AND obs_fp.concept_full_name = 'Accepted family planning methods'
 	AND obs_procedure.concept_full_name = 'Abortion procedure'
 	AND DATE(obs_procedure.obs_datetime) BETWEEN @start_date AND @end_date) AS procedures_fp_methods
 ON methods_list.child_concept_name = procedures_fp_methods.fp_name
 GROUP BY methods_list.parent_concept_name);
 
 
--- Safe Abortion service (Post abortion care)
+-- Safe abortion (SA) note service (Post abortion care)
 SELECT pac.pac_category AS 'PAC',
 	SUM(IF(pac.pac_cause IS NULL, 0, IF(pac.pac_abortion IS NULL, 0, 1))) AS Facility,
     SUM(IF(pac.pac_cause IS NULL, 0, IF(pac.pac_abortion IS NULL, 1, 0))) AS Others
 FROM  
 (SELECT pac_cause_list.answer_concept_name AS pac_category, coded_obs_view.value_concept_full_name AS pac_cause, obs_abortion.obs_id AS pac_abortion
 FROM
-(SELECT answer_concept_name FROM concept_answer_view WHERE question_concept_name = 'PAC Cause') AS pac_cause_list
+(SELECT answer_concept_name FROM concept_answer_view WHERE question_concept_name = 'PAC cause') AS pac_cause_list
 LEFT OUTER JOIN coded_obs_view ON pac_cause_list.answer_concept_name = coded_obs_view.value_concept_full_name
-				AND coded_obs_view.concept_full_name = 'PAC Cause'
+				AND coded_obs_view.concept_full_name = 'PAC cause'
 				AND DATE(coded_obs_view.obs_datetime) BETWEEN @start_date AND @end_date
 LEFT OUTER JOIN obs_view AS obs_abortion ON obs_abortion.person_id = coded_obs_view.person_id
     AND obs_abortion.concept_full_name = 'Abortion procedure'

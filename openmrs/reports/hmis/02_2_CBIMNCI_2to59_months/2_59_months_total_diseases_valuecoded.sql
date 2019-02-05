@@ -24,7 +24,7 @@ FROM
         AND answer_concept_short_name.voided
         IS FALSE
     WHERE
-        question_concept_name.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness, Dehydration Status', 'Childhood Illness, Diarrhoea present', 'Childhood Illness, Refered-Out')
+        question_concept_name.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness-Dehydration status', 'Childhood Illness-Diarrhoea present', 'CBIMNCI 2 to 59-Refered out')
             AND cd.name = 'Coded'
     ORDER BY answer_name DESC) first_answers
         LEFT OUTER JOIN
@@ -36,7 +36,7 @@ FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness, Dehydration Status', 'Childhood Illness, Diarrhoea present','Childhood Illness, Refered-Out')
+        AND cn1.name IN ('Childhood Illness (2-59)-ARI-Classification' , 'Childhood Illness-Dehydration status', 'Childhood Illness-Diarrhoea present','CBIMNCI 2 to 59-Refered out')
         AND o1.voided = 0
         AND cn1.voided = 0
     INNER JOIN concept_name cn2 ON o1.value_coded = cn2.concept_id

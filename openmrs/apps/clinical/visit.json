@@ -47,16 +47,16 @@
               "displayOrder": 7
            },
             "discharge_notes": {
-                "type": "Discharge Notes",
+                "type": "Discharge notes",
                 "config": {
                     "numberOfVisits": 1,
                     "showDetailsButton": true,
                     "conceptNames": [
-                        "Discharge Note, Brief Hospital Course",
-                        "Discharge Note, Medications on Discharged",
-                        "Discharge Note, Followup Instructions"
+                        "Discharge note, Brief Hospital Course",
+                        "Discharge note, Medications on Discharged",
+                        "Discharge note, Followup Instructions"
                     ],
-                    "title":"Discharge Notes"
+                    "title":"Discharge notes"
                 },
                 "displayOrder": 2
             },

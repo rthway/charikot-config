@@ -12,11 +12,11 @@ select 	'Cumulative no of Patients ever enrolled in HIV Care' as 'Anteretroviral
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @start_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @start_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @start_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @start_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @start_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @start_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @start_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @start_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @start_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, HIV care enrolled date' and o.value_datetime < @start_date group by o.person_id) as t1
@@ -34,11 +34,11 @@ select 	'New patients enrolled in HIV care' as 'Anteretroviral Treatment : Statu
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 		(select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, HIV care enrolled date' and o.value_datetime between @start_date and @end_date group by o.person_id) as t2
@@ -56,11 +56,11 @@ select 	'Number of patients transferred in HIV Care' as 'Anteretroviral Treatmen
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',	
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 		(select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Date of transferred in' and o.value_datetime between @start_date and @end_date group by o.person_id) as t3
@@ -78,11 +78,11 @@ select 	'Number of patients transferred out' as 'Anteretroviral Treatment : Stat
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',	
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 		(select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Date of transferred out' and o.value_datetime between @start_date and @end_date group by o.person_id) as t4
@@ -100,11 +100,11 @@ select 	'Number of patients death reported' as 'Anteretroviral Treatment : Statu
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',	
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 		(select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Date of death' and o.value_datetime between @start_date and @end_date group by o.person_id) as t5
@@ -122,11 +122,11 @@ select 	'Total cumulative no of patients served' as 'Anteretroviral Treatment : 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, HIV care enrolled date' and o.value_datetime < @end_date group by o.person_id) as t6
@@ -144,11 +144,11 @@ select 	'Patients medically eligible for ART but have not started' as 'Anteretro
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o 
 		inner join person p on o.person_id = p.person_id
@@ -169,11 +169,11 @@ select 	'Patients ever started ART at the end of last month' as 'Anteretroviral 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @start_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @start_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @start_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @start_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @start_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @start_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @start_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @start_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @start_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime < @start_date group by o.person_id) as t8
@@ -191,11 +191,11 @@ select 	'New patients started ART' as 'Anteretroviral Treatment : Status of HIV 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime between @start_date and @end_date group by o.person_id) as t9
@@ -213,11 +213,11 @@ select 	'Patients on ART transferred in' as 'Anteretroviral Treatment : Status o
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime is not null and o.person_id in 
@@ -237,11 +237,11 @@ select 	'Patients ever started ART at the end of this month' as 'Anteretroviral 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime < @end_date group by o.person_id) as t11
@@ -259,11 +259,11 @@ select 	'Total patients on ART transfer‐out (cumulative)' as 'Anteretroviral T
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime is not null and o.person_id in 
@@ -283,11 +283,11 @@ select 	'Total deaths reported (cumulative)' as 'Anteretroviral Treatment : Stat
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Date of death' and o.value_datetime < @end_date group by o.person_id) as t13
@@ -305,11 +305,11 @@ select 	'Cumulative patients transferred out' as 'Anteretroviral Treatment : Sta
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Date of transferred out' and o.value_datetime < @end_date group by o.person_id) as t14
@@ -327,11 +327,11 @@ select 	'Total patients missing (MIS)' as 'Anteretroviral Treatment : Status of 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from valid_coded_obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Reason for end of follow-up' and o.value_concept_full_name = 'Missing' and o.obs_datetime < @end_date group by o.person_id) as t15
@@ -349,14 +349,14 @@ select 	'Total patients lost to follow‐up (LFU)' as 'Anteretroviral Treatment 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from valid_coded_obs_view o inner join person p on o.person_id = p.person_id
-		where o.concept_full_name='ART, Reason for end of follow-up' and o.value_concept_full_name = 'Lost to Follow-up' and o.obs_datetime < @end_date group by o.person_id) as t16
+		where o.concept_full_name='ART, Reason for end of follow-up' and o.value_concept_full_name = 'Lost to Follow up' and o.obs_datetime < @end_date group by o.person_id) as t16
         
 union all
 
@@ -371,11 +371,11 @@ select 	'Total patients stopping (ST) ART' as 'Anteretroviral Treatment : Status
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from valid_coded_obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, Treatment stop' and o.value_concept_full_name = 'True' and o.obs_datetime < @end_date group by o.person_id) as t17
@@ -393,14 +393,14 @@ select 	'Total MIS/LFU/ST patients restart ART this month' as 'Anteretroviral Tr
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime between @start_date and @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from valid_coded_obs_view o inner join person p on o.person_id = p.person_id
-		where((o.concept_full_name='ART, Treatment stop' and o.value_concept_full_name = 'True') or (o.concept_full_name='ART, Reason for end of follow-up' and o.value_concept_full_name in('Missing','Lost to Follow-up')))
+		where((o.concept_full_name='ART, Treatment stop' and o.value_concept_full_name = 'True') or (o.concept_full_name='ART, Reason for end of follow-up' and o.value_concept_full_name in('Missing','Lost to Follow up')))
         and o.person_id in (select person_id from valid_coded_obs_view where concept_full_name = 'ART, ART treatment restart' and value_concept_full_name='True' and obs_datetime between @start_date and @end_date) and
         o.obs_datetime between @start_date and @end_date group by o.person_id) as t18
 
@@ -417,11 +417,11 @@ select 	'Total number of patients currently on ART' as 'Anteretroviral Treatment
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime < @end_date and o.person_id not in 
@@ -441,11 +441,11 @@ select 	'Patients in original 1st line regimen' as 'Anteretroviral Treatment : S
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime < @end_date and o.person_id not in 
@@ -465,11 +465,11 @@ select 	'Patients in substituted 1st line regimen' as 'Anteretroviral Treatment 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime < @end_date and o.person_id in 
@@ -489,11 +489,11 @@ select 	'Patients switched on to 2nd line regimen' as 'Anteretroviral Treatment 
 		ifnull(sum(if(age<1 and gender='F',1,0)),0) as 'Female child - < 1',
         ifnull(sum(if((age between 1 and 5) and gender='F',1,0)),0) as 'Female child - 1-4',
         ifnull(sum(if((age between 5 and 15) and gender='F',1,0)),0) as 'Female child - 5-14',
-		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex Worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People Who Inject Drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and Transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
+		ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Sex worker' and gender='F' and obs_datetime < @end_date group by person_id),1,0)),0) as 'FSW',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'People who inject drugs' and obs_datetime < @end_date group by person_id),1,0)),0) as 'IDU',
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'MSM and transgenders' and obs_datetime < @end_date group by person_id),1,0)),0) as 'MSM',
         ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name = 'Migrant' and obs_datetime < @end_date group by person_id),1,0)),0) as 'Migrant',
-        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and Transgenders', 'Sex Worker', 'People Who Inject Drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
+        ifnull(sum(if(person_id in (select person_id from person_ids where concept_full_name = 'ART, Risk Group' and value_concept_full_name not in ('Migrant', 'MSM and transgenders', 'Sex worker', 'People who inject drugs') and obs_datetime < @end_date group by person_id),1,0)),0) as 'Others'
         from
 (select o.person_id,datediff(o.obs_datetime,p.birthdate)/365 as 'age',p.gender from obs_view o inner join person p on o.person_id = p.person_id
 		where o.concept_full_name='ART, ART start date' and o.value_datetime < @end_date and o.person_id in 

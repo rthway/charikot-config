@@ -7,14 +7,14 @@ SET @end_date = '2015-03-20';
 -- Query
 -- Case Registration (1)
  SELECT case_types.name_value AS 'Case Registration',
-	SUM(IF(diagnosis_category.value_concept_full_name = 'New Diagnosis' && person.gender = 'F',1,0)) AS 'New-F',
-	SUM(IF(diagnosis_category.value_concept_full_name = 'New Diagnosis' && person.gender = 'M',1,0)) AS 'New-M',
+	SUM(IF(diagnosis_category.value_concept_full_name = 'New diagnosis' && person.gender = 'F',1,0)) AS 'New-F',
+	SUM(IF(diagnosis_category.value_concept_full_name = 'New diagnosis' && person.gender = 'M',1,0)) AS 'New-M',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Relapse' && person.gender = 'F',1,0)) AS 'Relapse-F',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Relapse' && person.gender = 'M',1,0)) AS 'Relapse-M',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Treatment after failure' && person.gender = 'F',1,0)) AS 'Treatment after failure-F',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Treatment after failure' && person.gender = 'M',1,0)) AS 'Treatment after failure-M',
-	SUM(IF(diagnosis_category.value_concept_full_name = 'Treatment after loss to follow-up' && person.gender = 'F',1,0)) AS 'Treatment after loss to follow-up-F',
-	SUM(IF(diagnosis_category.value_concept_full_name = 'Treatment after loss to follow-up' && person.gender = 'M',1,0)) AS 'Treatment after loss to follow-up-M',
+	SUM(IF(diagnosis_category.value_concept_full_name = 'Treatment after loss to follow up' && person.gender = 'F',1,0)) AS 'Treatment after loss to follow up-F',
+	SUM(IF(diagnosis_category.value_concept_full_name = 'Treatment after loss to follow up' && person.gender = 'M',1,0)) AS 'Treatment after loss to follow up-M',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Other previously treated' && person.gender = 'F',1,0)) AS 'Other previously treated-F',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Other previously treated' && person.gender = 'M',1,0)) AS 'Other previously treated-M',
 	SUM(IF(diagnosis_category.value_concept_full_name = 'Previous treatment history unknown' && person.gender = 'F',1,0)) AS 'Previous treatment history unknown-F',
@@ -26,9 +26,9 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'Tuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'TB Intake-Diagnosis category'
 RIGHT OUTER JOIN (SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'Tuberculosis-Case Registration') AS case_types ON case_types.name_key = tuberculosis_type.value_concept_full_name
 GROUP BY case_types.name_value
 ORDER BY case_types.sort_order;
@@ -56,11 +56,11 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
     AND tuberculosis_type.value_concept_full_name IN ('Pulmonary BC', 'Pulmonary CD')
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'Tuberculosis, Diagnosis Category'
-    AND diagnosis_category.value_concept_full_name IN ('New Diagnosis', 'Relapse')
+	AND diagnosis_category.concept_full_name = 'TB Intake-Diagnosis category'
+    AND diagnosis_category.value_concept_full_name IN ('New diagnosis', 'Relapse')
 INNER JOIN possible_age_group ON visit.date_started BETWEEN (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL possible_age_group.min_years YEAR), INTERVAL possible_age_group.min_days DAY)) 
 						AND (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL possible_age_group.max_years YEAR), INTERVAL possible_age_group.max_days DAY))
 						AND possible_age_group.report_group_name = 'Tuberculosis registration'
@@ -70,10 +70,10 @@ ORDER BY diagnosis_types.sort_order;
 
 -- Private sector and Community involvement in Referral/Diagnosis[5]
 SELECT referral_types.name_value AS 'Pri. sector & Comm. involvement in Ref./Diag.',
-	   SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name = 'New Diagnosis' && person.gender = 'F',1,0)) AS 'PBC(New)-F',
-       SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name = 'New Diagnosis' && person.gender = 'M',1,0)) AS 'PBC(New)-M',
-	   SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name != 'New Diagnosis' && person.gender = 'F',1,0)) AS 'PBC(Excl. New)-F',       
-       SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name != 'New Diagnosis' && person.gender = 'M',1,0)) AS 'PBC(Excl. New)-M',
+	   SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name = 'New diagnosis' && person.gender = 'F',1,0)) AS 'PBC(New)-F',
+       SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name = 'New diagnosis' && person.gender = 'M',1,0)) AS 'PBC(New)-M',
+	   SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name != 'New diagnosis' && person.gender = 'F',1,0)) AS 'PBC(Excl. New)-F',       
+       SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary BC' && diagnosis_category.value_concept_full_name != 'New diagnosis' && person.gender = 'M',1,0)) AS 'PBC(Excl. New)-M',
 	   SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary CD' && person.gender = 'F',1,0)) AS 'PCD(All)-F',       
        SUM(IF(tuberculosis_type.value_concept_full_name = 'Pulmonary CD' && person.gender = 'M',1,0)) AS 'PCD(All)-M',
        SUM(IF(tuberculosis_type.value_concept_full_name = 'Extra pulmonary' && person.gender = 'F',1,0)) AS 'EP(All)-F',
@@ -83,11 +83,11 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'Tuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'TB Intake-Diagnosis category'
 INNER JOIN coded_obs_view AS referral_type ON referral_type.encounter_id = tuberculosis_type.encounter_id
-	AND referral_type.concept_full_name = 'Tuberculosis, Referred by'
+	AND referral_type.concept_full_name = 'TB Intake-Referred by'
 RIGHT OUTER JOIN (SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'Tuberculosis-Referral') AS referral_types ON referral_types.name_key = referral_type.value_concept_full_name
 GROUP BY referral_types.name_value
 ORDER BY referral_types.sort_order;
@@ -109,7 +109,7 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_treatment ON tuberculosis_treatment.encounter_id = encounter.encounter_id
-	AND tuberculosis_treatment.concept_full_name = 'Tuberculosis, Treatment Type'
+	AND tuberculosis_treatment.concept_full_name = 'TB Intake-Treatment type'
 RIGHT OUTER JOIN (SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'Generic') AS treatment_category ON treatment_category.name_key = person.gender
 GROUP BY treatment_category.name_value
 ORDER BY treatment_category.sort_order;
@@ -127,7 +127,7 @@ INNER JOIN person ON visit.patient_id = person.person_id
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view ON coded_obs_view.person_id = person.person_id
 	AND coded_obs_view.concept_full_name = 'Coded Diagnosis'
-	AND coded_obs_view.value_concept_full_name IN ('Tuberculosis','Multi Drug Resistant Tuberculosis', 'Extremely Drug Resistant Tuberculosis')
+	AND coded_obs_view.value_concept_full_name IN ('Tuberculosis','Multi drug resistant Tuberculosis', 'Extremely Drug Resistant Tuberculosis')
     AND coded_obs_view.obs_datetime BETWEEN @start_date AND @end_date
 INNER JOIN coded_obs_view AS certainty_obs ON coded_obs_view.obs_group_id = certainty_obs.obs_group_id
 	AND certainty_obs.concept_full_name = 'Diagnosis Certainty'
@@ -159,7 +159,7 @@ GROUP BY person.gender) AS hiv_status ON hiv_status.gender = patients_tested.gen
 
 
 -- TB HIV activities
--- Sputum Smear Examination
+-- Sputum smear Examination
 
 --  Treatment outcome
 (SELECT
@@ -183,12 +183,12 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
     AND tuberculosis_type.value_concept_full_name = 'Pulmonary BC'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'Tuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'TB Intake-Diagnosis category'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
-	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN 
 	(SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'Tuberculosis-PBC Treatment outcome') AS outcome_category_list
@@ -218,13 +218,13 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
 	AND tuberculosis_type.value_concept_full_name = 'Pulmonary BC'
 INNER JOIN coded_obs_view AS hiv_status ON hiv_status.obs_group_id = tuberculosis_type.obs_group_id
 	AND hiv_status.concept_full_name = 'Tuberculosis, HIV Infection'
     AND hiv_status.value_concept_full_name = 'Yes'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
-	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN
 	(SELECT 'PBC - HIV +ve, All Types' AS name) AS hiv_header ON hiv_header.name = 'PBC - HIV +ve, All Types'
@@ -253,12 +253,12 @@ INNER JOIN person ON visit.patient_id = person.person_id
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 	AND DATE(encounter_datetime) BETWEEN @start_date AND @end_date
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
     AND tuberculosis_type.value_concept_full_name = 'Pulmonary CD'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'Tuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'TB Intake-Diagnosis category'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
- 	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+ 	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN 
 	(SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'Tuberculosis-PCD Treatment outcome') AS pcd_outcome
@@ -290,12 +290,12 @@ INNER JOIN person ON visit.patient_id = person.person_id
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 	AND DATE(encounter_datetime) BETWEEN @start_date AND @end_date
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
     AND tuberculosis_type.value_concept_full_name = 'Extra pulmonary'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'Tuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'TB Intake-Diagnosis category'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
- 	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+ 	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN 
 	(SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'Tuberculosis-EP Treatment outcome') AS ep_outcome
@@ -327,13 +327,13 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'Tuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'TB Intake-Type'
 	AND tuberculosis_type.value_concept_full_name IN ('Pulmonary BC', 'Extra pulmonary')
 INNER JOIN coded_obs_view AS hiv_status ON hiv_status.obs_group_id = tuberculosis_type.obs_group_id
 	AND hiv_status.concept_full_name = 'Tuberculosis, HIV Infection'
     AND hiv_status.value_concept_full_name = 'Yes'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
-	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN
 	(SELECT 'PCD & EP (BC or CD) HIV +ve, All Types' AS name) AS hiv_header ON hiv_header.name = 'PCD & EP (BC or CD) HIV +ve, All Types'
@@ -354,17 +354,17 @@ INNER JOIN person ON visit.patient_id = person.person_id
 -- INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view ON coded_obs_view.person_id = person.person_id
 	AND coded_obs_view.concept_full_name = 'Coded Diagnosis'
-	AND coded_obs_view.value_concept_full_name IN ('Multi Drug Resistant Tuberculosis','Extremely Drug Resistant Tuberculosis')
+	AND coded_obs_view.value_concept_full_name IN ('Multi drug resistant Tuberculosis','Extremely Drug Resistant Tuberculosis')
     AND coded_obs_view.obs_datetime BETWEEN @start_date AND @end_date
 INNER JOIN coded_obs_view AS certainty_obs ON coded_obs_view.obs_group_id = certainty_obs.obs_group_id
 	AND certainty_obs.concept_full_name = 'Diagnosis Certainty'
     AND certainty_obs.value_concept_full_name = 'Confirmed'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.person_id = person.person_id
-	AND diagnosis_category.concept_full_name = 'DRTuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'DRTB intake-Diagnosis category'
 GROUP BY person.person_id) AS entries
 LEFT OUTER JOIN coded_obs_view AS diagnosis_category
 	ON diagnosis_category.obs_datetime = entries.latest_obs
-    AND diagnosis_category.concept_full_name = 'DRTuberculosis, Diagnosis Category'
+    AND diagnosis_category.concept_full_name = 'DRTB intake-Diagnosis category'
     AND diagnosis_category.person_id = entries.person_id   
 RIGHT OUTER JOIN 
 	(SELECT name_key, name_value, sort_order FROM row_header_name_map WHERE report_group_name = 'DRTuberculosis-Case Registration') AS drtb_registration
@@ -396,12 +396,12 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'MDRTuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'MDRTB Intake-Type'
 INNER JOIN coded_obs_view AS hiv_status ON hiv_status.obs_group_id = tuberculosis_type.obs_group_id
-	AND hiv_status.concept_full_name = 'MDRTuberculosis, HIV Infection'
+	AND hiv_status.concept_full_name = 'MDRTB intake-HIV infection'
     AND hiv_status.value_concept_full_name = 'Yes'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
-	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN
 	(SELECT 'HIV +ve, All Types' AS name) AS hiv_header ON hiv_header.name = 'HIV +ve, All Types'
@@ -427,12 +427,12 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'MDRTuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'MDRTB Intake-Type'
 INNER JOIN coded_obs_view AS hiv_status ON hiv_status.obs_group_id = tuberculosis_type.obs_group_id
-	AND hiv_status.concept_full_name = 'MDRTuberculosis, HIV Infection'
+	AND hiv_status.concept_full_name = 'MDRTB intake-HIV infection'
     AND hiv_status.value_concept_full_name = 'Yes'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
-	AND treatment_outcome.concept_full_name = 'Tuberculosis, Treatment Outcome'
+	AND treatment_outcome.concept_full_name = 'TBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN
 	(SELECT 'All confirmed XDR-TB' AS name) AS xdr_tb_header ON xdr_tb_header.name = 'All confirmed XDR-TB'
@@ -450,7 +450,7 @@ INNER JOIN person ON visit.patient_id = person.person_id
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 	AND DATE(encounter_datetime) BETWEEN @start_date AND @end_date
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'MDRTuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'MDRTB Intake-Type'
 RIGHT OUTER JOIN possible_age_group ON DATE(encounter_datetime) BETWEEN (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL possible_age_group.min_years YEAR), INTERVAL possible_age_group.min_days DAY)) 
 						AND (DATE_ADD(DATE_ADD(person.birthdate, INTERVAL possible_age_group.max_years YEAR), INTERVAL possible_age_group.max_days DAY))
 WHERE possible_age_group.report_group_name = 'Tuberculosis registration'
@@ -480,13 +480,13 @@ INNER JOIN person ON visit.patient_id = person.person_id
 	AND visit.date_started BETWEEN @start_date AND @end_date
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS tuberculosis_type ON encounter.encounter_id = tuberculosis_type.encounter_id
-	AND tuberculosis_type.concept_full_name = 'MDRTuberculosis, Type'
+	AND tuberculosis_type.concept_full_name = 'MDRTB Intake-Type'
 INNER JOIN coded_obs_view AS diagnosis_category ON diagnosis_category.obs_group_id = tuberculosis_type.obs_group_id
-	AND diagnosis_category.concept_full_name = 'MDRTuberculosis, Diagnosis Category'
+	AND diagnosis_category.concept_full_name = 'MDRTB intake-Diagnosis category'
 LEFT OUTER JOIN coded_obs_view AS treatment_outcome ON treatment_outcome.person_id = tuberculosis_type.person_id
-	AND treatment_outcome.concept_full_name = 'MDRTuberculosis, Treatment Outcome'
+	AND treatment_outcome.concept_full_name = 'MDRTBFU-Treatment outcome'
     AND DATE(treatment_outcome.obs_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN 
-	(SELECT answer_concept_name FROM concept_answer_view WHERE question_concept_name = 'Tuberculosis, Diagnosis Category' AND answer_concept_name != 'Transfer In') AS diagnosis_category_list
+	(SELECT answer_concept_name FROM concept_answer_view WHERE question_concept_name = 'TB Intake-Diagnosis category' AND answer_concept_name != 'Transfer in') AS diagnosis_category_list
 	ON diagnosis_category.value_concept_full_name = diagnosis_category_list.answer_concept_name
 GROUP BY diagnosis_category_list.answer_concept_name;

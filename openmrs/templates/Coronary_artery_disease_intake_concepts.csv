@@ -17,7 +17,7 @@ uuid,name,description,class,datatype,shortname,reference-term-code,reference-ter
 ,"Coronary Artery Disease, Smoking history",,Misc,Boolean,Smoking,,,,,,,,,,
 ,"Coronary Artery Disease, Packs per Day",,Misc,Numeric,Packs per Day,,,,,,,,,,
 ,"Coronary Artery Disease, Numbers of years",,Misc,Numeric,Numbers of years,,,,,,,,,,
-,"Coronary Artery Disease, Current Smoker",,Misc,Boolean,Current Smoker,,,,,,,,,,
+,"Coronary Artery Disease, Current smoker",,Misc,Boolean,Current smoker,,,,,,,,,,
 ,"Coronary Artery Disease, Quit smoking since",,Misc,Text,Quit smoking since,,,,,,,,,,
 ,"Coronary Artery Disease, Alcohol abuse",,Misc,Boolean,Alcohol abuse,,,,,,,,,,
 ,"Coronary Artery Disease, Currently exposed to Alcohol",,Misc,Boolean,Currently exposed to Alcohol,,,,,,,,,,

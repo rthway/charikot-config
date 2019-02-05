@@ -16,7 +16,7 @@
         "query": "select count(v.visit_id) number_of_visits from visit v where date(v.date_created) between ':startDate:' and ':endDate:';"
       },
       {
-        "queryName": "Number of New Patients Registered",
+        "queryName": "Number of New patients Registered",
         "query": "select count(p.patient_id) number_of_new_patients_registered from patient p where date(p.date_created) between ':startDate:' and ':endDate:';"
       }
     ]

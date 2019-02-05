@@ -16,7 +16,7 @@ FROM
         AND question_concept_short_name.voided
         IS FALSE
     WHERE
-        question_concept_name.name IN ('Childhood Illness (2-59)-Malaria Free Zone-Measles' , 'Childhood Illness (2-59)-Malaria Risk Zone-Falciparum Malaria', 'Childhood Illness (2-59)-Malaria Risk Zone-Non Falciparum Malaria', 'Childhood Illness (2-59)-Malaria Risk Zone-Complicated Malaria', 'Childhood Illness, Fever present', 'CBIMNCI-Anaemia', 'Childhood Illness-Nutrition status-Other diagnosis')
+        question_concept_name.name IN ('Childhood Illness (2-59)-Malaria note Free Zone-Measles' , 'Childhood Illness (2-59)-Malaria note Risk Zone-Falciparum Malaria note', 'Childhood Illness (2-59)-Malaria note Risk Zone-Non Falciparum Malaria note', 'Childhood Illness (2-59)-Malaria note Risk Zone-Complicated Malaria note', 'Childhood Illness-Fever present', 'CBIMNCI 2 to 59-Anaemia', 'CBIMNCI 2 to 59-Other diagnosis')
     ORDER BY answer_name DESC) first_question
         LEFT OUTER JOIN
     (SELECT 
@@ -27,7 +27,7 @@ FROM
         obs o1
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
-        AND cn1.name IN ('Childhood Illness (2-59)-Ear Infection-Chronic Ear Infection' , 'Childhood Illness (2-59)-Malaria Free Zone-Measles', 'Childhood Illness (2-59)-Malaria Risk Zone-Falciparum Malaria', 'Childhood Illness (2-59)-Malaria Risk Zone-Non Falciparum Malaria', 'Childhood Illness (2-59)-Malaria Risk Zone-Complicated Malaria', 'Childhood Illness, Fever present', 'CBIMNCI-Anaemia', 'Childhood Illness-Nutrition status-Other diagnosis')
+        AND cn1.name IN ('Childhood Illness (2-59)-Ear Infection-Chronic Ear Infection' , 'Childhood Illness (2-59)-Malaria note Free Zone-Measles', 'Childhood Illness (2-59)-Malaria note Risk Zone-Falciparum Malaria note', 'Childhood Illness (2-59)-Malaria note Risk Zone-Non Falciparum Malaria note', 'Childhood Illness (2-59)-Malaria note Risk Zone-Complicated Malaria note', 'Childhood Illness-Fever present', 'CBIMNCI 2 to 59-Anaemia', 'CBIMNCI 2 to 59-Other diagnosis')
         AND o1.voided = 0
         AND cn1.voided = 0
     INNER JOIN encounter e ON o1.encounter_id = e.encounter_id

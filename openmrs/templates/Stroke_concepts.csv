@@ -1,6 +1,6 @@
 uuid,name,description,class,datatype,shortname,reference-term-code,reference-term-relationship,reference-term-source,synonym.1,answer.1,answer.2,answer.3,answer.4,answer.5,answer.6,answer.7,answer.8
-,"Stroke, Systolic",,Misc,Numeric,Systolic,,,,,,,,,,,,
-,"Stroke, Systolic Abnormal",,Abnormal,Boolean,Systolic Abnormal,,,,,,,,,,,,
+,"Stroke, BP data-systolic",,Misc,Numeric,BP data-systolic,,,,,,,,,,,,
+,"Stroke, BP data-systolic Abnormal",,Abnormal,Boolean,BP data-systolic Abnormal,,,,,,,,,,,,
 ,"Stroke, Diastolic",,Misc,Numeric,Diastolic,,,,,,,,,,,,
 ,"Stroke, Diastolic Abnormal",,Abnormal,Boolean,Diastolic Abnormal,,,,,,,,,,,,
 ,"Stroke, LDL",,Misc,Text,LDL,,,,,,,,,,,,

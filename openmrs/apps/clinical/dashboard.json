@@ -46,14 +46,14 @@
                 "formGroup":["Patient Vitals","Acute OPD visit","Acute Abdominal Complaint","Acute HEENT Complaint",
                              "Acute MSK Complaint","Acute Skin Complaint","Acute GU Complaint","ANC","Asthma, Progress","Childhood Illness (Children aged below 2 months)",
                              "Childhood Illness( Children aged 2 months to 5 years)","CHP Antenatal Care","Depression-Initial Visit","CHP Chronic Disease Counseling", "CHP Registration",
-                             "Chronic Kidney Disease, Progress","COPD, Progress","Congestive Heart Failure, Progress","Death Note","Delivery note","Dental","Dental Note",
-                             "Depression Note","Diabetes, Progress","Discharge Note","DRTuberculosis, Intake","ECG Notes","ER General Notes","Family Planning Template",
+                             "Chronic Kidney Disease, Progress","COPD, Progress","Congestive heart failure, Progress","Death note","Delivery note","Dental","Dental note",
+                             "Depression Note","Diabetes, Progress","Discharge note","DRTuberculosis, Intake","ECG Notes","ER General note","Family Planning Template",
                              "HIV Testing and Counseling Intake Template","HIV Treatment and Care Intake Template","HIV Treatment and Care Progress Template","Hypertension, Progress",
-                             "IMAM Program","Kalaazar, Template","Leprosy, Template","Mental Health","MHS-Depression Initial Visit","Mental Health Screener","Malaria","Nutrition","Operative Notes",
+                             "IMAM note","Kalazar note","Leprosy note","Mental Health","MHS-Depression Initial Visit","Mental Health Screener","Malaria note","Nutrition note","Operative note",
                              "Opioid Substitution Therapy Intake Template","Opioid Substitution Therapy Intake Template","Opportunistic Infection Template","Orthopaedic Examination",
-                             "PNC Note","Post Delivery Family Planning Checklist","Prevention of Mother-to-Child Transmission Intake Template","Procedure Notes","Psychiatrist's Recommendation",
-                             "Psychosis Followup Note","Psychiatrists Recommendation","Psychosis Intake Note","Rheumatoid Arthritis, Progress","Rheumatic Heart Disease, Progress","Safe Abortion","Seizure Disorder, Progress",
-                             "Sextually Transmitted Infections Intake Template","Stroke OPD","Trauma Notes","Tuberculosis, Intake","USG Notes","TEST TEMPLATE (टेस्ट टेम्प्लेट)"],
+                             "PNC note","Post Delivery Family Planning Checklist","Prevention of Mother-to-Child Transmission Intake Template","Procedure note","Psychiatrist's Recommendation",
+                             "Psychosis Followup Note","Psychiatrists Recommendation","Psychosis Intake Note","Rheumatoid Arthritis, Progress","Rheumatic Heart Disease, Progress","Safe abortion (SA) note","Seizure Disorder, Progress",
+                             "Sextually transmitted infections Intake Template","Stroke OPD","Trauma Notes","Tuberculosis, Intake","USG Notes","TEST TEMPLATE (टेस्ट टेम्प्लेट)"],
                 "displayOrder": 3
             	},
 		"conditions": {
@@ -145,12 +145,12 @@
                         "numberOfVisits": "4",
                         "groupBy": "encounters",
                         "obsConcepts": [
-                            "Systolic",
+                            "BP data-systolic",
                             "Diastolic",
                             "Temperature",
                             "Heart Rate",
                             "Respiratory Rate",
-                            "Oxygen Saturation",
+                            "Oxygen saturation",
                             "Weight"
                         ],
                         "drugConcepts": "",
@@ -290,8 +290,8 @@
                 "displayOrder": 13
             },
             "death_note": {
-                "title": "Death Note",
-                "templateName": "Death Note Template",
+                "title": "Death note",
+                "templateName": "Death note Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,
@@ -306,8 +306,8 @@
                 "displayOrder": 14
             },
             "discharge_note": {
-                "title": "Discharge Note",
-                "templateName": "Discharge Note Template",
+                "title": "Discharge note",
+                "templateName": "Discharge note Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,
@@ -362,8 +362,8 @@
                 "displayOrder": 17
             },
             "malaria": {
-                "title": "Malaria",
-                "templateName": "Malaria Disease Template",
+                "title": "Malaria note",
+                "templateName": "Malaria note Disease Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,

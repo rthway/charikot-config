@@ -20,7 +20,7 @@ select 	'STI - Screened/Counseled' as 'STI Cases by Sex & Age Group',
 
 from (select o.person_id, p.gender, p.birthdate,datediff(o.obs_datetime,p.birthdate)/365 as 'Age' from obs_view o 
 		inner join person p on o.person_id = p.person_id
-		where o.concept_full_name = 'STI, STI Counseling' and o.value_coded = 1 and 
+		where o.concept_full_name = 'STI-STI counseling' and o.value_coded = 1 and 
 		o.obs_datetime between @start_date and @end_date group by o.person_id) as t1
 
 union all 
@@ -44,7 +44,7 @@ select 	'STI - Diagnosed' as 'STI Cases by Sex & Age Group',
 
 from (select o.person_id, p.gender, p.birthdate,datediff(o.obs_datetime,p.birthdate)/365 as 'Age' from obs_view o 
 		inner join person p on o.person_id = p.person_id
-		where o.concept_full_name = 'STI, STI Diagnosis Syndrome' and o.value_coded is not null and 
+		where o.concept_full_name = 'STI-STI syndromic diagnosis' and o.value_coded is not null and 
 		o.obs_datetime between @start_date and @end_date group by o.person_id) as t2
 
 union all 
@@ -68,7 +68,7 @@ select 	'STI - Treated' as 'STI Cases by Sex & Age Group',
 
 from (select o.person_id, p.gender, p.birthdate,datediff(o.obs_datetime,p.birthdate)/365 as 'Age' from obs_view o 
 		inner join person p on o.person_id = p.person_id
-		where o.concept_full_name in ('STI, Sydromic Treatment','STI, Etiological Treatment') and o.value_coded = 1 and 
+		where o.concept_full_name in ('STI-Sydromic treatment','STI-Etiological treatment') and o.value_coded = 1 and 
 		o.obs_datetime between @start_date and @end_date group by o.person_id) as t3
         
 union all 
@@ -92,7 +92,7 @@ select 	'Presumptive Treatment to SWs' as 'STI Cases by Sex & Age Group',
 
 from (select o.person_id, p.gender, p.birthdate,datediff(o.obs_datetime,p.birthdate)/365 as 'Age' from obs_view o 
 		inner join person p on o.person_id = p.person_id
-		where o.concept_full_name = 'STI, Presumptive Treatment for Sex Workers' and o.value_coded = 1 and 
+		where o.concept_full_name = 'STI, Presumptive Treatment for Sex workers' and o.value_coded = 1 and 
 		o.obs_datetime between @start_date and @end_date group by o.person_id) as t4
         
 union all 
@@ -116,5 +116,5 @@ select 	'Asymptomatic Partners Treated' as 'STI Cases by Sex & Age Group',
 
 from (select o.person_id, p.gender, p.birthdate,datediff(o.obs_datetime,p.birthdate)/365 as 'Age' from obs_view o 
 		inner join person p on o.person_id = p.person_id
-		where o.concept_full_name = 'STI, Asymptomatic Partners Treated' and o.value_coded = 1 and 
+		where o.concept_full_name = 'STI-Asymptomatic partners treated' and o.value_coded = 1 and 
 		o.obs_datetime between @start_date and @end_date group by o.person_id) as t5

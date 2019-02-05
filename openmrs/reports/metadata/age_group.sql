@@ -42,9 +42,9 @@ INSERT INTO possible_age_group(name, report_group_name, min_years, min_days, max
 			VALUES('≥ 60 Years', 'Client Service Reports', 60, 0, 999, 0, 4); 
 
 INSERT INTO possible_age_group(name, report_group_name, min_years, min_days, max_years , max_days, sort_order)
-			VALUES('No. of women < 20 Years', 'Safe Abortion Service', 0, 0, 20, -1, 1); 
+			VALUES('No. of women < 20 Years', 'Safe abortion (SA) note Service', 0, 0, 20, -1, 1); 
 INSERT INTO possible_age_group(name, report_group_name, min_years, min_days, max_years , max_days, sort_order)
-			VALUES('No. of women ≥ 20 Years', 'Safe Abortion Service', 20, 0, 999, 0, 2);          
+			VALUES('No. of women ≥ 20 Years', 'Safe abortion (SA) note Service', 20, 0, 999, 0, 2);          
             
 INSERT INTO possible_age_group(name, report_group_name, min_years, min_days, max_years , max_days, sort_order)
 			VALUES('</ 28 days', 'Childhood Illness 2months', 0, 0, 0, 28, 1);     

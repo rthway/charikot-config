@@ -24,7 +24,7 @@ Loss of consciousness<br>",Misc,Coded,Seizure Classification,,,,,Partial,General
 ,"Seizure Disorder, Smoking History",,Misc,Boolean,Smoking History,,,,,,,,,,,,,,
 ,"Seizure Disorder, Packs per day",,Misc,Numeric,Packs per day,,,,,,,,,,,,,,
 ,"Seizure Disorder, Number of years",,Misc,Numeric,Number of years,,,,,,,,,,,,,,
-,"Seizure Disorder, Current Smoker",,Misc,Boolean,Current Smoker,,,,,,,,,,,,,,
+,"Seizure Disorder, Current smoker",,Misc,Boolean,Current smoker,,,,,,,,,,,,,,
 ,"Seizure Disorder, Quit Smoking Since",,Misc,Text,Quit Smoking Since,,,,,,,,,,,,,,
 ,"Seizure Disorder, Alcohol Abuse",,Misc,Boolean,Alcohol Abuse,,,,,,,,,,,,,,
 ,"Seizure Disorder, Currently Exposed to Alcohol",,Misc,Boolean,Currently Exposed to Alcohol,,,,,,,,,,,,,,

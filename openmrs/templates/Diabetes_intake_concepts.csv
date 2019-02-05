@@ -7,7 +7,7 @@ uuid,name,description,class,datatype,shortname,synonym.1,synonym.2,reference-ter
 ,"Diabetes, Last known A1C Result",,Misc,Text,Last known A1C Result,,,,,,,,,,,
 ,"Diabetes, Last Known Fasting Blood Sugar",,Misc,Date,Last known Fasting Blood Sugar,,,,,,,,,,,
 ,"Diabetes, Last known A1C Result",,Misc,Text,Last known Fasting Blood Sugar,,,,,,,,,,,
-,"Diabetes, Suspicion",,Diagnosis,Coded,If new patient / suspicion,,,,,,Polyuria,Blurred Vision,Polydypsia,Nocturia,Weight Loss,
+,"Diabetes, Suspicion",,Diagnosis,Coded,If new patient / suspicion,,,,,,Polyuria,Blurred Vision,Polydypsia,Nocturia,Weight loss,
 ,"Diabetes, Cormorbidities",,Diagnosis,Coded,Cormorbidities,,,,,,Hypertension,Hyperlipidemia,Coronary DZ,Obesity,Heart failure,CKD
 ,"Diabetes, Family History of Diabetes",,Misc,Boolean,Family History of Diabetes,,,,,,,,,,,
 ,"Diabetes, Details Of Family History Of Diabetes",,Misc,Text,Details Of Family History Of Diabetes,,,,,,,,,,,

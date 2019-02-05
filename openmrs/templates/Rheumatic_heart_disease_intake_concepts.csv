@@ -16,7 +16,7 @@ uuid,name,description,class,datatype,shortname,reference-term-code,reference-ter
 ,"Rheumatic Heart Disease, Smoking History",,Misc,Boolean,Smoking History,,,,,,,,
 ,"Rheumatic Heart Disease, Smokes Packs per Day",,Misc,Numeric,Packs per Day,,,,,,,,
 ,"Rheumatic Heart Disease, Number of years since smoking",,Misc,Numeric,Number of Years,,,,,,,,
-,"Rheumatic Heart Disease, Current Smoker",,Misc,Boolean,Current Smoker,,,,,,,,
+,"Rheumatic Heart Disease, Current smoker",,Misc,Boolean,Current smoker,,,,,,,,
 ,"Rheumatic Heart Disease, Quit Smoking Since",,Misc,Text,Quit Smoking Since,,,,,,,,
 ,"Rheumatic Heart Disease, Alcohol Abuse",,Misc,Boolean,Alcohol Abuse,,,,,,,,
 ,"Rheumatic Heart Disease, Currently Exposed to Alcohol",,Misc,Boolean,Currently Exposed to Alcohol,,,,,,,,

@@ -24,7 +24,7 @@ uuid,name,class,datatype,shortname,description,reference-term-code,reference-ter
 ,"Chronic Kidney Disease, Smoking History",Misc,Boolean,Smoking History,,,,,,,,,
 ,"Chronic Kidney Disease, Packs per day",Misc,Numeric,Packs per day,,,,,,,,,
 ,"Chronic Kidney Disease, Number of years",Misc,Numeric,Number of years,,,,,,,,,
-,"Chronic Kidney Disease, Current Smoker",Misc,Boolean,Current Smoker,,,,,,,,,
+,"Chronic Kidney Disease, Current smoker",Misc,Boolean,Current smoker,,,,,,,,,
 ,"Chronic Kidney Disease, Quit Smoking Since",Misc,Text,Quit Smoking Since,,,,,,,,,
 ,"Chronic Kidney Disease, Alcohol Abuse",Misc,Boolean,Alcohol Abuse,,,,,,,,,
 ,"Chronic Kidney Disease, Current Home Medications",Misc,Coded,Current Home Medications,,,,,,Ace Inhibitor,Furosemide,Spironolactone,

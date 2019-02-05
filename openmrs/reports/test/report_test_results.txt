@@ -47,8 +47,8 @@ SET @end_date = '2014-01-20';
 
 Results
 --------------------------------------
-"Female Sex Workers (FSWs)",2,1,1,0,0,0,0,0,0,0,0,1,1,1
-"People Who Inject Drugs (PWIDs)",1,1,0,0,0,0,0,0,0,0,0,0,1,0
+"Female Sex workers (FSWs)",2,1,1,0,0,0,0,0,0,0,0,1,1,1
+"People who inject drugs (PWIDs)",1,1,0,0,0,0,0,0,0,0,0,0,1,0
 "MSM and TG",3,0,2,0,0,0,0,0,0,1,0,2,0,0
 "Clients of FSWs",5,2,0,0,1,0,1,0,0,0,0,3,2,0
 "Male migrants",1,0,0,1,0,0,0,0,0,0,0,1,0,0

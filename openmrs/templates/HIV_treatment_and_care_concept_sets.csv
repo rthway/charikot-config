@@ -7,7 +7,7 @@ uuid,name,shortname,description,class,reference-term-code,reference-term-relatio
 ,"HIVTC, Ealry Infant Diagnosis",Early Infant Diagnosis,,Misc,,,,"HIVTC, HIV diagnosed within 2m","HIVTC, HIV diagnosed 2-9m","HIVTC, HIV diagnosed 9-18m","HIVTC, HIV diagnosed after 18m",,,,,,,,,,,,,,,,
 ,"HIVTC, HIV Exposed Baby",HIV Exposed Baby,,Misc,,,,"HIVTC, Ealry Infant Diagnosis","HIVTC, CPT Prophylaxis start date after 6wks",,,,,,,,,,,,,,,,,,
 ,"HIVTC, For PMTCT Cases",For PMTCT Cases,,Misc,,,,"HIVTC, Mothers ARV Regimen Details","HIVTC, HIV Exposed Baby",,,,,,,,,,,,,,,,,,
-,"HIVTC, TB assessment at the time of Enrollment in HIV Care",TB assessment at the time of Enrollment in HIV Care,,Misc,,,,"HIVTC, Smear TB assessment at enrollment","HIVTC, Culture TB assessment at enrollment","HIVTC, Chest X-Ray TB assessment at enrollment","HIVTC, Gene Xpert TB assessment at enrollment",,,,,,,,,,,,,,,,
+,"HIVTC, TB assessment at the time of Enrollment in HIV Care",TB assessment at the time of Enrollment in HIV Care,,Misc,,,,"HIVTC, Smear TB assessment at enrollment","HIVTC, Culture TB assessment at enrollment","HIVTC, Chest X-Ray TB assessment at enrollment","HIVTC, Gene xpert TB assessment at enrollment",,,,,,,,,,,,,,,,
 ,"HIVTC, History of TB",History of TB,,Misc,,,,"HIVTC, TB Type","HIVTC, TB Treatment start date","HIVTC, TB Regimen","HIVTC, TB Treatment Outcome",,,,,,,,,,,,,,,,
 ,"HIVTC, History of Other Chronic Illness",History of Other Chronic Illness,,Misc,,,,"HIVTC, Other chronic diseases","HIVTC, Other chronic disease drugs",,,,,,,,,,,,,,,,,,
 ,"HIVTC, Transferred in",Transferred in,,Misc,,,,"HIVTC, Transferred in from","HIVTC, Date of transferred in","HIVTC, Regimen when transferred in",,,,,,,,,,,,,,,,,

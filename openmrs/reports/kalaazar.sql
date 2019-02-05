@@ -27,7 +27,7 @@ INNER JOIN person ON visit.patient_id = person.person_id
 INNER JOIN person_address ON person_address.person_id = person.person_id
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN obs_view ON encounter.encounter_id = obs_view.encounter_id
-	AND obs_view.concept_full_name IN ('Malaria Kalaazar') 
+	AND obs_view.concept_full_name IN ('Malaria note Kalaazar') 
 INNER JOIN coded_obs_view ON coded_obs_view.person_id = person.person_id
 	AND coded_obs_view.concept_full_name = 'Coded Diagnosis'
 	AND coded_obs_view.value_concept_full_name IN ('Kala‐Azar')
@@ -61,7 +61,7 @@ INNER JOIN person ON visit.patient_id = person.person_id
 INNER JOIN person_address ON person_address.person_id = person.person_id
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN obs_view ON encounter.encounter_id = obs_view.encounter_id
-	AND obs_view.concept_full_name IN ('Malaria Kalaazar, Death Date')
+	AND obs_view.concept_full_name IN ('Malaria note Kalaazar-Death date')
     AND DATE(value_datetime) BETWEEN  @start_date AND @end_date) AS entries
 RIGHT OUTER JOIN (SELECT child_concept_name FROM concept_children_view WHERE parent_concept_name = 'Patient Origin Type' ) AS origin_types ON entries.Origin = origin_types.child_concept_name
 GROUP BY origin_types.child_concept_name;

@@ -13,7 +13,7 @@ uuid,name,description,class,datatype,shortname,reference-term-code,reference-ter
 ,"Asthma, Peak Expiratory Flow",,Misc,Text,Peak expiratory flow,,,,,,,,,
 ,"Asthma, Spirometry",,Misc,Text,Spirometry,,,,,,,,,
 ,"Asthma, Tests For Allergy",,Misc,Text,Tests for allergy,,,,,,,,,
-,"Asthma, Assess Classic Symptoms",,Misc,Coded,Assess classic symptoms,,,,,,Wheezing,Cough,Shortness of Breath,Difficulty Breathing
+,"Asthma, Assess Classic Symptoms",,Misc,Coded,Assess classic symptoms,,,,,,Wheezing,Cough,Shortness of breath,Difficulty Breathing
 ,"Asthma, Other Clues",,Misc,Coded,Other clues,,,,,,Chest tightness,Family History of Asthma,Personal History of Atopic Disease,Asthmatic Symptoms as Child
 ,"Asthma, Current Home Medications",,Misc,Coded,Current home medications,,,,,,B Agonist,Inhaled Steroid,Ipratropium,Oral Steroid
 ,"Asthma, All Other Medicines",,Misc,Text,All other medicines,,,,,,,,,

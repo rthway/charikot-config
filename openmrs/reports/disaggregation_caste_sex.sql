@@ -52,7 +52,7 @@ INNER JOIN person_attribute_type ON person_attribute.person_attribute_type_id = 
 	AND person_attribute_type.name = 'Caste'    
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view ON encounter.encounter_id = coded_obs_view.encounter_id
-	AND coded_obs_view.concept_full_name IN ('Weight condition')
+	AND coded_obs_view.concept_full_name IN ('CBIMNC 2_59-Weight condition')
     AND coded_obs_view.value_concept_full_name IN ('Low weight', 'Very low weight')
     AND DATE(coded_obs_view.obs_datetime) BETWEEN  @start_date AND @end_date  
 RIGHT OUTER JOIN (SELECT answer_concept_name, answer_concept_id FROM concept_answer_view WHERE question_concept_name = 'Caste' ) AS caste_list ON caste_list.answer_concept_id = person_attribute.value
@@ -70,7 +70,7 @@ INNER JOIN person_attribute_type ON person_attribute.person_attribute_type_id = 
 	AND person_attribute_type.name = 'Caste'
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN obs_view ON encounter.encounter_id = obs_view.encounter_id
-	AND obs_view.concept_full_name = 'Delivery Note, Delivery date and time'
+	AND obs_view.concept_full_name = 'Delivery-Delivery date and time'
     AND DATE(obs_view.value_datetime) BETWEEN @start_date AND @end_date
 RIGHT OUTER JOIN (SELECT answer_concept_name, answer_concept_id FROM concept_answer_view WHERE question_concept_name = 'Caste' ) AS caste_list ON caste_list.answer_concept_id = person_attribute.value
 GROUP BY caste_list.answer_concept_name) AS delivery ON delivery.caste_ethnicity = underweight.caste_ethnicity
@@ -201,7 +201,7 @@ INNER JOIN person_attribute_type ON person_attribute.person_attribute_type_id = 
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view AS diagnosis_obs ON diagnosis_obs.person_id = person.person_id
 	AND diagnosis_obs.concept_full_name = 'Coded Diagnosis'
-	AND diagnosis_obs.value_concept_full_name IN ('Tuberculosis', 'Multi Drug Resistant Tuberculosis', 'Extremely Drug Resistant Tuberculosis')
+	AND diagnosis_obs.value_concept_full_name IN ('Tuberculosis', 'Multi drug resistant Tuberculosis', 'Extremely Drug Resistant Tuberculosis')
     AND DATE(diagnosis_obs.obs_datetime) BETWEEN @start_date AND @end_date
 INNER JOIN coded_obs_view AS certainty_obs ON diagnosis_obs.obs_group_id = certainty_obs.obs_group_id
 	AND certainty_obs.concept_full_name = 'Diagnosis Certainty'
@@ -223,7 +223,7 @@ INNER JOIN person_attribute_type ON person_attribute.person_attribute_type_id = 
 	AND person_attribute_type.name = 'Caste'
 INNER JOIN encounter ON visit.visit_id = encounter.visit_id
 INNER JOIN coded_obs_view ON encounter.encounter_id = coded_obs_view.encounter_id
-	AND coded_obs_view.concept_full_name IN ('Out Patient Details, Free Health Service Code', 'ER General Notes, Free Health Service Code')
+	AND coded_obs_view.concept_full_name IN ('OPD-Free health service code', 'ER-Free health service code')
     AND coded_obs_view.value_concept_full_name = 'Gender based violence'  
 RIGHT OUTER JOIN (SELECT answer_concept_name, answer_concept_id FROM concept_answer_view WHERE question_concept_name = 'Caste' ) AS caste_list ON caste_list.answer_concept_id = person_attribute.value
 GROUP BY caste_list.answer_concept_name) AS gender_violence ON gender_violence.caste_ethnicity = tb_cases.caste_ethnicity;
