@@ -77,6 +77,26 @@
         "icon": "fa-book",
         "order": 4,
         "requiredPrivilege": "app:orders"
+    },,
+    "implementerInterface": {
+      "id": "bahmni.implementer.interface",
+      "extensionPointId": "org.bahmni.home.dashboard",
+      "type": "link",
+      "translationKey": "MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY",
+      "url": "/implementer-interface",
+      "icon": "fa fa-pencil-square-o",
+      "order": 12,
+      "requiredPrivilege": "app:implementer-interface"
+    },
+    "atomfeedConsole": {
+      "id": "bahmni.atomfeed.console",
+      "extensionPointId": "org.bahmni.home.dashboard",
+      "type": "link",
+      "translationKey": "MODULE_LABEL_ATOMFEED_CONSOLE_KEY",
+      "url": "/atomfeed-console",
+      "icon": "fa fa-terminal",
+      "order": 13,
+      "requiredPrivilege": "app:admin"
     },
     "bahmni_issuereporting": {
         "id": "bahmni.issueReporting",
