@@ -77,7 +77,7 @@
         "icon": "fa-book",
         "order": 4,
         "requiredPrivilege": "app:orders"
-    },,
+    },
     "implementerInterface": {
       "id": "bahmni.implementer.interface",
       "extensionPointId": "org.bahmni.home.dashboard",
