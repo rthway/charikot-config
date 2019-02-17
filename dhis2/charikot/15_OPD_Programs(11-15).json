@@ -73,7 +73,7 @@
           "row": 10,
           "column": 3
         },
-		 {
+		{
 		 "_comment": "Colorectal colon with rectum cancer-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "PYQPAx2s3On",
@@ -884,7 +884,7 @@
           "column": 3
         },
 		{
-		 "_comment": "	Epididymitis/ Orchitis-F",
+		 "_comment": "Epididymitis/ Orchitis-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "so2s568hmR9",
           "row": 20,
@@ -1035,7 +1035,7 @@
           "column": 4
         },
 		{
-		 "_comment": "	Epididymitis/ Orchitis-M",
+		 "_comment": "Epididymitis/ Orchitis-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "so2s568hmR9",
           "row": 20,
@@ -1053,7 +1053,7 @@
 	"Not mentioned above and others": {
       "dataValues": [  
 		{
-		 "_comment": "Not mentioned above and other-f",
+		 "_comment": "Not mentioned above and other-M",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "G0FIKc60DcJ",
           "row": 1,
@@ -1068,7 +1068,8 @@
         }
 		]
 	},
-	"OPD Surgical Problems(Total and New OPD )": {
+	
+	"OPD Surgical Problems(Total and New OPD)": {
       "dataValues": [    						 
         {
 		"_comment": "Total New OPD Visits (Including Under 5 Children)-F",
