@@ -1,13 +1,13 @@
 var onBloodPressureChange = function (formName, formFieldValues) {
     var systolic = formFieldValues['Systolic Data'];
     var diastolic = formFieldValues['Diastolic Data'];
-    if (systolic == null && diastolic == null) {
+    if (systolic || diastolic) {
         return {
-            disable: ["Posture"]
+            enable: ["Posture"]
         }
     } else {
         return {
-            enable: ["Posture"]
+            disable: ["Posture"]
         }
     }
 };

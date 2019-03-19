@@ -3,7 +3,6 @@
         "common": [
             "Patient Vitals",
             "Acute OPD visit",
-            "Psychosocial Assessment",
             "Acute Abdominal Complaint",
             "Acute HEENT Complaint",
             "Acute MSK Complaint",
@@ -51,7 +50,7 @@
             "Rheumatoid Arthritis, Progress",
             "Rheumatic Heart Disease, Progress",
             "Seizure Disorder, Progress",
-            "Sextually Transmitted Infections Intake Template",
+            "Sexually Transmitted Infections",
             "Stroke OPD",
             "Trauma Notes",
             "Tuberculosis, Intake",
@@ -59,7 +58,10 @@
             "DR TB Follow up Note",
             "USG Notes",
             "TEST TEMPLATE (टेस्ट टेम्प्लेट)",
-            "Zoonotic Disease"
+            "Zoonotic Disease",
+	    "Family Planning Template",
+            "Family Planning and Reproductive Health Template",
+	    "Osteoarthritis QI note"
         ],
         "male": [],
         "female": [
@@ -67,8 +69,6 @@
             "ANC-USG Note",
             "CHP Antenatal Care",
             "Delivery note",
-            "Family Planning Template",
-            "Family Planning and Reproductive Health Template",
             "PNC Note",
             "Post Delivery Family Planning Checklist",
             "Prevention of Mother-to-Child Transmission Intake Template",
@@ -76,7 +76,8 @@
             "Safe Abortion"
         ],
         "lessThanTwoMonths":[
-            "CBIMNCI (<2 months child)"
+            "CBIMNCI (<2 months child)",
+	    "Newborn admission (NBA) note"
         ],
         "infant": [
         ],
