@@ -1,6 +1,5 @@
 {
-	"commonConfig": {
-  },
+  "commonConfig": {},
   "tabConfig": {
     "allMedicationTabConfig": {
       "orderSet": {
@@ -8,10 +7,9 @@
       },
       "inputOptionsConfig": {
         "defaultDurationUnit": "Day(s)",
-        "hideOrderSet" : false,
+        "hideOrderSet": false,
         "defaultInstructions": "As directed",
-        "frequencyDefaultDurationUnitsMap": [
-          {
+        "frequencyDefaultDurationUnitsMap": [{
             "minFrequency": "1/7",
             "maxFrequency": 5,
             "defaultDurationUnit": "Day(s)"
@@ -28,29 +26,29 @@
           }
         ],
         "routes": [
-		  "Oral",
-		  "Topical",
-		  "Intravenous",
+          "Oral",
+          "Topical",
+          "Intravenous",
           "Intramuscular",
-		  "Inhalation",
+          "Inhalation",
           "Nasal",
-		  "Intraosseous",
+          "Intraosseous",
           "Intrathecal",
           "Intraperitoneal",
           "Intradermal",
-		  "Nasogastric",
-		  "Per Rectum",
-		  "Per Vaginal",
+          "Nasogastric",
+          "Per Rectum",
+          "Per Vaginal",
           "Sub Cutaneous",
-		  "Sub Lingual"
+          "Sub Lingual"
         ],
         "doseUnits": [
-		  "Tablet(s)",
-		  "Capsule(s)",
-		  "Drop",
-		  "ml",
-		  "mg",
-		  "Unit(s)",
+          "Tablet(s)",
+          "Capsule(s)",
+          "Drop",
+          "ml",
+          "mg",
+          "Unit(s)",
           "Teaspoon",
           "Tablespoon",
           "Puff(s)",
@@ -147,12 +145,11 @@
             "route": "Oral"
           }
         },
-        "routesToMakeDoseSectionNonMandatory" : ["Topical","Inhalation"]
+        "routesToMakeDoseSectionNonMandatory": ["Topical", "Inhalation"]
       },
       "drugOrderHistoryConfig": {
         "view": "default"
-        }
       }
     }
   }
-
+}

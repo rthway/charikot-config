@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-target/
-.DS_Store
-.idea
-*.iml
-*/logs/*
-logs/*
-playbooks/**/all.retry
-migration-run-log.txt
-=======
 .DS_Store
 *.log
 *.iml
@@ -17,5 +7,7 @@ migration-run-log.txt
 */.idea/*
 .tmp
 target
-
->>>>>>> 174f4cb26ab5015921752ec06bad0ec5bcfcc154
+*/logs/*
+logs/*
+playbooks/**/all.retry
+migration-run-log.txt

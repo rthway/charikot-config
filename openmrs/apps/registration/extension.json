@@ -1,9 +1,9 @@
 {
-	"search":{
+    "search": {
         "id": "bahmni.registration.navigation.patient.search",
         "extensionPointId": "org.bahmni.registration.navigation",
         "type": "link",
-        "translationKey":"REGISTRATION_SEARCH_CONFIG_KEY",
+        "translationKey": "REGISTRATION_SEARCH_CONFIG_KEY",
         "url": "/search",
         "shortcutKey": "REGISTRATION_SEARCH_CONFIG_ACCESS_KEY",
         "icon": "fa-search",
@@ -11,7 +11,7 @@
         "requiredPrivilege": "View Patients"
     },
 
-    "createNew":{
+    "createNew": {
         "id": "bahmni.registration.navigation.patient.create",
         "extensionPointId": "org.bahmni.registration.navigation",
         "type": "link",
@@ -22,7 +22,7 @@
         "order": 2,
         "requiredPrivilege": "Add Patients"
     },
-    "view":{
+    "view": {
         "id": "bahmni.patient.search.result.action.edit",
         "extensionPointId": "org.bahmni.registration.patient.search.result.action",
         "type": "link",
@@ -56,4 +56,3 @@
         "requiredPrivilege": "Edit Visits"
     }
 }
-

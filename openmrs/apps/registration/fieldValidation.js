@@ -7,7 +7,7 @@ Bahmni.Registration.customValidator = {
     },
     "Telephone Number": {
         method: function (name, value, personAttributeDetails) {
-            return value && value.length> 6;
+            return value && value.length > 6;
         },
         errorMessage: "REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY"
     },

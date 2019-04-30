@@ -1,12 +1,8 @@
-[
-    {
-        "id": "bahmni.dhis",
-        "extensionPoints": [
-            {
-                "id": "org.bahmni.dhis.dashboard",
-                "description": "DHIS Dashboard"
-            }
-        ]
+[{
+    "id": "bahmni.dhis",
+    "extensionPoints": [{
+        "id": "org.bahmni.dhis.dashboard",
+        "description": "DHIS Dashboard"
+    }]
 
-    }
-]
+}]

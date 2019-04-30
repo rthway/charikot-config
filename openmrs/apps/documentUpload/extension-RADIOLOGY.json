@@ -1,51 +1,27 @@
 {
-<<<<<<< HEAD
-    "bahmni_docupload_patients_search_activepatients": {
-=======
-    "bahmniDocUploadPatientsSearchActivePatients":{
->>>>>>> 174f4cb26ab5015921752ec06bad0ec5bcfcc154
+    "bahmniDocUploadPatientsSearchActivePatients": {
         "id": "bahmni.docUpload.patients.search.activePatients",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.activePatients",
-<<<<<<< HEAD
-            "display": "Active Patients",
-            "forwardUrl": "#/patient/{{patientUuid}}/document"
-        },
-        "label": "Active Patients",
-        "order": 1,
-        "requiredPrivilege": "app:document-upload"
-    },
-    "bahmni_docupload_patients_search_allpatients": {
-=======
             "translationKey": "MODULE_LABEL_ACTIVE_PATIENTS_KEY",
-            "forwardUrl" : "#/patient/{{patientUuid}}/document"
+            "forwardUrl": "#/patient/{{patientUuid}}/document"
         },
         "label": "Active Patients",
         "order": 1,
         "requiredPrivilege": "app:radiology-upload"
     },
-	"bahmniDocUploadPatientsSearchAllPatients":{
->>>>>>> 174f4cb26ab5015921752ec06bad0ec5bcfcc154
+    "bahmniDocUploadPatientsSearchAllPatients": {
         "id": "bahmni.docUpload.patients.search.allPatients",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
-<<<<<<< HEAD
-            "display": "All patients",
+            "translationKey": "MODULE_LABEL_ALL_PATIENTS_KEY",
             "forwardUrl": "#/patient/{{patientUuid}}/document"
         },
         "label": "All patients",
         "order": 1,
-        "requiredPrivilege": "app:document-upload"
-=======
-            "translationKey":"MODULE_LABEL_ALL_PATIENTS_KEY",
-            "forwardUrl" : "#/patient/{{patientUuid}}/document"
-        },
-        "label": "All patients",
-        "order": 1,
         "requiredPrivilege": "app:radiology-upload"
->>>>>>> 174f4cb26ab5015921752ec06bad0ec5bcfcc154
     }
 }

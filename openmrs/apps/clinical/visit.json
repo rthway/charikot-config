@@ -39,13 +39,13 @@
                 },
                 "displayOrder": 1
             },
-             "conditions": {
+            "conditions": {
                 "type": "conditionsList",
                 "config": {
-                   "title": "Conditions"
-              },
-              "displayOrder": 7
-           },
+                    "title": "Conditions"
+                },
+                "displayOrder": 7
+            },
             "discharge_notes": {
                 "type": "Discharge Notes",
                 "config": {
@@ -56,7 +56,7 @@
                         "Discharge Note, Medications on Discharged",
                         "Discharge Note, Followup Instructions"
                     ],
-                    "title":"Discharge Notes"
+                    "title": "Discharge Notes"
                 },
                 "displayOrder": 2
             },
@@ -112,7 +112,7 @@
             "title": "Charikot Hospital",
             "header": "OPD Summary",
             "logo": "../images/nhn-logo.png",
-		"showNameAndImage": true
+            "showNameAndImage": true
         },
         "sections": {
             "patientinformation": {
@@ -138,12 +138,12 @@
                 "displayOrder": 1
             },
             "conditions": {
-                 "type": "conditionsList",
-                 "config": {
+                "type": "conditionsList",
+                "config": {
                     "title": "Conditions"
-                 },
-                 "displayOrder": 6
-                 },
+                },
+                "displayOrder": 6
+            },
             "observation": {
                 "type": "observation",
                 "title": "Observation",
@@ -197,14 +197,14 @@
                 "displayOrder": 5
             }
         }
-},
+    },
     "test_summary": {
         "title": "OPD One Pager",
         "printing": {
             "title": "Charikot Hospital",
             "header": "OPD One Pager",
             "logo": "../images/nhn-logo.png",
-                "showNameAndImage": true
+            "showNameAndImage": true
         },
         "sections": {
             "patientinformation": {
@@ -281,9 +281,9 @@
                 },
                 "displayOrder": 5
             }
-        }   
+        }
 
- },
+    },
     "birthCertificate": {
         "title": "Birth Certificate",
         "printing": {
