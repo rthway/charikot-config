@@ -210,7 +210,8 @@ FROM
         AND cn2.name = 'Positive'
        
 WHERE
-    DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE) 
+    DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)
+	AND obs.voided != 1
   
     
   
