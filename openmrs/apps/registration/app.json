@@ -18,7 +18,9 @@
     ],
     "config": {
         "mandatoryPersonAttributes": [
-            "Caste"
+           "Caste",
+           "MemberHouseHold",
+           "Relation"
         ],
 		"autoCompleteFields": [
             "familyName"
@@ -54,13 +56,19 @@
                 "label": "VDC/Municipality",
                 "placeholder": "Enter VDC/Municipality",
                 "field": "city_village"
-            }
+            },
+			
+		
+    
+		"searchByPatientIdentifier": true
         },
-        "patientSearchResults": {
+
+		"patientSearchResults": {
             "address": {
                 "fields" : ["city_village", "address1"]
             }
-        },
+        },	
+     
         "enableNepaliCalendar": true,
         "displayNepaliDates": true
     }
