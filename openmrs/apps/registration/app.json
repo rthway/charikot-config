@@ -33,6 +33,8 @@
             }
         ],
         "showMiddleName": true,
+	"showLastName": true,
+	"isLastNameMandatory": true,  
         "defaultVisitType": "General",
         "conceptSetUI": {
             "Department Sent To": {
