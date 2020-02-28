@@ -23,7 +23,15 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
     static Double BMI_OBESE = 35.0;
     static Double BMI_SEVERELY_OBESE = 40.0;
     static Map<BahmniObservation, BahmniObservation> obsParentMap = new HashMap<BahmniObservation, BahmniObservation>();
+	static Map<String,Integer> depressionPHQ9ValueMap = new HashMap<String,Integer>();
 
+	static {
+	    depressionPHQ9ValueMap.put("0, Not at all",0);
+	   depressionPHQ9ValueMap.put("1, Sometimes",1);
+	   depressionPHQ9ValueMap.put("2, More than half the days",2);
+	   depressionPHQ9ValueMap.put("3, Everyday",3);
+	}
+	
     public static enum BmiStatus {
         VERY_SEVERELY_UNDERWEIGHT("Very Severely Underweight"),
         SEVERELY_UNDERWEIGHT("Severely Underweight"),
@@ -49,8 +57,55 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
 
     public void run(BahmniEncounterTransaction bahmniEncounterTransaction) {
         setBMI(bahmniEncounterTransaction);
+	setPCQTotalDI(bahmniEncounterTransaction);
+        setPCQTotalDF(bahmniEncounterTransaction);
     }
+		
+	static def setPCQTotalDI(BahmniEncounterTransaction bahmniEncounterTransaction){
+	    Collection<BahmniObservation> observations = bahmniEncounterTransaction.getObservations()
+	    def depressionObservation = find("Depression Initial-PHQ9",observations,null);
+		def total = 0;
+		if( depressionObservation == null) return;
+		for (BahmniObservation observation : depressionObservation.getGroupMembers()) {
+			if((!"Depression Initial-PHQ9 Total".equalsIgnoreCase(observation.getConcept().getName()))
+			&& (!"Depression Initial-PHQ9 Effect".equalsIgnoreCase(observation.getConcept().getName()))
+			&& (!"Depression-Severity of depression".equalsIgnoreCase(observation.getConcept().getName()))			
+			    && (((Map)observation.getValue()).get("name") != null)){
+			    Object observationFullName = ((Map)observation.getValue()).get("name");
+				if(observationFullName instanceof Map){
+					observationFullName = ((Map)observationFullName).get("name");
+				}
+				total += depressionPHQ9ValueMap.get(observationFullName);
+			}
+		}
+		def childDepresionTotalObs = find("Depression Initial-PHQ9 Total",
+		depressionObservation.getGroupMembers(),null);
+		childDepresionTotalObs.setValue(total);
+	}
 
+		static def setPCQTotalDF(BahmniEncounterTransaction bahmniEncounterTransaction){
+            	Collection<BahmniObservation> observations = bahmniEncounterTransaction.getObservations()
+            	def depressionObservation = find("Depression FollowUp-PHQ9",observations,null);
+                def total = 0;
+                if( depressionObservation == null) return;
+                for (BahmniObservation observation : depressionObservation.getGroupMembers()) {
+                        if((!"Depression-PHQ9 Total".equalsIgnoreCase(observation.getConcept().getName()))
+                        && (!"Depression-PHQ9 Effect".equalsIgnoreCase(observation.getConcept().getName()))
+                        && (!"Depression Initial-PHQ9-Depression-Severity of depression".equalsIgnoreCase(observation.getConcept().getName()))
+                        && (((Map)observation.getValue()).get("name") != null)){
+                            Object observationFullName = ((Map)observation.getValue()).get("name");
+                                if(observationFullName instanceof Map){
+                                        observationFullName = ((Map)observationFullName).get("name");
+                                }
+                                total += depressionPHQ9ValueMap.get(observationFullName);
+                        }
+                }
+                def childDepresionTotalObs = find("Depression-PHQ9 Total",
+                depressionObservation.getGroupMembers(),null);
+                childDepresionTotalObs.setValue(total);
+        }
+
+    
     static def setBMI(BahmniEncounterTransaction bahmniEncounterTransaction) {
         Collection<BahmniObservation> observations = bahmniEncounterTransaction.getObservations()
         def nowAsOfEncounter = bahmniEncounterTransaction.getEncounterDateTime() != null ? bahmniEncounterTransaction.getEncounterDateTime() : new Date();
@@ -177,14 +232,14 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
                 " and obs.voided = false" +
                 " and obs.obsDatetime <= :till" +
                 excludeObsClause +
-                " order by obs.obsDatetime desc ");
+		" order by obs.obsDatetime desc ");
         queryToGetObservations.setString("patientUuid", patientUuid);
         queryToGetObservations.setParameterList("conceptName", conceptName);
         queryToGetObservations.setParameter("till", tillDate);
         if (excludedObsIsSaved) {
             queryToGetObservations.setString("excludeObsUuid", excludeObs.uuid)
         }
-        queryToGetObservations.setMaxResults(1);
+	queryToGetObservations.setMaxResults(1);
         List<Obs> observations = queryToGetObservations.list();
         if (observations.size() > 0) {
             return observations.get(0).getValueNumeric();
