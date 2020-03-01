@@ -1493,10 +1493,7 @@
 			"PTSD Initial-Feeling Jumpy or Easily startled?": {
                 "required": true
             },
-			"PTSD Initial-PCL Total": {
-                "required": true
-            },
-			"PTSD Initial-Daily Activities": {
+		"PTSD Initial-Daily Activities": {
                 "required": true
             },
 			"PTSD-ASR": {
@@ -1559,10 +1556,7 @@
 			"Mental health-Primary Complaint": {
                 "required": true
             },
-			"Depression Initial-PHQ9 Total": {
-                "required": true
-            },
-			"Mental Health-Medical Ruleout": {
+		"Mental Health-Medical Ruleout": {
                 "required": true,
 				"multiSelect": true
             },
