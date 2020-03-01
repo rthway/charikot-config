@@ -1433,10 +1433,7 @@
 			"Depression-F/U-PHQ9-9": {
                 "required": true
             },
-			"Depression-PHQ9 Total": {
-                "required": true
-            },
-			"Depression-Progress toward Goal of treatment": {
+		"Depression-Progress toward Goal of treatment": {
                 "required": true
             },
 			"Depression F/U-Follow up": {
