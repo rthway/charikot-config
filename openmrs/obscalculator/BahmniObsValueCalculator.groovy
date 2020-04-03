@@ -92,6 +92,7 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
                         if((!"Depression-PHQ9 Total".equalsIgnoreCase(observation.getConcept().getName()))
                         && (!"Depression-PHQ9 Effect".equalsIgnoreCase(observation.getConcept().getName()))
                         && (!"Depression Initial-PHQ9-Depression-Severity of depression".equalsIgnoreCase(observation.getConcept().getName()))
+                        && (!"Depression-Severity of depression".equalsIgnoreCase(observation.getConcept().getName()))
                         && (((Map)observation.getValue()).get("name") != null)){
                             Object observationFullName = ((Map)observation.getValue()).get("name");
                                 if(observationFullName instanceof Map){
