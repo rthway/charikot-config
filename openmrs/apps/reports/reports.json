@@ -1234,7 +1234,20 @@
 			}]
 		}
 	},
-
+	"EWARS Plus": {
+		"name": "EWARS Plus",
+		"DHISProgram": true,
+		"type": "concatenated",
+		"config": {
+			"reports": [{
+				"name": "EWARS Plus",
+				"type": "MRSGeneric",
+				"config": {
+					"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/Covid19/Covid19.sql"
+				}
+			}]
+		}
+	},
 
 	"hospital_activities__number_of_clients_served_new_and_total": {
 		"name": "Hospital Activities - Number of Clients Served (New and Total)",
