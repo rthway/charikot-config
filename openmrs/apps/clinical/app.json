@@ -23,8 +23,8 @@
         "visitUuid"
     ],
     "config": {	
-		"enableNepaliCalendar": true,
-		"displayNepaliDates": true,
+		"enableNepaliCalendar": false,
+		"displayNepaliDates": false,
 		"defaultVisitType": "General",
 	        "filterObservationTemplates":true,
                 "visitTypeForRetrospectiveEntries": "General",
@@ -1007,6 +1007,18 @@
             "Delivery Note, Delivery date and time": {
                 "allowFutureDates": true
             },
+            "Discharge Note, Admission Date": {
+                "allowFutureDates": true
+            },
+            "Discharge Note, Discharge Date": {
+                "allowFutureDates": true
+            },
+            "PNC, PNC visit date": {
+                "allowFutureDates": true
+            },
+            "Date and time of delivery": {
+                "allowFutureDates": true
+            },
 	    "FRH-Procedure Follow Up": {
                 "allowFutureDates": true
             },
@@ -1566,6 +1578,17 @@
             },
 			"Discharge Note-Post op surgery complications": {
                 "multiSelect": true
+            },
+			"Covid-Symptoms": {
+                "required": true,
+				"multiSelect": true	
+            },
+			"Covid-Additional risk factor": {
+                "required": true,
+				"multiSelect": true	
+            },
+			"Coivd-Sample collected": {
+                "required": true
             },
 		"Delivery Note-Complication Present": {
 		"multiSelect": true

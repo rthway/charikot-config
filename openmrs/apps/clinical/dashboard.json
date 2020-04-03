@@ -76,7 +76,13 @@
                 },
                 "displayOrder": 5
             	},
-            "otherdiagnosticOrderControl":  {
+            "radiology":{  
+                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_KEY",
+                "type":"radiology",
+                "showDetailsButton":true,
+                "displayOrder":5
+            },
+			"otherdiagnosticOrderControl":  {
                 "title": "Other Diagnostics",
                 "type": "ordersControl",
                 "orderType": "USG Order",
