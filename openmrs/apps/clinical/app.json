@@ -23,8 +23,8 @@
         "visitUuid"
     ],
     "config": {	
-		"enableNepaliCalendar": false,
-		"displayNepaliDates": false,
+		"enableNepaliCalendar": true,
+		"displayNepaliDates": true,
 		"defaultVisitType": "General",
 	        "filterObservationTemplates":true,
                 "visitTypeForRetrospectiveEntries": "General",
