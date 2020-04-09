@@ -193,6 +193,9 @@
             "CHP ANC, Visit date": {
                 "required":true
             },
+	   "USG, Cleaned before use?": {			
+		 "required": true
+	   },
             "CHP ANC, Visit type": {
                 "required":true
             },
