@@ -925,6 +925,9 @@
             "PNC, Visit Time": {
                 "required": true
             },
+	    "ANC-USG Placenta Position": {
+		 "required": true
+	    },    
             "PNC, Blood Transfusion Provided": {
                 "required": true
             },
