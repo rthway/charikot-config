@@ -112,6 +112,9 @@
             "Hypertension - Risk factors": {
                 "multiSelect": true
             },
+	    "USG, Cleaned after use?": {
+                "required": true
+            },
             "HTC, Risk Group": {
                 "multiSelect": true
             },
