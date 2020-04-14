@@ -23,8 +23,8 @@
         "visitUuid"
     ],
     "config": {	
-		"enableNepaliCalendar": false,
-		"displayNepaliDates": false,
+		"enableNepaliCalendar": true,
+		"displayNepaliDates": true,
 		"defaultVisitType": "General",
 	        "filterObservationTemplates":true,
                 "visitTypeForRetrospectiveEntries": "General",
@@ -193,6 +193,9 @@
             "CHP ANC, Visit date": {
                 "required":true
             },
+	   "USG, Cleaned before use?": {			
+		 "required": true
+	   },
             "CHP ANC, Visit type": {
                 "required":true
             },
@@ -922,6 +925,9 @@
             "PNC, Visit Time": {
                 "required": true
             },
+	    "ANC-USG Placenta Position": {
+		 "required": true
+	    },    
             "PNC, Blood Transfusion Provided": {
                 "required": true
             },
