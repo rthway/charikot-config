@@ -181,6 +181,9 @@
             "CHP Registration, House Number": {
                 "required":true
             },
+	    "USG, Cleaned before use?": {
+                "required":true
+            },	
             "CHP Registration, Family Member Number": {
                 "required":true
             },
